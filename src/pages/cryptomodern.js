@@ -1,27 +1,25 @@
-import React from 'react';
-import { ThemeProvider } from 'styled-components';
-import { theme } from 'common/theme/cryptoModern';
 import { ResetCSS } from 'common/assets/css/style';
-import Sticky from 'react-stickynode';
-import Navbar from 'containers/CryptoModern/Navbar';
+import { theme } from 'common/theme/cryptoModern';
+import SEO from 'components/seo';
 import Banner from 'containers/CryptoModern/Banner';
-import CountDown from 'containers/CryptoModern/CountDown';
+import GlobalStyle, {
+  ContentWrapper, CryptoWrapper
+} from 'containers/CryptoModern/cryptoModern.style';
+import FaqSection from 'containers/CryptoModern/FaqSection';
 import Features from 'containers/CryptoModern/FeatureSection';
-import WorkHistory from 'containers/CryptoModern/WorkHistory';
-import Investment from 'containers/CryptoModern/Investment';
+import Footer from 'containers/CryptoModern/Footer';
 import FundRaising from 'containers/CryptoModern/FundRaising';
+import Investment from 'containers/CryptoModern/Investment';
+import MapSection from 'containers/CryptoModern/MapSection';
+import Navbar from 'containers/CryptoModern/Navbar';
+import Newsletter from 'containers/CryptoModern/Newsletter';
 import Privacypolicy from 'containers/CryptoModern/Privacy';
 import WalletSection from 'containers/CryptoModern/WalletSection';
-import MapSection from 'containers/CryptoModern/MapSection';
-import FaqSection from 'containers/CryptoModern/FaqSection';
-import Newsletter from 'containers/CryptoModern/Newsletter';
-import Footer from 'containers/CryptoModern/Footer';
-import GlobalStyle, {
-  CryptoWrapper,
-  ContentWrapper,
-} from 'containers/CryptoModern/cryptoModern.style';
+import WorkHistory from 'containers/CryptoModern/WorkHistory';
+import React from 'react';
+import Sticky from 'react-stickynode';
+import { ThemeProvider } from 'styled-components';
 
-import SEO from 'components/seo';
 
 export default function () {
   return (
@@ -38,7 +36,7 @@ export default function () {
           </Sticky>
           <ContentWrapper>
             <Banner />
-            <CountDown />
+            {/* <CountDown /> */}
             <Features />
             <WorkHistory />
             <Investment />

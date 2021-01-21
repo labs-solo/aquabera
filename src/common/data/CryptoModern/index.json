@@ -4,14 +4,14 @@
 		"navMenu": [
 			{
 				"id": 1,
-				"label": "Home",
-				"path": "#home",
-				"offset": "84"
+				"label": "Key Features",
+				"path": "#key-features",
+				"offset": "81"
 			},
 			{
 				"id": 2,
-				"label": "Key Features",
-				"path": "#key-features",
+				"label": "Market Opportunity",
+				"path": "#market-opportunity",
 				"offset": "81"
 			}
 		]
@@ -21,29 +21,42 @@
 		{
 			"id": 1,
 			"icon": "../../assets/image/cryptoModern/feature-1.png",
-			"title": "Great Market Value",
-			"description": "The leading digital currency by market capitalization, has grown in value by more than 10 times."
+			"title": "Gauranteed Peg",
+			"description": "Redeeming oneCoin will always get the equivalent in USDC (minus redemption fee)."
 		},
 		{
 			"id": 2,
 			"icon": "../../assets/image/cryptoModern/feature-2.png",
-			"title": "Verified Mining",
-			"description": "Your mining rigs are already set up and running. As soon as you set up your account."
+			"title": "Community treasury",
+			"description": "Create memberCoin treasury goverened by the community to utilize invest, incentivise."
 		},
 		{
 			"id": 3,
 			"icon": "../../assets/image/cryptoModern/feature-3.png",
-			"title": "Fastest Miner",
-			"description": "Don’t wrestle with rig assembly and hot, noisy miners at home. We have the fastest bitcoin mining."
-		},
-		{
-			"id": 4,
-			"icon": "../../assets/image/cryptoModern/feature-4.png",
-			"title": "Secure Transactions",
-			"description": "You can mine any cryptocurrency available in our catalogue! Switch your mining power."
+			"title": "Relieve coin sell pressure",
+			"description": "Incentivise long position on the coin while allowing community members to hold a safe asset."
 		}
 	],
-
+	"MarketOpportunity": [
+		{
+			"id": 1,
+			"icon": "../../assets/image/cryptoModern/feature-1.png",
+			"title": "User idle coins",
+			"description": "Millions of dollars of project Coins are being held by users, workers and community members without any utilization."
+		},
+		{
+			"id": 2,
+			"icon": "../../assets/image/cryptoModern/feature-2.png",
+			"title": "Treasury idle coins",
+			"description": "Millions of dollars of project Coins are being held in project treasuries, DAOs, and Multisigs without any utilization."
+		},
+		{
+			"id": 3,
+			"icon": "../../assets/image/cryptoModern/feature-3.png",
+			"title": "Collaborate with any crypto project",
+			"description": "Ichi can partner with any crypto project with a Coin community and liquidity."
+		}
+	],
 	"WalletFeatures": [
 		{
 			"id": 1,
@@ -91,95 +104,62 @@
 			"title": "About Us",
 			"menuItems": [
 				{
-					"url": "#",
-					"text": "Support Center"
+					"url": "https://docs.ichi.farm/",
+					"text": "Documentation"
 				},
 				{
-					"url": "#",
-					"text": "Customer Support"
+					"url": "https://github.com/ichifarm",
+					"text": "Github"
 				},
 				{
-					"url": "#",
-					"text": "About Us"
+					"url": "https://docs.ichi.farm/introduction/audits",
+					"text": "Audit"
 				},
 				{
-					"url": "#",
-					"text": "Copyright"
-				},
-				{
-					"url": "#",
-					"text": "Popular Campaign"
+					"url": "https://medium.com/ichifarm/ichi-farm-bug-bounties-d3a042e8088a",
+					"text": "Bug Bounty"
 				}
 			]
 		},
 		{
-			"title": "Our Information",
+			"title": "Governance",
 			"menuItems": [
 				{
-					"url": "#",
-					"text": "Return Policy"
+					"url": "https://docs.ichi.farm/introduction/ichi-tokenomics",
+					"text": "ICHI Token"
 				},
 				{
-					"url": "#",
-					"text": "Privacy Policy"
+					"url": "https://www.ichi.farm/#/treasury",
+					"text": "Stablecoin Treasuries"
 				},
 				{
-					"url": "#",
-					"text": "Terms & Conditions"
+					"url": "https://docs.ichi.farm/introduction/ichi-tokenomics",
+					"text": "Forum"
 				},
 				{
-					"url": "#",
-					"text": "Site Map"
-				},
-				{
-					"url": "#",
-					"text": "Store Hours"
+					"url": "https://snapshot.page/#/ichi.eth",
+					"text": "Vote"
 				}
 			]
 		},
 		{
-			"title": "My Account",
+			"title": "Community",
 			"menuItems": [
 				{
-					"url": "#",
-					"text": "Press inquiries"
+					"url": "https://t.me/ichifarm",
+					"text": "Telegram"
 				},
 				{
-					"url": "#",
-					"text": "Social media directories"
+					"url": "https://discord.com/invite/Bm6pUHjHUC",
+					"text": "Discord"
 				},
 				{
-					"url": "#",
-					"text": "Images & B-roll"
+					"url": "https://twitter.com/ichifarm",
+					"text": "Twitter"
 				},
 				{
-					"url": "#",
-					"text": "Permissions"
-				},
-				{
-					"url": "#",
-					"text": "Speaker requests"
-				}
-			]
-		},
-		{
-			"title": "Policy",
-			"menuItems": [
-				{
-					"url": "#",
-					"text": "Application security"
-				},
-				{
-					"url": "#",
-					"text": "Software principles"
-				},
-				{
-					"url": "#",
-					"text": "Unwanted software policy"
-				},
-				{
-					"url": "#",
-					"text": "Responsible supply chain"
+					"url": "https://medium.com/ichifarm",
+					"text": "Medium"
 				}
 			]
 		}

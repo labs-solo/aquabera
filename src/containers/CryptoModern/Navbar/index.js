@@ -1,6 +1,6 @@
 // import LogoImage from 'common/assets/image/cryptoModern/logo-white.png';
 // import LogoImageAlt from 'common/assets/image/cryptoModern/logo.png';
-import LogoImage from 'common/assets/image/ichi/192x192_App_Icon.png';
+import LogoImage from 'common/assets/image/ichi/128x128_App_Icon.png';
 import Button from 'common/components/Button';
 import ScrollSpyMenu from 'common/components/ScrollSpyMenu';
 import Container from 'common/components/UI/Container';

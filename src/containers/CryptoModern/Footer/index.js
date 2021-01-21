@@ -1,14 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
 import Box from 'common/components/Box';
-import Text from 'common/components/Text';
+// import Text from 'common/components/Text';
 import Heading from 'common/components/Heading';
-import Logo from 'common/components/UIElements/Logo';
+// import Logo from 'common/components/UIElements/Logo';
 import Container from 'common/components/UI/Container';
+import { graphql, useStaticQuery } from 'gatsby';
+import PropTypes from 'prop-types';
+import React from 'react';
 import FooterWrapper, { List, ListItem } from './footer.style';
 
-import LogoImage from 'common/assets/image/cryptoModern/logo-white.png';
 
 const Footer = ({
   row,
@@ -36,7 +35,7 @@ const Footer = ({
     <FooterWrapper>
       <Container className="footer_container">
         <Box className="row" {...row}>
-          <Box {...colOne}>
+          {/* <Box {...colOne}>
             <Logo
               href="#"
               logoSrc={LogoImage}
@@ -45,7 +44,7 @@ const Footer = ({
             />
             <Text content="hello@redq.io" {...textStyle} />
             <Text content="+479-443-9334" {...textStyle} />
-          </Box>
+          </Box> */}
           {/* End of footer logo column */}
           <Box {...colTwo}>
             {Data.cryptoModernJson.FooterData.map((widget, index) => (
@@ -89,6 +88,7 @@ Footer.defaultProps = {
     flexWrap: 'wrap',
     ml: '-15px',
     mr: '-15px',
+    justifyContent: 'center'
   },
   // Footer col one style
   colOne: {
@@ -97,12 +97,14 @@ Footer.defaultProps = {
     mb: ['30px', 0],
     pl: ['15px', 0],
     pr: ['15px', '15px', 0],
+    justifyContent: 'center'
   },
   // Footer col two style
   colTwo: {
     width: ['100%', '65%', '65%', '77%'],
     flexBox: true,
     flexWrap: 'wrap',
+    justifyContent: 'center'
   },
   // Footer col default style
   col: {
@@ -110,6 +112,7 @@ Footer.defaultProps = {
     pl: '15px',
     pr: '15px',
     mb: '30px',
+    justifyContent: 'center'
   },
   // widget title default style
   titleStyle: {

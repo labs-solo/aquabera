@@ -6,9 +6,9 @@ import Container from 'common/components/UI/Container';
 import { graphql, useStaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
-import FeatureSectionWrapper from './featureSection.style';
+import MarketOpportunitySectionWrapper from './marketOpportunitySection.style';
 
-const FeatureSection = ({
+const MarketOpportunitySection = ({
   row,
   col,
   sectionHeader,
@@ -23,7 +23,7 @@ const FeatureSection = ({
   const Data = useStaticQuery(graphql`
     query {
       cryptoModernJson {
-        Features {
+        MarketOpportunity {
           id
           title
           description
@@ -35,17 +35,17 @@ const FeatureSection = ({
     }
   `);
   return (
-    <FeatureSectionWrapper id="key-features">
+    <MarketOpportunitySectionWrapper id="market-opportunity">
       <Container>
         <Box {...sectionHeader} className="sectionHeader">
-          <Text content="Why choose Ichi" {...sectionSubTitle} />
+          <Text content="Market Opportunity" {...sectionSubTitle} />
           {/* <Heading
             content="Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiu Lorem ipsum dolor Lorem ipsum dolor"
             {...sectionTitle}
           /> */}
         </Box>
         <Box className="row" {...row}>
-          {Data.cryptoModernJson.Features.map((feature, index) => (
+          {Data.cryptoModernJson.MarketOpportunity.map((feature, index) => (
             <Box className="col" {...col} key={index}>
               <FeatureBlock
                 icon={<img src={feature.icon.publicURL} alt="feature" />}
@@ -55,18 +55,18 @@ const FeatureSection = ({
                 description={
                   <Text content={feature.description} {...featureDescription} />
                 }
-                className="cryptoFeature"
+                className="cryptoMarketOpportunity"
               />
             </Box>
           ))}
         </Box>
       </Container>
-    </FeatureSectionWrapper>
+    </MarketOpportunitySectionWrapper>
   );
 };
 
-// FeatureSection style props
-FeatureSection.propTypes = {
+// MarketOpportunitySection style props
+MarketOpportunitySection.propTypes = {
   sectionHeader: PropTypes.object,
   row: PropTypes.object,
   col: PropTypes.object,
@@ -76,8 +76,8 @@ FeatureSection.propTypes = {
   featureDescription: PropTypes.object,
 };
 
-// FeatureSection default style
-FeatureSection.defaultProps = {
+// MarketOpportunitySection default style
+MarketOpportunitySection.defaultProps = {
   // section header default style
   sectionHeader: {
     mb: ['40px', '40px', '40px', '80px'],
@@ -142,4 +142,4 @@ FeatureSection.defaultProps = {
   },
 };
 
-export default FeatureSection;
+export default MarketOpportunitySection;
