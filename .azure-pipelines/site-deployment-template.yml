@@ -5,9 +5,9 @@ parameters:
     type: string
 
 steps:
-  - script: |
-      sudo apt-get -y update
-      sudo apt-get -y install libvips
+  # - script: |
+  #     sudo apt-get -y update
+  #     sudo apt-get -y install libvips
   - task: NodeTool@0
     displayName: 'Install Node.js'
     inputs:
