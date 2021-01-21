@@ -1,0 +1,50 @@
+parameters:
+  - name: storageAccountName
+    type: string
+  - name: storageAccountKey
+    type: string
+
+steps:
+  - script: |
+      sudo apt-get -y update
+      sudo apt-get -y install libvips
+  - task: NodeTool@0
+    displayName: 'Install Node.js'
+    inputs:
+      versionSpec: '12.x'
+  - script: npm install
+    displayName: 'npm install'
+  - script: npm run build
+    displayName: 'npm run build'
+  - task: ArchiveFiles@2
+    inputs:
+      rootFolderOrFile: '$(Build.SourcesDirectory)/public'
+      archiveType: 'zip'
+      archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+      replaceExistingArchive: true
+  - task: PublishBuildArtifacts@1
+    inputs:
+      pathToPublish: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+      artifactName: 'build'
+
+  # Requires a windows build VM
+  # - task: AzureFileCopy@3
+  #   inputs:
+  #     SourcePath: '$(System.SourcesDirectory)/public'
+  #     azureSubscription: devrg
+  #     Destination: AzureBlob
+  #     storage: $(storageAccountName)
+  #     ContainerName: $web
+
+  - task: AzureCLI@2
+    displayName: Deploy site to Storage
+    inputs:
+      azureSubscription: devrg
+      scriptType: pscore
+      scriptLocation: inlineScript
+      inlineScript: |
+        az storage blob upload-batch -d '$web' -s $env:BUILD_DIR
+    env:
+      BUILD_DIR: $(Build.SourcesDirectory)/public
+      AZURE_STORAGE_ACCOUNT: $(storageAccountName)
+      AZURE_STORAGE_KEY: $(storageAccountKey)

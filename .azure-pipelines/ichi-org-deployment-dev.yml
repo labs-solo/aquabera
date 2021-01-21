@@ -1,0 +1,20 @@
+pr:
+  branches:
+    include:
+      - '*' 
+  paths:
+    include:
+      - src/*
+      - deployment/*
+
+pool:
+  vmImage: "ubuntu-latest"
+
+variables:
+- group: ichi-org-deployment-dev
+
+steps:
+  - template: site-deployment-template.yml
+    parameters:
+      storageAccountName: $(storageAccountName)
+      storageAccountKey: $(storageAccountKey)

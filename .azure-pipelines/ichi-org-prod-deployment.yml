@@ -1,0 +1,26 @@
+parameters:
+  - name: storageAccountName
+    type: string
+  - name: storageAccountKey
+    type: string
+
+steps:
+  - task: ExtractFiles@1
+    inputs:
+      # https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#pipeline-variables-devops-services
+      archiveFilePatterns: $(Pipeline.Workspace)/build/$(Build.BuildId).zip
+      destinationFolder: $(Build.SourcesDirectory)/build
+      cleanDestinationFolder: true
+      overwriteExistingFiles: true
+  - task: AzureCLI@2
+    displayName: Deploy site to Storage
+    inputs:
+      azureSubscription: devrg
+      scriptType: pscore
+      scriptLocation: inlineScript
+      inlineScript: |
+        az storage blob upload-batch -d '$web' -s $env:BUILD_DIR
+    env:
+      BUILD_DIR: $(Build.SourcesDirectory)/build/build
+      AZURE_STORAGE_ACCOUNT: $(storageAccountName)
+      AZURE_STORAGE_KEY: $(storageAccountKey)

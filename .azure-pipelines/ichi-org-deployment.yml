@@ -1,0 +1,44 @@
+trigger:
+  branches:
+    include:
+      - master
+      - main
+  paths:
+    include:
+      - src/*
+
+pr: none
+
+name: $(Date:yyyyMMdd)$(Rev:r)
+
+stages:
+  - stage: staging
+    displayName: Deploy to Staging
+    variables:
+      - group: ichi-org-deployment-staging
+    jobs:
+      - job: terraformTest
+        displayName: Run AML Terraform Tests
+        steps:
+          - template: site-deployment-template.yml
+            parameters:
+              storageAccountName: $(storageAccountName)
+              storageAccountKey: $(storageAccountKey)
+
+  - stage: prod
+    dependsOn: staging
+    displayName: Deploy to Prod
+    variables:
+      - group: ichi-org-deployment-prod
+    jobs:
+      - deployment: gated_prod_deployment
+        displayName: Deploy to Prod
+        environment: prod
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - template: ichi-org-prod-deployment.yml
+                  parameters:
+                    storageAccountName: $(storageAccountName)
+                    storageAccountKey: $(storageAccountKey)
