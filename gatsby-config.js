@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `A react next landing page`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Ichi`,
+    description: `Useable money for every coin`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -45,7 +45,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.svg`, // This path is relative to the root of the site.
       },
     },
     {

@@ -1,27 +1,26 @@
-import React, { useState, useEffect, Fragment } from 'react';
-import { ThemeProvider } from 'styled-components';
-import Sticky from 'react-stickynode';
 import { Modal } from '@redq/reuse-modal';
-import { appTheme } from 'common/theme/app';
-import {
-  GlobalStyle,
-  AppWrapper,
-  ConditionWrapper,
-} from 'containers/App/app.style';
+import '@redq/reuse-modal/es/index.css';
 import { ResetCSS } from 'common/assets/css/style';
-import Navbar from 'containers/App/Navbar';
+import { DrawerProvider } from 'common/contexts/DrawerContext';
+import { appTheme } from 'common/theme/app';
+import SEO from 'components/seo';
+import {
+  AppWrapper,
+  ConditionWrapper, GlobalStyle
+} from 'containers/App/app.style';
 import DomainSection from 'containers/App/Banner';
-import FeatureSection from 'containers/App/FeatureSection';
 import ControllSection from 'containers/App/Control';
-import TestimonialSection from 'containers/App/Testimonial';
-import PartnerHistory from 'containers/App/PartnerHistory';
-import PaymentSection from 'containers/App/PaymentSection';
-import Footer from 'containers/App/Footer';
+import FeatureSection from 'containers/App/FeatureSection';
 import FeatureSlider from 'containers/App/FeatureSlider';
 import FeatureSliderTwo from 'containers/App/FeatureSliderTwo';
-import { DrawerProvider } from 'common/contexts/DrawerContext';
-import '@redq/reuse-modal/es/index.css';
-import SEO from 'components/seo';
+import Footer from 'containers/App/Footer';
+import Navbar from 'containers/App/Navbar';
+import PartnerHistory from 'containers/App/PartnerHistory';
+import PaymentSection from 'containers/App/PaymentSection';
+import TestimonialSection from 'containers/App/Testimonial';
+import React, { Fragment, useEffect, useState } from 'react';
+import Sticky from 'react-stickynode';
+import { ThemeProvider } from 'styled-components';
 
 function getSize() {
   return {
@@ -50,9 +49,9 @@ function useWindowSize() {
   return windowSize;
 }
 
-export default () => {
-  const size = process.browser && useWindowSize();
-  const innerWidth = process.browser && size.innerWidth;
+const App = () => {
+  const size = useWindowSize();
+  const innerWidth = size && size.innerWidth;
 
   return (
     <ThemeProvider theme={appTheme}>
@@ -82,3 +81,5 @@ export default () => {
     </ThemeProvider>
   );
 };
+
+export default App;

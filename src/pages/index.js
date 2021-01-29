@@ -18,11 +18,11 @@ import Sticky from 'react-stickynode';
 import { ThemeProvider } from 'styled-components';
 
 
-export default function () {
+export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <>
-        <SEO title="Crypto Modern" />
+        <SEO title="Ichi" />
 
         <ResetCSS />
         <GlobalStyle />
