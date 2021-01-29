@@ -23,11 +23,19 @@ import Sticky from 'react-stickynode';
 import { ThemeProvider } from 'styled-components';
 
 function getSize() {
+  if (typeof window !== "undefined") {
+    return {
+      innerHeight: window.innerHeight,
+      innerWidth: window.innerWidth,
+      outerHeight: window.outerHeight,
+      outerWidth: window.outerWidth,
+    };
+  } 
   return {
-    innerHeight: window.innerHeight,
-    innerWidth: window.innerWidth,
-    outerHeight: window.outerHeight,
-    outerWidth: window.outerWidth,
+    innerHeight: 0,
+    innerWidth: 0,
+    outerHeight: 0,
+    outerWidth: 0,
   };
 }
 
@@ -51,7 +59,7 @@ function useWindowSize() {
 
 const App = () => {
   const size = useWindowSize();
-  const innerWidth = size && size.innerWidth;
+  const innerWidth = size.innerWidth;
 
   return (
     <ThemeProvider theme={appTheme}>
