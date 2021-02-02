@@ -1,5 +1,4 @@
-import LogoImageAlt from 'common/assets/image/ichi/logo_horizontal_dark/ichi_logo_horizontal_dark.png';
-import LogoImage from 'common/assets/image/ichi/logo_horizontal_light/ichi_logo_horizontal_light.png';
+import { default as LogoImage, default as LogoImageAlt } from 'common/assets/image/ichi/logo_horizontal_dark/ichi_logo_horizontal_dark.svg';
 import Button from 'common/components/Button';
 import ScrollSpyMenu from 'common/components/ScrollSpyMenu';
 import Container from 'common/components/UI/Container';

@@ -1,8 +1,8 @@
-import styled from 'styled-components';
-import { variant, alignItems, boxShadow } from 'styled-system';
 import { themeGet } from '@styled-system/theme-get';
-import { buttonStyle, colorStyle, sizeStyle } from '../customVariant';
+import styled from 'styled-components';
+import { alignItems, boxShadow, variant } from 'styled-system';
 import { base } from '../base';
+import { buttonStyle, colorStyle, sizeStyle } from '../customVariant';
 
 const ButtonStyle = styled.button`
   /* button default style */
@@ -10,7 +10,8 @@ const ButtonStyle = styled.button`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: ${themeGet('colors.white', '#ffffff')};
+  #color: ${themeGet('colors.white', '#ffffff')};
+  color: ${themeGet('colors.white', '#028489')};
   background-color: ${themeGet('colors.primary', '#028489')};
   min-height: ${themeGet('heights.3', '48')}px;
   min-width: ${themeGet('widths.3', '48')}px;

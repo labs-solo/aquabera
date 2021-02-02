@@ -1,114 +1,118 @@
 import { ResetCSS } from 'common/assets/css/style';
-import { theme } from 'common/theme/cryptoModern';
+import { theme } from 'common/theme/hostingModern';
 import SEO from 'components/seo';
 import Banner from 'containers/CryptoModern/Banner';
-import CountDown from 'containers/CryptoModern/CountDown';
+// import CountDown from 'containers/CryptoModern/CountDown';
 import GlobalStyle, {
   ContentWrapper, CryptoWrapper
 } from 'containers/CryptoModern/cryptoModern.style';
-import Features from 'containers/CryptoModern/FeatureSection';
+// import CallToAction from 'containers/HostingModern/CallToAction';
+// import CustomerSupport from 'containers/HostingModern/CustomerSupport';
+// import Faq from 'containers/HostingModern/Faq';
+// import Feature from 'containers/HostingModern/Feature';
+// import Footer from 'containers/HostingModern/Footer';
 import Footer from 'containers/CryptoModern/Footer';
-import MarketOpportunity from 'containers/CryptoModern/MarketOpportunitySection';
+// import Features from 'containers/CryptoModern/FeatureSection';
+// import MarketOpportunity from 'containers/CryptoModern/MarketOpportunitySection';
 import Navbar from 'containers/CryptoModern/Navbar';
-// import Newsletter from 'containers/CryptoModern/Newsletter';
-// import Privacypolicy from 'containers/CryptoModern/Privacy';
-// import WalletSection from 'containers/CryptoModern/WalletSection';
-// import WorkHistory from 'containers/CryptoModern/WorkHistory';
+// import NewsFeed from 'containers/HostingModern/NewsFeed';
+// import Pricing from 'containers/HostingModern/Pricing';
+// import Service from 'containers/HostingModern/Service';
+// import Testimonials from 'containers/HostingModern/Testimonials';
+// import UltimateFeature from 'containers/HostingModern/UltimateFeature';
 import React from 'react';
 import Sticky from 'react-stickynode';
 import { ThemeProvider } from 'styled-components';
 
 
-export default function App() {
+const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <>
-        <SEO title="Ichi" />
+      <SEO title="Ichi" />
 
-        <ResetCSS />
-        <GlobalStyle />
+      <ResetCSS />
+      <GlobalStyle />
 
-        <CryptoWrapper>
-          <Sticky top={0} innerZ={9999} activeClass="sticky-active">
-            <Navbar />
-          </Sticky>
-          <ContentWrapper>
-            <Banner />
-            <CountDown />
-            <Features />
-            <MarketOpportunity />
-            {/* <WorkHistory /> */}
-            {/* <Investment /> */}
-            {/* <FundRaising /> */}
-            {/* <Privacypolicy /> */}
-            {/* <WalletSection /> */}
-            {/* <MapSection /> */}
-            {/* <FaqSection /> */}
-            {/* <Newsletter /> */}
-          </ContentWrapper>
-          <Footer />
-        </CryptoWrapper>
-      </>
+      <CryptoWrapper>
+        {/* <TopBar /> */}
+        <Sticky top={0} innerZ={9999} activeClass="sticky-active">
+          <Navbar />
+        </Sticky>
+        <ContentWrapper>
+          <Banner />
+          {/* <CountDown /> */}
+          {/* <Service /> */}
+          {/* <Feature /> */}
+          {/* <UltimateFeature /> */}
+          {/* <CustomerSupport /> */}
+          {/* <Pricing /> */}
+          {/* <Testimonials /> */}
+          {/* <NewsFeed /> */}
+          {/* <Faq /> */}
+          {/* <CallToAction /> */}
+          {/* <Features /> */}
+          {/* <MarketOpportunity /> */}
+        </ContentWrapper>
+        <Footer />
+      </CryptoWrapper>
     </ThemeProvider>
   );
-}
+};
+export default App;
 
-// Original that allowed selecting the different templates
-// import React, { Fragment } from 'react';
+
+// Crypto modern
+// import { ResetCSS } from 'common/assets/css/style';
+// import { theme } from 'common/theme/cryptoModern';
+// import SEO from 'components/seo';
+// import Banner from 'containers/CryptoModern/Banner';
+// import CountDown from 'containers/CryptoModern/CountDown';
+// import GlobalStyle, {
+//   ContentWrapper, CryptoWrapper
+// } from 'containers/CryptoModern/cryptoModern.style';
+// import Features from 'containers/CryptoModern/FeatureSection';
+// import Footer from 'containers/CryptoModern/Footer';
+// import MarketOpportunity from 'containers/CryptoModern/MarketOpportunitySection';
+// import Navbar from 'containers/CryptoModern/Navbar';
+// // import Newsletter from 'containers/CryptoModern/Newsletter';
+// // import Privacypolicy from 'containers/CryptoModern/Privacy';
+// // import WalletSection from 'containers/CryptoModern/WalletSection';
+// // import WorkHistory from 'containers/CryptoModern/WorkHistory';
+// import React from 'react';
 // import Sticky from 'react-stickynode';
 // import { ThemeProvider } from 'styled-components';
-// import { Modal } from '@redq/reuse-modal';
-// import { agencyTheme } from 'common/theme/agency';
-// import { ResetCSS } from 'common/assets/css/style';
-// import { GlobalStyle, AgencyWrapper } from 'containers/Agency/agency.style';
-// import Navbar from 'containers/Agency/Navbar';
-// import BannerSection from 'containers/Agency/BannerSection';
-// import FeatureSection from 'containers/Agency/FeatureSection';
-// import AboutUsSection from 'containers/Agency/AboutUsSection';
-// import WorkHistory from 'containers/Agency/WorkHistory';
-// import BlogSection from 'containers/Agency/BlogSection';
-// import TestimonialSection from 'containers/Agency/TestimonialSection';
-// import TeamSection from 'containers/Agency/TeamSection';
-// import VideoSection from 'containers/Agency/VideoSection';
-// import FaqSection from 'containers/Agency/FaqSection';
-// import NewsletterSection from 'containers/Agency/NewsletterSection';
-// import QualitySection from 'containers/Agency/QualitySection';
-// import Footer from 'containers/Agency/Footer';
-// import { DrawerProvider } from 'common/contexts/DrawerContext';
-// import '@redq/reuse-modal/es/index.css';
-// import SEO from 'components/seo';
 
-// export default () => {
+
+// export default function App() {
 //   return (
-//     <ThemeProvider theme={agencyTheme}>
-//       <Fragment>
-//         <SEO title="Agency" />
-//         <Modal />
+//     <ThemeProvider theme={theme}>
+//       <>
+//         <SEO title="Ichi" />
+
 //         <ResetCSS />
 //         <GlobalStyle />
-//         {/* End of agency head section */}
-//         {/* Start agency wrapper section */}
-//         <AgencyWrapper>
-//           <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
-//             <DrawerProvider>
-//               <Navbar />
-//             </DrawerProvider>
+
+//         <CryptoWrapper>
+//           <Sticky top={0} innerZ={9999} activeClass="sticky-active">
+//             <Navbar />
 //           </Sticky>
-//           <BannerSection />
-//           <FeatureSection />
-//           <AboutUsSection />
-//           <WorkHistory />
-//           <BlogSection />
-//           <QualitySection />
-//           <VideoSection />
-//           <TestimonialSection />
-//           <TeamSection />
-//           <FaqSection />
-//           <NewsletterSection />
+//           <ContentWrapper>
+//             <Banner />
+//             <CountDown />
+//             <Features />
+//             <MarketOpportunity />
+//             {/* <WorkHistory /> */}
+//             {/* <Investment /> */}
+//             {/* <FundRaising /> */}
+//             {/* <Privacypolicy /> */}
+//             {/* <WalletSection /> */}
+//             {/* <MapSection /> */}
+//             {/* <FaqSection /> */}
+//             {/* <Newsletter /> */}
+//           </ContentWrapper>
 //           <Footer />
-//         </AgencyWrapper>
-//         {/* End of agency wrapper section */}
-//       </Fragment>
+//         </CryptoWrapper>
+//       </>
 //     </ThemeProvider>
 //   );
-// };
+// }

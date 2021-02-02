@@ -1,15 +1,15 @@
-import styled from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
+import styled from 'styled-components';
 
 const BannerWrapper = styled.div`
   padding-top: 100px;
   min-height: 802px;
   overflow: hidden;
-  background-image: linear-gradient(
-    135deg,
-    rgba(64, 219, 216, 0.15) 0%,
-    rgba(3, 16, 59, 0.15) 35%
-  );
+  #background-image: linear-gradient(
+  #  135deg,
+  #  rgba(64, 219, 216, 0.15) 0%,
+  #  rgba(3, 16, 59, 0.15) 35%
+  #);
   @media only screen and (min-width: 1201px) and (max-width: 1440px) {
     min-height: 100%;
   }
@@ -121,13 +121,22 @@ export const ButtonGroup = styled.div`
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
-
     &.primary {
-      background-image: linear-gradient(to right, #4ba1d8, #4464bd 95%);
-      &:hover {
-        box-shadow: rgba(75, 109, 235, 0.78) 0px 12px 24px -10px;
-      }
+      background-color: ${themeGet('colors.primary')};
+      font-weight: bold;
     }
+    &.secondary {
+      margin-left: 15px;
+      background-color: ${themeGet('colors.secondary')};
+      font-weight: bold;
+    }
+
+    #&.primary {
+    #  background-image: linear-gradient(to right, #4ba1d8, #4464bd 95%);
+    #  &:hover {
+    #    box-shadow: rgba(75, 109, 235, 0.78) 0px 12px 24px -10px;
+    #  }
+    #}
 
     &.text {
       margin-left: 15px;

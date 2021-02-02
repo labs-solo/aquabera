@@ -1,6 +1,12 @@
+// import FooterImage from 'common/assets/image/hosting/footer-bg.png';
 import styled from 'styled-components';
-import FooterImage from 'common/assets/image/hosting/footer-bg.png';
 
+// #@media (min-width: 576px) {
+// #   background-image: url(${FooterImage});
+// # }
+// # @media (max-width: 990px) {
+// #   padding-bottom: 20px;
+// # }
 const FooterWrapper = styled.footer`
   position: relative;
   overflow: hidden;
@@ -16,7 +22,6 @@ const FooterWrapper = styled.footer`
       top: 14%;
       left: 0;
       pointer-events: none;
-      background-color: rgba(18, 103, 230, 0.03);
       transform: rotate(-6deg);
       @media (max-width: 767px) {
         padding-bottom: 150%;
@@ -30,29 +35,26 @@ const FooterWrapper = styled.footer`
     padding-top: 80px;
     padding-bottom: 80px;
     position: relative;
-    @media (min-width: 576px) {
-      background-image: url(${FooterImage});
-    }
-    @media (max-width: 990px) {
-      padding-bottom: 20px;
-    }
   }
 `;
 
 const List = styled.ul``;
 
+  // #color: #B2FFB2;
+    // color: #80d780;
 const ListItem = styled.li`
   a {
-    color: #8ec7ff;
+    color: #00C591;
     font-size: 14px;
     line-height: 36px;
     transition: all 0.2s ease;
-    font-weight: 300;
+    font-weight: bold;
     &:hover,
     &:focus {
       outline: 0;
       text-decoration: none;
-      color: #fff;
+      font-weight: bolder;
+      #color: #fff;
     }
   }
 `;

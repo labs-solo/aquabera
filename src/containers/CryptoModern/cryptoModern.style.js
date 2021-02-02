@@ -1,10 +1,11 @@
-import styled, { createGlobalStyle } from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
+import styled, { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Roboto', sans-serif;
-    background:#03103b;
+    # original background was dark
+    # background:#03103b;
   }
   .reuseModalParentWrapper,
   .reuseModalOverlay {

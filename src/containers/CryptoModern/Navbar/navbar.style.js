@@ -1,6 +1,6 @@
-import styled from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
 import searchIcon from 'common/assets/image/appClassic/search.svg';
+import styled from 'styled-components';
 
 const NavbarWrapper = styled.nav`
   width: 100%;
@@ -32,7 +32,7 @@ const NavbarWrapper = styled.nav`
   ul {
     li {
       a {
-        color: ${themeGet('colors.menu', '#fff')};
+        color: ${themeGet('colors.menu', '#00BD7B')};
         font-size: 16px;
         font-weight: 400;
         transition: all 0.3s ease;
@@ -130,10 +130,14 @@ export const MenuArea = styled.div`
     }
     &.trail {
       border-radius: 4px;
-      background-image: linear-gradient(to right, #4ba1d8, #4464bd 95%);
-      &:hover {
-        box-shadow: rgba(75, 109, 235, 0.78) 0px 12px 24px -10px;
-      }
+      #background-image: linear-gradient(to right, #4ba1d8, #4464bd 95%);
+      #background-image: linear-gradient(to right, #CCF2E5, #00BD7B 95%);
+      background-color: #CCF2E5;
+      color: #00BD7B;
+      font-weight: bold;
+      #&:hover {
+      #  box-shadow: rgba(75, 109, 235, 0.78) 0px 12px 24px -10px;
+      #}
       @media only screen and (max-width: 991px) {
         display: none;
       }
@@ -145,7 +149,8 @@ export const MenuArea = styled.div`
         padding: 0;
         justify-content: flex-end;
         min-width: 35px;
-        color: #fff;
+        #color: #fff;
+        color: #00BD7B;
         svg {
           width: 27px;
           height: auto;

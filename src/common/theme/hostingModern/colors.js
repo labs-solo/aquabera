@@ -4,10 +4,12 @@ const colors = {
   white: '#ffffff',
   text: '#343D48',
   textPrimary: '#0F2137',
-  primary: '#362C8B',
+  //primary: '#362C8B',
+  primary: '#00BD7B',
   primaryHover: '#362C8B',
   border: '#dce5ea',
-  secondary: '#7B72F0',
+  //secondary: '#7B72F0',
+  secondary: '#CCF2E5',
   tertiary: '#5B2B9D',
 };
 
