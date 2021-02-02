@@ -143,7 +143,7 @@ export const Footer_Data = [
     title: 'About Us',
     menuItems: [
       {
-        url: '#',
+        url: '#about-us',
         text: 'Support Center',
       },
       {

@@ -12,7 +12,7 @@ import { menu } from 'react-icons-kit/feather/menu';
 import { x } from 'react-icons-kit/feather/x';
 import Fade from 'react-reveal/Fade';
 import Scrollspy from 'react-scrollspy';
-import NavbarWrapper, { MenuArea, MobileMenu } from './navbar.style';
+import { MenuArea, MobileMenu, NavbarWrapper } from './navbar.style';
 
 const Navbar = () => {
   const data = useStaticQuery(graphql`

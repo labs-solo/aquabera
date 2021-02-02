@@ -4,14 +4,20 @@
 		"navMenu": [
 			{
 				"id": 1,
-				"label": "Key Features",
-				"path": "#key-features",
+				"label": "About Us",
+				"path": "#about-us",
 				"offset": "81"
 			},
 			{
 				"id": 2,
-				"label": "Market Opportunity",
-				"path": "#market-opportunity",
+				"label": "Governance",
+				"path": "#governance",
+				"offset": "81"
+			},
+			{
+				"id": 3,
+				"label": "Community",
+				"path": "#community",
 				"offset": "81"
 			}
 		]
@@ -102,6 +108,7 @@
 	"FooterData": [
 		{
 			"title": "About Us",
+			"anchor": "#about-us",
 			"menuItems": [
 				{
 					"url": "https://docs.ichi.farm/",
@@ -123,6 +130,7 @@
 		},
 		{
 			"title": "Governance",
+			"anchor": "#governance",
 			"menuItems": [
 				{
 					"url": "https://docs.ichi.farm/introduction/ichi-tokenomics",
@@ -144,6 +152,7 @@
 		},
 		{
 			"title": "Community",
+			"anchor": "#community",
 			"menuItems": [
 				{
 					"url": "https://t.me/ichifarm",

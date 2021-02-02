@@ -23,6 +23,7 @@ const Footer = ({
       cryptoModernJson {
         FooterData {
           title
+          anchor
           menuItems {
             text
             url
@@ -53,7 +54,7 @@ const Footer = ({
                 <List>
                   {widget.menuItems.map((item, index) => (
                     <ListItem key={`footer-list-item-${index}`}>
-                      <a href={item.url} className="ListItem">
+                      <a target="_blank" rel="noreferrer" href={item.url} className="ListItem">
                         {item.text}
                       </a>
                     </ListItem>

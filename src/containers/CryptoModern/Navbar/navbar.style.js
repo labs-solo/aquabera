@@ -2,7 +2,7 @@ import { themeGet } from '@styled-system/theme-get';
 import searchIcon from 'common/assets/image/appClassic/search.svg';
 import styled from 'styled-components';
 
-const NavbarWrapper = styled.nav`
+export const NavbarWrapper = styled.nav`
   width: 100%;
   padding: 25px 0 26px;
   background-color: transparent;
@@ -264,5 +264,3 @@ export const MobileMenu = styled.div`
     }
   }
 `;
-
-export default NavbarWrapper;
