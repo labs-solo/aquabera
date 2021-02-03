@@ -36,18 +36,13 @@ export const NavbarWrapper = styled.nav`
         font-size: 16px;
         font-weight: 400;
         transition: all 0.3s ease;
-        &:hover {
-          font-weight: 700;
-        }
-      }
-      &.is-current {
-        a {
-          font-weight: 700;
-        }
       }
     }
   }
 `;
+        // &:hover {
+        //   font-weight: 700;
+        // }
 
 export const MenuArea = styled.div`
   display: flex;

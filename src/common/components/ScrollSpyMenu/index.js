@@ -180,7 +180,9 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
     'font-size': '16px',
     'font-weight': '400',
     'padding': '0px',
-    'padding-bottom': '14px'
+    'padding-bottom': '14px',
+    // This is a gross approximation until I can figure out the flex container
+    'margin-top': '7px'
   };
 
   return (
@@ -191,38 +193,40 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
       {...props}
     >
       <li>
-      <Menu compact style={semanticMenuStyles}>
-        <Dropdown 
-          text='Stablecoins' 
-          options={stablecoinOptions} 
-          style={semanticDropdownStyles} simple item 
-        />
-      </Menu>
+        <Menu compact style={semanticMenuStyles}>
+          <Dropdown 
+            text='Stablecoins' 
+            options={stablecoinOptions} 
+            style={semanticDropdownStyles} simple item 
+          />
+        </Menu>
       </li>
       <li>
-      <Menu compact style={semanticMenuStyles}>
-        <Dropdown 
-          text='Developers' 
-          options={developerOptions}
-          style={semanticDropdownStyles} simple item 
-        />
-      </Menu>
+        <Menu compact style={semanticMenuStyles}>
+          <Dropdown 
+            text='Developers' 
+            options={developerOptions}
+            style={semanticDropdownStyles} simple item 
+          />
+        </Menu>
       </li>
-      <Menu compact style={semanticMenuStyles}>
-        <Dropdown 
-          text='Governance' 
-          options={governanceOptions} 
-          style={semanticDropdownStyles} simple item 
-        />
-      </Menu>
       <li>
-      <Menu compact style={semanticMenuStyles}>
-        <Dropdown 
-          text='Community' 
-          options={communityOptions} 
-          style={semanticDropdownStyles} simple item 
-        />
-      </Menu>
+        <Menu compact style={semanticMenuStyles}>
+          <Dropdown 
+            text='Governance' 
+            options={governanceOptions} 
+            style={semanticDropdownStyles} simple item 
+          />
+        </Menu>
+      </li>
+      <li>
+        <Menu compact style={semanticMenuStyles}>
+          <Dropdown 
+            text='Community' 
+            options={communityOptions} 
+            style={semanticDropdownStyles} simple item 
+          />
+        </Menu>
       </li>
       {menuItems.map((menu, index) => (
         <li key={`menu-item-${index}`}>

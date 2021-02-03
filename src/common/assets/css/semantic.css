@@ -23881,8 +23881,8 @@ ol.ui.horizontal.list li:before,
   -webkit-transition: none !important;
   transition: none !important;
 }
-
-.ui.menu .ui.dropdown .menu > .item:hover {
+/* NOTE: Commented out */
+/* .ui.menu .ui.dropdown .menu > .item:hover {
   background: rgba(0, 0, 0, 0.05) !important;
   color: rgba(0, 0, 0, 0.95) !important;
 }
@@ -23896,7 +23896,7 @@ ol.ui.horizontal.list li:before,
   background: rgba(0, 0, 0, 0.03) !important;
   font-weight: bold !important;
   color: rgba(0, 0, 0, 0.95) !important;
-}
+} */
 
 .ui.menu .ui.dropdown.item .menu .item:not(.filtered) {
   display: block;
@@ -24071,7 +24071,8 @@ ol.ui.horizontal.list li:before,
 .ui.menu .link.item:hover,
 .ui.menu a.item:hover {
   cursor: pointer;
-  background: rgba(0, 0, 0, 0.03);
+  /* NOTE: commented out */
+  /* background: rgba(0, 0, 0, 0.03); */
   color: rgba(0, 0, 0, 0.95);
 }
 
@@ -32183,7 +32184,8 @@ body.dimmable > .dimmer {
   text-align: left;
   -webkit-box-shadow: 0px 2px 3px 0px rgba(34, 36, 38, 0.15);
   box-shadow: 0px 2px 3px 0px rgba(34, 36, 38, 0.15);
-  border: 1px solid rgba(34, 36, 38, 0.15);
+  /* NOTE Commented out */
+  /* border: 1px solid rgba(34, 36, 38, 0.15); */
   border-radius: 0.28571429rem;
   -webkit-transition: opacity 0.1s ease;
   transition: opacity 0.1s ease;
@@ -32233,6 +32235,10 @@ body.dimmable > .dimmer {
   display: inline-block;
   -webkit-transition: none;
   transition: none;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 /*--------------

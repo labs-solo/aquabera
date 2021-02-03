@@ -96,11 +96,27 @@ export const DiscountLabel = styled.div`
   }
 `;
 
+// export const BannerImage = styled.div`
+//   flex-shrink: 0;
+//   width: calc(100% - 425px);
+//   img {
+//     margin-left: 80px;
+//     @media only screen and (max-width: 1600px) {
+//       margin-left: 0;
+//     }
+//     @media only screen and (max-width: 480px) {
+//       max-width: 70%;
+//     }
+//   }
+// `;
+// TODO: Ugly css hack, should be fixed
 export const BannerImage = styled.div`
   flex-shrink: 0;
-  width: calc(100% - 425px);
+  #width: calc(100% - 425px);
   img {
-    margin-left: 80px;
+    position: absolute;
+    top: 16%;
+    left: 25%;
     @media only screen and (max-width: 1600px) {
       margin-left: 0;
     }
