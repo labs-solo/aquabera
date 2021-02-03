@@ -110,13 +110,21 @@ export const DiscountLabel = styled.div`
 //   }
 // `;
 // TODO: Ugly css hack, should be fixed
+// https://www.sitepoint.com/css3-responsive-centered-image/
 export const BannerImage = styled.div`
   flex-shrink: 0;
   #width: calc(100% - 425px);
   img {
     position: absolute;
-    top: 16%;
-    left: 25%;
+    max-width: 80%;
+    top: 25%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -25%);
+    -moz-transform: translate(-50%, -25%);
+    -ms-transform: translate(-50%, -25%);
+    -o-transform: translate(-50%, -25%);
+    transform: translate(-50%, -25%);
+
     @media only screen and (max-width: 1600px) {
       margin-left: 0;
     }
