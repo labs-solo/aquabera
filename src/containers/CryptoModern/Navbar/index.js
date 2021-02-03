@@ -134,7 +134,7 @@ const Navbar = () => {
             <Button className="trail" title="Try for Free" />
           </AnchorLink> */}
           <Link target="_blank" href="https://www.ichi.farm" offset={84}>
-            <Button className="trail" title="Launch App" />
+            <Button className="trail" title="USE ICHI" />
           </Link>
 
           {/* Mobile Hamburger */}

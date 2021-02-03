@@ -147,6 +147,7 @@ export const ButtonGroup = styled.div`
     border-radius: 5px;
     padding-left: 16px;
     padding-right: 16px;
+    margin-top: 5px;
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
@@ -155,10 +156,12 @@ export const ButtonGroup = styled.div`
     }
     &.primary {
       background-color: ${themeGet('colors.primary')};
+      color: ${themeGet('colors.white')};
       font-weight: bold;
     }
     &.secondary {
       background-color: ${themeGet('colors.secondary')};
+      color: ${themeGet('colors.primary')};
       font-weight: bold;
     }
 
@@ -171,7 +174,7 @@ export const ButtonGroup = styled.div`
 
     &.text {
       margin-left: 15px;
-      color: #fff;
+      #color: #fff;
       border: 1px solid rgba(255, 255, 255, 0.302);
     }
   }

@@ -40,7 +40,9 @@ const HowDoesItWorkSection = ({
           <Text content="How does it work?" {...sectionSubTitle} />
         </Box>
         <Fade in delay={100}>
-          <Image src={Data.cryptoModernJson.HowDoesItWork.logo.publicURL} alt="Banner" />
+          <a target="_blank" rel="noreferrer" href="https://docs.ichi.farm/introduction/the-win-win-design-of-ichi">
+            <Image src={Data.cryptoModernJson.HowDoesItWork.logo.publicURL} alt="Banner" />
+          </a>
         </Fade>
         {/* <Box {...sectionHeader} className="sectionHeader">
           <Text content="Why choose Ichi" {...sectionSubTitle} />

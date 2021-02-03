@@ -31,10 +31,17 @@ const Banner = () => {
           <Fade up delay={300}>
             <ButtonGroup>
               <a target="_blank" rel="noreferrer" href="https://www.ichi.farm">
-                <Button className="secondary" variant="textButton" title="Launch App" />
+                <Button 
+                  className="primary" 
+                  variant="textButton" 
+                  title="USE ICHI" 
+                />
               </a>
               <a target="_blank" rel="noreferrer" href="https://docs.ichi.farm/introduction/where-to-get-ichi">
-                <Button className="primary left-margin-15" title="GET ICHI" />
+                <Button 
+                  className="secondary left-margin-15" 
+                  title="GET ICHI" 
+                />
               </a>
               <a target="_blank" rel="noreferrer" href="https://docs.ichi.farm">
                 <Button
