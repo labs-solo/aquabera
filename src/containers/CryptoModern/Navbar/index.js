@@ -95,7 +95,7 @@ const Navbar = () => {
     <NavbarWrapper className="navbar">
       <Container>
         <Logo
-          href="/cryptoModern"
+          href="/"
           logoSrc={LogoImage}
           title="Ichi"
           className="main-logo"

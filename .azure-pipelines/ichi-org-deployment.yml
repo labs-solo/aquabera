@@ -18,7 +18,7 @@ stages:
       - group: ichi-org-deployment-staging
     jobs:
       - job: terraformTest
-        displayName: Run AML Terraform Tests
+        displayName: Deploy to Staging
         steps:
           - template: site-deployment-template.yml
             parameters:
