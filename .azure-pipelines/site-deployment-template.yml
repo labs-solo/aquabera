@@ -45,6 +45,6 @@ steps:
       inlineScript: |
         az storage blob upload-batch -d '$web' -s $env:BUILD_DIR
     env:
-      BUILD_DIR: $(Build.SourcesDirectory)/build/public
+      BUILD_DIR: $(Build.SourcesDirectory)/public
       AZURE_STORAGE_ACCOUNT: $(storageAccountName)
       AZURE_STORAGE_KEY: $(storageAccountKey)
