@@ -150,12 +150,14 @@ export const ButtonGroup = styled.div`
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
+    &.left-margin-15 {
+      margin-left: 15px;
+    }
     &.primary {
       background-color: ${themeGet('colors.primary')};
       font-weight: bold;
     }
     &.secondary {
-      margin-left: 15px;
       background-color: ${themeGet('colors.secondary')};
       font-weight: bold;
     }

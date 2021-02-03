@@ -4,7 +4,6 @@ import Heading from 'common/components/Heading';
 import Image from 'common/components/Image';
 import Text from 'common/components/Text';
 import Container from 'common/components/UI/Container';
-import { Link } from 'gatsby';
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import BannerWrapper, {
@@ -31,16 +30,19 @@ const Banner = () => {
           </Fade>
           <Fade up delay={300}>
             <ButtonGroup>
-              <Link target="_blank" to="https://docs.ichi.farm/introduction/where-to-get-ichi">
-                <Button className="primary" title="GET ICHI" />
-              </Link>
-              <Link target="_blank" to="https://docs.ichi.farm">
+              <a target="_blank" rel="noreferrer" href="https://www.ichi.farm">
+                <Button className="secondary" variant="textButton" title="Launch App" />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://docs.ichi.farm/introduction/where-to-get-ichi">
+                <Button className="primary left-margin-15" title="GET ICHI" />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://docs.ichi.farm">
                 <Button
-                  className="secondary"
+                  className="secondary left-margin-15"
                   variant="textButton"
                   title="READ THE DOCS"
                 />
-              </Link>
+              </a>
             </ButtonGroup>
           </Fade>
         </BannerContent>
