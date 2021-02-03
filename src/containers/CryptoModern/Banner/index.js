@@ -1,5 +1,5 @@
 import bannerImg from 'common/assets/image/ichi/img_ichi_hero.svg';
-import Button from 'common/components/Button';
+import ButtonLink from 'common/components/ButtonLink';
 import Heading from 'common/components/Heading';
 import Image from 'common/components/Image';
 import Text from 'common/components/Text';
@@ -30,26 +30,24 @@ const Banner = () => {
           </Fade>
           <Fade up delay={300}>
             <ButtonGroup>
-              <a target="_blank" rel="noreferrer" href="https://www.ichi.farm">
-                <Button 
-                  className="primary" 
-                  variant="textButton" 
-                  title="USE ICHI" 
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="https://docs.ichi.farm/introduction/where-to-get-ichi">
-                <Button 
-                  className="secondary left-margin-15" 
-                  title="GET ICHI" 
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="https://docs.ichi.farm">
-                <Button
-                  className="secondary left-margin-15"
-                  variant="textButton"
-                  title="READ THE DOCS"
-                />
-              </a>
+              <ButtonLink
+                href="https://www.ichi.farm"
+                className="primary" 
+                variant="textButton" 
+                title="USE ICHI" 
+              />
+              <ButtonLink
+                href="https://docs.ichi.farm/introduction/where-to-get-ichi"
+                className="secondary left-margin-15" 
+                title="GET ICHI" 
+                onClick={() => console.log(`Clicked GET ICHI`)}
+              />
+              <ButtonLink
+                href="https://docs.ichi.farm"
+                className="secondary left-margin-15"
+                variant="textButton"
+                title="READ THE DOCS"
+              />
             </ButtonGroup>
           </Fade>
         </BannerContent>
