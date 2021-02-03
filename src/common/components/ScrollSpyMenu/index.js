@@ -41,27 +41,35 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
   // Chainlink’s Stablecoin
   const stablecoinOptions = [
     { 
-      key: 1, 
-      text: 'oneBTC', 
+      key: 1,
+      text: 'oneBTC',
       value: 1,
       content: (
         <a target="_blank" rel="noreferrer" href="https://www.ichi.farm/#/mint?wBTC">Bitcoin (oneBTC)</a>
       )
     },
     { 
-      key: 2, 
-      text: 'oneETH', 
+      key: 2,
+      text: 'oneETH',
       value: 2,
       content: (
         <a target="_blank" rel="noreferrer" href="https://www.ichi.farm/#/mint?eth">Ethereum (oneETH)</a>
       )
     },
     { 
-      key: 3, 
-      text: 'oneLINK', 
+      key: 3,
+      text: 'oneLINK',
       value: 3,
       content: (
         <a target="_blank" rel="noreferrer" href="https://www.ichi.farm/#/mint?link">Chainlink (oneLINK)</a>
+      )
+    },
+    { 
+      key: 4,
+      text: 'oneWING',
+      value: 4,
+      content: (
+        <a target="_blank" rel="noreferrer" href="https://www.ichi.farm/#/mint?pwing">Wing (oneWING)</a>
       )
     },
   ];

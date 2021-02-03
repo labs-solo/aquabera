@@ -101,7 +101,7 @@ const Navbar = () => {
           className="main-logo"
         />
         <Logo
-          href="/cryptoModern"
+          href="/"
           logoSrc={LogoImageAlt}
           title="Ichi"
           className="logo-alt"
