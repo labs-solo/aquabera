@@ -128,8 +128,13 @@ export const BannerImage = styled.div`
     @media only screen and (max-width: 1600px) {
       margin-left: 0;
     }
+    @media only screen and (max-width: 1440px) {
+      margin-left: 0;
+      display: none;
+    }
     @media only screen and (max-width: 480px) {
       max-width: 70%;
+      display: none;
     }
   }
 `;

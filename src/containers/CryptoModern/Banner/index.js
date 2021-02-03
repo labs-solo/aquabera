@@ -1,5 +1,3 @@
-// import bannerImg from 'common/assets/image/cryptoModern/banner-bg.png';
-// import bannerImg from 'common/assets/image/cryptoModern/banner-bg.png';
 import bannerImg from 'common/assets/image/ichi/img_ichi_hero.svg';
 import Button from 'common/components/Button';
 import Heading from 'common/components/Heading';
