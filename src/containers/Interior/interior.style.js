@@ -1,5 +1,5 @@
-import styled, { createGlobalStyle, keyframes } from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
+import styled, { createGlobalStyle, keyframes } from 'styled-components';
 
 const shake = keyframes`
   0% {

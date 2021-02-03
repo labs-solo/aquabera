@@ -23,7 +23,6 @@ const Footer = ({
       cryptoModernJson {
         FooterData {
           title
-          anchor
           menuItems {
             text
             url

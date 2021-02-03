@@ -12,6 +12,7 @@ import GlobalStyle, {
 // import Feature from 'containers/HostingModern/Feature';
 // import Footer from 'containers/HostingModern/Footer';
 import Footer from 'containers/CryptoModern/Footer';
+import HowDoesItWorkSection from 'containers/CryptoModern/HowDoesItWorkSection';
 // import Features from 'containers/CryptoModern/FeatureSection';
 // import MarketOpportunity from 'containers/CryptoModern/MarketOpportunitySection';
 import Navbar from 'containers/CryptoModern/Navbar';
@@ -23,7 +24,6 @@ import Navbar from 'containers/CryptoModern/Navbar';
 import React from 'react';
 import Sticky from 'react-stickynode';
 import { ThemeProvider } from 'styled-components';
-
 
 const App = () => {
   return (
@@ -52,6 +52,7 @@ const App = () => {
           {/* <CallToAction /> */}
           {/* <Features /> */}
           {/* <MarketOpportunity /> */}
+          <HowDoesItWorkSection />
         </ContentWrapper>
         <Footer />
       </CryptoWrapper>

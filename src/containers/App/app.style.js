@@ -1,8 +1,8 @@
-import styled, { createGlobalStyle } from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
-
-import SubstractHover from 'common/assets/image/app/substract-hover.png';
 import BannerPattern from 'common/assets/image/app/pattern.png';
+import SubstractHover from 'common/assets/image/app/substract-hover.png';
+import styled, { createGlobalStyle } from 'styled-components';
+
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Open Sans', sans-serif;
   }
 
-  section{
+  section {
     position: relative;
   }
 
@@ -82,6 +82,7 @@ const GlobalStyle = createGlobalStyle`
         }
       }
     }
+
 
     /* Modal default style */
 

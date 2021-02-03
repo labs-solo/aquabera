@@ -6,13 +6,7 @@ import Logo from 'common/components/UIElements/Logo';
 import useOnClickOutside from 'common/hooks/useOnClickOutside';
 import { graphql, Link, useStaticQuery } from 'gatsby';
 import React, { useRef, useState } from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-import { Icon } from 'react-icons-kit';
-import { menu } from 'react-icons-kit/feather/menu';
-import { x } from 'react-icons-kit/feather/x';
-import Fade from 'react-reveal/Fade';
-import Scrollspy from 'react-scrollspy';
-import { MenuArea, MobileMenu, NavbarWrapper } from './navbar.style';
+import { MenuArea, NavbarWrapper } from './navbar.style';
 
 const Navbar = () => {
   const data = useStaticQuery(graphql`
@@ -44,23 +38,23 @@ const Navbar = () => {
     setState({ ...state, searchToggle: false })
   );
 
-  const toggleHandler = (type) => {
-    if (type === 'search') {
-      setState({
-        ...state,
-        search: '',
-        searchToggle: !state.searchToggle,
-        mobileMenu: false,
-      });
-    }
+  // const toggleHandler = (type) => {
+  //   if (type === 'search') {
+  //     setState({
+  //       ...state,
+  //       search: '',
+  //       searchToggle: !state.searchToggle,
+  //       mobileMenu: false,
+  //     });
+  //   }
 
-    if (type === 'menu') {
-      setState({
-        ...state,
-        mobileMenu: !state.mobileMenu,
-      });
-    }
-  };
+  //   if (type === 'menu') {
+  //     setState({
+  //       ...state,
+  //       mobileMenu: !state.mobileMenu,
+  //     });
+  //   }
+  // };
 
   // const handleOnChange = (event) => {
   //   setState({
@@ -90,12 +84,12 @@ const Navbar = () => {
     scrollItems.push(item.path.slice(1));
   });
 
-  const handleRemoveMenu = () => {
-    setState({
-      ...state,
-      mobileMenu: false,
-    });
-  };
+  // const handleRemoveMenu = () => {
+  //   setState({
+  //     ...state,
+  //     mobileMenu: false,
+  //   });
+  // };
 
   return (
     <NavbarWrapper className="navbar">
@@ -143,7 +137,9 @@ const Navbar = () => {
             <Button className="trail" title="Launch App" />
           </Link>
 
-          <Button
+          {/* Mobile Hamburger */}
+          {/* Not much to show here right now, so no reason to show this */}
+          {/* <Button
             className="menubar"
             icon={
               state.mobileMenu ? (
@@ -157,12 +153,13 @@ const Navbar = () => {
             color="#0F2137"
             variant="textButton"
             onClick={() => toggleHandler('menu')}
-          />
+          /> */}
         </MenuArea>
       </Container>
 
       {/* start mobile menu */}
-      <MobileMenu className={`mobile-menu ${state.mobileMenu ? 'active' : ''}`}>
+      {/* Not much to show here right now, so no reason to show this */}
+      {/* <MobileMenu className={`mobile-menu ${state.mobileMenu ? 'active' : ''}`}>
         <Container>
           <Scrollspy
             className="menu"
@@ -184,7 +181,7 @@ const Navbar = () => {
           </Scrollspy>
           <Button title="Try for Free" />
         </Container>
-      </MobileMenu>
+      </MobileMenu> */}
       {/* end of mobile menu */}
     </NavbarWrapper>
   );
