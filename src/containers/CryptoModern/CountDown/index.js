@@ -33,7 +33,6 @@ const CountDownSectionHelper = () => {
 
   // Get the estimated time in seconds * 1000 to get milliseconds, then add that to the date
   const estimatedTimeInSec = !error && data && data.result ? data.result.EstimateTimeInSec * 1000 : 0;
-  console.log(`Estimated time in seconds: ${estimatedTimeInSec}, data: ${data}, data: ${JSON.stringify(data, null, ' ')}`)
   const deadline = new Date(Date.parse(new Date()) + estimatedTimeInSec);
 
   if (error) {
