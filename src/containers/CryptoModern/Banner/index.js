@@ -13,7 +13,6 @@ import BannerWrapper, {
   ButtonGroup
 } from './banner.style';
 
-
 const Banner = () => {
   return (
     <BannerWrapper id="home">

@@ -6,6 +6,13 @@ import Logo from 'common/components/UIElements/Logo';
 import useOnClickOutside from 'common/hooks/useOnClickOutside';
 import { graphql, Link, useStaticQuery } from 'gatsby';
 import React, { useRef, useState } from 'react';
+// import AnchorLink from 'react-anchor-link-smooth-scroll';
+// import { Icon } from 'react-icons-kit';
+// import { menu } from 'react-icons-kit/feather/menu';
+// import { x } from 'react-icons-kit/feather/x';
+// import Fade from 'react-reveal/Fade';
+// import Scrollspy from 'react-scrollspy';
+// import { MenuArea, MobileMenu, NavbarWrapper } from './navbar.style';
 import { MenuArea, NavbarWrapper } from './navbar.style';
 
 const Navbar = () => {
@@ -133,7 +140,7 @@ const Navbar = () => {
           {/* <AnchorLink href="#trail" offset={84}>
             <Button className="trail" title="Try for Free" />
           </AnchorLink> */}
-          <Link target="_blank" href="https://www.ichi.farm" offset={84}>
+          <Link target="_blank" to="https://www.ichi.farm" offset={84}>
             <Button className="trail" title="USE ICHI" />
           </Link>
 

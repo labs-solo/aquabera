@@ -1,5 +1,5 @@
-import styled from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
+import styled from 'styled-components';
 
 const SectionWrapper = styled.div`
   padding: 75px 0;
@@ -24,7 +24,7 @@ export const ContentWrapper = styled.div`
   }
 
   h2 {
-    color: ${themeGet('colors.white', '#fff')};
+    color: ${themeGet('colors.black')};
     font-size: 32px;
     line-height: 44px;
     font-weight: 400;
@@ -62,7 +62,7 @@ export const ContentWrapper = styled.div`
         width: 110px;
         height: 100px;
         border-radius: 5px;
-        background-color: #0b1741;
+        background-color: ${themeGet('colors.secondary')};
         @media (max-width: 480px) {
           width: 70px;
           height: 70px;
@@ -75,7 +75,8 @@ export const ContentWrapper = styled.div`
           span {
             font-size: 60px;
             letter-spacing: -1px;
-            color: #ffffff;
+            #color: #ffffff;
+            color: ${themeGet('colors.primary')};
             font-family: 'Roboto';
             font-weight: 300;
             text-align: center;
@@ -87,7 +88,7 @@ export const ContentWrapper = styled.div`
         .digitLabel {
           font-size: 14px;
           letter-spacing: 3px;
-          color: #8ec7ff;
+          color: ${themeGet('colors.text')};
           font-family: 'Roboto';
           font-weight: 500;
           text-align: center;

@@ -220,12 +220,13 @@ export const MobileMenu = styled.div`
     ul {
       padding-bottom: 20px;
       li {
+        # This controls the mobile nav manu colors
         a {
           display: block;
           padding: 13px 0;
           border-radius: 5px;
           transition: all 0.3s ease;
-          color: ${themeGet('colors.secondary', '#000')};
+          color: ${themeGet('colors.primary')} !important;
         }
         &:hover {
           a {

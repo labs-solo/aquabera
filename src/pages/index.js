@@ -2,7 +2,7 @@ import { ResetCSS } from 'common/assets/css/style';
 import { theme } from 'common/theme/hostingModern';
 import SEO from 'components/seo';
 import Banner from 'containers/CryptoModern/Banner';
-// import CountDown from 'containers/CryptoModern/CountDown';
+import CountDown from 'containers/CryptoModern/CountDown';
 import GlobalStyle, {
   ContentWrapper, CryptoWrapper
 } from 'containers/CryptoModern/cryptoModern.style';
@@ -40,7 +40,7 @@ const App = () => {
         </Sticky>
         <ContentWrapper>
           <Banner />
-          {/* <CountDown /> */}
+          <CountDown />
           {/* <Service /> */}
           {/* <Feature /> */}
           {/* <UltimateFeature /> */}
