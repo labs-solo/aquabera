@@ -126,13 +126,13 @@ class NormalClock extends React.Component {
         {divider ? <span className="dividerColon">:</span> : ''}
         <NormalUnitContainer
           countdown={countdown}
-          unit={'minutes'}
+          unit={'mins'}
           digit={minutes}
         />
         {divider ? <span className="dividerColon">:</span> : ''}
         <NormalUnitContainer
           countdown={countdown}
-          unit={'seconds'}
+          unit={'secs'}
           digit={seconds}
         />
       </div>

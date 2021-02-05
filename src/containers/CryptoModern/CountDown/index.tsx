@@ -17,6 +17,7 @@ import NormalClock from './timer';
 //   }
 // }
 
+// https://etherscan.io/apis
 const endpoint = 'https://api.etherscan.io/api?module=block&action=getblockcountdown&blockno=11908500&apikey=PFGWRD38DM8BB6TYHZ45ZVNNPI84BM13WT';
 const queryClient = new QueryClient();
  export default function CountDownSection() {
@@ -33,7 +34,7 @@ const CountDownSectionHelper = () => {
 
   // Get the estimated time in seconds * 1000 to get milliseconds, then add that to the date
   const estimatedTimeInSec = !error && data && data.result ? data.result.EstimateTimeInSec * 1000 : 0;
-  const deadline = new Date(Date.parse(new Date()) + estimatedTimeInSec);
+  const deadline = new Date(new Date().valueOf() + estimatedTimeInSec);
 
   if (error) {
     console.error(`Could not fetch countdown: ${error}`);
@@ -44,7 +45,7 @@ const CountDownSectionHelper = () => {
     <SectionWrapper>
       <Container>
         <ContentWrapper>
-          <Heading content="Ichi Halving Countdown" />
+          <Heading content="Ichi Halving Countdown" as="h4" />
           <Fade up>
             <div className="timerCount">
               <NormalClock countdown={deadline} divider="true" />

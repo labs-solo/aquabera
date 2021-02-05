@@ -2,14 +2,16 @@ import { themeGet } from '@styled-system/theme-get';
 import styled from 'styled-components';
 
 const SectionWrapper = styled.div`
-  padding: 75px 0;
+  padding: 30px 0;
   overflow: hidden;
 
   @media only screen and (max-width: 1440px) {
-    padding: 100px 0 50px;
+    /* padding: 50px 0 50px; */
+    padding: 30px 0;
   }
   @media only screen and (max-width: 480px) {
-    padding: 60px 0 5px;
+    /* padding: 60px 0 5px; */
+    padding: 30px 0;
   }
 `;
 
@@ -27,7 +29,7 @@ export const ContentWrapper = styled.div`
     color: ${themeGet('colors.black')};
     font-size: 32px;
     line-height: 44px;
-    font-weight: 400;
+    /* font-weight: 400; */
     margin-bottom: 27px;
     @media only screen and (max-width: 1366px) {
       font-size: 30px;
@@ -47,46 +49,50 @@ export const ContentWrapper = styled.div`
   }
 
   .timerCount {
-    margin-top: 30px;
-    margin-bottom: 60px;
+    /* margin-top: 30px; */
+    /* margin-bottom: 60px; */
 
     .NormalClock {
       display: flex;
-      justify-content: space-between;
-      width: 600px;
+      /* justify-content: space-between; */
+      /* width: 600px; */
       align-items: center;
       @media (max-width: 480px) {
         width: 100%;
       }
       .NormalUnitContainer {
-        width: 110px;
-        height: 100px;
+        /* width: 110px;
+        height: 100px; */
+        width: 40px;
+        height: 30px;
         border-radius: 5px;
         background-color: ${themeGet('colors.secondary')};
         @media (max-width: 480px) {
-          width: 70px;
-          height: 70px;
-          background-color: transparent;
+          /* width: 70px;
+          height: 70px; */
+          width: 30px;
+          width: 20px;
+          /* background-color: transparent; */
         }
         .NormalupperCard {
           align-items: center;
           display: flex;
           justify-content: center;
           span {
-            font-size: 60px;
+            font-size: 18px;
             letter-spacing: -1px;
-            #color: #ffffff;
+            //color: #ffffff;
             color: ${themeGet('colors.primary')};
             font-family: 'Roboto';
             font-weight: 300;
             text-align: center;
             @media (max-width: 480px) {
-              font-size: 30px;
+              font-size: 14px;
             }
           }
         }
         .digitLabel {
-          font-size: 14px;
+          font-size: 8px;
           letter-spacing: 3px;
           color: ${themeGet('colors.text')};
           font-family: 'Roboto';
@@ -94,20 +100,30 @@ export const ContentWrapper = styled.div`
           text-align: center;
           margin-top: 12px;
           @media (max-width: 480px) {
-            font-size: 10px;
+            font-size: 6px;
+            display:block;
+            visibility:hidden;
+            /* display: none; */
+          }
+        }
+        .digitLabel:first-letter {
+          @media (max-width: 480px) {
+            visibility:visible;
           }
         }
       }
       .dividerColon {
-        font-size: 36px;
-        line-height: 48px;
-        color: #fff;
+        /* font-size: 78px;
+        line-height: 48px; */
+        /* color: #fff; */
+        color: black;
         font-family: 'Roboto';
         font-weight: 700;
         text-align: center;
-        @media (max-width: 480px) {
+        padding: 5px;
+        /* @media (max-width: 480px) {
           display: none;
-        }
+        } */
       }
     }
   }

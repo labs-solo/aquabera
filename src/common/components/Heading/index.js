@@ -1,12 +1,12 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
 import styled from 'styled-components';
 import {
   fontFamily,
   fontWeight,
-  textAlign,
-  lineHeight,
-  letterSpacing,
+
+
+  letterSpacing, lineHeight, textAlign
 } from 'styled-system';
 import { base, themed } from '../base';
 
@@ -85,5 +85,5 @@ Heading.defaultProps = {
   as: 'h2',
   mt: 0,
   mb: '1rem',
-  fontWeight: 'bold',
+  fontWeight: '300',
 };

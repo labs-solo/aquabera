@@ -5,11 +5,11 @@ const BannerWrapper = styled.div`
   padding-top: 100px;
   min-height: 802px;
   overflow: hidden;
-  #background-image: linear-gradient(
-  #  135deg,
-  #  rgba(64, 219, 216, 0.15) 0%,
-  #  rgba(3, 16, 59, 0.15) 35%
-  #);
+  /* background-image: linear-gradient(
+    135deg,
+    rgba(64, 219, 216, 0.15) 0%,
+    rgba(3, 16, 59, 0.15) 35%
+  ); */
   @media only screen and (min-width: 1201px) and (max-width: 1440px) {
     min-height: 100%;
   }
@@ -44,18 +44,18 @@ export const BannerContent = styled.div`
   width: 100%;
   @media only screen and (max-width: 991px) {
     flex-shrink: 0;
-    max-width: 360px;
+    /* max-width: 360px; */
   }
 
   h1 {
-    font-size: 48px;
+    font-size: 30px;
     line-height: 1.25;
     font-weight: 400;
     color: ${themeGet('colors.menu', '#0D233E')};
     margin-bottom: 24px;
     letter-spacing: -0.025em;
     @media only screen and (max-width: 1440px) {
-      font-size: 38px;
+      font-size: 28px;
       margin-bottom: 20px;
     }
   }
@@ -130,7 +130,14 @@ export const BannerImage = styled.div`
     }
     @media only screen and (max-width: 1440px) {
       margin-left: 0;
-      display: none;
+      /* display: none; */
+      max-width: 40%
+    }
+    @media only screen and (max-width: 952px) {
+      max-width: 50%;
+    }
+    @media only screen and (max-width: 655px) {
+      max-width: 75%;
     }
     @media only screen and (max-width: 480px) {
       max-width: 70%;

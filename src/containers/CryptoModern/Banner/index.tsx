@@ -4,6 +4,7 @@ import Heading from 'common/components/Heading';
 import Image from 'common/components/Image';
 import Text from 'common/components/Text';
 import Container from 'common/components/UI/Container';
+import CountDown from 'containers/CryptoModern/CountDown';
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import BannerWrapper, {
@@ -21,11 +22,15 @@ const Banner = () => {
           <Fade up delay={100}>
             <Heading
               as="h1"
-              content="Useable Money for Every Coin"
+              content="Stable Currency &"
+            />
+            <Heading
+              as="h1"
+              content="Economic Stimulus"
             />
           </Fade>
           <Fade up delay={200}>
-            <Text content="Support your favorite cryptocurrency by doing real business with its stablecoin" />
+            <Text content="(Fueled by any Coin)" />
           </Fade>
           <Fade up delay={300}>
             <ButtonGroup>
@@ -39,7 +44,6 @@ const Banner = () => {
                 href="https://docs.ichi.farm/introduction/where-to-get-ichi"
                 className="secondary left-margin-15" 
                 title="GET ICHI" 
-                onClick={() => console.log(`Clicked GET ICHI`)}
               />
               <ButtonLink
                 href="https://docs.ichi.farm"
@@ -49,6 +53,7 @@ const Banner = () => {
               />
             </ButtonGroup>
           </Fade>
+          <CountDown />
         </BannerContent>
         <BannerImage>
           <Fade in delay={100}>

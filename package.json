@@ -54,6 +54,8 @@
     "deploy": "yarn build && firebase deploy"
   },
   "devDependencies": {
+    "@types/react": "^17.0.1",
+    "@types/styled-components": "^5.1.7",
     "firebase-tools": "^8.11.2",
     "react-query": "^3.7.1",
     "react-select": "^3.2.0",
