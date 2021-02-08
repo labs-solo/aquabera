@@ -51,7 +51,7 @@ export const BannerContent = styled.div`
     font-size: 30px;
     line-height: 1.25;
     font-weight: 400;
-    color: ${themeGet('colors.menu', '#0D233E')};
+    color: ${themeGet('colors.heading')};
     margin-bottom: 24px;
     letter-spacing: -0.025em;
     @media only screen and (max-width: 1440px) {
