@@ -9,6 +9,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import HowDoesItWorkSectionWrapper from './howDoesItWorkSection.style';
+import colors from 'common/theme/hostingModern/colors';
 
 const HowDoesItWorkSection = ({
   row,
@@ -95,7 +96,7 @@ HowDoesItWorkSection.defaultProps = {
     fontSize: ['30px', '40px'],
     fontWeight: '300',
     letterSpacing: '-0.025em',
-    color: 'black',
+    color: colors.heading,
     mb: '15px',
   },
   // section title default style

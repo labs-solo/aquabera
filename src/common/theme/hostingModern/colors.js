@@ -11,6 +11,7 @@ const colors = {
   //secondary: '#7B72F0',
   secondary: '#CCF2E5',
   tertiary: '#5B2B9D',
+  heading: '#0676FF',
 };
 
 export default colors;

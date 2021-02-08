@@ -4,9 +4,9 @@ import styled from 'styled-components';
 import {
   fontFamily,
   fontWeight,
-
-
-  letterSpacing, lineHeight, textAlign
+  letterSpacing,
+  lineHeight,
+  textAlign
 } from 'styled-system';
 import { base, themed } from '../base';
 
