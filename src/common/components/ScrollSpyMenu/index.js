@@ -181,16 +181,16 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
 
   const semanticMenuStyles = {
     'border': 'none',
-    'box-shadow': 'none'
+    'boxShadow': 'none'
   };
   const semanticDropdownStyles = {
     'color': '#00BD7B',
-    'font-size': '16px',
-    'font-weight': '400',
+    'fontSize': '16px',
+    'fontWeight': '400',
     'padding': '0px',
-    'padding-bottom': '14px',
+    'paddingBottom': '14px',
     // This is a gross approximation until I can figure out the flex container
-    'margin-top': '7px'
+    'marginTop': '7px'
   };
 
   return (

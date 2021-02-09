@@ -32,6 +32,7 @@
 		}
 	],
 	"HowDoesItWork": {
+		"href": "https://docs.ichi.farm/introduction/the-win-win-design-of-ichi",
 		"logo": "../../assets/image/ichi/img_ichi_flow.svg"
 	},
 	"MarketOpportunity": [

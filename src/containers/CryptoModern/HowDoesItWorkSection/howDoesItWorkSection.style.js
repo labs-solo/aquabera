@@ -13,7 +13,19 @@ const HowDoesItWorkSectionWrapper = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
   }
+
+  img {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 1000px) {
+      max-width: 100%;
+    }
+  }
+
   .feature__block {
     position: relative;
     height: 100%;
