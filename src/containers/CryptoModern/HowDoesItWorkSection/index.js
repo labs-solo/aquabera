@@ -4,12 +4,12 @@ import Image from 'common/components/Image';
 // import Heading from 'common/components/Heading';
 import Text from 'common/components/Text';
 import Container from 'common/components/UI/Container';
+import colors from 'common/theme/hostingModern/colors';
 import { graphql, useStaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import HowDoesItWorkSectionWrapper from './howDoesItWorkSection.style';
-import colors from 'common/theme/hostingModern/colors';
 
 const HowDoesItWorkSection = ({
   row,
@@ -27,6 +27,7 @@ const HowDoesItWorkSection = ({
     query {
       cryptoModernJson {
         HowDoesItWork {
+          href
           logo {
             publicURL
           }
@@ -41,29 +42,10 @@ const HowDoesItWorkSection = ({
           <Text content="How does it work?" {...sectionSubTitle} />
         </Box>
         <Fade in delay={100}>
-          <a target="_blank" rel="noreferrer" href="https://docs.ichi.farm/introduction/the-win-win-design-of-ichi">
-            <Image src={Data.cryptoModernJson.HowDoesItWork.logo.publicURL} alt="Banner" />
+          <a target="_blank" rel="noreferrer" href={Data.cryptoModernJson.HowDoesItWork.href}>
+            <Image src={Data.cryptoModernJson.HowDoesItWork.logo.publicURL} alt="Banner" maxWidth="900px" />
           </a>
         </Fade>
-        {/* <Box {...sectionHeader} className="sectionHeader">
-          <Text content="Why choose Ichi" {...sectionSubTitle} />
-        </Box>
-        <Box className="row" {...row}>
-          {Data.cryptoModernJson.Features.map((feature, index) => (
-            <Box className="col" {...col} key={index}>
-              <FeatureBlock
-                icon={<img src={feature.icon.publicURL} alt="feature" />}
-                wrapperStyle={blockWrapperStyle}
-                contentStyle={contentStyle}
-                title={<Heading content={feature.title} {...featureTitle} />}
-                description={
-                  <Text content={feature.description} {...featureDescription} />
-                }
-                className="cryptoFeature"
-              />
-            </Box>
-          ))}
-        </Box> */}
       </Container>
     </HowDoesItWorkSectionWrapper>
   );
