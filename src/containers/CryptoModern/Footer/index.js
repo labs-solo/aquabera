@@ -7,7 +7,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import FooterWrapper, { List, ListItem } from './footer.style';
-import { themeGet } from '@styled-system/theme-get';
+import colors from 'common/theme/hostingModern/colors'
 
 
 const Footer = ({
@@ -117,7 +117,7 @@ Footer.defaultProps = {
   },
   // widget title default style
   titleStyle: {
-    color: themeGet('colors.footerHeader'),
+    color: colors.footerHeader,
     fontSize: '16px',
     fontWeight: '600',
     mb: '30px',
