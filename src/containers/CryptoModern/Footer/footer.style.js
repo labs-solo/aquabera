@@ -1,4 +1,5 @@
 // import FooterImage from 'common/assets/image/hosting/footer-bg.png';
+import { themeGet } from '@styled-system/theme-get';
 import styled from 'styled-components';
 
 // #@media (min-width: 576px) {
@@ -10,9 +11,10 @@ import styled from 'styled-components';
 const FooterWrapper = styled.footer`
   position: relative;
   overflow: hidden;
+  background-color: ${themeGet('colors.footerBackground')};
   @media (min-width: 576px) {
-    padding-top: 170px;
-    margin-top: -150px;
+    /* padding-top: 170px;
+    margin-top: -150px; */
     &:before {
       content: '';
       position: absolute;
@@ -40,21 +42,17 @@ const FooterWrapper = styled.footer`
 
 const List = styled.ul``;
 
-  // #color: #B2FFB2;
-    // color: #80d780;
 const ListItem = styled.li`
   a {
-    color: #00C591;
+    color: ${themeGet('colors.footerItem')};
     font-size: 14px;
-    line-height: 36px;
+    line-height: 25px;
     transition: all 0.2s ease;
-    font-weight: bold;
     &:hover,
     &:focus {
       outline: 0;
       text-decoration: none;
-      font-weight: bolder;
-      #color: #fff;
+      font-weight: bold;
     }
   }
 `;

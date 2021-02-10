@@ -7,6 +7,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import FooterWrapper, { List, ListItem } from './footer.style';
+import { themeGet } from '@styled-system/theme-get';
 
 
 const Footer = ({
@@ -116,9 +117,9 @@ Footer.defaultProps = {
   },
   // widget title default style
   titleStyle: {
-    color: 'black',
+    color: themeGet('colors.footerHeader'),
     fontSize: '16px',
-    fontWeight: '700',
+    fontWeight: '600',
     mb: '30px',
   },
   // Default logo size
@@ -128,7 +129,6 @@ Footer.defaultProps = {
   },
   // widget text default style
   textStyle: {
-    //color: '#B2FFB2',
     color: '#80d780',
     fontSize: '16px',
     mb: '10px',

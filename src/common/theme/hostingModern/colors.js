@@ -12,6 +12,9 @@ const colors = {
   secondary: '#CCF2E5',
   tertiary: '#5B2B9D',
   heading: '#0676FF',
+  footerBackground: '#EDF5FF',
+  footerItem: '#00C591',
+  footerHeader: '#00387C',
 };
 
 export default colors;
