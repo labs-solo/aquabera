@@ -3,7 +3,7 @@ import { themeGet } from '@styled-system/theme-get';
 
 const GlobalStyle = createGlobalStyle`
   body {
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Montserrat'
   }
   .reuseModalParentWrapper,
   .reuseModalOverlay {
@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   h6 {
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Montserrat'
   }
   section {
     position: relative;

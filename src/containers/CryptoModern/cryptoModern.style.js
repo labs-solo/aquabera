@@ -3,9 +3,9 @@ import styled, { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   body {
-    font-family: 'Roboto', sans-serif;
-    # original background was dark
-    # background:#03103b;
+    font-family: 'Montserrat'
+    /* # original background was dark
+    # background:#03103b; */
   }
   .reuseModalParentWrapper,
   .reuseModalOverlay {
@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
   h5,
   h6,
   p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat'
   }
   section {
     position: relative;

@@ -83,7 +83,7 @@ export const ContentWrapper = styled.div`
             letter-spacing: -1px;
             //color: #ffffff;
             color: ${themeGet('colors.primary')};
-            font-family: 'Roboto';
+            font-family: 'Montserrat';
             font-weight: 300;
             text-align: center;
             @media (max-width: 480px) {
@@ -95,7 +95,7 @@ export const ContentWrapper = styled.div`
           font-size: 8px;
           letter-spacing: 3px;
           color: ${themeGet('colors.text')};
-          font-family: 'Roboto';
+          font-family: 'Montserrat';
           font-weight: 500;
           text-align: center;
           margin-top: 12px;
@@ -117,7 +117,7 @@ export const ContentWrapper = styled.div`
         line-height: 48px; */
         /* color: #fff; */
         color: black;
-        font-family: 'Roboto';
+        font-family: 'Montserrat';
         font-weight: 700;
         text-align: center;
         padding: 5px;
