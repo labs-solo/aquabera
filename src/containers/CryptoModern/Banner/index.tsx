@@ -1,4 +1,4 @@
-import bannerImg from 'common/assets/image/ichi/img_ichi_hero.svg';
+import bannerImg from 'common/assets/image/ichi/img_ichi_hero_resp.svg';
 import ButtonLink from 'common/components/ButtonLink';
 import Heading from 'common/components/Heading';
 import Image from 'common/components/Image';
@@ -9,7 +9,6 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import BannerWrapper, {
   BannerContent,
-
   BannerImage,
   ButtonGroup
 } from './banner.style';

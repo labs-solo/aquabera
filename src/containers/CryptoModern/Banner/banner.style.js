@@ -113,9 +113,10 @@ export const DiscountLabel = styled.div`
 // https://www.sitepoint.com/css3-responsive-centered-image/
 export const BannerImage = styled.div`
   flex-shrink: 0;
-  #width: calc(100% - 425px);
+  /* #width: calc(100% - 425px); */
   img {
-    position: absolute;
+    /* This works ok for the centered image behind the text but would need a lot more work */
+    /* position: absolute;
     max-width: 80%;
     top: 25%;
     left: 50%;
@@ -123,7 +124,7 @@ export const BannerImage = styled.div`
     -moz-transform: translate(-50%, -25%);
     -ms-transform: translate(-50%, -25%);
     -o-transform: translate(-50%, -25%);
-    transform: translate(-50%, -25%);
+    transform: translate(-50%, -25%); */
 
     @media only screen and (max-width: 1600px) {
       margin-left: 0;
@@ -131,18 +132,21 @@ export const BannerImage = styled.div`
     @media only screen and (max-width: 1440px) {
       margin-left: 0;
       /* display: none; */
-      max-width: 40%
+      /* max-width: 40% */
+    }
+    @media only screen and (max-width: 991px) {
+      max-width: 65%;
     }
     @media only screen and (max-width: 952px) {
-      max-width: 50%;
+      max-width: 65%;
     }
-    @media only screen and (max-width: 655px) {
-      max-width: 75%;
-    }
-    @media only screen and (max-width: 480px) {
-      max-width: 70%;
+    @media only screen and (max-width: 952px) {
       display: none;
     }
+    /* @media only screen and (max-width: 480px) {
+      max-width: 70%;
+      display: none;
+    } */
   }
 `;
 
@@ -172,16 +176,16 @@ export const ButtonGroup = styled.div`
       font-weight: bold;
     }
 
-    #&.primary {
+    /* #&.primary {
     #  background-image: linear-gradient(to right, #4ba1d8, #4464bd 95%);
     #  &:hover {
     #    box-shadow: rgba(75, 109, 235, 0.78) 0px 12px 24px -10px;
     #  }
-    #}
+    #} */
 
     &.text {
       margin-left: 15px;
-      #color: #fff;
+      /* #color: #fff; */
       border: 1px solid rgba(255, 255, 255, 0.302);
     }
   }
