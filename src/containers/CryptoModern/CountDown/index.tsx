@@ -18,7 +18,7 @@ import NormalClock from './timer';
 // }
 
 // https://etherscan.io/apis
-const endpoint = 'https://api.etherscan.io/api?module=block&action=getblockcountdown&blockno=11908500&apikey=PFGWRD38DM8BB6TYHZ45ZVNNPI84BM13WT';
+const endpoint = 'https://api.etherscan.io/api?module=block&action=getblockcountdown&blockno=12394000&apikey=PFGWRD38DM8BB6TYHZ45ZVNNPI84BM13WT';
 const queryClient = new QueryClient();
  export default function CountDownSection() {
    return (
