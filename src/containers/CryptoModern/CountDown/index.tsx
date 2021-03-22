@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider, useQuery } from 'react-query';
 import Fade from 'react-reveal/Fade';
 import SectionWrapper, { ContentWrapper } from './countdown.style';
 import NormalClock from './timer';
+import {Link} from 'gatsby';
 
 // type HalvingResponse = {
 //   status: String;
@@ -45,7 +46,9 @@ const CountDownSectionHelper = () => {
     <SectionWrapper>
       <Container>
         <ContentWrapper>
-          <Heading content="Ichi Halving Countdown" as="h4" />
+          <Link target="_blank" to="https://docs.ichi.farm/liquidity-programs/overview/ichi-reward-halving">
+            ICHI Halving
+          </Link>
           <Fade up>
             <div className="timerCount">
               <NormalClock countdown={deadline} divider="true" />
