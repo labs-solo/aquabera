@@ -9,7 +9,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import Fade from 'react-reveal/Fade';
-import HowDoesItWorkSectionWrapper from './howDoesItWorkSection.style';
+import { HowDoesItWorkSectionWrapper, USDCWrapper, WBTCWrapper } from './howDoesItWorkSection.style';
 
 const HowDoesItWorkSection = ({
   row,
@@ -36,16 +36,34 @@ const HowDoesItWorkSection = ({
     }
   `);
   return (
-    <HowDoesItWorkSectionWrapper id="how-does-it-work">
+    <HowDoesItWorkSectionWrapper id="how-it-works">
       <Container>
         <Box {...sectionHeader} className="sectionHeader">
-          <Text content="How does it work?" {...sectionSubTitle} />
+          <Text content="How it works" {...sectionSubTitle} />
         </Box>
-        <Fade in delay={100}>
-          <a target="_blank" rel="noreferrer" href={Data.cryptoModernJson.HowDoesItWork.href}>
-            <Image src={Data.cryptoModernJson.HowDoesItWork.logo.publicURL} alt="Banner" maxWidth="900px" />
-          </a>
-        </Fade>
+        <div className="how-it-works-contents">
+          <Fade in delay={100}>
+            <a target="_blank" rel="noreferrer" href={Data.cryptoModernJson.HowDoesItWork.href}>
+              <Image src={Data.cryptoModernJson.HowDoesItWork.logo.publicURL} alt="Banner" maxWidth="900px" />
+            </a>
+            <div className="steps-container">
+              <div className="steps">
+                <div className="step"><span className="number-circle">1</span> You pay exactly $1 of value in two parts to mint any oneToken (an ICHI stablecoin).</div> 
+                <div className="step"><span className="number-circle">2</span> oneBTC is used in this example.  It is work 1 USD.  It is minted with <USDCWrapper>USDC</USDCWrapper> and <WBTCWrapper>wBTC</WBTCWrapper></div> 
+                <div className="step"><span className="number-circle">3</span> The <WBTCWrapper>wBTC</WBTCWrapper> share increases as the BTC treasure grows in size.</div>
+                <div className="step"><span className="number-circle">4</span> The USDC is deposited to the oneBTC contract, controlled by the oneBTC smart contract.</div>
+                <div className="step"><span className="number-circle">5</span> The BTC is also deposited to the oneBTC contract, governed by oneBTC holders.</div>
+              </div>
+              <div className="steps">
+                <div className="step"><span className="number-circle">6</span> Exchange wBTC for more USDC. (Rebalance)</div>
+                <div className="step"><span className="number-circle">7</span> Invest wBTC in DeFi (Decentralized Finance).</div>
+                <div className="step"><span className="number-circle">8</span> Spend wBTC on discounts and yield to grow adoption.</div>
+                <div className="step"><span className="number-circle">9</span> Minting and Redemption Fees Stay in Collateral.</div>
+                <div className="step"><span className="number-circle">10</span> You get exactly $1 of USDC when you redeem a oneBTC.</div>
+              </div>
+            </div>
+          </Fade>
+        </div>
       </Container>
     </HowDoesItWorkSectionWrapper>
   );
