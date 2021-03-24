@@ -52,7 +52,7 @@ const HowDoesItWorkSection = ({
                 <div className="step"><span className="number-circle">2</span> oneBTC is used in this example.  It is work 1 USD.  It is minted with <USDCWrapper>USDC</USDCWrapper> and <WBTCWrapper>wBTC</WBTCWrapper></div> 
                 <div className="step"><span className="number-circle">3</span> The <WBTCWrapper>wBTC</WBTCWrapper> share increases as the BTC treasure grows in size.</div>
                 <div className="step"><span className="number-circle">4</span> The USDC is deposited to the oneBTC contract, controlled by the oneBTC smart contract.</div>
-                <div className="step"><span className="number-circle">5</span> The BTC is also deposited to the oneBTC contract, governed by oneBTC holders.</div>
+                <div className="step"><span className="number-circle">5</span> The wBTC is also deposited to the oneBTC contract, governed by oneBTC holders.</div>
               </div>
               <div className="steps">
                 <div className="step"><span className="number-circle">6</span> Exchange wBTC for more USDC. (Rebalance)</div>
