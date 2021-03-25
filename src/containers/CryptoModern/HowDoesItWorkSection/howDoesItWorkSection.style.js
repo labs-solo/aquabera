@@ -38,8 +38,6 @@ export const HowDoesItWorkSectionWrapper = styled.section`
   }
 
   .how-it-works-contents {
-    /* border: 2px solid ${themeGet('colors.orange')}; */
-    border: 2px solid rgba(234, 151, 61, .5);
     padding: 50px;
   }
 
@@ -87,9 +85,14 @@ export const HowDoesItWorkSectionWrapper = styled.section`
   .steps-container {
     margin-top: 20px;
     display: flex;
-    align-items: center;
+    justify-content: space-evenly;
+
+    @media (max-width: 800px) {
+      display: inherit;
+    }
+
     & .steps {
-      display: block;
+      max-width: 440px;
     }
     & .step {
       padding: 5px;
