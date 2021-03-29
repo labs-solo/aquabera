@@ -1,11 +1,10 @@
-import Heading from 'common/components/Heading';
 import Container from 'common/components/UI/Container';
+import { Link } from 'gatsby';
 import React from 'react';
 import { QueryClient, QueryClientProvider, useQuery } from 'react-query';
 import Fade from 'react-reveal/Fade';
 import SectionWrapper, { ContentWrapper } from './countdown.style';
 import NormalClock from './timer';
-import {Link} from 'gatsby';
 
 // type HalvingResponse = {
 //   status: String;
