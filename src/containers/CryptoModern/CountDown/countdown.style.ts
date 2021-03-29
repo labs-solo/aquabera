@@ -49,7 +49,7 @@ export const ContentWrapper = styled.div`
   }
 
   .timerCount {
-    /* margin-top: 30px; */
+    margin-top: 15px;
     /* margin-bottom: 60px; */
 
     .NormalClock {
