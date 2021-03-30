@@ -4,7 +4,7 @@ import Image from 'common/components/Image';
 // import Heading from 'common/components/Heading';
 import Text from 'common/components/Text';
 import Container from 'common/components/UI/Container';
-import colors from 'common/theme/hostingModern/colors';
+import colors from 'common/theme/cryptoModern/colors';
 import { graphql, useStaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';

@@ -1,5 +1,5 @@
 import { themeGet } from '@styled-system/theme-get';
-import searchIcon from 'common/assets/image/appClassic/search.svg';
+import searchIcon from 'common/assets/image/ichi/search.svg';
 import styled from 'styled-components';
 
 export const NavbarWrapper = styled.nav`
@@ -125,14 +125,14 @@ export const MenuArea = styled.div`
     }
     &.trail {
       border-radius: 4px;
-      #background-image: linear-gradient(to right, #4ba1d8, #4464bd 95%);
-      #background-image: linear-gradient(to right, #CCF2E5, #00BD7B 95%);
+      /* background-image: linear-gradient(to right, #4ba1d8, #4464bd 95%);
+      background-image: linear-gradient(to right, #CCF2E5, #00BD7B 95%); */
       background-color: ${themeGet('colors.primary')};
       color: ${themeGet('colors.white')};
       font-weight: bold;
-      #&:hover {
-      #  box-shadow: rgba(75, 109, 235, 0.78) 0px 12px 24px -10px;
-      #}
+      /* &:hover {
+        box-shadow: rgba(75, 109, 235, 0.78) 0px 12px 24px -10px;
+      } */
       @media only screen and (max-width: 991px) {
         display: none;
       }
@@ -144,7 +144,6 @@ export const MenuArea = styled.div`
         padding: 0;
         justify-content: flex-end;
         min-width: 35px;
-        #color: #fff;
         color: #00BD7B;
         svg {
           width: 27px;
