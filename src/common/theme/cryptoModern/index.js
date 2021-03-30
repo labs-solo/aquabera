@@ -1,9 +1,10 @@
 import colors from './colors';
+
 export const theme = {
-  breakpoints: ['480px', '768px', '990px', '1220px'],
-  space: [0, 5, 10, 15, 20, 25, 30, 40, 56, 71, 91],
-  fontSizes: [10, 12, 14, 15, 16, 20, 24, 36, 48, 55, 60, 81],
-  fontWeights: [300, 400, 500, 600, 700, 800, 900],
+  breakpoints: ['576px', '768px', '991px', '1220px'],
+  space: [0, 5, 8, 10, 15, 20, 25, 30, 33, 35, 40, 50, 60, 70, 80, 85, 90, 100],
+  fontSizes: [10, 12, 14, 15, 16, 18, 20, 22, 24, 36, 48, 80, 96],
+  fontWeights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
   lineHeights: {
     solid: 1,
     title: 1.25,
@@ -15,18 +16,31 @@ export const theme = {
     tight: '-0.05em',
     mega: '0.25em',
   },
-  fonts: {
-    roboto: '"Roboto", sans-serif',
-  },
-  borders: [0, '1px solid', '2px solid', '4px solid'],
-  radius: [0, 3, 5, 10, 15, 20, 25, 50, 60, '50%'],
+  borders: [
+    0,
+    '1px solid',
+    '2px solid',
+    '3px solid',
+    '4px solid',
+    '5px solid',
+    '6px solid',
+  ],
+  radius: [3, 4, 5, 10, 20, 30, 60, 120, '50%'],
+  widths: [36, 40, 44, 48, 54, 70, 81, 128, 256],
+  heights: [36, 40, 44, 46, 48, 54, 70, 81, 128],
+  maxWidths: [16, 32, 64, 128, 256, 512, 768, 1024, 1536],
   colors,
   colorStyles: {
     primary: {
       color: colors.primary,
+      border: '1px solid',
       borderColor: colors.primary,
+      backgroundColor: colors.transparent,
       '&:hover': {
-        boxShadow: 'colors.primary 0px 12px 24px -10px',
+        color: colors.white,
+        backgroundColor: colors.primaryHover,
+        borderColor: colors.primaryHover,
+        boxShadow: colors.primaryBoxShadow,
       },
     },
     secondary: {
@@ -57,6 +71,11 @@ export const theme = {
       color: colors.white,
       backgroundColor: colors.primary,
       borderColor: colors.primary,
+      '&:hover': {
+        backgroundColor: colors.primaryHover,
+        borderColor: colors.primaryHover,
+        boxShadow: colors.primaryBoxShadow,
+      },
     },
     secondaryWithBg: {
       color: colors.white,
@@ -85,6 +104,12 @@ export const theme = {
         borderColor: colors.secondary,
       },
     },
+    transparentBg: {
+      backgroundColor: colors.white,
+      '&:hover': {
+        backgroundColor: colors.white,
+      },
+    },
   },
   buttonStyles: {
     textButton: {
@@ -92,7 +117,7 @@ export const theme = {
       color: colors.primary,
       padding: 0,
       height: 'auto',
-      backgroundColor: `${colors.transparent}`,
+      backgroundColor: colors.transparent,
     },
     outlined: {
       borderWidth: '1px',
@@ -118,4 +143,7 @@ export const theme = {
       justifyContent: 'center',
     },
   },
+  // FlexBox: {
+  //   backgroundColor: 'green'
+  // }
 };

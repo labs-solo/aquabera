@@ -1,5 +1,5 @@
 import { ResetCSS } from 'common/assets/css/style';
-import { theme } from 'common/theme/hostingModern';
+import { theme } from 'common/theme/cryptoModern';
 import SEO from 'components/seo';
 import Banner from 'containers/CryptoModern/Banner';
 import GlobalStyle, {

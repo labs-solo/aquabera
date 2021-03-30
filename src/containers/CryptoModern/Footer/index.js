@@ -3,11 +3,11 @@ import Box from 'common/components/Box';
 import Heading from 'common/components/Heading';
 // import Logo from 'common/components/UIElements/Logo';
 import Container from 'common/components/UI/Container';
+import colors from 'common/theme/cryptoModern/colors';
 import { graphql, useStaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import FooterWrapper, { List, ListItem } from './footer.style';
-import colors from 'common/theme/hostingModern/colors'
 
 
 const Footer = ({
