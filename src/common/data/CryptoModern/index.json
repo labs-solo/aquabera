@@ -4,7 +4,7 @@
 		"navMenu": [
 			{
 				"id": 1,
-				"label": "How it Work",
+				"label": "How it Works",
 				"path": "#how-it-works",
 				"offset": "81"
 			}
