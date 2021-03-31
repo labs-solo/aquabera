@@ -19,7 +19,9 @@ const GlobalStyle = createGlobalStyle`
   h3,
   h4,
   h5,
-  h6,
+  h6 {
+    font-family: 'Montserrat SemiBold'
+  }
   p {
     font-family: 'Montserrat'
   }
@@ -152,6 +154,10 @@ export const SectionHeader = styled.header`
       line-height: 38px;
       letter-spacing: -0.5px;
     }
+  }
+
+  .mb-10px {
+    margin-bottom: 10px;
   }
 `;
 

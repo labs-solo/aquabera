@@ -1,5 +1,4 @@
 import Container from 'common/components/UI/Container';
-import { Link } from 'gatsby';
 import React from 'react';
 import { QueryClient, QueryClientProvider, useQuery } from 'react-query';
 import Fade from 'react-reveal/Fade';
@@ -45,9 +44,9 @@ const CountDownSectionHelper = () => {
     <SectionWrapper>
       <Container>
         <ContentWrapper>
-          <Link target="_blank" to="https://docs.ichi.farm/liquidity-programs/overview/ichi-reward-halving">
+          <a target="_blank" rel="noreferrer" href="https://docs.ichi.farm/liquidity-programs/overview/ichi-reward-halving">
             ICHI Halving
-          </Link>
+          </a>
           <Fade up>
             <div className="timerCount">
               <NormalClock countdown={deadline} divider="true" />

@@ -4,7 +4,7 @@ import ScrollSpyMenu from 'common/components/ScrollSpyMenu';
 import Container from 'common/components/UI/Container';
 import Logo from 'common/components/UIElements/Logo';
 import useOnClickOutside from 'common/hooks/useOnClickOutside';
-import { graphql, Link, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 import React, { useRef, useState } from 'react';
 // import AnchorLink from 'react-anchor-link-smooth-scroll';
 // import { Icon } from 'react-icons-kit';
@@ -140,9 +140,9 @@ const Navbar = () => {
           {/* <AnchorLink href="#trail" offset={84}>
             <Button className="trail" title="Try for Free" />
           </AnchorLink> */}
-          <Link target="_blank" to="https://www.ichi.farm" offset={84}>
+          <a target="_blank" rel="noreferrer" href="https://www.ichi.farm" offset={84}>
             <Button className="trail" title="USE ICHI" />
-          </Link>
+          </a>
 
           {/* Mobile Hamburger */}
           {/* Not much to show here right now, so no reason to show this */}
