@@ -1,8 +1,8 @@
 import Box from 'common/components/Box';
-import Image from 'common/components/Image';
 // import FeatureBlock from 'common/components/FeatureBlock';
-// import Heading from 'common/components/Heading';
-import Text from 'common/components/Text';
+import Heading from 'common/components/Heading';
+import Image from 'common/components/Image';
+// import Text from 'common/components/Text';
 import Container from 'common/components/UI/Container';
 import colors from 'common/theme/cryptoModern/colors';
 import { graphql, useStaticQuery } from 'gatsby';
@@ -39,7 +39,11 @@ const HowDoesItWorkSection = ({
     <HowDoesItWorkSectionWrapper id="how-it-works">
       <Container>
         <Box {...sectionHeader} className="sectionHeader">
-          <Text content="How it works" {...sectionSubTitle} />
+          {/* <Text content="How it works" {...sectionSubTitle} /> */}
+          <Heading
+            as="h2"
+            content="How it works"
+          />
         </Box>
         <div className="how-it-works-contents">
           <Fade in delay={100}>

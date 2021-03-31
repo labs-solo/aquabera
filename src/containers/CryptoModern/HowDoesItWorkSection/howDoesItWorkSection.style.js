@@ -25,6 +25,17 @@ export const HowDoesItWorkSectionWrapper = styled.section`
     justify-content: center;
     align-items: center;
     margin-bottom: 0px;
+
+    h2 {
+      font-size: 40px;
+      line-height: 49px;
+      font-weight: 400;
+      color: ${themeGet('colors.heading')};
+      letter-spacing: -0.025em;
+      @media only screen and (max-width: 1440px) {
+        font-size: 28px;
+      }
+    }
   }
 
   img {
