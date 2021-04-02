@@ -29,7 +29,7 @@ const Banner = () => {
             />
           </Fade>
           <Fade up delay={200}>
-            <Text content="(Fueled by any Coin)" />
+            <Text className="sub-heading" content="(Fueled by any Coin)" />
           </Fade>
           <Fade up delay={300}>
             <ButtonGroup>

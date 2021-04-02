@@ -6,11 +6,9 @@ const SectionWrapper = styled.div`
   overflow: hidden;
 
   @media only screen and (max-width: 1440px) {
-    /* padding: 50px 0 50px; */
     padding: 30px 0;
   }
   @media only screen and (max-width: 480px) {
-    /* padding: 60px 0 5px; */
     padding: 30px 0;
   }
 `;
@@ -19,17 +17,22 @@ export const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
   @media (max-width: 480px) {
     flex-wrap: nowrap;
-    align-items: center;
+  }
+
+  .countdown-heading {
+    height: 19px;
+    color: ${themeGet('colors.footerHeader')};
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 19px;
   }
 
   h2 {
     color: ${themeGet('colors.black')};
     font-size: 32px;
     line-height: 44px;
-    /* font-weight: 400; */
     margin-bottom: 27px;
     @media only screen and (max-width: 1366px) {
       font-size: 30px;
@@ -54,56 +57,55 @@ export const ContentWrapper = styled.div`
 
     .NormalClock {
       display: flex;
-      /* justify-content: space-between; */
-      /* width: 600px; */
       align-items: center;
       @media (max-width: 480px) {
         width: 100%;
       }
       .NormalUnitContainer {
-        /* width: 110px;
-        height: 100px; */
-        width: 40px;
-        height: 30px;
+        height: 50px;
+        width: 70px;
         border-radius: 5px;
-        background-color: ${themeGet('colors.secondary')};
+        background-color: ${themeGet('colors.secondaryBlue')};
         @media (max-width: 480px) {
-          /* width: 70px;
-          height: 70px; */
-          width: 30px;
-          width: 20px;
-          /* background-color: transparent; */
+          height: 30px;
+          width: 40px;
         }
         .NormalupperCard {
           align-items: center;
           display: flex;
           justify-content: center;
           span {
+            height: 24px;
+            width: 50px;
             font-size: 18px;
-            letter-spacing: -1px;
-            //color: #ffffff;
-            color: ${themeGet('colors.primary')};
+            letter-spacing: 0px;
+            color: ${themeGet('colors.heading')};
             font-family: 'Montserrat';
-            font-weight: 300;
+            font-weight: 600;
+            font-size: 18px;
             text-align: center;
+            line-height: 22px;
             @media (max-width: 480px) {
               font-size: 14px;
             }
           }
         }
         .digitLabel {
-          font-size: 8px;
-          letter-spacing: 3px;
-          color: ${themeGet('colors.text')};
+          height: 24px;
+          width: 70px;
+          font-size: 14px;
+          letter-spacing: 0px;
+          line-height: 18px;
+          color: ${themeGet('colors.footerHeader')};
           font-family: 'Montserrat';
           font-weight: 500;
           text-align: center;
           margin-top: 12px;
           @media (max-width: 480px) {
-            font-size: 6px;
+            padding-right: 10px;
+            font-size: 8px;
             display:block;
             visibility:hidden;
-            /* display: none; */
           }
         }
         .digitLabel:first-letter {
@@ -113,17 +115,11 @@ export const ContentWrapper = styled.div`
         }
       }
       .dividerColon {
-        /* font-size: 78px;
-        line-height: 48px; */
-        /* color: #fff; */
         color: black;
         font-family: 'Montserrat';
         font-weight: 700;
         text-align: center;
         padding: 5px;
-        /* @media (max-width: 480px) {
-          display: none;
-        } */
       }
     }
   }

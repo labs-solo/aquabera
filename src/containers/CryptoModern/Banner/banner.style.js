@@ -44,7 +44,6 @@ export const BannerContent = styled.div`
   width: 100%;
   @media only screen and (max-width: 991px) {
     flex-shrink: 0;
-    /* max-width: 360px; */
   }
 
   h1 {
@@ -63,6 +62,16 @@ export const BannerContent = styled.div`
     font-size: 16px;
     line-height: 33px;
     font-weight: 400;
+  }
+
+  .sub-heading {
+    height: 24px;
+    /* width: 460px; */
+    color: ${themeGet('colors.footerHeader')};
+    font-family: Montserrat;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 24px;
   }
 `;
 
