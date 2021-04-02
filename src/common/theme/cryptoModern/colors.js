@@ -10,6 +10,7 @@ const colors = {
   border: '#dce5ea',
   //secondary: '#7B72F0',
   secondary: '#CCF2E5',
+  secondaryBlue: '#EDF5FF',
   tertiary: '#5B2B9D',
   heading: '#0676FF',
   footerBackground: '#EDF5FF',

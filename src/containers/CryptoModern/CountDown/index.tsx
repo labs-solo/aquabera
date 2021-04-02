@@ -1,4 +1,3 @@
-import Container from 'common/components/UI/Container';
 import React from 'react';
 import { QueryClient, QueryClientProvider, useQuery } from 'react-query';
 import Fade from 'react-reveal/Fade';
@@ -42,19 +41,16 @@ const CountDownSectionHelper = () => {
 
   return (
     <SectionWrapper>
-      <Container>
-        <ContentWrapper>
-          <a target="_blank" rel="noreferrer" href="https://docs.ichi.farm/liquidity-programs/overview/ichi-reward-halving">
-            ICHI Halving
-          </a>
-          <Fade up>
-            <div className="timerCount">
-              <NormalClock countdown={deadline} divider="true" />
-            </div>
-          </Fade>
-          {/* <Button className="primary" title="PRE-ORDER NOW" /> */}
-        </ContentWrapper>
-      </Container>
+      <ContentWrapper>
+        <a className="countdown-heading" target="_blank" rel="noreferrer" href="https://docs.ichi.farm/liquidity-programs/overview/ichi-reward-halving">
+          ICHI Halving Countdown
+        </a>
+        <Fade up>
+          <div className="timerCount">
+            <NormalClock countdown={deadline} divider="true" />
+          </div>
+        </Fade>
+      </ContentWrapper>
     </SectionWrapper>
   );
 };
