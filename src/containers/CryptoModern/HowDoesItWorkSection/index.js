@@ -53,16 +53,16 @@ const HowDoesItWorkSection = ({
             <div className="steps-container">
               <div className="steps">
                 <div className="step"><span className="number-circle">1</span> You pay exactly $1 of value in two parts to mint any oneToken (an ICHI stablecoin).</div> 
-                <div className="step"><span className="number-circle">2</span> oneBTC is used in this example.  It is work 1 USD.  It is minted with <USDCWrapper>USDC</USDCWrapper> and <WBTCWrapper>wBTC</WBTCWrapper></div> 
-                <div className="step"><span className="number-circle">3</span> The <WBTCWrapper>wBTC</WBTCWrapper> share increases as the BTC treasure grows in size.</div>
-                <div className="step"><span className="number-circle">4</span> The USDC is deposited to the oneBTC contract, controlled by the oneBTC smart contract.</div>
-                <div className="step"><span className="number-circle">5</span> The wBTC is also deposited to the oneBTC contract, governed by oneBTC holders.</div>
+                <div className="step"><span className="number-circle">2</span> oneBTC is used in this example.  It is worth 1 USD.  It is minted with <USDCWrapper>USDC</USDCWrapper> and <WBTCWrapper>wBTC</WBTCWrapper></div> 
+                <div className="step"><span className="number-circle">3</span> The <WBTCWrapper>wBTC</WBTCWrapper> share increases as the BTC treasury grows in size.</div>
+                <div className="step"><span className="number-circle">4</span> The USDC is deposited to the oneBTC Vault, controlled by the oneBTC smart contract.</div>
+                <div className="step"><span className="number-circle">5</span> The wBTC is also deposited to the oneBTC Vault, governed by oneBTC holders.</div>
               </div>
               <div className="steps">
                 <div className="step"><span className="number-circle">6</span> Exchange wBTC for more USDC. (Rebalance)</div>
                 <div className="step"><span className="number-circle">7</span> Invest wBTC in DeFi (Decentralized Finance).</div>
                 <div className="step"><span className="number-circle">8</span> Spend wBTC on discounts and yield to grow adoption.</div>
-                <div className="step"><span className="number-circle">9</span> Minting and Redemption Fees Stay in Collateral.</div>
+                <div className="step"><span className="number-circle">9</span> Minting and Redemption Fees stay in Collateral.</div>
                 <div className="step"><span className="number-circle">10</span> You get exactly $1 of USDC when you redeem a oneBTC.</div>
               </div>
             </div>
