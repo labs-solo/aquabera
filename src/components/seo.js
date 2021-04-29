@@ -61,8 +61,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               )
               .concat(meta)}
           >
-            <script dangerouslySetInnerHTML={{
-              __html: `
+            <script type="text/javascript">{`
                 !function(e,t,n,s,u,a){e.twq || (s = e.twq = function () {
                   s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
                 }, s.version = '1.1', s.queue = [], u = t.createElement(n), u.async = !0, u.src = '//static.ads-twitter.com/uwt.js',
@@ -70,8 +69,8 @@ function SEO({ description, lang, meta, keywords, title }) {
                 // Insert Twitter Pixel ID and Standard Event data below
                 twq('init','o5ykd');
                 twq('track','PageView');
-              `
-            }} />
+            `}
+            </script>
           </Helmet>
         );
       }}
