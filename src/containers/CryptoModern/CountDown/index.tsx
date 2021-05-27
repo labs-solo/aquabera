@@ -1,3 +1,4 @@
+import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import React from 'react';
 import { QueryClient, QueryClientProvider, useQuery } from 'react-query';
 import Fade from 'react-reveal/Fade';
@@ -42,9 +43,9 @@ const CountDownSectionHelper = () => {
   return (
     <SectionWrapper>
       <ContentWrapper>
-        <a className="countdown-heading" target="_blank" rel="noreferrer" href="https://docs.ichi.farm/liquidity-programs/overview/ichi-reward-halving">
+        <OutboundLink className="countdown-heading" target="_blank" href="https://docs.ichi.farm/liquidity-programs/overview/ichi-reward-halving">
           ICHI Halving Countdown
-        </a>
+        </OutboundLink>
         <Fade up>
           <div className="timerCount">
             <NormalClock countdown={deadline} divider="true" />

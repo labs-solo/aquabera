@@ -23711,7 +23711,8 @@ ol.ui.horizontal.list li:before,
   -ms-user-select: none;
   user-select: none;
   background: none;
-  padding: 0.92857143em 1.14285714em;
+  /* NOTE This will mess with the flex centering, so commenting it out */
+  /* padding: 0.92857143em 1.14285714em; */
   text-transform: none;
   color: rgba(0, 0, 0, 0.87);
   font-weight: normal;
@@ -23749,6 +23750,9 @@ ol.ui.horizontal.list li:before,
   -ms-user-select: text;
   user-select: text;
   line-height: 1.3;
+  /* NOTE: Dropdown text color goes here */
+  color: #0676FF;
+  background-color: transparent;
 }
 
 .ui.menu .item > p:first-child {
@@ -25496,6 +25500,11 @@ Floated Menu / Item
   display: inline-flex;
   margin: 0em;
   vertical-align: middle;
+  /* NOTE Added this to force it to be in the center */
+  padding: none;
+  margin: none;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .ui.compact.vertical.menu {
@@ -32237,8 +32246,8 @@ body.dimmable > .dimmer {
   transition: none;
   font-size: 16px;
   font-weight: 400;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  /* -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; */
 }
 
 /*--------------

@@ -12,7 +12,7 @@ steps:
     displayName: 'Install Node.js'
     inputs:
       versionSpec: '12.x'
-  - script: npm install
+  - script: npm install --force
     displayName: 'npm install'
   - script: npm run build
     displayName: 'npm run build'

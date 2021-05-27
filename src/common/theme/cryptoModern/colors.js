@@ -17,7 +17,11 @@ const colors = {
   footerItem: '#00C591',
   footerHeader: '#00387C',
   steps: '#2775CA',
-  orange: '#EA973D'
+  orange: '#EA973D',
+
+  // new
+  menu: '#0676FF'
+
 };
 
 export default colors;

@@ -10,7 +10,6 @@ const ButtonLinkStyle = styled.a`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  #color: ${themeGet('colors.white', '#ffffff')};
   color: ${themeGet('colors.white', '#028489')};
   background-color: ${themeGet('colors.primary', '#028489')};
   min-height: ${themeGet('heights.3', '48')}px;

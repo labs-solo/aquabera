@@ -58,37 +58,37 @@ export const appTheme = {
     },
     primaryWithBg: {
       color: colors.white,
-      backgroundColor: colors.primary,
+      bgColor: colors.primary,
       borderColor: colors.primary,
       '&:hover': {
-        backgroundColor: colors.primaryHover,
+        bgColor: colors.primaryHover,
         borderColor: colors.primaryHover,
       },
     },
     secondaryWithBg: {
       color: colors.white,
-      backgroundColor: colors.secondary,
+      bgColor: colors.secondary,
       borderColor: colors.secondary,
       '&:hover': {
-        backgroundColor: colors.secondaryHover,
+        bgColor: colors.secondaryHover,
         borderColor: colors.secondaryHover,
       },
     },
     warningWithBg: {
       color: colors.white,
-      backgroundColor: colors.yellow,
+      bgColor: colors.yellow,
       borderColor: colors.yellow,
       '&:hover': {
-        backgroundColor: colors.yellowHover,
+        bgColor: colors.yellowHover,
         borderColor: colors.yellowHover,
       },
     },
     errorWithBg: {
       color: colors.white,
-      backgroundColor: colors.secondaryHover,
+      bgColor: colors.secondaryHover,
       borderColor: colors.secondaryHover,
       '&:hover': {
-        backgroundColor: colors.secondary,
+        bgColor: colors.secondary,
         borderColor: colors.secondary,
       },
     },
@@ -99,12 +99,12 @@ export const appTheme = {
       color: colors.primary,
       padding: 0,
       height: 'auto',
-      backgroundColor: colors.transparent,
+      bgColor: colors.transparent,
     },
     outlined: {
       borderWidth: '1px',
       borderStyle: 'solid',
-      backgroundColor: colors.transparent,
+      bgColor: colors.transparent,
     },
     fab: {
       border: '0',

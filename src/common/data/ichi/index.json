@@ -1,0 +1,88 @@
+{
+	"navbar": {
+		"logo": "../../assets/image/ichi/logo_horizontal_light/ichi_logo_horizontal_light.svg",
+		"navMenu": [
+		]
+	},
+	"howItWorksSection": {
+		"href": "https://docs.ichi.farm/introduction/the-win-win-design-of-ichi",
+		"header": {
+      "name": "How it works",
+      "text": "The Ichi oneToken Factory allows any user to mint a stablecoin with their favorite cryptocurrency. Tokens are always redeemable for $1, and create a community treasury to stimulate rewards"
+    }
+	},
+	"oneTokensSection": {
+    "header": {
+      "name": "oneTokens",
+      "text": "Ichi supports the following stablecoins, collateralized with your favorite cryptocurrencies."
+    },
+    "oneTokens": [
+      {
+        "name": "oneBTC",
+        "text": "The Ichi oneToken Factory allows any user to mint a stablecoin with their favorite cryptocurrency."
+      },
+      {
+        "name": "oneETH",
+        "text": "The Ichi oneToken Factory allows any user to mint a stablecoin with their favorite cryptocurrency"
+      },
+      {
+        "name": "oneLINK",
+        "text": "The Ichi oneToken Factory allows any user to mint a stablecoin with their favorite cryptocurrency"
+      }
+    ]
+	},
+	"partnersSection": {
+    "header": {
+      "name": "Partners",
+      "text": "Organizations supporting the ICHI community"
+    },
+    "partners": [
+      {
+        "name": "1inch",
+        "text": "Providing liquidity rewards"
+      },
+      {
+        "name": "Balancer",
+        "text": "Providing liquidity rewards"
+      },
+      {
+        "name": "Loopring",
+        "text": "Providing liquidity rewards"
+      },
+      {
+        "name": "Moonbeam",
+        "text": "Providing grant funding"
+      },
+      {
+        "name": "Solana",
+        "text": "Providing launch support"
+      },
+      {
+        "name": "Sushiswap",
+        "text": "Providing liquidity rewards"
+      },
+      {
+        "name": "Quantstamp",
+        "text": "Audited oneToken Factory"
+      },
+      {
+        "name": "Certik",
+        "text": "Audited oneToken Factory"
+      },
+      {
+        "name": "Solidified",
+        "text": "Audited oneToken Factory"
+      }
+    ]
+	},
+	"joinTheCommunitySection": {
+    "header": {
+      "name": "Join the community",
+      "text": "Drop by our Telegram to join the community, learn about ICHI, start farming, and govern the project",
+      "button": {
+        "text": "Join Telegram",
+        "href": "https://t.me/ichifarm"
+      }
+    }
+	}
+}

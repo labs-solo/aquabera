@@ -1,36 +1,42 @@
 import { ResetCSS } from 'common/assets/css/style';
-import { theme } from 'common/theme/cryptoModern';
+import { darkTheme } from 'common/theme/dark/darkTheme';
+import { lightTheme } from 'common/theme/light/lightTheme';
 import SEO from 'components/seo';
-import Banner from 'containers/CryptoModern/Banner';
-import GlobalStyle, {
-  ContentWrapper, CryptoWrapper
-} from 'containers/CryptoModern/cryptoModern.style';
-import Footer from 'containers/CryptoModern/Footer';
-import HowDoesItWorkSection from 'containers/CryptoModern/HowDoesItWorkSection';
-import Navbar from 'containers/CryptoModern/Navbar';
+import GlobalStyle, { ContentWrapper } from 'containers/app.style';
+import Banner from 'containers/Banner';
+import CopywriteSection from 'containers/CopywriteSection';
+import HowItWorksSection from 'containers/HowItWorksSection';
+import JoinTheCommunitySection from 'containers/JoinTheCommunitySection';
+import Navbar from 'containers/Navbar';
+import OneTokensSection from 'containers/OneTokensSection';
+import PartnersSection from 'containers/PartnersSection';
 import React from 'react';
 import Sticky from 'react-stickynode';
 import { ThemeProvider } from 'styled-components';
+import useDarkMode from 'use-dark-mode';
 
 const App = () => {
+  const darkMode = useDarkMode();
+  const theme = darkMode.value ? darkTheme : lightTheme;
   return (
     <ThemeProvider theme={theme}>
       <SEO title="Ichi" />
-
       <ResetCSS />
       <GlobalStyle />
-
-      <CryptoWrapper>
-        {/* <TopBar /> */}
+      <ContentWrapper>
         <Sticky top={0} innerZ={9999} activeClass="sticky-active">
-          <Navbar />
+          <Navbar toggleTheme={darkMode.toggle} />
         </Sticky>
         <ContentWrapper>
           <Banner />
-          <HowDoesItWorkSection />
+          <OneTokensSection />
+          <HowItWorksSection />
+          <PartnersSection />
+          <JoinTheCommunitySection />
+          <CopywriteSection />
         </ContentWrapper>
-        <Footer />
-      </CryptoWrapper>
+        {/* <Footer /> */}
+      </ContentWrapper>
     </ThemeProvider>
   );
 };

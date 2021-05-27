@@ -29,7 +29,7 @@ const ContainerWrapper = styled.div`
   }
 
   @media (min-width: 1200px) {
-    max-width: ${(props) => props.width || '1170px'};
+    max-width: ${(props) => props.width || '1200px'};
     padding: 0;
   }
   @media (min-width: 1400px) {

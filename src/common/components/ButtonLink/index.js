@@ -53,7 +53,6 @@ const ButtonLink = ({
     <ButtonLinkStyle
       type={type}
       href={href}
-      rel="noreferrer"
       target="_blank"
       className={addAllClasses.join(' ')}
       icon={icon}

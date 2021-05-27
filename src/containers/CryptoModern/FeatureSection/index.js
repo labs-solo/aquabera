@@ -3,7 +3,6 @@ import FeatureBlock from 'common/components/FeatureBlock';
 import Heading from 'common/components/Heading';
 import Text from 'common/components/Text';
 import Container from 'common/components/UI/Container';
-import { graphql, useStaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import FeatureSectionWrapper from './featureSection.style';
@@ -20,20 +19,13 @@ const FeatureSection = ({
   contentStyle,
   blockWrapperStyle,
 }) => {
-  const Data = useStaticQuery(graphql`
-    query {
-      cryptoModernJson {
-        Features {
-          id
-          title
-          description
-          icon {
-            publicURL
-          }
-        }
-      }
-    }
-  `);
+  // const Data = useStaticQuery(graphql`
+  //   query {
+  //     ichiJson {
+  //     }
+  //   }
+  // `);
+  const Data = {};
   return (
     <FeatureSectionWrapper id="key-features">
       <Container>
@@ -45,7 +37,7 @@ const FeatureSection = ({
           /> */}
         </Box>
         <Box className="row" {...row}>
-          {Data.cryptoModernJson.Features.map((feature, index) => (
+          {Data.ichiJson.Features.map((feature, index) => (
             <Box className="col" {...col} key={index}>
               <FeatureBlock
                 icon={<img src={feature.icon.publicURL} alt="feature" />}
