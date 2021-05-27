@@ -28,6 +28,14 @@
       {
         "name": "oneLINK",
         "text": "The Ichi oneToken Factory allows any user to mint a stablecoin with their favorite cryptocurrency"
+      },
+      {
+        "name": "oneWING",
+        "text": "The Ichi oneToken Factory allows any user to mint a stablecoin with their favorite cryptocurrency"
+      },
+      {
+        "name": "oneVBTC",
+        "text": "The Ichi oneToken Factory allows any user to mint a stablecoin with their favorite cryptocurrency"
       }
     ]
 	},
