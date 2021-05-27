@@ -20,7 +20,7 @@ const App = () => {
   const theme = darkMode.value ? darkTheme : lightTheme;
   return (
     <ThemeProvider theme={theme}>
-      <SEO title="Ichi" />
+      <SEO title="ICHI" />
       <ResetCSS />
       <GlobalStyle />
       <ContentWrapper>

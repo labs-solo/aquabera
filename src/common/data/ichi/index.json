@@ -8,34 +8,34 @@
 		"href": "https://docs.ichi.farm/introduction/the-win-win-design-of-ichi",
 		"header": {
       "name": "How it works",
-      "text": "The Ichi oneToken Factory allows any user to mint a stablecoin with their favorite cryptocurrency. Tokens are always redeemable for $1, and create a community treasury to stimulate rewards"
+      "text": "The ICHI oneToken Factory allows any user to mint a stablecoin with their favorite cryptocurrency. Tokens are always redeemable for $1, and create a community treasury to stimulate rewards"
     }
 	},
 	"oneTokensSection": {
     "header": {
       "name": "oneTokens",
-      "text": "Ichi supports the following stablecoins, collateralized with your favorite cryptocurrencies."
+      "text": "ICHI supports the following stablecoins, collateralized with your favorite cryptocurrencies."
     },
     "oneTokens": [
       {
         "name": "oneBTC",
-        "text": "The Ichi oneToken Factory allows any user to mint a stablecoin with their favorite cryptocurrency."
+        "text": "The stablecoin for the world's ultimate hodlers"
       },
       {
         "name": "oneETH",
-        "text": "The Ichi oneToken Factory allows any user to mint a stablecoin with their favorite cryptocurrency"
+        "text": "A stablecoin for the first world computer"
       },
       {
         "name": "oneLINK",
-        "text": "The Ichi oneToken Factory allows any user to mint a stablecoin with their favorite cryptocurrency"
+        "text": "Demonstrating the ability to create a stablecoin for large cap projects"
       },
       {
         "name": "oneWING",
-        "text": "The Ichi oneToken Factory allows any user to mint a stablecoin with their favorite cryptocurrency"
+        "text": "Borrow and lend on wing.finance"
       },
       {
         "name": "oneVBTC",
-        "text": "The Ichi oneToken Factory allows any user to mint a stablecoin with their favorite cryptocurrency"
+        "text": "Help support the peg of VBTC"
       }
     ]
 	},

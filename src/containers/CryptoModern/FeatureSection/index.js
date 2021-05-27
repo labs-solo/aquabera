@@ -30,7 +30,7 @@ const FeatureSection = ({
     <FeatureSectionWrapper id="key-features">
       <Container>
         <Box {...sectionHeader} className="sectionHeader">
-          <Text content="Why choose Ichi" {...sectionSubTitle} />
+          <Text content="Why choose ICHI" {...sectionSubTitle} />
           {/* <Heading
             content="Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiu Lorem ipsum dolor Lorem ipsum dolor"
             {...sectionTitle}
