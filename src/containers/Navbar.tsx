@@ -116,11 +116,11 @@ const Navbar: React.FC<Props> = (props) => {
       <Container>
         <Image
           className="image-ichi-logo main-logo"
-          alt="Ichi Logo"
+          alt="ICHI Logo"
         />
         <Image
           className="image-ichi-logo logo-alt"
-          alt="Ichi Logo"
+          alt="ICHI Logo"
         />
         {/* <Logo
           href="/"
