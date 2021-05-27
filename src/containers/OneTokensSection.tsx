@@ -41,7 +41,7 @@ const OneTokensSection: React.FC = () => {
           className="mt-20 mlr-auto"
         />
         <Fade in delay={100}>
-          <StyledFlex justifyContent="center" className="mt-20 one-tokens-content" gap="50px">
+          <StyledFlex justifyContent="center" className="mt-20 one-tokens-content" gap="25px" flexWrap="wrap">
             {oneTokens?.map((oneToken) => (
               <StyledFlexColumn key={oneToken.name} className="one-token" justifyContent="space-between">
                 <Image
