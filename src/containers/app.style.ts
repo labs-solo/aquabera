@@ -89,7 +89,7 @@ const GlobalStyle = createGlobalStyle`
     
     & .primary-button {
       width: 130px;
-      border-radius: 20px;
+      border-radius: 25px;
       background: linear-gradient(139.74deg, #00C9FF 0%, #0676FF 100%);
       font-size: 16px;
       font-weight: 600;
@@ -99,7 +99,7 @@ const GlobalStyle = createGlobalStyle`
 
     & .secondary-button {
       width: 130px;
-      border-radius: 20px;
+      border-radius: 25px;
       background-color: #4D8BC9;
       font-size: 16px;
       font-weight: 600;

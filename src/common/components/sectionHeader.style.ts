@@ -13,5 +13,5 @@ export const StyledSectionHeaderSubText = styled.div`
   letter-spacing: 0;
   line-height: 24px;
   text-align: center;
-  max-width: 520px;
+  max-width: 575px;
 `;

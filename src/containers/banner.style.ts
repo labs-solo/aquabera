@@ -72,7 +72,7 @@ export const StyledBackgroundImage = styled(BackgroundImage)`
   .heading {
     font-size: 40px;
     line-height: 49px;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: -0.025em;
     /* @media only screen and (max-width: 1440px) {
       font-size: 28px;

@@ -25,32 +25,6 @@ export const StyledHowItWorksSection = styled.section`
     }
   }
 
-  .feature__block {
-    position: relative;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    transition: all 0.3s ease;
-    padding: 0 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    &:hover {
-      background-image: linear-gradient(
-        to bottom,
-        transparent 50%,
-        rgba(255, 255, 255, 0.031)
-      );
-    }
-    @media (max-width: 500px) {
-      padding: 15px 0;
-      &:hover {
-        background-image: none;
-      }
-    }
-  }
-
   & .button-learn-more {
     width: 180px;
   }
@@ -70,9 +44,4 @@ export const StyledStepText = styled.div`
   font-size: 16px;
   letter-spacing: 0;
   line-height: 19px;
-  white-space: nowrap;
-
-  @media (max-width: 1264px) {
-    white-space: normal;
-  }
 `;

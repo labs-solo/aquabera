@@ -25,7 +25,19 @@ export const StyledJoinTheCommunitySection = styled.section`
     padding: 50px;
   }
 
+  // Apparently this <Button> from superprops adds margin-bottom to the
+  // button icon, have to override that
   & .button-telegram {
     width: 190px;
+
+    & .btn-icon {
+      & img {
+        margin-bottom: 0px;
+      }
+    }
+
+    & .btn-text {
+      margin-left: 3px;
+    }
   }
 `;

@@ -78,6 +78,7 @@ type StyledFlexColumnProps = {
   textAlign?: string;
   justifyContent?: string;
   alignItems?: string;
+  alignSelf?: string;
   height?: string;
   width?: string;
 };
@@ -91,6 +92,7 @@ export const StyledFlexColumn = styled.div<StyledFlexColumnProps>`
   width: ${(props) => props.width};
   justify-content: ${(props) => props.justifyContent};
   align-items: ${(props) => props.alignItems};
+  align-self: ${(props) => props.alignSelf};
 `;
 
 export const StyledTable = styled.table`
