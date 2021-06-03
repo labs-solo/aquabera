@@ -67,7 +67,7 @@ const Banner: React.FC = () => {
               <OutboundLink target="_blank" href="https://www.ichi.farm">
                 <Button className="text primary-button" title="Enter App" />
               </OutboundLink>
-              <OutboundLink target="_blank" href="https://docs.ichi.farm/introduction/where-to-get-ichi" className="ml-10">
+              <OutboundLink target="_blank" href="https://docs.ichi.farm/ichi/where-to-get-ichi" className="ml-10">
                 <Button className="text secondary-button" title="Get ICHI" />
               </OutboundLink>
             </StyledFlexStart>

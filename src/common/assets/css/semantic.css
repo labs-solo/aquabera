@@ -33451,8 +33451,10 @@ select.ui.dropdown {
   overflow: visible;
   width: auto;
   height: auto;
+  /* NOTE: This controls the pop open positioning */
   top: 100% !important;
   opacity: 1;
+  margin-top: 15px;
 }
 
 .ui.simple.dropdown > .menu > .item:active > .menu,

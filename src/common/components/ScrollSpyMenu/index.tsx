@@ -94,10 +94,10 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
     },
     { 
       key: 3, 
-      text: 'Audit', 
+      text: 'Audits', 
       value: 3,
       content: (
-          <OutboundLink target="_blank" href="https://docs.ichi.farm/introduction/audits">Audit</OutboundLink>
+          <OutboundLink target="_blank" href="https://docs.ichi.farm/audits-and-risks/audits">Audits</OutboundLink>
       ) 
     },
     { 
@@ -116,7 +116,7 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
       text: 'ICHI Token', 
       value: 1,
       content: (
-          <OutboundLink target="_blank" href="https://docs.ichi.farm/introduction/ichi-tokenomics">ICHI Token</OutboundLink>
+          <OutboundLink target="_blank" href="https://docs.ichi.farm/ichi/ichi-governance">ICHI Token</OutboundLink>
       ) 
     },
     { 
@@ -132,7 +132,7 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
       text: 'Forum', 
       value: 3,
       content: (
-          <OutboundLink target="_blank" href="https://docs.ichi.farm/introduction/ichi-tokenomics">Forum</OutboundLink>
+          <OutboundLink target="_blank" href="https://docs.ichi.farm/ichi/ichi-governance">Forum</OutboundLink>
       ) 
     },
     { 
