@@ -49,7 +49,8 @@
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby develop --host localhost --port 8000",
-    "start": "gatsby serve"
+    "start": "gatsby serve",
+    "clean": "gatsby clean"
   },
   "devDependencies": {
     "@types/react": "^17.0.6",
