@@ -42,7 +42,7 @@ const PartnersSection: React.FC = () => {
           {section.partners?.map((partner) => (
             <StyledFlexColumn key={partner.name} className="one-token" justifyContent="space-between" width="320px" height="190px">
               <Image
-                className={`icon-${partner.name}`}
+                className={`icon-${partner.name.replace(/\s+/g, '-').toLocaleLowerCase()}`}
                 height="100px"
                 width="100px"
                 alt={partner.name}
