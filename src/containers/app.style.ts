@@ -14,6 +14,13 @@ import IconOneVBTC from '../common/assets/image/ichi/oneTokens/logo_256_vBTC.svg
 import IconOneWing from '../common/assets/image/ichi/oneTokens/logo_256_wing.svg';
 import IconLink from '../common/assets/image/ichi/tokens/chainlink.svg';
 import IconUsdc from '../common/assets/image/ichi/tokens/usdc.svg';
+import IconGoldinAuctionsLight from '../common/assets/image/light/icon_goldin_auctions_light.svg';
+import IconGoldinAuctionsDark from '../common/assets/image/dark/icon_goldin_auctions_dark.svg';
+import IconAccompliceBlockchainLight from '../common/assets/image/light/icon_accomplice_blockchain_light.svg';
+import IconAccompliceBlockchainDark from '../common/assets/image/dark/icon_accomplice_blockchain_dark.svg';
+import IconColliderVenturesLight from '../common/assets/image/light/icon_collider_ventures_light.svg';
+import IconColliderVenturesDark from '../common/assets/image/dark/icon_collider_ventures_dark.svg';
+import IconFirstMileVentures from '../common/assets/image/light/icon_goldin_auctions_light.svg';
 import Icon1Inch from '../common/assets/image/icons/icon_1inch.svg';
 import IconBalance from '../common/assets/image/icons/icon_balance.svg';
 import IconLoopring from '../common/assets/image/icons/icon_loopring.svg';
@@ -158,23 +165,26 @@ const GlobalStyle = createGlobalStyle`
     & .icon-bpt {
       content: url(${IconOneTokens})
     }
-    & .icon-Balancer {
+    & .icon-balancer {
       content: url(${IconBalance})
     }
-    & .icon-Loopring {
+    & .icon-loopring {
       content: url(${IconLoopring})
     }
-    & .icon-Moonbeam {
+    & .icon-moonbeam {
       content: url(${IconMoonbeam})
     }
-    & .icon-Solana {
+    & .icon-solana {
       content: url(${IconSolana})
     }
-    & .icon-Sushiswap {
+    & .icon-sushiswap {
       content: url(${IconSushiSwap})
     }
-    & .icon-Moon {
+    & .icon-moon {
       content: url(${IconMoon})
+    }
+    & .icon-first-mile-ventures {
+      content: url(${IconFirstMileVentures})
     }
 
     &.dark-mode {
@@ -236,16 +246,25 @@ const GlobalStyle = createGlobalStyle`
       /* ------------------------------------- */
       /* Icons  */
       /* ------------------------------------- */
-      & .icon-Quantstamp {
+      & .icon-quantstamp {
         content: url(${IconQuantstampLight})
       }
-      & .icon-Certik {
+      & .icon-certik {
         content: url(${IconCertikDark})
       }
-      & .icon-Solidified {
+      & .icon-solidified {
         content: url(${IconSolidifiedDark})
       }
-
+      & .icon-goldin-auctions {
+        content: url(${IconGoldinAuctionsDark})
+      }
+      & .icon-accomplice-blockchain {
+        content: url(${IconAccompliceBlockchainDark})
+      }
+      & .icon-collider-ventures {
+        content: url(${IconColliderVenturesDark})
+      }
+    
       /* ------------------------------------- */
       /* How it work section  */
       /* ------------------------------------- */
@@ -322,16 +341,25 @@ const GlobalStyle = createGlobalStyle`
       /* ------------------------------------- */
       /* Icons  */
       /* ------------------------------------- */
-      & .icon-Quantstamp {
+      & .icon-quantstamp {
         content: url(${IconQuantstampDark})
       }
-      & .icon-Certik {
+      & .icon-certik {
         content: url(${IconCertikLight})
       }
-      & .icon-Solidified {
+      & .icon-solidified {
         content: url(${IconSolidifiedLight})
       }
-
+      & .icon-goldin-auctions {
+        content: url(${IconGoldinAuctionsLight})
+      }
+      & .icon-accomplice-blockchain {
+        content: url(${IconAccompliceBlockchainLight})
+      }
+      & .icon-collider-ventures {
+        content: url(${IconColliderVenturesLight})
+      }
+    
       /* ------------------------------------- */
       /* How it work section  */
       /* ------------------------------------- */

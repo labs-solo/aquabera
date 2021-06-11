@@ -7,8 +7,8 @@
 	"howItWorksSection": {
 		"href": "https://docs.ichi.farm/onetokens/win-win-design-of-onetokens",
 		"header": {
-      "name": "How it works",
-      "text": "The ICHI oneToken Factory allows any user to mint a stablecoin with their favorite cryptocurrency. Tokens are always redeemable for $1, and create a community treasury to stimulate rewards"
+      "name": "The Decentralized Monetary Authority Model",
+      "text": "Decentralized Monetary Authorities allow any community to mint a stablecoin with their favorite cryptocurrency. Tokens are always redeemable for $1, and create a community treasury to stimulate rewards"
     }
 	},
 	"oneTokensSection": {
@@ -80,6 +80,18 @@
       {
         "name": "Solidified",
         "text": "Audited oneToken Factory"
+      },
+      {
+        "name": "Goldin Auctions",
+        "text": "Ecosystem and liquidity"
+      },
+      {
+        "name": "Accomplice Blockchain",
+        "text": "Ecosystem and liquidity"
+      },
+      {
+        "name": "Collider Ventures",
+        "text": "Ecosystem and liquidity"
       }
     ]
 	},
