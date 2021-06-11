@@ -2,7 +2,7 @@ import { themeGet } from '@styled-system/theme-get';
 import BackgroundImage from 'gatsby-background-image';
 import styled from 'styled-components';
 
-const BannerWrapper = styled.div`
+const BannerWrapperOuter = styled.div`
   /* ONLY ADDED WITH FLUID gatsby image */
   max-width: 1440px;
   /* height: 700px; */
@@ -11,6 +11,18 @@ const BannerWrapper = styled.div`
   background-color: linear-gradient(180deg, #019ffa 0%, #012c5f 100%);
   /* END */
   padding-top: 100px;
+  min-height: 802px;
+  overflow: hidden;
+`;
+
+export  const BannerWrapper = styled.div`
+  /* ONLY ADDED WITH FLUID gatsby image */
+  max-width: 1440px;
+  /* height: 700px; */
+  width: 100%;
+  margin: auto;
+  background-color: linear-gradient(180deg, #019ffa 0%, #012c5f 100%);
+  /* END */
   min-height: 802px;
   overflow: hidden;
 
@@ -44,6 +56,18 @@ const BannerWrapper = styled.div`
       flex-wrap: wrap;
       min-height: 100%;
     }
+  }
+`;
+
+export const StyledBackgroundGradient = styled.div`
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  padding-top: 20px !important;
+  height: 75px;
+  background-image: linear-gradient(to right, #7200d9, #015db9);
+  @media only screen and (max-width: 991px) {
+    padding-top: 20px;
   }
 `;
 
@@ -216,4 +240,4 @@ export const ButtonGroup = styled.div`
   }
 `;
 
-export default BannerWrapper;
+export default BannerWrapperOuter;
