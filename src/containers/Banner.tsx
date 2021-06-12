@@ -6,7 +6,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
-import BannerWrapper, { StyledBackgroundImage } from './banner.style';
+import BannerWrapperOuter, { StyledBackgroundImage, StyledBackgroundGradient, BannerWrapper } from './banner.style';
 
     // {/* <CountDown />  */}
 const Banner: React.FC = () => {
@@ -37,44 +37,53 @@ const Banner: React.FC = () => {
   );
   const imageData = data.file.childImageSharp.fixed;
   return (
-    <BannerWrapper id="home">
-      {/* <BannerContent className="image-banner-bg"> */}
-      <StyledBackgroundImage fixed={imageData}>
+    <BannerWrapperOuter id="home">
+      <StyledBackgroundGradient>
         <StyledFlexCenter>
-          {/* NOTE: This allows for a static image so the Flex container isn't reflowed */}
-          {/* NOTE also the transition: none, otherwise a black blip happens */}
-          <StaticImage
-            src="../common/assets/image/light/img_bubbles_onetokens.svg"
-            alt="One Token Bubbles"
-            placeholder="blurred"
-            layout="fixed"
-            quality={100}
-            width={665}
-            height={700}
-            style={{
-              transition: 'none'
-            }}
-          />
-          <StyledFlexColumn justifyContent="center" className="color-white banner-header ml-10">
-            <div className="heading">Stablecoins for any</div>
-            <div className="heading">cryptocurrency</div>
-
-            <div className="sub-heading mt-40">Mint tokens, earn yield, and</div>
-            <div className="sub-heading">incentivize activity with the world's first</div>
-            <div className="sub-heading">Decentralized Monetary Authority</div>
-
-            <StyledFlexStart className="mt-40">
-              <OutboundLink target="_blank" href="https://www.ichi.farm">
-                <Button className="text primary-button" title="Enter App" />
-              </OutboundLink>
-              <OutboundLink target="_blank" href="https://docs.ichi.farm/ichi/where-to-get-ichi" className="ml-10">
-                <Button className="text secondary-button" title="Get ICHI" />
-              </OutboundLink>
-            </StyledFlexStart>
-          </StyledFlexColumn>
+          <OutboundLink href="https://medium.com/ichifarm/announcing-ichi-v2-d69cebc47d25" target="_blank" className="medium color-white">
+            <h2>Announcing ICHI V2 &rarr;</h2>
+          </OutboundLink>
         </StyledFlexCenter>
-      </StyledBackgroundImage>
-    </BannerWrapper>
+      </StyledBackgroundGradient>
+      <BannerWrapper >
+        {/* <BannerContent className="image-banner-bg"> */}
+        <StyledBackgroundImage fixed={imageData}>
+          <StyledFlexCenter>
+            {/* NOTE: This allows for a static image so the Flex container isn't reflowed */}
+            {/* NOTE also the transition: none, otherwise a black blip happens */}
+            <StaticImage
+              src="../common/assets/image/light/img_bubbles_onetokens.svg"
+              alt="One Token Bubbles"
+              placeholder="blurred"
+              layout="fixed"
+              quality={100}
+              width={665}
+              height={700}
+              style={{
+                transition: 'none'
+              }}
+            />
+            <StyledFlexColumn justifyContent="center" className="color-white banner-header ml-10">
+              <div className="heading">Stablecoins for any</div>
+              <div className="heading">cryptocurrency</div>
+
+              <div className="sub-heading mt-40">Mint tokens, earn yield, and</div>
+              <div className="sub-heading">incentivize activity with the world's first</div>
+              <div className="sub-heading">Decentralized Monetary Authority</div>
+
+              <StyledFlexStart className="mt-40">
+                <OutboundLink target="_blank" href="https://www.ichi.farm">
+                  <Button className="text primary-button" title="Enter App" />
+                </OutboundLink>
+                <OutboundLink target="_blank" href="https://docs.ichi.farm/ichi/where-to-get-ichi" className="ml-10">
+                  <Button className="text secondary-button" title="Get ICHI" />
+                </OutboundLink>
+              </StyledFlexStart>
+            </StyledFlexColumn>
+          </StyledFlexCenter>
+        </StyledBackgroundImage>
+      </BannerWrapper>
+    </BannerWrapperOuter>
   );
 };
 
