@@ -20,7 +20,8 @@ import IconAccompliceBlockchainLight from '../common/assets/image/light/icon_acc
 import IconAccompliceBlockchainDark from '../common/assets/image/dark/icon_accomplice_blockchain_dark.svg';
 import IconColliderVenturesLight from '../common/assets/image/light/icon_collider_ventures_light.svg';
 import IconColliderVenturesDark from '../common/assets/image/dark/icon_collider_ventures_dark.svg';
-import IconFirstMileVentures from '../common/assets/image/light/icon_goldin_auctions_light.svg';
+import IconFirstMileVenturesLight from '../common/assets/image/light/icon_first_mile_ventures_light.svg';
+import IconFirstMileVenturesDark from '../common/assets/image/dark/icon_first_mile_ventures_dark.svg';
 import Icon1Inch from '../common/assets/image/icons/icon_1inch.svg';
 import IconBalance from '../common/assets/image/icons/icon_balance.svg';
 import IconLoopring from '../common/assets/image/icons/icon_loopring.svg';
@@ -183,9 +184,6 @@ const GlobalStyle = createGlobalStyle`
     & .icon-moon {
       content: url(${IconMoon})
     }
-    & .icon-first-mile-ventures {
-      content: url(${IconFirstMileVentures})
-    }
 
     &.dark-mode {
 
@@ -264,7 +262,10 @@ const GlobalStyle = createGlobalStyle`
       & .icon-collider-ventures {
         content: url(${IconColliderVenturesDark})
       }
-    
+      & .icon-first-mile-ventures {
+        content: url(${IconFirstMileVenturesDark})
+      }
+      
       /* ------------------------------------- */
       /* How it work section  */
       /* ------------------------------------- */
@@ -359,7 +360,10 @@ const GlobalStyle = createGlobalStyle`
       & .icon-collider-ventures {
         content: url(${IconColliderVenturesLight})
       }
-    
+      & .icon-first-mile-ventures {
+        content: url(${IconFirstMileVenturesLight})
+      }
+      
       /* ------------------------------------- */
       /* How it work section  */
       /* ------------------------------------- */
