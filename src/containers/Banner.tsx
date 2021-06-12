@@ -41,7 +41,7 @@ const Banner: React.FC = () => {
       <StyledBackgroundGradient>
         <StyledFlexCenter>
           <OutboundLink href="https://medium.com/ichifarm/announcing-ichi-v2-d69cebc47d25" target="_blank" className="medium color-white">
-            <h2>Announcing ICHI V2 &rarr;</h2>
+            Announcing ICHI V2 &rarr;
           </OutboundLink>
         </StyledFlexCenter>
       </StyledBackgroundGradient>

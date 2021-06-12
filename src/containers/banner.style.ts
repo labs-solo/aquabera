@@ -60,10 +60,12 @@ export  const BannerWrapper = styled.div`
 `;
 
 export const StyledBackgroundGradient = styled.div`
+  font-size: 19px;
+  font-weight: 500; 
   max-width: 1440px;
   width: 100%;
   margin: auto;
-  padding-top: 20px !important;
+  padding-top: 30px;
   height: 75px;
   background-image: linear-gradient(to right, #7200d9, #015db9);
   @media only screen and (max-width: 991px) {
