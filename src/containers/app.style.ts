@@ -14,8 +14,8 @@ import IconOneVBTC from '../common/assets/image/ichi/oneTokens/logo_256_vBTC.svg
 import IconOneWing from '../common/assets/image/ichi/oneTokens/logo_256_wing.svg';
 import IconLink from '../common/assets/image/ichi/tokens/chainlink.svg';
 import IconUsdc from '../common/assets/image/ichi/tokens/usdc.svg';
-import IconGoldinAuctionsLight from '../common/assets/image/light/icon_goldin_auctions_light.svg';
-import IconGoldinAuctionsDark from '../common/assets/image/dark/icon_goldin_auctions_dark.svg';
+import IconGoldinLight from '../common/assets/image/light/icon_goldin_light.svg';
+import IconGoldinDark from '../common/assets/image/dark/icon_goldin_dark.svg';
 import IconAccompliceBlockchainLight from '../common/assets/image/light/icon_accomplice_blockchain_light.svg';
 import IconAccompliceBlockchainDark from '../common/assets/image/dark/icon_accomplice_blockchain_dark.svg';
 import IconColliderVenturesLight from '../common/assets/image/light/icon_collider_ventures_light.svg';
@@ -253,8 +253,8 @@ const GlobalStyle = createGlobalStyle`
       & .icon-solidified {
         content: url(${IconSolidifiedDark})
       }
-      & .icon-goldin-auctions {
-        content: url(${IconGoldinAuctionsDark})
+      & .icon-goldin {
+        content: url(${IconGoldinDark})
       }
       & .icon-accomplice-blockchain {
         content: url(${IconAccompliceBlockchainDark})
@@ -351,8 +351,8 @@ const GlobalStyle = createGlobalStyle`
       & .icon-solidified {
         content: url(${IconSolidifiedLight})
       }
-      & .icon-goldin-auctions {
-        content: url(${IconGoldinAuctionsLight})
+      & .icon-goldin {
+        content: url(${IconGoldinLight})
       }
       & .icon-accomplice-blockchain {
         content: url(${IconAccompliceBlockchainLight})
