@@ -32,7 +32,7 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
     });
   };
 
-  // Bitcoin’s Stablecoin 
+  // Bitcoin’s Stablecoin
   // Link: https://www.ichi.farm/#/mint?wBTC
 
   // Ethereum’s Stablecoin
@@ -41,7 +41,7 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
   // oneLINK
   // Chainlink’s Stablecoin
   // const stablecoinOptions = [
-  //   { 
+  //   {
   //     key: 1,
   //     text: 'oneBTC',
   //     value: 1,
@@ -49,7 +49,7 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
   //       <OutboundLink target="_blank" href="https://www.ichi.farm/#/mint?wBTC">Bitcoin (oneBTC)</OutboundLink>
   //     )
   //   },
-  //   { 
+  //   {
   //     key: 2,
   //     text: 'oneETH',
   //     value: 2,
@@ -57,7 +57,7 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
   //       <OutboundLink target="_blank" href="https://www.ichi.farm/#/mint?eth">Ethereum (oneETH)</OutboundLink>
   //     )
   //   },
-  //   { 
+  //   {
   //     key: 3,
   //     text: 'oneLINK',
   //     value: 3,
@@ -65,7 +65,7 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
   //       <OutboundLink target="_blank" href="https://www.ichi.farm/#/mint?link">Chainlink (oneLINK)</OutboundLink>
   //     )
   //   },
-  //   { 
+  //   {
   //     key: 4,
   //     text: 'oneWING',
   //     value: 4,
@@ -76,107 +76,107 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
   // ];
 
   const developerOptions = [
-    { 
-      key: 1, 
-      text: 'Documentation', 
-      value: 1, 
+    {
+      key: 1,
+      text: 'Documentation',
+      value: 1,
       content: (
         <OutboundLink target="_blank" href="https://docs.ichi.farm/">Documentation</OutboundLink>
       )
     },
-    { 
+    {
       key: 2,
-      text: 'Github', 
+      text: 'Github',
       value: 2,
       content: (
           <OutboundLink target="_blank" href="https://github.com/ichifarm">Github</OutboundLink>
-      ) 
+      )
     },
-    { 
-      key: 3, 
-      text: 'Audits', 
+    {
+      key: 3,
+      text: 'Audits',
       value: 3,
       content: (
           <OutboundLink target="_blank" href="https://docs.ichi.farm/audits-and-risks/audits">Audits</OutboundLink>
-      ) 
+      )
     },
-    { 
-      key: 4, 
-      text: 'Bug Bounty', 
+    {
+      key: 4,
+      text: 'Bug Bounty',
       value: 4,
       content: (
-          <OutboundLink target="_blank" href="https://medium.com/ichifarm/ichi-farm-bug-bounties-d3a042e8088a">Bug Bounty</OutboundLink>
-      ) 
+          <OutboundLink target="_blank" href="https://immunefi.com/bounty/ichi/">Bug Bounty</OutboundLink>
+      )
     },
   ];
 
   const governanceOptions = [
-    { 
-      key: 1, 
-      text: 'ICHI Token', 
+    {
+      key: 1,
+      text: 'ICHI Token',
       value: 1,
       content: (
           <OutboundLink target="_blank" href="https://docs.ichi.farm/ichi/ichi-governance">ICHI Token</OutboundLink>
-      ) 
+      )
     },
-    { 
-      key: 2, 
-      text: 'Stablecoin Treasuries', 
+    {
+      key: 2,
+      text: 'Stablecoin Treasuries',
       value: 2,
       content: (
           <OutboundLink target="_blank" href="https://www.ichi.farm/#/treasury">Stablecoin Treasuries</OutboundLink>
-      ) 
+      )
     },
-    { 
-      key: 3, 
-      text: 'Forum', 
+    {
+      key: 3,
+      text: 'Forum',
       value: 3,
       content: (
           <OutboundLink target="_blank" href="https://docs.ichi.farm/ichi/ichi-governance">Forum</OutboundLink>
-      ) 
+      )
     },
-    { 
-      key: 4, 
-      text: 'Vote', 
+    {
+      key: 4,
+      text: 'Vote',
       value: 4,
       content: (
           <OutboundLink target="_blank" href="https://snapshot.page/#/ichi.eth">Vote</OutboundLink>
-      ) 
+      )
     },
   ];
 
   const communityOptions = [
-    { 
-      key: 1, 
-      text: 'Telegram', 
+    {
+      key: 1,
+      text: 'Telegram',
       value: 1,
       content: (
           <OutboundLink target="_blank" href="https://t.me/ichifarm">Telegram</OutboundLink>
-      ) 
+      )
     },
-    { 
-      key: 2, 
-      text: 'Discord', 
+    {
+      key: 2,
+      text: 'Discord',
       value: 2,
       content: (
           <OutboundLink target="_blank" href="https://discord.com/invite/Bm6pUHjHUC">Discord</OutboundLink>
-      ) 
+      )
     },
-    { 
-      key: 3, 
-      text: 'Twitter', 
+    {
+      key: 3,
+      text: 'Twitter',
       value: 3,
       content: (
           <OutboundLink target="_blank" href="https://twitter.com/ichifarm">Twitter</OutboundLink>
-      ) 
+      )
     },
-    { 
-      key: 4, 
-      text: 'Medium', 
+    {
+      key: 4,
+      text: 'Medium',
       value: 4,
       content: (
           <OutboundLink target="_blank" href="https://medium.com/ichifarm">Medium</OutboundLink>
-      ) 
+      )
     },
   ];
 
@@ -203,37 +203,37 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
     >
       {/* <li>
         <Menu compact style={semanticMenuStyles}>
-          <Dropdown 
-            text='Stablecoins' 
-            options={stablecoinOptions} 
-            style={semanticDropdownStyles} simple item 
+          <Dropdown
+            text='Stablecoins'
+            options={stablecoinOptions}
+            style={semanticDropdownStyles} simple item
           />
         </Menu>
       </li> */}
       <li>
         <Menu compact style={semanticMenuStyles} className="bg-color">
-          <Dropdown 
-            text='Developers' 
+          <Dropdown
+            text='Developers'
             options={developerOptions}
-            style={semanticDropdownStyles} simple item 
+            style={semanticDropdownStyles} simple item
           />
         </Menu>
       </li>
       <li>
         <Menu compact style={semanticMenuStyles} className="bg-color">
-          <Dropdown 
-            text='Governance' 
-            options={governanceOptions} 
-            style={semanticDropdownStyles} simple item 
+          <Dropdown
+            text='Governance'
+            options={governanceOptions}
+            style={semanticDropdownStyles} simple item
           />
         </Menu>
       </li>
       <li>
         <Menu compact style={semanticMenuStyles} className="bg-color">
-          <Dropdown 
-            text='Community' 
-            options={communityOptions} 
-            style={semanticDropdownStyles} simple item 
+          <Dropdown
+            text='Community'
+            options={communityOptions}
+            style={semanticDropdownStyles} simple item
           />
         </Menu>
       </li>
