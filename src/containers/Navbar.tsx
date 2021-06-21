@@ -169,7 +169,7 @@ const Navbar: React.FC<Props> = (props) => {
 
           <ThemeSwitcher onClick={props.toggleTheme} />
 
-          <OutboundLink target="_blank" href="https://www.ichi.farm" className="ml-20">
+          <OutboundLink target="_blank" href="https://app.ichi.org" className="ml-20">
             <Button className="text primary-button" title="Enter App" />
           </OutboundLink>
 
@@ -388,7 +388,7 @@ export default Navbar;
 //           </Search> */}
 //           {/* end of search */}
 
-//           <Link target="_blank" href="https://www.ichi.farm" offset={84}>
+//           <Link target="_blank" href="https://app.ichi.org" offset={84}>
 //             <Button className="trail" title="Launch App" />
 //           </Link>
 

@@ -6,7 +6,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
-import BannerWrapperOuter, { StyledBackgroundImage, StyledBackgroundGradient, BannerWrapper } from './banner.style';
+import BannerWrapperOuter, { BannerWrapper, StyledBackgroundGradient, StyledBackgroundImage } from './banner.style';
 
     // {/* <CountDown />  */}
 const Banner: React.FC = () => {
@@ -72,7 +72,7 @@ const Banner: React.FC = () => {
               <div className="sub-heading">Decentralized Monetary Authority</div>
 
               <StyledFlexStart className="mt-40">
-                <OutboundLink target="_blank" href="https://www.ichi.farm">
+                <OutboundLink target="_blank" href="https://app.ichi.org">
                   <Button className="text primary-button" title="Enter App" />
                 </OutboundLink>
                 <OutboundLink target="_blank" href="https://docs.ichi.farm/ichi/where-to-get-ichi" className="ml-10">

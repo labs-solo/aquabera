@@ -32,49 +32,6 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
     });
   };
 
-  // Bitcoin’s Stablecoin
-  // Link: https://www.ichi.farm/#/mint?wBTC
-
-  // Ethereum’s Stablecoin
-  // Link: https://www.ichi.farm/#/mint?eth
-
-  // oneLINK
-  // Chainlink’s Stablecoin
-  // const stablecoinOptions = [
-  //   {
-  //     key: 1,
-  //     text: 'oneBTC',
-  //     value: 1,
-  //     content: (
-  //       <OutboundLink target="_blank" href="https://www.ichi.farm/#/mint?wBTC">Bitcoin (oneBTC)</OutboundLink>
-  //     )
-  //   },
-  //   {
-  //     key: 2,
-  //     text: 'oneETH',
-  //     value: 2,
-  //     content: (
-  //       <OutboundLink target="_blank" href="https://www.ichi.farm/#/mint?eth">Ethereum (oneETH)</OutboundLink>
-  //     )
-  //   },
-  //   {
-  //     key: 3,
-  //     text: 'oneLINK',
-  //     value: 3,
-  //     content: (
-  //       <OutboundLink target="_blank" href="https://www.ichi.farm/#/mint?link">Chainlink (oneLINK)</OutboundLink>
-  //     )
-  //   },
-  //   {
-  //     key: 4,
-  //     text: 'oneWING',
-  //     value: 4,
-  //     content: (
-  //       <OutboundLink target="_blank" href="https://www.ichi.farm/#/mint?pwing">Wing (oneWING)</OutboundLink>
-  //     )
-  //   },
-  // ];
-
   const developerOptions = [
     {
       key: 1,
