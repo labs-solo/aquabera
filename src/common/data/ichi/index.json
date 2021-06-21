@@ -18,6 +18,10 @@
     },
     "oneTokens": [
       {
+        "name": "oneFIL",
+        "text": "A stablecoin for decentralized file storage"
+      },
+      {
         "name": "oneBTC",
         "text": "The stablecoin for the world's ultimate hodlers"
       },
@@ -83,7 +87,7 @@
       },
       {
         "name": "Goldin",
-        "text": "Ecosystem and liquidity"
+        "text": "Community PR Firm"
       },
       {
         "name": "Accomplice Blockchain",

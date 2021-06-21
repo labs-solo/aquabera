@@ -27,6 +27,7 @@ import IconBalance from '../common/assets/image/icons/icon_balance.svg';
 import IconLoopring from '../common/assets/image/icons/icon_loopring.svg';
 import IconMoon from '../common/assets/image/icons/icon_moon.svg';
 import IconMoonbeam from '../common/assets/image/icons/icon_moonbeam.svg';
+import IconOneFil from '../common/assets/image/icons/icon_onefil.svg';
 import IconSolana from '../common/assets/image/icons/icon_solana.svg';
 import IconSushiSwap from '../common/assets/image/icons/icon_sushiswap.svg';
 import IconTelegram from '../common/assets/image/icons/icon_telegram.svg';
@@ -156,6 +157,9 @@ const GlobalStyle = createGlobalStyle`
     }
     & .icon-oneVBTC {
       content: url(${IconOneVBTC})
+    }
+    & .icon-oneFIL {
+      content: url(${IconOneFil})
     }
     & .icon-USDC {
       content: url(${IconUsdc})
