@@ -30,7 +30,7 @@ export const StyledModalWrapper = styled.div`
 export const StyledModal = styled.div`
   z-index: 10060;
   position: fixed;
-  top: 270px;
+  top: 150px;
   left: 50%;
   margin-left: -350px;
   border-radius: 30px;
