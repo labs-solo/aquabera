@@ -34,6 +34,7 @@ import IconTelegram from '../common/assets/image/icons/icon_telegram.svg';
 import IconCertikLight from '../common/assets/image/light/icon_certik_light.svg';
 import IconQuantstampDark from '../common/assets/image/light/icon_quantstamp_dark.svg';
 import IconSolidifiedLight from '../common/assets/image/light/icon_solidified_light.svg';
+import ImageLogoV2 from '../common/assets/image/ichi/image_ichi_v2.svg';
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -116,6 +117,10 @@ const GlobalStyle = createGlobalStyle`
       line-height: 19px;
     }
 
+    & .long-button {
+      width: 250px;      
+    }
+
     & .color-white {
       color: #ffffff
     }
@@ -188,6 +193,9 @@ const GlobalStyle = createGlobalStyle`
     & .icon-moon {
       content: url(${IconMoon})
     }
+    & .image-logo-v2 {
+      content: url(${ImageLogoV2})
+    }
 
     &.dark-mode {
 
@@ -244,6 +252,9 @@ const GlobalStyle = createGlobalStyle`
         margin-bottom: auto;
         content: url(${darkTheme.images.theme})
       }
+      & .image-bg-popover {
+        content: url(${darkTheme.images.bgPopover})
+      }
 
       /* ------------------------------------- */
       /* Icons  */
@@ -283,6 +294,13 @@ const GlobalStyle = createGlobalStyle`
       & .top-waves-bg {
         background: url(${darkTheme.images.topWaves});
         background-repeat: no-repeat;
+        background-color: ${darkTheme.colors.contentInnerBgColor};
+      }
+
+      /* ------------------------------------- */
+      /* Popover */
+      /* ------------------------------------- */
+      & .inner-box-bg-color {
         background-color: ${darkTheme.colors.contentInnerBgColor};
       }
     }
@@ -342,6 +360,9 @@ const GlobalStyle = createGlobalStyle`
         margin-bottom: auto;
         content: url(${lightTheme.images.theme})
       }
+      & .image-bg-popover {
+        content: url(${darkTheme.images.bgPopover})
+      }
 
       /* ------------------------------------- */
       /* Icons  */
@@ -383,6 +404,13 @@ const GlobalStyle = createGlobalStyle`
         background-repeat: no-repeat;
         background-color: ${lightTheme.colors.contentInnerBgColor};
         /* background-color: linear-gradient(180deg, #EDF5FF 100%, #FFFFFF 0%); */
+      }
+
+      /* ------------------------------------- */
+      /* Popover */
+      /* ------------------------------------- */
+      & .inner-box-bg-color {
+        background-color: ${lightTheme.colors.contentInnerBgColor};
       }
     }
   }

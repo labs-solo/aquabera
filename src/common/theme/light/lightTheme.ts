@@ -20,6 +20,8 @@ import ImageHowItWorks from 'common/assets/image/light/img_howitworks.svg';
 import ImageIchiLogo from 'common/assets/image/light/img_logo_ichi_black.svg';
 import ImageIchi from 'common/assets/image/light/img_logo_ichi_symbol.svg';
 import ImageTheme from 'common/assets/image/light/img_theme.svg';
+import IconClose from 'common/assets/image/light/icon_close.svg';
+import ImageBgPopover from 'common/assets/image/ichi/background_blue.png';
 import { ColorsKey, IchiTheme, Theme } from 'common/models/theme';
 import { css } from 'styled-components';
 import lightColors from './lightColors';
@@ -52,7 +54,11 @@ export const lightTheme: IchiTheme = {
     howItWorks: ImageHowItWorks,
     communityBubbles: ImageCommunityBubbles,
     topWaves: ImageTopWaves,
-    theme: ImageTheme
+    theme: ImageTheme,
+    bgPopover: ImageBgPopover
+  },
+  icons:{
+    close: IconClose
   },
   breakpoints: ['576px', '768px', '991px', '1220px'],
   space: [0, 5, 8, 10, 15, 20, 25, 30, 33, 35, 40, 50, 60, 70, 80, 85, 90, 100],

@@ -65,6 +65,10 @@ export type IchiTheme = {
     communityBubbles: string;
     topWaves: string;
     theme: string;
+    bgPopover: string;
+  },
+  icons:{
+    close: string;
   },
   breakpoints: string[];
   space: number[];
