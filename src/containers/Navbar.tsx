@@ -14,6 +14,9 @@ import React, { useRef, useState } from 'react';
 // import Scrollspy from 'react-scrollspy';
 // import { MenuArea, MobileMenu, NavbarWrapper } from './navbar.style';
 import { MenuArea, NavbarWrapper } from './navbar.style';
+import ModalContainer from 'containers/ModalContainer';
+import useModal from 'hooks/useModal';
+
 
 // index.json navMenu []
 // {
@@ -24,6 +27,7 @@ import { MenuArea, NavbarWrapper } from './navbar.style';
 // }
 type Props = {
   toggleTheme: Function;
+  refetchUserInfo: Function;
 }
 
 const Navbar: React.FC<Props> = (props) => {
@@ -110,8 +114,10 @@ const Navbar: React.FC<Props> = (props) => {
   //     mobileMenu: false,
   //   });
   // };
+  const { isShowing: isShowingModal, toggle: toggleModal } = useModal();
 
   return (
+    <>
     <NavbarWrapper className="navbar bg-color">
       <Container>
         <Image
@@ -169,9 +175,8 @@ const Navbar: React.FC<Props> = (props) => {
 
           <ThemeSwitcher onClick={props.toggleTheme} />
 
-          <OutboundLink target="_blank" href="https://app.ichi.org" className="ml-20">
-            <Button className="text primary-button" title="Enter App" />
-          </OutboundLink>
+          <Button className="text primary-button" title="Enter App" onClick={toggleModal} />
+
 
           {/* Mobile Hamburger */}
           {/* Not much to show here right now, so no reason to show this */}
@@ -220,6 +225,13 @@ const Navbar: React.FC<Props> = (props) => {
       </MobileMenu> */}
       {/* end of mobile menu */}
     </NavbarWrapper>
+    <ModalContainer
+      key="Modal"
+      isShowing={isShowingModal}
+      toggle={() => toggleModal()}
+      refetchUserInfo={props.refetchUserInfo}
+    />
+    </>
   );
 };
 
