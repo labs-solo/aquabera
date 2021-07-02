@@ -2,13 +2,13 @@
 import Button from 'common/components/Button';
 // import Image from 'common/components/Image';
 import { StyledFlexCenter, StyledFlexColumn, StyledFlexStart } from 'common/styles/common.styles';
+import ModalContainer from 'containers/ModalContainer';
 import { graphql, useStaticQuery } from 'gatsby';
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import { StaticImage } from 'gatsby-plugin-image';
+import useModal from 'hooks/useModal';
 import React from 'react';
 import BannerWrapperOuter, { BannerWrapper, StyledBackgroundGradient, StyledBackgroundImage } from './banner.style';
-import useModal from 'hooks/useModal';
-import ModalContainer from 'containers/ModalContainer';
 
 type Props = {
   refetchUserInfo: Function;
@@ -49,8 +49,8 @@ const Banner: React.FC<Props> = (props) => {
       <BannerWrapperOuter id="home">
         <StyledBackgroundGradient>
           <StyledFlexCenter>
-            <OutboundLink href="https://medium.com/ichifarm/announcing-ichi-v2-d69cebc47d25" target="_blank" className="medium color-white">
-              Announcing ICHI V2 &rarr;
+            <OutboundLink href="https://docs.ichi.farm/" target="_blank" className="medium color-white">
+              Read the Docs to learn about ICHI V2 &rarr;
             </OutboundLink>
           </StyledFlexCenter>
         </StyledBackgroundGradient>
