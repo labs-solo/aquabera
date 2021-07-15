@@ -18,8 +18,8 @@
     },
     "oneTokens": [
       {
-        "name": "oneFIL",
-        "text": "A stablecoin for decentralized file storage"
+        "name": "one1INCH",
+        "text": "A stablecoin for better payments, incentives, and rewards in DeFi"
       },
       {
         "name": "oneBTC",
@@ -30,16 +30,20 @@
         "text": "A stablecoin for the first world computer"
       },
       {
+        "name": "oneFIL",
+        "text": "A stablecoin for decentralized file storage"
+      },
+      {
         "name": "oneLINK",
         "text": "Demonstrating the ability to create a stablecoin for large cap projects"
       },
       {
-        "name": "oneWING",
-        "text": "Borrow and lend on wing.finance"
-      },
-      {
         "name": "oneVBTC",
         "text": "Help support the peg of VBTC"
+      },
+      {
+        "name": "oneWING",
+        "text": "Borrow and lend on wing.finance"
       }
     ]
 	},

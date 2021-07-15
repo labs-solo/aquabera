@@ -28,6 +28,7 @@ import IconLoopring from '../common/assets/image/icons/icon_loopring.svg';
 import IconMoon from '../common/assets/image/icons/icon_moon.svg';
 import IconMoonbeam from '../common/assets/image/icons/icon_moonbeam.svg';
 import IconOneFil from '../common/assets/image/icons/icon_onefil.svg';
+import IconOne1Inch from '../common/assets/image/icons/icon_one1inch.svg';
 import IconSolana from '../common/assets/image/icons/icon_solana.svg';
 import IconSushiSwap from '../common/assets/image/icons/icon_sushiswap.svg';
 import IconTelegram from '../common/assets/image/icons/icon_telegram.svg';
@@ -165,6 +166,9 @@ const GlobalStyle = createGlobalStyle`
     }
     & .icon-oneFIL {
       content: url(${IconOneFil})
+    }
+    & .icon-one1INCH {
+      content: url(${IconOne1Inch})
     }
     & .icon-USDC {
       content: url(${IconUsdc})
