@@ -18,7 +18,14 @@ const PartnersSection: React.FC = () => {
     }
   `);
 
-  const section = Data.ichiJson.rssFeedSection;
+  // const section = Data.ichiJson.rssFeedSection;
+  const section = {
+    "header": "Latest News",
+    "feed": "https://medium.com/feed/ichifarm",
+    "url": "https://medium.com/ichifarm",
+    "rss2json": "https://api.rss2json.com/v1/api.json?rss_url="
+  }
+
   return (
     <Container>
       <Widget data={section}></Widget>
