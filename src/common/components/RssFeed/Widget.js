@@ -1,15 +1,10 @@
-import React, {Component, useState} from 'react';
-// import Parser from 'rss-parser';
+import React from 'react';
 import Button from 'common/components/Button';
 import Card from './Card';
 import './Card.css';
-import Container from 'common/components/UI/Container';
 import SectionHeader from 'common/components/SectionHeader';
-import { navigate } from 'gatsby';
-// import RSSfeed from 'common/data/ichi/index.js';
 
 class Widget extends React.Component {
-    feedURL;
 
     constructor(props) {
         super(props)
@@ -21,16 +16,12 @@ class Widget extends React.Component {
     } 
 
     handleClick() {
-        navigate(this.props.data.url);
-        console.log("--- "+this.props.data.url)
+        window.open(this.props.data.url, "_blank");
     }
-    
 
     componentDidMount() {
-        // fetch(urlForFeedToJson(this.props.mediumRSSFeedLink))
         fetch(this.props.data.rss2json + this.props.data.feed)
             .then(response => {
-                console.log(response);
                 if (!response.ok) {
                     throw Error("Network request failed")
                 }        
@@ -39,9 +30,7 @@ class Widget extends React.Component {
             .then(data => data.json())
             .then(data => {   
                 const dataItems = data.items
-                // const mediumPosts = dataItems.filter(item => item.categories.length > 0)
                 const mediumPosts = dataItems.filter(item => !item.title.includes("Weekly Review")  )
-                console.log(mediumPosts);
                 this.setState({
                     mediumPosts: mediumPosts,
                 }) 
@@ -59,7 +48,6 @@ class Widget extends React.Component {
         
         const mediumPosts = this.state.mediumPosts
         const posts = mediumPosts.length > 3 ? mediumPosts.slice(0, 3) : mediumPosts;
-        // const posts = mediumPosts;
         
         const cardCarousels = posts.map((post, index) => 
           <div className={this.state.active === index ? 'carousel-item col-12 col-sm-12 col-md-6 col-lg-4 active' : 'carousel-item col-12 col-sm-12 col-md-6 col-lg-4'} key={index}> 
