@@ -1,11 +1,11 @@
 import Container from 'common/components/UI/Container';
-import { IchiJson } from 'common/models/ichiJson';
-import { graphql, useStaticQuery } from 'gatsby';
+// import { IchiJson } from 'common/models/ichiJson';
+// import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import Widget from 'common/components/RssFeed/Widget.js'
 
 const PartnersSection: React.FC = () => {
-  const Data = useStaticQuery<IchiJson>(graphql`
+  /* const Data = useStaticQuery<IchiJson>(graphql`
     query {
       ichiJson {
         rssFeedSection {
@@ -16,7 +16,7 @@ const PartnersSection: React.FC = () => {
         }
       }
     }
-  `);
+  `); */
 
   // const section = Data.ichiJson.rssFeedSection;
   const section = {
