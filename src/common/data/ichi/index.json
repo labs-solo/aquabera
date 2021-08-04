@@ -107,6 +107,12 @@
       }
     ]
 	},
+  "rssFeedSection":{
+    "header": "Latest News",
+    "feed": "https://medium.com/feed/ichifarm",
+    "url": "https://medium.com/ichifarm",
+    "rss2json": "https://api.rss2json.com/v1/api.json?rss_url="
+  },
 	"joinTheCommunitySection": {
     "header": {
       "name": "Join the community",

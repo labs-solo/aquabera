@@ -1,0 +1,22 @@
+.card{
+    width: 33%;
+    float: left;
+    padding: 30px;
+}
+.card-body{
+    text-align: center;
+}
+.card-img-top{
+    border-radius: 10px;
+}
+.carousel{
+    clear: both;
+}
+.clear{
+    clear:both;
+}
+hr{
+    height: 0;
+    border-top: 1px solid #dddddd;
+    margin-bottom: 50px;
+}
