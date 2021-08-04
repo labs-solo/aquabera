@@ -11,7 +11,6 @@ import React from 'react';
 import BannerWrapperOuter, { BannerWrapper, StyledBackgroundGradient, StyledBackgroundImage } from './banner.style';
 
 type Props = {
-  refetchUserInfo: Function;
 }
 
     // {/* <CountDown />  */}
@@ -95,7 +94,6 @@ const Banner: React.FC<Props> = (props) => {
         key="Modal"
         isShowing={isShowingModal}
         toggle={() => toggleModal()}
-        refetchUserInfo={props.refetchUserInfo}
       />
     </>
   );

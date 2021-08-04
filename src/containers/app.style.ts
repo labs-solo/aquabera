@@ -225,6 +225,10 @@ const GlobalStyle = createGlobalStyle`
         color: ${darkTheme.colors.primary}
       }
 
+      & .link-color {
+        color: ${darkTheme.colors.headingColor}
+      }
+
       /* ------------------------------------- */
       /* Images  */
       /* ------------------------------------- */
@@ -331,6 +335,10 @@ const GlobalStyle = createGlobalStyle`
 
       & .primary-color {
         color: ${lightTheme.colors.primary}
+      }
+      
+      & .link-color {
+        color: ${darkTheme.colors.headingColor}
       }
 
       /* ------------------------------------- */

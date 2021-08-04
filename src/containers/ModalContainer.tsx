@@ -11,7 +11,6 @@ import SectionHeaderSubText from 'common/components/SectionHeaderSubText';
 type Props = {
   isShowing: boolean;
   toggle: (event?: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
-  refetchUserInfo: Function;
 };
 
 const ModalContainer: React.FC<Props> = (props) => {

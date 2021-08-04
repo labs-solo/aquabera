@@ -28,6 +28,13 @@ type PartnersSection = {
   partners: Header[]
 }
 
+type RssFeedSection = {
+  header: string;
+  url: string;
+  feed: string;
+  rss2json: string;
+}
+
 type JoinTheCommunitySection = {
   header: Header;
 }
@@ -38,6 +45,7 @@ export type IchiJson = {
     howItWorksSection: HowItWorksSection;
     oneTokensSection: OneTokensSection;
     partnersSection: PartnersSection;
+    rssFeedSection: RssFeedSection;
     joinTheCommunitySection: JoinTheCommunitySection;
   };
 };
