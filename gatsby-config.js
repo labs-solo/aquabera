@@ -23,9 +23,9 @@ module.exports = {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: [
-          "G-XNQQKHVS1N", // Google Analytics / GA
+          'G-XNQQKHVS1N', // Google Analytics / GA
         ],
-        cookieDomain: "ichi.org",
+        cookieDomain: 'ichi.org',
       },
     },
     {
@@ -67,6 +67,6 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
+    'gatsby-plugin-offline',
   ],
 };
