@@ -31,6 +31,7 @@ import IconOneFil from '../common/assets/image/icons/icon_onefil.svg';
 import IconOneFuse from '../common/assets/image/icons/icon_onefuse.svg';
 import IconOneMph from '../common/assets/image/icons/icon_onemph.svg';
 import IconOnePerl from '../common/assets/image/icons/icon_oneperl.svg';
+import IconOneUni from '../common/assets/image/icons/icon_oneuni.svg';
 import IconOne1Inch from '../common/assets/image/icons/icon_one1inch.svg';
 import IconSolana from '../common/assets/image/icons/icon_solana.svg';
 import IconSushiSwap from '../common/assets/image/icons/icon_sushiswap.svg';
@@ -178,6 +179,9 @@ const GlobalStyle = createGlobalStyle`
     }
     & .icon-onePERL {
       content: url(${IconOnePerl})
+    }
+    & .icon-oneUNI {
+      content: url(${IconOneUni})
     }
     & .icon-one1INCH {
       content: url(${IconOne1Inch})
