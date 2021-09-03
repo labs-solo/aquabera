@@ -40,6 +40,12 @@ import IconCertikLight from '../common/assets/image/light/icon_certik_light.svg'
 import IconQuantstampDark from '../common/assets/image/light/icon_quantstamp_dark.svg';
 import IconSolidifiedLight from '../common/assets/image/light/icon_solidified_light.svg';
 import ImageLogoV2 from '../common/assets/image/ichi/image_ichi_v2.svg';
+import ImageCoinTelegraph from '../common/assets/image/ichi/media/cointelegraph.png';
+import ImageDefiant from '../common/assets/image/ichi/media/defiant.png';
+import ImageDefiyield from '../common/assets/image/ichi/media/defiyield.png';
+import ImageDecrypt from '../common/assets/image/ichi/media/decrypt.png';
+import ImageCoinTribune from '../common/assets/image/ichi/media/cointribune.png';
+import ImageInsideTrack from '../common/assets/image/ichi/media/inside-track.jpg';
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -216,6 +222,28 @@ const GlobalStyle = createGlobalStyle`
     & .image-logo-v2 {
       content: url(${ImageLogoV2})
     }
+    /* ------------------------------------- */
+    /* Media logos  */
+    /* ------------------------------------- */
+    & .image-cointelegraph {
+      content: url(${ImageCoinTelegraph})
+    }
+    & .image-defiant {
+      content: url(${ImageDefiant})
+    }
+    & .image-defiyield {
+      content: url(${ImageDefiyield})
+    }
+    & .image-decrypt {
+      content: url(${ImageDecrypt})
+    }
+    & .image-cointribune {
+      content: url(${ImageCoinTribune})
+    }
+    & .image-insidetrack {
+      content: url(${ImageInsideTrack})
+    }
+
 
     &.dark-mode {
 
@@ -231,6 +259,12 @@ const GlobalStyle = createGlobalStyle`
 
       & .sub-heading-color {
         color: ${darkTheme.colors.subHeadingColor}
+      }
+
+      & .media-section-bg-color {
+        padding: 60px 0 40px 0;
+        margin-top: 40px;
+        background: #cccccc;
       }
 
       & .primary-text-color {
@@ -343,6 +377,10 @@ const GlobalStyle = createGlobalStyle`
 
       & .sub-heading-color {
         color: ${lightTheme.colors.subHeadingColor}
+      }
+
+      & .media-section-bg-color {
+        background-image: linear-gradient(${lightTheme.colors.bgColor}, #efefef)
       }
 
       & .primary-text-color {

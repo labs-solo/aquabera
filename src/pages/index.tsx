@@ -1,6 +1,7 @@
 import App from 'App';
 import Banner from 'containers/Banner';
 import CopywriteSection from 'containers/CopywriteSection';
+import MediaSection from 'containers/MediaSection';
 import HowItWorksSection from 'containers/HowItWorksSection';
 import JoinTheCommunitySection from 'containers/JoinTheCommunitySection';
 import OneTokensSection from 'containers/OneTokensSection';
@@ -17,6 +18,7 @@ const Index: React.FC = () => {
       <PartnersSection />
       <RssFeedSection />
       <JoinTheCommunitySection />
+      <MediaSection />
       <CopywriteSection />
     </App>
   );
