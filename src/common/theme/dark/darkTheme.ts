@@ -22,6 +22,8 @@ import ImageIchiLogo from 'common/assets/image/dark/img_logo_ichi_white.svg';
 import ImageTheme from 'common/assets/image/dark/img_theme.svg';
 import ImageHowItWorks from 'common/assets/image/light/img_howitworks.svg';
 import IconClose from 'common/assets/image/dark/icon_close.svg';
+import ImageLeftArrow from 'common/assets/image/dark/img_left_arrow.png';
+import ImageRightArrow from 'common/assets/image/dark/img_right_arrow.png';
 import ImageBgPopover from 'common/assets/image/ichi/background_blue.png';
 import { ColorsKey, IchiTheme, Theme } from 'common/models/theme';
 import { css } from 'styled-components';
@@ -55,8 +57,10 @@ export const darkTheme: IchiTheme = {
     communityBubbles: ImageCommunityBubbles,
     topWaves: ImageTopWaves,
     theme: ImageTheme,
-    bgPopover: ImageBgPopover
-  },
+    bgPopover: ImageBgPopover,
+    leftArrow: ImageLeftArrow,
+    rightArrow: ImageRightArrow
+},
   icons:{
     close: IconClose
   },

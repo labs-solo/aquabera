@@ -279,6 +279,14 @@ const GlobalStyle = createGlobalStyle`
         color: ${darkTheme.colors.headingColor}
       }
 
+      & .quote-carousel-left-arrow{
+        background-image: url(${darkTheme.images.leftArrow})
+      }
+
+      & .quote-carousel-right-arrow{
+        background-image: url(${darkTheme.images.rightArrow})
+      }
+
       /* ------------------------------------- */
       /* Images  */
       /* ------------------------------------- */
@@ -395,6 +403,13 @@ const GlobalStyle = createGlobalStyle`
         color: ${darkTheme.colors.headingColor}
       }
 
+      & .quote-carousel-left-arrow{
+        background-image: url(${lightTheme.images.leftArrow})
+      }
+
+      & .quote-carousel-right-arrow{
+        background-image: url(${lightTheme.images.rightArrow})
+      }
       /* ------------------------------------- */
       /* Images  */
       /* ------------------------------------- */

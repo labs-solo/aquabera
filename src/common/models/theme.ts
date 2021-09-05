@@ -66,6 +66,8 @@ export type IchiTheme = {
     topWaves: string;
     theme: string;
     bgPopover: string;
+    leftArrow: string;
+    rightArrow: string;
   },
   icons:{
     close: string;
