@@ -11,6 +11,9 @@ pr: none
 
 name: $(Date:yyyyMMdd)$(Rev:r)
 
+pool:
+  vmImage: "ubuntu-latest"
+
 stages:
   - stage: staging
     displayName: Deploy to Staging
