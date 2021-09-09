@@ -16,6 +16,7 @@ import React, { useRef, useState } from 'react';
 import { MenuArea, NavbarWrapper } from './navbar.style';
 import ModalContainer from 'containers/ModalContainer';
 import useModal from 'hooks/useModal';
+import Link from 'common/components/Link';
 
 
 // index.json navMenu []
@@ -120,14 +121,18 @@ const Navbar: React.FC<Props> = (props) => {
     <>
     <NavbarWrapper className="navbar bg-color">
       <Container>
-        <Image
-          className="image-ichi-logo main-logo"
-          alt="ICHI Logo"
-        />
-        <Image
-          className="image-ichi-logo logo-alt"
-          alt="ICHI Logo"
-        />
+        <Link href="/">
+          <Image
+            className="image-ichi-logo main-logo"
+            alt="ICHI Logo"
+          />
+        </Link>
+        <Link href="/">
+          <Image
+            className="image-ichi-logo logo-alt"
+            alt="ICHI Logo"
+          />
+        </Link>
         {/* <Logo
           href="/"
           logoSrc={LogoImage}

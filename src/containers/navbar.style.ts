@@ -58,7 +58,7 @@ export const MenuArea = styled.div`
       margin-right: 13px;
     }
     // Hide the dropdown menues when small enough
-    @media only screen and (max-width: 750px) {
+    @media only screen and (max-width: 800px) {
       display: none;
     }
     li {
@@ -71,6 +71,12 @@ export const MenuArea = styled.div`
       }
       &:last-child {
         margin-right: 0;
+      }
+    }
+
+    @media only screen and (max-width: 880px) {
+      li {
+        margin: 0 0px;
       }
     }
   }
