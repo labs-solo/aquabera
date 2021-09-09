@@ -127,15 +127,7 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
       content: (
           <OutboundLink target="_blank" href="https://twitter.com/ichifarm">Twitter</OutboundLink>
       )
-    },
-    {
-      key: 4,
-      text: 'Medium',
-      value: 4,
-      content: (
-          <OutboundLink target="_blank" href="https://medium.com/ichifarm">Medium</OutboundLink>
-      )
-    },
+    }
   ];
 
   const newsOptions = [
