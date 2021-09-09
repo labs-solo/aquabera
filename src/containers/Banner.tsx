@@ -72,12 +72,13 @@ const Banner: React.FC<Props> = (props) => {
                 }}
               />
               <StyledFlexColumn justifyContent="center" className="color-white banner-header ml-10">
-                <div className="heading">Stablecoins for any</div>
-                <div className="heading">cryptocurrency</div>
+                <div className="heading">Create a branded dollar for</div>
+                <div className="heading">your community</div>
 
-                <div className="sub-heading mt-40">Mint tokens, earn yield, and</div>
-                <div className="sub-heading">incentivize activity with the world's first</div>
-                <div className="sub-heading">Decentralized Monetary Authority</div>
+                <div className="sub-heading mt-40">With ICHI, every community gets</div>
+                <div className="sub-heading">their own token worth $1. It is minted with</div>
+                <div className="sub-heading">each community's cryptocurrency.</div>
+                <div className="sub-heading">It is redeemable 1-for-1 for USD Coin (USDC).</div>
 
                 <StyledFlexStart className="mt-40">
                 <Button className="text primary-button" title="Enter App" onClick={toggleModal} />
