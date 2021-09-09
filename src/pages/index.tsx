@@ -1,6 +1,5 @@
 import App from 'App';
 import Banner from 'containers/Banner';
-import CopywriteSection from 'containers/CopywriteSection';
 import MediaSection from 'containers/MediaSection';
 import QuoteCarouselSection from 'containers/QuoteCarouselSection';
 import HowItWorksSection from 'containers/HowItWorksSection';
@@ -21,7 +20,6 @@ const Index: React.FC = () => {
       <RssFeedSection />
       <JoinTheCommunitySection />
       <MediaSection />
-      <CopywriteSection />
     </App>
   );
 };

@@ -3,6 +3,7 @@ import { darkTheme } from 'common/theme/dark/darkTheme';
 import { lightTheme } from 'common/theme/light/lightTheme';
 import SEO from 'components/seo';
 import GlobalStyle, { ContentWrapper } from 'containers/app.style';
+import CopywriteSection from 'containers/CopywriteSection';
 import Navbar from 'containers/Navbar';
 import React from 'react';
 import Sticky from 'react-stickynode';
@@ -24,7 +25,7 @@ const App: React.FC = (props) => {
         <ContentWrapper>
           {props.children}
         </ContentWrapper>
-        {/* <Footer /> */}
+        <CopywriteSection />
       </ContentWrapper>
     </ThemeProvider>
   );

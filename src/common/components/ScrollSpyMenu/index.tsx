@@ -5,6 +5,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Scrollspy from 'react-scrollspy';
 import { Dropdown, Menu } from 'semantic-ui-react';
 import { DrawerContext } from '../../contexts/DrawerContext';
+import Link from 'common/components/Link';
 
 const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
   const { dispatch } = useContext(DrawerContext);
@@ -137,6 +138,25 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
     },
   ];
 
+  const newsOptions = [
+    {
+      key: 1,
+      text: 'Medium',
+      value: 1,
+      content: (
+          <OutboundLink target="_blank" href="https://medium.com/ichifarm">Medium</OutboundLink>
+      )
+    },
+    {
+      key: 2,
+      text: 'In the News',
+      value: 2,
+      content: (
+          <Link href="/news/">In the News</Link>
+      )
+    }
+  ];
+
   const semanticMenuStyles = {
     'border': 'none',
     'boxShadow': 'none'
@@ -190,6 +210,15 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
           <Dropdown
             text='Community'
             options={communityOptions}
+            style={semanticDropdownStyles} simple item
+          />
+        </Menu>
+      </li>
+      <li>
+        <Menu compact style={semanticMenuStyles} className="bg-color">
+          <Dropdown
+            text='News & Media'
+            options={newsOptions}
             style={semanticDropdownStyles} simple item
           />
         </Menu>

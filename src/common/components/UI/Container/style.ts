@@ -27,7 +27,7 @@ const ContainerWrapper = styled.div<Props>`
       padding-right: 30px;
     `};
   @media (min-width: 768px) {
-    max-width: 750px;
+    /*max-width: 750px;*/
     width: 100%;
   }
   @media (min-width: 992px) {

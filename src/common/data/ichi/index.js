@@ -4,20 +4,169 @@
 /* ------------------------------------ */
 // Features data section
 /* ------------------------------------ */
-import featureIcon1 from 'common/assets/image/cryptoModern/feature-1.png';
+/* import featureIcon1 from 'common/assets/image/cryptoModern/feature-1.png';
 import featureIcon2 from 'common/assets/image/cryptoModern/feature-2.png';
 import featureIcon3 from 'common/assets/image/cryptoModern/feature-3.png';
 import featureIcon4 from 'common/assets/image/cryptoModern/feature-4.png';
-import logo from 'common/assets/image/cryptoModern/logo.png';
+import logo from 'common/assets/image/cryptoModern/logo.png'; */
 /* ------------------------------------ */
 // Wallet  data section
 /* ------------------------------------ */
-import walletIcon1 from 'common/assets/image/cryptoModern/wallet1.png';
+/* import walletIcon1 from 'common/assets/image/cryptoModern/wallet1.png';
 import walletIcon2 from 'common/assets/image/cryptoModern/wallet2.png';
-import walletIcon3 from 'common/assets/image/cryptoModern/wallet3.png';
+import walletIcon3 from 'common/assets/image/cryptoModern/wallet3.png'; */
+
+export const mediaPosts=[
+  {
+    id: 18,
+    author: "Essential Crypto Podcast", 
+    title: "Inside Track with Bryan Gross from ICHI", 
+    exerpt: "This episode is presented by Bryan Gross Network Steward of ICHI. ICHI is a community that has enabled many other projects to govern their own in-house stablecoins including the likes of Filecoin and Chainlink.", 
+    link: "https://podcasts.apple.com/us/podcast/inside-track-with-bryan-gross-from-ichi/id1557938964?i=1000532027111", 
+    thumbnail: "inside-track.jpg", 
+    date: new Date("2021-08-14 12:00:00")},
+  {
+    id: 17,
+    author: "The Chain Bulletin", 
+    title: "Ren Protocol to Launch Community-Governed Stablecoins", 
+    exerpt: "Begining of the article", 
+    link: "https://chainbulletin.com/ren-protocol-to-launch-community-governed-stablecoins/", 
+    thumbnail: "chain-bulletin.jpg", 
+    date: new Date("2021-08-11 12:00:00")},
+  {
+    id: 16,
+    author: "CryptoNinjas", 
+    title: "ICHI supports cross-chain platform Ren in making stablecoins for BTC and other tokens available", 
+    exerpt: "Begining of the article", 
+    link: "https://www.cryptoninjas.net/2021/08/10/ren-btc-stablecoin-ichi-crosschain-ethereum-dapps/", 
+    thumbnail: "cryptoninjas.jpg", 
+    date: new Date("2021-08-10 12:00:00")},
+  {
+    id: 15,
+    author: "DefiYield", 
+    title: "How Does Ichi Work? The Decentralized Monetary Authority Model", 
+    exerpt: "", 
+    link: "https://www.youtube.com/watch?v=dtyrsnqJHMA", 
+    thumbnail: "defiyield.jpg", 
+    date: new Date("2021-07-28 12:00:00")},
+  {
+    id: 14,
+    author: "Crowdfund Insider", 
+    title: "Fuse Network, a Blockchain Infrastructure Provider for Mobile Payments, Partners ICHI to Give Users Control Over their Funds", 
+    exerpt: "Begining of the article", 
+    link: "https://www.crowdfundinsider.com/2021/07/178032-fuse-network-a-blockchain-infrastructure-provider-for-mobile-payments-partners-ichi-to-give-users-control-over-their-funds/", 
+    thumbnail: "crowdfund-insider.jpg", 
+    date: new Date("2021-07-19 12:00:00")},
+  {
+    id: 13,
+    author: "Hashoshi's Crypto Over Coffee YouTube Show", 
+    title: "1INCH Network Launches Stablecoin", 
+    exerpt: "Begining of the article", 
+    link: "https://www.youtube.com/watch?v=vfKKO-L_H7k", 
+    thumbnail: "hashoshi.jpg", 
+    date: new Date("2021-07-03 12:00:00")},
+  {
+    id: 12,
+    author: "The Chain Bulletin", 
+    title: "1inch Network Launching USD-Pegged Stablecoin", 
+    exerpt: "", 
+    link: "https://chainbulletin.com/1inch-network-launching-usd-pegged-stablecoin/", 
+    thumbnail: "chain-bulletin.jpg", 
+    date: new Date("2021-07-02 12:00:00")},
+  {
+    id: 11,
+    author: "CoinTribune", 
+    title: "1INCH Network to launch its own stablecoin", 
+    exerpt: "", 
+    link: "https://www.cointribune.com/en/blockchain-en/ecosystem/1inch-network-to-launch-its-own-stablecoin/", 
+    thumbnail: "cointribune.png", 
+    date: new Date("2021-07-02 12:00:00")},
+  {
+    id: 10,
+    author: "Crowdfund Insider", 
+    title: "Decentralized Monetary Authorities Protocol ICHI Partners 1inch Network to Launch New Stablecoin", 
+    exerpt: "", 
+    link: "https://www.crowdfundinsider.com/2021/07/177391-decentralized-monetary-authorities-protocol-ichi-partners-1inch-network-to-launch-new-stablecoin/", 
+    thumbnail: "crowdfund-insider.jpg", 
+    date: new Date("2021-07-02 12:00:00")},
+  {
+    id: 9,
+    author: "Cryptopolitan ", 
+    title: "1inch partners ICHI to unveil dollar-pegged stablecoin", 
+    exerpt: "", 
+    link: "https://www.cryptopolitan.com/1inch-to-unveil-dollar-pegged-stablecoin/", 
+    thumbnail: "cryptopolitan.jpg", 
+    date: new Date("2021-07-03 12:00:00")},
+  {
+    id: 8,
+    author: "Total Krypto", 
+    title: "Filecoin has launched its own stablecoin for payments on its network", 
+    exerpt: "", 
+    link: "https://totalkrypto.com/filecoin-has-launched-its-own-stablecoin-for-payments-on-its-network", 
+    thumbnail: "totalkrypto.jpg", 
+    date: new Date("2021-07-01 12:00:00")},
+  {
+    id: 7,
+    author: "Cointelegraph", 
+    title: "1inch to launch dollar-pegged stablecoin with ICHI", 
+    exerpt: "Begining of the article", 
+    link: "https://cointelegraph.com/news/1inch-to-launch-dollar-pegged-stablecoin-with-ichi", 
+    thumbnail: "cointelegraph.jpg", 
+    date: new Date("2021-07-01 12:00:00")},
+  {
+    id: 6,
+    author: "DailyCoin", 
+    title: " ICHI Creates Decentralized Monetary Authority for Filecoin to Support Peer-to-Peer Cloud Storage Transactions to Power Web3 ", 
+    exerpt: "", 
+    link: "https://dailycoin.com/ichi-creates-decentralized-monetary-authority-for-filecoin-to-support-peer-to-peer-cloud-storage-transactions-to-power-web3/", 
+    thumbnail: "dailycoin.jpg", 
+    date: new Date("2021-06-30 12:00:00")},
+  {
+    id: 5,
+    author: "Decrypt ", 
+    title: "Filecoin Now Has Its Own Stablecoin. But Why? ", 
+    exerpt: "", 
+    link: "https://decrypt.co/74538/filecoins-stablecoin-onefil-launches", 
+    thumbnail: "decrypt.jpg", 
+    date: new Date("2021-06-28 12:00:00")},
+  {
+    id: 4,
+    author: "The Defiant", 
+    title: "ICHI Launches the World's First Decentralized Monetary Authority (DMA), Enabling Any Crypto Community to Create & Govern its Own Stable Currency", 
+    exerpt: "", 
+    link: "https://newsletter.thedefiant.io/p/-inbox-dump-11?token=eyJ1c2VyX2lkIjozODk5OTU2NiwicG9zdF9pZCI6MzcyNDc4NjcsIl8iOiJjZVFzYSIsImlhdCI6MTYyMzA3NzIyNSwiZXhwIjoxNjIzMDgwODI1LCJpc3MiOiJwdWItMTEyNTkiLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0.Kx3M4plvXcJ1LtYAcmR0upWj9MxMReTSxMTMqdDLZeM", 
+    thumbnail: "defiant.png", 
+    date: new Date("2021-06-05 12:00:00")},
+  {
+    id: 3,
+    author: "Block Tribune", 
+    title: "ICHI Provides Stability To Booming Crypto Market", 
+    exerpt: "", 
+    link: "http://blocktribune.com/ichi-provides-stability-to-booming-crypto-market/", 
+    thumbnail: "block-tribune.png", 
+    date: new Date("2021-06-04 12:00:00")},
+  {
+    id: 2,
+    author: "Digital Coin Standard", 
+    title: "ICHI Embarks On Stable Coin Issuance After Unveiling The Decentralized Monetary Authority", 
+    exerpt: "Begining of the article", 
+    link: "https://digitalcoinstandard.com/business/ichi-embarks-on-stable-coin-issuance-after-unveiling-the-decentralized-monetary-authority/", 
+    thumbnail: "digital-coin-standard.jpg", 
+    date: new Date("2021-06-02 12:00:00")},
+  {
+    id: 1,
+    author: "Cointelegraph", 
+    title: "ICHI launches ‘Decentralized Monetary Authority’ for stablecoin issuance", 
+    exerpt: "", 
+    link: "https://cointelegraph.com/news/ichi-launches-decentralized-monetary-authority-for-stablecoin-issuance", 
+    thumbnail: "cointelegraph.jpg", 
+    date: new Date("2021-05-27 12:00:00")}
+      
+]
+
 
 export const navbar = {
-  logo: logo,
+  /* logo: logo, */
   navMenu: [
     {
       id: 1,
@@ -53,7 +202,7 @@ export const navbar = {
 };
 
 
-export const Features = [
+/* export const Features = [
   {
     id: 1,
     icon: featureIcon1,
@@ -82,10 +231,10 @@ export const Features = [
     description:
       'You can mine any cryptocurrency available in our catalogue! Switch your mining power.',
   },
-];
+]; */
 
 
-export const WalletFeatures = [
+/* export const WalletFeatures = [
   {
     id: 1,
     icon: walletIcon1,
@@ -101,7 +250,7 @@ export const WalletFeatures = [
     icon: walletIcon3,
     title: 'Pay as many as you want',
   },
-];
+]; */
 
 /* ------------------------------------ */
 // Faq  data section
