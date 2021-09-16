@@ -60,6 +60,18 @@ export default class Quotes extends React.PureComponent {
     return (this.state.index + 1) % this.quotes.length;
   }
 
+  nextIndex(ind) {
+    return (ind + 1) % this.quotes.length;
+  }
+
+  prevIndex(ind) {
+    if (ind === 0) {
+      return this.quotes.length - 1;
+    }else{
+      return ind - 1;
+    }
+  }
+
   handleForward = () => {
     if (this.isAnimating) {
       return false;
@@ -89,10 +101,7 @@ export default class Quotes extends React.PureComponent {
       state => ({
         first: false,
         forward: false,
-        index:
-          state.index === 0 ?
-            this.quotes.length - 1 :
-            state.index - 1
+        index: (state.index - 1 + this.quotes.length) % this.quotes.length
       }),
       () => {
         this.setTimeout();
@@ -164,11 +173,13 @@ export default class Quotes extends React.PureComponent {
         animationDuration={this.animationDuration}
         forward={this.state.forward}
         incoming={this.quotes[this.state.index]}
+        incomingNext={this.quotes[this.nextIndex(this.state.index)]}
         onForward={this.handleForward}
         onPrevious={this.handlePrevious}
         onMouseOut={this.handleMouseOut}
         onMouseOver={this.handleMouseOver}
         outgoing={this.quotes[this.outgoingIndex]}
+        outgoingNext={this.quotes[this.nextIndex(this.outgoingIndex)]}
         {...this.props}
       />
     );
