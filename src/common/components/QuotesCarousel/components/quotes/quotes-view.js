@@ -58,11 +58,13 @@ export default class View extends React.PureComponent {
           <Quote
             key={'in ' + this.props.incoming.quote}
             style={this.incomingStyle}
-            {...this.props.incoming}
+            currentQuote={this.props.incoming}
+            nextQuote={this.props.incomingNext}
           />
           <Quote
             key={'out ' + this.props.outgoing.quote}
-            {...this.props.outgoing}
+            currentQuote={this.props.outgoing}
+            nextQuote={this.props.outgoingNext}
           />
         </div>
         <div
