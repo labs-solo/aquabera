@@ -9,6 +9,11 @@ import { StaticImage } from 'gatsby-plugin-image';
 import useModal from 'hooks/useModal';
 import React from 'react';
 import BannerWrapperOuter, { BannerWrapper, StyledBackgroundGradient, StyledBackgroundImage } from './banner.style';
+import { useQuery } from '@apollo/client';
+import { ChainId, REFRESH_INTERVALS } from 'common/constants/constants';
+import { QueryItemsResponse, QueryName } from 'common/models/graphql';
+import { AppSyncFarmAPY } from 'common/models/farm';
+import { listFarmsQuery } from 'graphql/queries/listFarms.query';
 
 type Props = {
 }
@@ -28,7 +33,7 @@ const Banner: React.FC<Props> = (props) => {
   // fluid(quality: 100, maxWidth: 1440) {
   //   ...GatsbyImageSharpFluid
   // }
-  const data = useStaticQuery(graphql`
+  const dataStatic = useStaticQuery(graphql`
       query {
         file(relativePath: { eq: "image/light/bg_hero.jpg" }) {
           childImageSharp {
@@ -40,16 +45,24 @@ const Banner: React.FC<Props> = (props) => {
       }
     `
   );
-  const imageData = data.file.childImageSharp.fixed;
+  const imageData = dataStatic.file.childImageSharp.fixed;
   const { isShowing: isShowingModal, toggle: toggleModal } = useModal();
+  const { loading: loadingFarms, error: errorLoadingFarms, data: dataFarms, networkStatus: networkStatusFarms, refetch: refetchFarms } = useQuery<QueryItemsResponse<AppSyncFarmAPY>>(listFarmsQuery, {
+    // Fetch the list of farms if there is no urlPoolId
+    fetchPolicy: 'cache-and-network',
+    pollInterval: REFRESH_INTERVALS[QueryName.listFarms]
+  });
+  const appSyncFarms: AppSyncFarmAPY[] = dataFarms?.listFarms?.items || [];
+  const arrAPYs = appSyncFarms.filter(farm => farm.isDeposit && farm.chainId === ChainId.MAINNET).map(farm => farm.yearlyAPY)
+  const maxAPY = parseInt((arrAPYs.reduce((max, current) => Math.max(max, current), -Infinity)).toString());
 
   return (
     <>
       <BannerWrapperOuter id="home">
         <StyledBackgroundGradient>
           <StyledFlexCenter>
-            <OutboundLink href="https://docs.ichi.farm/" target="_blank" className="medium color-white">
-              Read the Docs to learn about ICHI V2 &rarr;
+            <OutboundLink href="https://app.ichi.org/deposit" target="_blank" className="medium color-white">
+            Deposit stablecoins to earn up to {maxAPY}% in ICHI Rewards &rarr;
             </OutboundLink>
           </StyledFlexCenter>
         </StyledBackgroundGradient>
