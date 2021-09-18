@@ -46,5 +46,7 @@ steps:
         az storage blob upload-batch -d '$web' -s $env:BUILD_DIR
     env:
       BUILD_DIR: $(Build.SourcesDirectory)/public
+      APP_SYNC_URL: $(appSyncUrl)
+      APP_SYNC_API_KEY: $(appSyncApiKey)
       AZURE_STORAGE_ACCOUNT: $(storageAccountName)
       AZURE_STORAGE_KEY: $(storageAccountKey)

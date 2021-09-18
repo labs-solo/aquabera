@@ -18,5 +18,7 @@ variables:
 steps:
   - template: site-deployment-template.yml
     parameters:
+      appSyncUrl: $(appSyncUrl)
+      appSyncApiKey: $(appSyncApiKey)
       storageAccountName: $(storageAccountName)
       storageAccountKey: $(storageAccountKey)
