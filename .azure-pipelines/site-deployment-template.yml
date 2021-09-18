@@ -1,4 +1,8 @@
 parameters:
+  - name: appSyncUrl
+    type: string
+  - name: appSyncApiKey
+    type: string
   - name: storageAccountName
     type: string
   - name: storageAccountKey
