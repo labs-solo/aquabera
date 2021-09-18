@@ -55,6 +55,7 @@
     "clean": "gatsby clean"
   },
   "devDependencies": {
+    "@apollo/client": "^3.3.19",
     "@types/react": "^17.0.6",
     "@types/styled-components": "^5.1.9",
     "classnames": "^2.3.1",
