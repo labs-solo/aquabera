@@ -25,6 +25,8 @@ stages:
         steps:
           - template: site-deployment-template.yml
             parameters:
+              appSyncUrl: $(appSyncUrl)
+              appSyncApiKey: $(appSyncApiKey)
               storageAccountName: $(storageAccountName)
               storageAccountKey: $(storageAccountKey)
 
@@ -43,5 +45,7 @@ stages:
               steps:
                 - template: ichi-org-prod-deployment.yml
                   parameters:
+                    appSyncUrl: $(appSyncUrl)
+                    appSyncApiKey: $(appSyncApiKey)
                     storageAccountName: $(storageAccountName)
                     storageAccountKey: $(storageAccountKey)
