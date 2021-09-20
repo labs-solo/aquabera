@@ -55,6 +55,7 @@ const Banner: React.FC<Props> = (props) => {
   const appSyncFarms: AppSyncFarmAPY[] = dataFarms?.listFarms?.items || [];
   const arrAPYs = appSyncFarms.filter(farm => farm.isDeposit && farm.chainId === ChainId.MAINNET).map(farm => farm.yearlyAPY)
   const maxAPY = parseInt((arrAPYs.reduce((max, current) => Math.max(max, current), -Infinity)).toString());
+  const bannerMessage = maxAPY ? `Deposit stablecoins to earn up to ${maxAPY}% in ICHI Rewards`: ""; 
 
   return (
     <>
@@ -62,7 +63,7 @@ const Banner: React.FC<Props> = (props) => {
         <StyledBackgroundGradient>
           <StyledFlexCenter>
             <OutboundLink href="https://app.ichi.org/deposit" target="_blank" className="medium color-white">
-            Deposit stablecoins to earn up to {maxAPY}% in ICHI Rewards &rarr;
+              {bannerMessage} &rarr;
             </OutboundLink>
           </StyledFlexCenter>
         </StyledBackgroundGradient>
