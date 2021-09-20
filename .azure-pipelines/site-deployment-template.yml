@@ -20,6 +20,9 @@ steps:
     displayName: 'npm install'
   - script: npm run build
     displayName: 'npm run build'
+    env:
+      APP_SYNC_URL: $(appSyncUrl)
+      APP_SYNC_API_KEY: $(appSyncApiKey)
   - task: ArchiveFiles@2
     inputs:
       rootFolderOrFile: '$(Build.SourcesDirectory)/public'
