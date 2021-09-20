@@ -9,11 +9,12 @@ pr:
       - src/*
       - deployment/*
 
+variables:
+  APP_SYNC_URL: $(appSyncUrl)
+  APP_SYNC_API_KEY: $(appSyncApiKey)
+  
 pool:
   vmImage: "ubuntu-latest"
-
-variables:
-- group: ichi-org-deployment-dev
 
 steps:
   - template: site-deployment-template.yml
