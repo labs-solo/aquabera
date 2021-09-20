@@ -10,8 +10,7 @@ pr:
       - deployment/*
 
 variables:
-  APP_SYNC_URL: $(appSyncUrl)
-  APP_SYNC_API_KEY: $(appSyncApiKey)
+- group: ichi-org-deployment-dev
   
 pool:
   vmImage: "ubuntu-latest"
