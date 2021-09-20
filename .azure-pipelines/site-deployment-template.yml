@@ -8,6 +8,10 @@ parameters:
   - name: storageAccountKey
     type: string
 
+variables:
+  APP_SYNC_URL: $(appSyncUrl)
+  APP_SYNC_API_KEY: $(appSyncApiKey)
+  
 steps:
   # - script: |
   #     sudo apt-get -y update
@@ -20,9 +24,6 @@ steps:
     displayName: 'npm install'
   - script: npm run build
     displayName: 'npm run build'
-    env:
-      APP_SYNC_URL: $(appSyncUrl)
-      APP_SYNC_API_KEY: $(appSyncApiKey)
   - task: ArchiveFiles@2
     inputs:
       rootFolderOrFile: '$(Build.SourcesDirectory)/public'
@@ -53,7 +54,5 @@ steps:
         az storage blob upload-batch -d '$web' -s $env:BUILD_DIR
     env:
       BUILD_DIR: $(Build.SourcesDirectory)/public
-      APP_SYNC_URL: $(appSyncUrl)
-      APP_SYNC_API_KEY: $(appSyncApiKey)
       AZURE_STORAGE_ACCOUNT: $(storageAccountName)
       AZURE_STORAGE_KEY: $(storageAccountKey)

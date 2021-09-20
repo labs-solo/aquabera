@@ -8,6 +8,10 @@ parameters:
   - name: storageAccountKey
     type: string
 
+variables:
+  APP_SYNC_URL: $(appSyncUrl)
+  APP_SYNC_API_KEY: $(appSyncApiKey)
+  
 steps:
   - task: ExtractFiles@1
     inputs:
@@ -26,7 +30,5 @@ steps:
         az storage blob upload-batch -d '$web' -s $env:BUILD_DIR
     env:
       BUILD_DIR: $(Build.SourcesDirectory)/build/public
-      APP_SYNC_URL: $(appSyncUrl)
-      APP_SYNC_API_KEY: $(appSyncApiKey)
       AZURE_STORAGE_ACCOUNT: $(storageAccountName)
       AZURE_STORAGE_KEY: $(storageAccountKey)
