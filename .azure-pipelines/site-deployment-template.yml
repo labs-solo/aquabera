@@ -8,10 +8,6 @@ parameters:
   - name: storageAccountKey
     type: string
 
-variables:
-  APP_SYNC_URL: $(appSyncUrl)
-  APP_SYNC_API_KEY: $(appSyncApiKey)
-  
 steps:
   # - script: |
   #     sudo apt-get -y update

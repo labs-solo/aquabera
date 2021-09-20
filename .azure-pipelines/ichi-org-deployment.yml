@@ -11,6 +11,10 @@ pr: none
 
 name: $(Date:yyyyMMdd)$(Rev:r)
 
+variables:
+  APP_SYNC_URL: $(appSyncUrl)
+  APP_SYNC_API_KEY: $(appSyncApiKey)
+  
 pool:
   vmImage: "ubuntu-latest"
 
