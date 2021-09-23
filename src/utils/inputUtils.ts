@@ -37,3 +37,15 @@ export namespace InputUtils {
   };
 
 }
+
+export function truncateString(str: string, num: number) {
+  // If the length of str is less than or equal to num
+  // just return str--don't truncate it.
+  if (str.length <= num) {
+    return str
+  }else{
+  // Return str truncated with '...' concatenated to the end of str.
+      return str.slice(0, Math.min(num, str.substr(0, num).lastIndexOf(" "))) + '...'
+  }
+}
+

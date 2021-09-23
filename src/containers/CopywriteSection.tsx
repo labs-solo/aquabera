@@ -19,7 +19,7 @@ const CopywriteSection: React.FC = () => {
           width="auto"
         />
         <TosText className="primary-text-color text-align-right">
-          <Link href="terms-of-service">Terms of Service</Link>
+          <Link href="/terms-of-service/">Terms of Service</Link>
         </TosText>
       </StyledFlex>
     </Container>
