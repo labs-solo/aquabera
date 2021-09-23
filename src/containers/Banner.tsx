@@ -14,6 +14,7 @@ import { ChainId, REFRESH_INTERVALS } from 'common/constants/constants';
 import { QueryItemsResponse, QueryName } from 'common/models/graphql';
 import { AppSyncFarmAPY } from 'common/models/farm';
 import { listFarmsQuery } from 'graphql/queries/listFarms.query';
+import numbro from 'numbro';
 
 type Props = {
 }
@@ -53,9 +54,16 @@ const Banner: React.FC<Props> = (props) => {
     pollInterval: REFRESH_INTERVALS[QueryName.listFarms]
   });
   const appSyncFarms: AppSyncFarmAPY[] = dataFarms?.listFarms?.items || [];
-  const arrAPYs = appSyncFarms.filter(farm => farm.isDeposit && farm.chainId === ChainId.MAINNET).map(farm => farm.yearlyAPY)
-  const maxAPY = parseInt((arrAPYs.reduce((max, current) => Math.max(max, current), -Infinity)).toString());
-  const bannerMessage = maxAPY ? `Deposit stablecoins to earn up to ${maxAPY}% in ICHI Rewards`: ""; 
+  const farm = appSyncFarms.filter(farm => farm.isDeposit && farm.chainId === ChainId.MAINNET)
+    .reduce( ( (prev, current) => (prev.farmTVL > current.farmTVL) ? prev : current), 
+    {isDeposit: true, 
+      yearlyAPY: 0,
+      chainId: 0,
+      tvl: 0,
+      farmTVL: 0,
+      lpName: ''});
+  const maxAPY = parseInt(farm.yearlyAPY.toString());
+  const bannerMessage = maxAPY ? `$${numbro(farm.farmTVL).format({ average: true, totalLength: 2 }).toUpperCase()} of ${farm.lpName} deposited, earning ${maxAPY}% APY`: ""; 
 
   return (
     <>
