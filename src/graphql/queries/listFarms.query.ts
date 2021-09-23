@@ -7,6 +7,9 @@ query listFarms {
       isDeposit
       yearlyAPY
       chainId
+      tvl
+      farmTVL
+      lpName
     }
   }
 }
