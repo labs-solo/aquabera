@@ -17,7 +17,7 @@ const NewsSection: React.FC = () => {
         <SectionHeader 
           text='In the News' 
         />
-        <StyledFlex flexWrap="wrap">
+        <StyledFlex flexWrap="wrap" className="mt-40 mb-20">
           {mediaPosts.map((post) => (
             <NewsCard post={post} key={post.id}/>
           ))}  

@@ -128,6 +128,17 @@ const GlobalStyle = createGlobalStyle`
       line-height: 19px;
     }
 
+    & .small-button {
+      width: 130px;
+      border-radius: 25px;
+      background: linear-gradient(139.74deg, #00C9FF 0%, #0676FF 100%);
+      min-height: 40px;
+      height: 40px;
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 300;
+      }
+
     & .long-button {
       width: 250px;      
     }

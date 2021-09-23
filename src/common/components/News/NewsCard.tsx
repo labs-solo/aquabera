@@ -1,10 +1,9 @@
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import React from 'react';
 import Button from 'common/components/Button';
-import { StyledNewsCard } from './newsCard.style';
+import { StyledNewsCard, StyledNewsCardBody, StyledNewsCardHeader, StyledNewsTitle } from './newsCard.style';
 import Image from '../Image';
-import { StaticImage } from 'gatsby-plugin-image';
-import { StyledFlexColumn } from 'common/styles/common.styles';
+import { truncateString } from '../../../utils/inputUtils';
 
 type Post = {
     thumbnail: string;
@@ -18,20 +17,21 @@ type Post = {
 type Props = {
     post: Post;
 }
-  
 const NewsCard: React.FC<Props> = (props) => {
     return(
         <StyledNewsCard>
-            <Image src={props.post.thumbnail} alt={props.post.author} height="60px" className="source" />
-            <div>
-                <div className="one-token-description primary-text-color">{props.post.date.toLocaleDateString()}</div>
-                <div className="one-token-name primary-text-color">
-                    {props.post.title}
-                </div>
-            </div>
-            <OutboundLink target="_blank" href={props.post.link} className="btn-read-more">
-                <Button className="primary-button text mt-20" title="Read More" />
-            </OutboundLink>
+            <StyledNewsCardHeader>
+                <Image src={props.post.thumbnail} alt={props.post.author} />
+            </StyledNewsCardHeader>
+            <StyledNewsCardBody>
+                <StyledNewsTitle >
+                    {truncateString(props.post.title, 70)}
+                </StyledNewsTitle>
+                <div className="news-date">{props.post.date.toLocaleDateString()}</div>
+                <OutboundLink target="_blank" href={props.post.link} >
+                    <Button className="small-button text" title="Read More" />
+                </OutboundLink>
+            </StyledNewsCardBody>
         </StyledNewsCard>
     )
 }
