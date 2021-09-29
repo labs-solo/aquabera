@@ -18,13 +18,25 @@ import walletIcon3 from 'common/assets/image/cryptoModern/wallet3.png'; */
 
 export const mediaPosts=[
   {
+    id: 19,
+    author: "NomadFury", 
+    title: "Exclusive interview with ICHI steward Bryan Gross on NomadFury", 
+    exerpt: "In this latest exclusive podcast interview, the special guest ICHI lead steward Bryan Gross talks about their project's overview, ecosystem, features, advantages, benefits, exciting updates and future plans.", 
+    link: "https://www.youtube.com/watch?v=mXGKm1EQm_s1", 
+    thumbnail: "nomadfury.jpg", 
+    date: new Date("2021-09-28 12:00:00"), 
+    action: "Watch"
+  },
+  {
     id: 18,
     author: "Essential Crypto Podcast", 
     title: "Inside Track with Bryan Gross from ICHI", 
     exerpt: "This episode is presented by Bryan Gross Network Steward of ICHI. ICHI is a community that has enabled many other projects to govern their own in-house stablecoins including the likes of Filecoin and Chainlink.", 
     link: "https://podcasts.apple.com/us/podcast/inside-track-with-bryan-gross-from-ichi/id1557938964?i=1000532027111", 
     thumbnail: "inside-track.jpg", 
-    date: new Date("2021-08-14 12:00:00")},
+    date: new Date("2021-08-14 12:00:00"),
+    action: "Listen"
+  },
   {
     id: 17,
     author: "The Chain Bulletin", 
@@ -48,7 +60,9 @@ export const mediaPosts=[
     exerpt: "", 
     link: "https://www.youtube.com/watch?v=dtyrsnqJHMA", 
     thumbnail: "defiyield.jpg", 
-    date: new Date("2021-07-28 12:00:00")},
+    date: new Date("2021-07-28 12:00:00"), 
+    action: "Watch"
+  },
   {
     id: 14,
     author: "Crowdfund Insider", 
@@ -64,7 +78,9 @@ export const mediaPosts=[
     exerpt: "Begining of the article", 
     link: "https://www.youtube.com/watch?v=vfKKO-L_H7k", 
     thumbnail: "hashoshi.jpg", 
-    date: new Date("2021-07-03 12:00:00")},
+    date: new Date("2021-07-03 12:00:00"), 
+    action: "Watch"
+  },
   {
     id: 12,
     author: "The Chain Bulletin", 

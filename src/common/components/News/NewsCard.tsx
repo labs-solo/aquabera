@@ -12,6 +12,7 @@ type Post = {
     exerpt: string;
     author: string;
     date: Date;
+    action: string;
 }
 
 type Props = {
@@ -29,7 +30,7 @@ const NewsCard: React.FC<Props> = (props) => {
                 </StyledNewsTitle>
                 <div className="news-date">{props.post.date.toLocaleDateString()}</div>
                 <OutboundLink target="_blank" href={props.post.link} >
-                    <Button className="small-button text" title="Read More" />
+                    <Button className="small-button text" title={props.post.action ? props.post.action : "Read more"} />
                 </OutboundLink>
             </StyledNewsCardBody>
         </StyledNewsCard>
