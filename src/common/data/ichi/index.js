@@ -18,6 +18,15 @@ import walletIcon3 from 'common/assets/image/cryptoModern/wallet3.png'; */
 
 export const mediaPosts=[
   {
+    id: 20,
+    author: "ValueWalk", 
+    title: "Bryan Gross on El Salvador & Achieving Satoshi's Vision", 
+    exerpt: "How El Salvador Bitcoin Experiment highlights the challenges of achieving Satoshi's vision of 'peer to peer electronic cash'", 
+    link: "https://www.valuewalk.com/how-el-salvadors-bitcoin-experiment-highlights-the-challenges-of-achieving-satoshis-vision-of-peer-to-peer-electronic-cash/", 
+    thumbnail: "valuewalk.png", 
+    date: new Date("2021-10-05 12:00:00")
+  },
+  {
     id: 19,
     author: "NomadFury", 
     title: "Exclusive interview with ICHI steward Bryan Gross on NomadFury", 
