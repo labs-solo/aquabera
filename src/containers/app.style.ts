@@ -33,6 +33,7 @@ import IconOneMph from '../common/assets/image/icons/icon_onemph.svg';
 import IconOnePerl from '../common/assets/image/icons/icon_oneperl.svg';
 import IconOneUni from '../common/assets/image/icons/icon_oneuni.svg';
 import IconOne1Inch from '../common/assets/image/icons/icon_one1inch.svg';
+import IconOneDodo from '../common/assets/image/icons/icon_onedodo.svg';
 import IconSolana from '../common/assets/image/icons/icon_solana.svg';
 import IconSushiSwap from '../common/assets/image/icons/icon_sushiswap.svg';
 import IconTelegram from '../common/assets/image/icons/icon_telegram.svg';
@@ -202,6 +203,9 @@ const GlobalStyle = createGlobalStyle`
     }
     & .icon-one1INCH {
       content: url(${IconOne1Inch})
+    }
+    & .icon-oneDODO {
+      content: url(${IconOneDodo})
     }
     & .icon-USDC {
       content: url(${IconUsdc})
