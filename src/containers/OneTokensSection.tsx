@@ -9,6 +9,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import { StyledOneTokensSection } from './oneTokensSection.style';
+import {oneTokens} from 'common/data/ichi'
 
 
 const OneTokensSection: React.FC = () => {
@@ -29,7 +30,7 @@ const OneTokensSection: React.FC = () => {
     }
   `);
 
-  const oneTokens = Data.ichiJson.oneTokensSection.oneTokens || [];
+  // const oneTokens = Data.ichiJson.oneTokensSection.oneTokens || [];
   return (
     <StyledOneTokensSection id="one-tokens">
       <Container>
@@ -45,7 +46,7 @@ const OneTokensSection: React.FC = () => {
             {oneTokens?.map((oneToken) => (
               <StyledFlexColumn key={oneToken.name} className="one-token" justifyContent="space-between">
                 <Image
-                  className={`icon-${oneToken.name}`}
+                  src={`oneTokens/icon_${oneToken.name}.svg`}
                   height="100px"
                   width="100px"
                   alt="One Token Bubbles"
