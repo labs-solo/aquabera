@@ -16,6 +16,45 @@ import logo from 'common/assets/image/cryptoModern/logo.png'; */
 import walletIcon2 from 'common/assets/image/cryptoModern/wallet2.png';
 import walletIcon3 from 'common/assets/image/cryptoModern/wallet3.png'; */
 
+export const oneTokens=[
+  {
+    "name": "one1INCH",
+    "text": "A stablecoin for better payments, incentives, and rewards in DeFi"
+  },
+  {
+    "name": "oneDODO",
+    "text": "A stablecoin for better payments and more efficient exchanges in DeFi"
+  },
+  {
+    "name": "oneFIL",
+    "text": "A stablecoin for decentralized file storage"
+  },
+  {
+    "name": "oneFOX",
+    "text": "A stable asset backed by $FOX for the ShapeShift economy"
+  },
+  {
+    "name": "oneFUSE",
+    "text": "More stability for day-to-day crypto mobile payments"
+  },
+  {
+    "name": "oneMPH",
+    "text": "A stablecoin deployed for the 88mph community"
+  },
+  {
+    "name": "onePERL",
+    "text": "A Stable Governance Token Built for Planet Earth"
+  },
+  {
+    "name": "oneUNI",
+    "text": "A token to stabilize the DeFi world"
+  },
+  {
+    "name": "oneWING",
+    "text": "Borrow and lend on wing.finance"
+  }
+];
+
 export const mediaPosts=[
   {
     id: 20,
