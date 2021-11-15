@@ -46,10 +46,10 @@ const OneTokensSection: React.FC = () => {
             {oneTokens?.map((oneToken) => (
               <StyledFlexColumn key={oneToken.name} className="one-token" justifyContent="space-between">
                 <Image
-                  src={`oneTokens/icon_${oneToken.name}.svg`}
+                  src={`oneTokens/logo_256_${oneToken.name}.svg`}
                   height="100px"
                   width="100px"
-                  alt="One Token Bubbles"
+                  alt={`${oneToken.name} logo`}
                 />
                 <div className="one-token-name primary-text-color">
                   {oneToken.name}
