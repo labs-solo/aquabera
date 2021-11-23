@@ -1,7 +1,7 @@
 // import CountDown from 'containers/CryptoModern/CountDown';
 import Button from 'common/components/Button';
 // import Image from 'common/components/Image';
-import { StyledFlexCenter, StyledFlexColumn, StyledFlexStart } from 'common/styles/common.styles';
+import { StyledFlex, StyledFlexCenter, StyledFlexColumn, StyledFlexStart } from 'common/styles/common.styles';
 import ModalContainer from 'containers/ModalContainer';
 import { graphql, useStaticQuery } from 'gatsby';
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
@@ -36,7 +36,7 @@ const Banner: React.FC<Props> = (props) => {
   // }
   const dataStatic = useStaticQuery(graphql`
       query {
-        file(relativePath: { eq: "image/light/bg_hero.jpg" }) {
+        file(relativePath: { eq: "image/light/bg_angel_vaults.jpg" }) {
           childImageSharp {
             fixed(jpegQuality: 100, width: 1440, height: 700) {
               ...GatsbyImageSharpFixed
@@ -78,38 +78,37 @@ const Banner: React.FC<Props> = (props) => {
         <BannerWrapper >
           {/* <BannerContent className="image-banner-bg"> */}
           <StyledBackgroundImage fixed={imageData}>
-            <StyledFlexCenter>
+            <StyledFlex justifyContent="space-around" >
               {/* NOTE: This allows for a static image so the Flex container isn't reflowed */}
               {/* NOTE also the transition: none, otherwise a black blip happens */}
               <StaticImage
-                src="../common/assets/image/light/img_bubbles_onetokens.svg"
+                src="../common/assets/image/light/img_angel_vaults.svg"
                 alt="One Token Bubbles"
                 placeholder="blurred"
                 layout="fixed"
                 quality={100}
-                width={665}
-                height={700}
+                width={560}
+                height={420}
                 style={{
                   transition: 'none'
                 }}
+                className="ml-80"
               />
-              <StyledFlexColumn justifyContent="center" className="color-white banner-header ml-10">
-                <div className="heading">Create a branded dollar for</div>
-                <div className="heading">your community</div>
+              <StyledFlexColumn justifyContent="center" className="color-white banner-header">
+                <div className="heading">Angel Liquidity Vaults built for Crypto Communities and LPs</div>
 
-                <div className="sub-heading mt-40">With ICHI, every community gets</div>
-                <div className="sub-heading">their own token worth $1. It is minted with</div>
-                <div className="sub-heading">each community's cryptocurrency.</div>
-                <div className="sub-heading">It is redeemable 1-for-1 for USD Coin (USDC).</div>
+                <div className="sub-heading mt-40">With Angel Vaults, Crypto Communities can build treasuries of project owned liquidity and provide LPs with single-sided deposits to Uniswap v3 without the need to manage their position.</div>
 
-                <StyledFlexStart className="mt-40">
-                <Button className="text primary-button" title="Enter App" onClick={toggleModal} />
-                  <OutboundLink target="_blank" href="https://docs.ichi.farm/ichi/where-to-get-ichi" className="ml-10">
-                    <Button className="text secondary-button" title="Get ICHI" />
-                  </OutboundLink>
-                </StyledFlexStart>
+                <div className="btn-group">
+                  <StyledFlexStart className="mt-40">
+                    <Button className="text primary-button" title="Enter App" onClick={toggleModal} />
+                    <OutboundLink target="_blank" href="https://docs.ichi.farm/ichi/where-to-get-ichi" className="ml-10">
+                      <Button className="text secondary-button" title="Get ICHI" />
+                    </OutboundLink>
+                  </StyledFlexStart>
+                </div>
               </StyledFlexColumn>
-            </StyledFlexCenter>
+            </StyledFlex>
           </StyledBackgroundImage>
         </BannerWrapper>
       </BannerWrapperOuter>

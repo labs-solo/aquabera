@@ -92,6 +92,9 @@ const GlobalStyle = createGlobalStyle`
     & .ml-40 {
       margin-left: 40px;
     }
+    & .ml-80 {
+      margin-left: 80px;
+    }
 
     & .mlr-auto {
       margin-left: auto;

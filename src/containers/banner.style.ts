@@ -11,7 +11,7 @@ const BannerWrapperOuter = styled.div`
   background-color: linear-gradient(180deg, #019ffa 0%, #012c5f 100%);
   /* END */
   padding-top: 100px;
-  min-height: 802px;
+  min-height: 700px;
   overflow: hidden;
 `;
 
@@ -23,7 +23,7 @@ export  const BannerWrapper = styled.div`
   margin: auto;
   background-color: linear-gradient(180deg, #019ffa 0%, #012c5f 100%);
   /* END */
-  min-height: 802px;
+  min-height: 700px;
   overflow: hidden;
 
   // This targets the gatsby background image div
@@ -78,12 +78,14 @@ export const StyledBackgroundImage = styled(BackgroundImage)`
   /* height: 700px; */
   width: 100%;
   margin: auto;
+  padding-top: 150px;
 
   @media only screen and (max-width: 991px) {
     flex-shrink: 0;
     height: 500px;
     padding-top: 50px;
     width: 100%;
+    padding-top: 250px;
   }
 
   // When the screen is small enough don't show the bubbles
@@ -100,9 +102,14 @@ export const StyledBackgroundImage = styled(BackgroundImage)`
     line-height: 49px;
     font-weight: 600;
     letter-spacing: -0.025em;
-    /* @media only screen and (max-width: 1440px) {
-      font-size: 28px;
-    } */
+    width: 100%;
+    max-width: 520px;
+    @media (min-width: 1251px) and (max-width: 1440px) {
+      width: 360px;
+      margin-left: -160px;
+      font-size: 34px;
+      line-height: 42px;
+    }
 
   }
 
@@ -111,9 +118,20 @@ export const StyledBackgroundImage = styled(BackgroundImage)`
     font-size: 24px;
     letter-spacing: 0;
     line-height: 29px;
-    /* @media only screen and (max-width: 1440px) {
-      font-size: 18px;
-    } */
+    width: 100%;
+    max-width: 520px;
+    @media (min-width: 1251px) and (max-width: 1440px) {
+      width: 360px;
+      margin-left: -160px;
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
+
+  .btn-group {
+    @media (min-width: 1251px) and (max-width: 1440px) {
+      margin-left: -160px;
+    }
   }
 `;
 
@@ -202,42 +220,8 @@ export const BannerImage = styled.div`
 `;
 
 export const ButtonGroup = styled.div`
-  margin-top: 35px;
-
-  .reusecore__button {
-    text-transform: inherit;
-    border-radius: 5px;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-top: 5px;
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
-    &.left-margin-15 {
-      margin-left: 15px;
-    }
-    &.primary {
-      background-color: ${themeGet('colors.primary')};
-      color: ${themeGet('colors.white')};
-      font-weight: bold;
-    }
-    &.secondary {
-      background-color: ${themeGet('colors.secondary')};
-      color: ${themeGet('colors.primary')};
-      font-weight: bold;
-    }
-
-    /* #&.primary {
-    #  background-image: linear-gradient(to right, #4ba1d8, #4464bd 95%);
-    #  &:hover {
-    #    box-shadow: rgba(75, 109, 235, 0.78) 0px 12px 24px -10px;
-    #  }
-    #} */
-
-    &.text {
-      margin-left: 15px;
-      /* #color: #fff; */
-      border: 1px solid rgba(255, 255, 255, 0.302);
+    @media (min-width: 1251px) and (max-width: 1440px) {
+      margin-left: -160px;
     }
   }
 `;
