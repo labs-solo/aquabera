@@ -32,6 +32,9 @@ export  const BannerWrapper = styled.div`
       width: inherit !important;
       padding-top: 50px;
     }
+    @media only screen and (max-width: 450px) {
+      padding: 20px 5px 5px 5px;
+    }
   }
 
   // THis doesn't work, but it would be optimal to compact the image on a small screen
@@ -86,6 +89,10 @@ export const StyledBackgroundImage = styled(BackgroundImage)`
     padding-top: 50px;
     width: 100%;
     padding-top: 250px;
+  }
+
+  @media only screen and (max-width: 450px) {
+    padding-top: 0px;
   }
 
   // When the screen is small enough don't show the bubbles
