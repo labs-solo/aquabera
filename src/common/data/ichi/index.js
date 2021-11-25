@@ -57,6 +57,70 @@ export const oneTokens=[
 
 export const mediaPosts=[
   {
+    id: 27,
+    author: "The Defiant", 
+    title: "Are Branded Dollars The New StableCoins? | DeFi 2.0 with ICHI", 
+    exerpt: "", 
+    link: "https://www.youtube.com/watch?v=weU5b58LTdI", 
+    thumbnail: "defiant.png", 
+    date: new Date("2021-11-24 12:00:00"),
+    action: "Watch"
+  },
+  {
+    id: 26,
+    author: "Coin Investor News", 
+    title: " ShapeShift DAO Partners with ICHI to Launch a Stable Witness", 
+    exerpt: "", 
+    link: "https://coininvestornews.com/shapeshift-dao-a-decentralized-custodial-cryptography-platform-partners-with-ichi-to-launch-a-stable-witness/", 
+    thumbnail: "coin-investor-news.png", 
+    date: new Date("2021-11-15 12:00:00")
+  },
+  {
+    id: 25,
+    author: "Crowdfund Insider", 
+    title: "ShapeShift DAO Partners with ICHI to Launch Stable Token", 
+    exerpt: "", 
+    link: "https://www.crowdfundinsider.com/2021/11/182893-shapeshift-dao-a-decentralized-non-custodial-crypto-platform-partners-with-ichi-to-launch-stable-token/", 
+    thumbnail: "crowdfund-insider.jpg", 
+    date: new Date("2021-11-14 12:00:00")
+  },
+  {
+    id: 24,
+    author: "Coincu", 
+    title: " ShapeShift DAO Released its First Token-backed Stablecoin", 
+    exerpt: "", 
+    link: "https://news.coincu.com/33950-shapeshift-dao-released-first-token-backed/", 
+    thumbnail: "coincu.png", 
+    date: new Date("2021-11-13 12:00:00")
+  },
+  {
+    id: 23,
+    author: "Decrypt", 
+    title: "ShapeShift DAO Launches Its First Token-Backed Stablecoin", 
+    exerpt: "", 
+    link: "https://decrypt.co/85922/shapeshift-dao-launches-first-token-backed-stablecoin", 
+    thumbnail: "decrypt.jpg", 
+    date: new Date("2021-11-12 12:00:00")
+  },
+  {
+    id: 22,
+    author: "Crowdfund Insider", 
+    title: "DODO and ICHI Introduce Stable Token", 
+    exerpt: "", 
+    link: "https://www.crowdfundinsider.com/2021/11/182660-dodo-the-decentralized-exchange-platform-supported-by-proactive-market-maker-algo-introduces-stable-token/", 
+    thumbnail: "crowdfund-insider.jpg", 
+    date: new Date("2021-11-08 12:00:00")
+  },
+  {
+    id: 21,
+    author: "Cryptopolitan", 
+    title: " DODO Launches New Stable DODO in Partnership with ICHI", 
+    exerpt: "", 
+    link: "https://www.cryptopolitan.com/dodo-launches-new-stable-dodo-token-i/", 
+    thumbnail: "cryptopolitan.jpg", 
+    date: new Date("2021-11-05 12:00:00")
+  },
+  {
     id: 20,
     author: "ValueWalk", 
     title: "Bryan Gross on El Salvador & Achieving Satoshi's Vision", 
