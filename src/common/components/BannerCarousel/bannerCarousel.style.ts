@@ -15,7 +15,7 @@ export  const BannerWrapper = styled.div`
       padding-left: 520px;
     }
     @media only screen and (max-width: 450px) {
-      padding-bottom: 20px;
+      padding-bottom: 15px;
     }
 
   }
@@ -51,6 +51,8 @@ export  const BannerWrapper = styled.div`
     letter-spacing: 0;
     line-height: 29px;
     width: 100%;
+    margin-top: 40px;
+
     @media (min-width: 1250px) and (max-width: 1440px) {
       font-size: 22px;
       line-height: 28px;
@@ -65,18 +67,32 @@ export  const BannerWrapper = styled.div`
     @media (max-width: 450px) {
       font-size: 16px;
       line-height: 21px;
+      margin-top: 30px;
     }
   }
 
   .btn-group {
     display: block;
     text-align: left;
+    margin-top: 40px;
 
     @media (min-width: 1250px) and (max-width: 1440px) {
     }
     @media (max-width: 1249px) {
       text-align: center;
     }
+    @media (max-width: 450px) {
+      margin-top: 30px;
+
+      .primary-button, .secondary-button{
+        font-size: 12px;
+        width: 100px;
+        white-space: nowrap;
+        height: 32px;
+        min-height: 32px;
+      }
+    }
+
   }
 
 `;
