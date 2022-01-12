@@ -115,7 +115,6 @@ const Navbar: React.FC<Props> = (props) => {
   //     mobileMenu: false,
   //   });
   // };
-  const { isShowing: isShowingModal, toggle: toggleModal } = useModal();
 
   return (
     <>
@@ -180,8 +179,9 @@ const Navbar: React.FC<Props> = (props) => {
 
           <ThemeSwitcher onClick={props.toggleTheme} />
 
-          <Button className="text primary-button" title="Enter App" onClick={toggleModal} />
-
+          <OutboundLink target="_blank" href="https://app.ichi.org" >
+            <Button className="text primary-button" title="Enter App" />
+          </OutboundLink>
 
           {/* Mobile Hamburger */}
           {/* Not much to show here right now, so no reason to show this */}
@@ -230,12 +230,6 @@ const Navbar: React.FC<Props> = (props) => {
       </MobileMenu> */}
       {/* end of mobile menu */}
     </NavbarWrapper>
-    <ModalContainer
-      key="Modal"
-      isShowing={isShowingModal}
-      toggle={() => toggleModal()}
-      refetchUserInfo={props.refetchUserInfo}
-    />
     </>
   );
 };
