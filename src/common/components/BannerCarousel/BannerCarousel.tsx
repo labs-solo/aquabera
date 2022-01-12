@@ -30,7 +30,10 @@ const BannerCarousel: React.FC<Props> = (props) => {
                             <div className="sub-heading">With ICHI, every community gets their own token worth $1. It is minted with each community's cryptocurrency. It is redeemable 1-for-1 for USD Coin (USDC).</div>
 
                             <div className="btn-group">
-                                <Button className="text primary-button" title="Enter App" onClick={toggleModal} />
+                                <OutboundLink target="_blank" href="https://app.ichi.org" >
+                                    <Button className="text primary-button" title="Enter App" />
+                                </OutboundLink>
+                                    
                                 <OutboundLink target="_blank" href="https://docs.ichi.farm/ichi/where-to-get-ichi" className="ml-10">
                                     <Button className="text secondary-button" title="Get ICHI" />
                                 </OutboundLink>
@@ -52,7 +55,9 @@ const BannerCarousel: React.FC<Props> = (props) => {
                             <div className="sub-heading">With Angel Vaults, Crypto Communities can build treasuries of project owned liquidity and provide LPs with single-sided deposits to Uniswap v3 without the need to manage their position.</div>
 
                             <div className="btn-group">
-                                <Button className="text primary-button" title="Enter App" onClick={toggleModal} />
+                                <OutboundLink target="_blank" href="https://app.ichi.org" >
+                                    <Button className="text primary-button" title="Enter App" />
+                                </OutboundLink>
                                 <OutboundLink target="_blank" href="https://docs.ichi.farm/ichi/where-to-get-ichi" className="ml-10">
                                     <Button className="text secondary-button" title="Get ICHI" />
                                 </OutboundLink>
