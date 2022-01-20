@@ -10,7 +10,6 @@ import { ChainId, REFRESH_INTERVALS } from 'common/constants/constants';
 import { QueryItemsResponse, QueryName } from 'common/models/graphql';
 import { AppSyncFarmAPY } from 'common/models/farm';
 import { listFarmsQuery } from 'graphql/queries/listFarms.query';
-import numbro from 'numbro';
 import ImageBgHero from 'common/assets/image/light/bg_hero.jpg';
 import ImageBgAngelVaults from 'common/assets/image/light/bg_angel_vaults.jpg';
 import ImageBgHeroExt from 'common/assets/image/light/bg_hero_ext.jpg';
@@ -45,23 +44,25 @@ const Banner: React.FC<Props> = (props) => {
     pollInterval: REFRESH_INTERVALS[QueryName.listFarms]
   });
   const appSyncFarms: AppSyncFarmAPY[] = dataFarms?.listFarms?.items || [];
-  const farm = appSyncFarms.filter(farm => farm.isDeposit && farm.chainId === ChainId.MAINNET)
-    .reduce( ( (prev, current) => (prev.farmTVL > current.farmTVL) ? prev : current), 
-    {isDeposit: true, 
+  const farm = appSyncFarms.filter(farm => farm.isPosition && farm.chainId === ChainId.MAINNET)
+    .reduce( ( (prev, current) => (prev.yearlyAPY > current.yearlyAPY) ? prev : current), 
+    {isPosition: true, 
       yearlyAPY: 0,
       chainId: 0,
       tvl: 0,
       farmTVL: 0,
-      lpName: ''});
+      lpName: '',
+      displayName: ''
+    }); 
   const maxAPY = parseInt(farm.yearlyAPY.toString());
-  const bannerMessage = maxAPY ? `$${numbro(farm.farmTVL).format({ average: true, totalLength: 2 }).toUpperCase()} of ${farm.lpName} deposited, earning ${maxAPY}% APY`: ""; 
+  const bannerMessage = maxAPY ? `Deposit ${farm.displayName.replace(' Vault', '')} into the ${farm.displayName} and earn up to ${maxAPY}% APR`: ""; 
 
   return (
     <>
       <BannerWrapperOuter id="home">
         <StyledBackgroundGradient>
           <StyledFlexCenter>
-            <OutboundLink href="https://app.ichi.org/deposit" target="_blank" className="medium color-white">
+            <OutboundLink href="https://app.ichi.org/vault" target="_blank" className="medium color-white">
               {bannerMessage} &rarr;
             </OutboundLink>
           </StyledFlexCenter>
