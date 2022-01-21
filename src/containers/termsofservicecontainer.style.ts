@@ -4,7 +4,7 @@ const TextWrapper = styled.div`
   max-width: 1440px;
   width: 100%;
   margin: auto;
-  padding: 130px 0 80px;
+  padding: 40px 0 80px;
   @media (max-width: 990px) {
     padding: 60px 0 60px 0;
   }

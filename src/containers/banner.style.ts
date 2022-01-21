@@ -7,8 +7,8 @@ const BannerWrapperOuter = styled.div`
   width: 100%;
   margin: auto;
   background-color: linear-gradient(180deg, #019ffa 0%, #012c5f 100%);
-  /* END */
-  padding-top: 100px;
+  /* END 
+  padding-top: 100px;*/
   min-height: 700px;
   overflow: hidden;
 `;

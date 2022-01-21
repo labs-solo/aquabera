@@ -6,11 +6,11 @@ import { lightTheme } from 'common/theme/light/lightTheme';
 import SEO from 'components/seo';
 import GlobalStyle, { ContentWrapper } from 'containers/app.style';
 import CopywriteSection from 'containers/CopywriteSection';
-import Navbar from 'containers/Navbar';
 import React from 'react';
 import Sticky from 'react-stickynode';
 import { ThemeProvider } from 'styled-components';
 import useDarkMode from 'use-dark-mode';
+import Topnav from 'containers/Topnav';
 
 const App: React.FC = (props) => {
   const darkMode = useDarkMode();
@@ -23,7 +23,7 @@ const App: React.FC = (props) => {
         <GlobalStyle />
         <ContentWrapper>
           <Sticky top={0} innerZ={9999} activeClass="sticky-active">
-            <Navbar toggleTheme={darkMode.toggle} />
+            <Topnav themeToggle={darkMode.toggle} /> 
           </Sticky>
           <ContentWrapper>
             {props.children}

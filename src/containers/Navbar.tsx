@@ -28,7 +28,7 @@ import Link from 'common/components/Link';
 // }
 type Props = {
   toggleTheme: Function;
-  refetchUserInfo: Function;
+  refetchUserInfo?: Function;
 }
 
 const Navbar: React.FC<Props> = (props) => {
@@ -132,18 +132,6 @@ const Navbar: React.FC<Props> = (props) => {
             alt="ICHI Logo"
           />
         </Link>
-        {/* <Logo
-          href="/"
-          logoSrc={LogoImage}
-          title="Ichi"
-          className="main-logo"
-        />
-        <Logo
-          href="/"
-          logoSrc={LogoImageAlt}
-          title="Ichi"
-          className="logo-alt"
-        /> */}
         {/* end of logo */}
 
         <MenuArea className={state.searchToggle ? 'active' : ''}>
@@ -154,28 +142,6 @@ const Navbar: React.FC<Props> = (props) => {
             drawerClose={false}
           />
           {/* end of main menu */}
-
-          {/* <Search className="search" ref={searchRef}>
-            <form onSubmit={handleSearchForm}>
-              <input
-                type="text"
-                value={state.search}
-                placeholder="Enter your keyword"
-                onChange={handleOnChange}
-              />
-            </form>
-            <Button
-              className="text"
-              variant="textButton"
-              icon={<Icon icon={state.searchToggle ? x : search} />}
-              onClick={() => toggleHandler('search')}
-            />
-          </Search> */}
-          {/* end of search */}
-
-          {/* <AnchorLink href="#trail" offset={84}>
-            <Button className="trail" title="Try for Free" />
-          </AnchorLink> */}
 
           <ThemeSwitcher onClick={props.toggleTheme} />
 

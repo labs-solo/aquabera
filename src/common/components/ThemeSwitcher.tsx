@@ -16,7 +16,7 @@ const ThemeSwitcher: React.FC<ThemeSwitcherProps> = (props) => {
 
   return (
     <StyledThemeSwitcher>
-      <StyledThemeIcon>
+      <StyledThemeIcon className="ptb-5">
         <Image
           className="icon-theme-switcher"
           alt="Toggle theme"
