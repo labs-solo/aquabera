@@ -23,7 +23,7 @@ const App: React.FC = (props) => {
         <GlobalStyle />
         <ContentWrapper>
           <Sticky top={0} innerZ={9999} activeClass="sticky-active">
-            <Topnav themeToggle={darkMode.toggle} /> 
+            <Topnav themeToggle={darkMode.toggle} themeName={theme.name} /> 
           </Sticky>
           <ContentWrapper>
             {props.children}

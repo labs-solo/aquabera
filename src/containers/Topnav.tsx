@@ -153,6 +153,7 @@ export const newsOptions = [
 
 type Props = {
   themeToggle: Function;
+  themeName: string;
 }
 
 const Topnav: React.FC<Props> = (props) => {
@@ -191,7 +192,14 @@ const Topnav: React.FC<Props> = (props) => {
             <NavDropdown.Item key={option.key} href={option.url} data-target={option.target} target={option.target}>{option.text}</NavDropdown.Item>
           ))}
         </NavDropdown>
-        <ThemeSwitcher onClick={props.themeToggle} />
+        {(props.themeName === 'light') ? (
+          <Nav.Link onClick={() => props.themeToggle()} className="nav-item theme-switcher" id="navitem">
+            Dark Theme
+          </Nav.Link>
+        ) : (
+          <Nav.Link onClick={() => props.themeToggle()} className="nav-item theme-switcher" id="navitem">Light Theme</Nav.Link>
+        )}
+        <div className="theme-switcher-icon"><ThemeSwitcher onClick={props.themeToggle} /></div>
 
         <OutboundLink target="_blank" href="https://app.ichi.org" >
           <Button className="text primary-button" title="Enter App" />

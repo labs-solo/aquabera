@@ -162,6 +162,25 @@ const GlobalStyle = createGlobalStyle`
     & .text-align-center {
       text-align: center;
     }
+    & .theme-switcher{
+      display: none;
+      visibility: hidden;
+    }
+    & .theme-switcher-icon{
+      display: block;
+      visibility: visible;
+    }
+    @media only screen and (max-width: 990px) {
+      .theme-switcher{
+        display: block;
+        visibility: visible;
+      }
+      & .theme-switcher-icon{
+        display: none;
+        visibility: hidden;
+        }
+    }
+  
 
     /* ------------------------------------- */
     /* Icons  */
@@ -335,6 +354,10 @@ const GlobalStyle = createGlobalStyle`
         font-weight: 400;
         transition: all 0.3s ease;
       }
+      & .nav-item{
+        color: #0676FF !important;
+        padding: 8px;
+      }
 
 
       /* ------------------------------------- */
@@ -480,6 +503,11 @@ const GlobalStyle = createGlobalStyle`
         font-weight: 400;
         transition: all 0.3s ease;
       }
+      & .nav-item{
+        color: #0676FF !important;
+        padding: 8px;
+      }
+      
 
       /* ------------------------------------- */
       /* Images  */
