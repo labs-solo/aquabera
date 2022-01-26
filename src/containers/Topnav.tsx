@@ -187,7 +187,7 @@ const Topnav: React.FC<Props> = (props) => {
             <NavDropdown.Item key={option.key} href={option.url} target={option.target}>{option.text}</NavDropdown.Item>
           ))}
         </NavDropdown>
-        <NavDropdown title="New & Media" className="collasible-nav-dropdown">
+        <NavDropdown title="News & Media" className="collasible-nav-dropdown">
           {newsOptions.map(option => (
             <NavDropdown.Item key={option.key} href={option.url} data-target={option.target} target={option.target}>{option.text}</NavDropdown.Item>
           ))}
