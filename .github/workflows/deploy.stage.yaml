@@ -10,6 +10,9 @@ jobs:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     name: Build and deploy stage
     runs-on: ubuntu-latest
+    environment:
+      name: stage
+      url: http://ichiorg.stage.${{ github.actor }}.s3-website-us-east-1.amazonaws.com
 
     steps:
     - uses: actions/checkout@v2
@@ -72,7 +75,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: prod
-      url: http://ichiorg.stage.${{ github.actor }}.s3-website-us-east-1.amazonaws.com
+      url: https://ichi.org
 
     steps:
 
@@ -124,5 +127,5 @@ jobs:
       with:
         enabled-static-website: 'true'
         folder: 'public'
-        connection-string: ${{ secrets.TMP_CONN_STRING }}
+        connection-string: ${{ secrets.BLOB_STORAGE_CONNECTION_STRING }}
 
