@@ -6,9 +6,9 @@ on:
       - master
 
 jobs:
-  build-and-deploy:
+  stage:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
-    name: build-deploy-stage
+    name: Build and deploy stage
     runs-on: ubuntu-latest
 
     steps:
@@ -52,3 +52,54 @@ jobs:
 
     - name: Deploy static site to s3://ichiorg.stage.${{ github.actor }}
       run: aws s3 sync ./public s3://ichiorg.stage.${{ github.actor }} --delete
+  prod:
+    needs: stage
+    name: Build and deploy prod
+    runs-on: ubuntu-latest
+    environment:
+      name: prod
+      url: http://ichiorg.stage.${{ github.actor }}.s3-website-us-east-1.amazonaws.com
+
+    steps:
+
+    - name: Azure Login
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+    - uses: actions/checkout@v2
+      with:
+        submodules: true
+
+    - name: Install Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 16.x
+
+    - name: Install dependencies
+      run: |
+        npm i --force
+
+    - name: Unit Tests
+      run: |
+        npm run test
+
+    - name: Build website
+      run: |
+        echo "NODE_ENV: $NODE_ENV"
+        touch .env.production
+        echo GATSBY_APP_SYNC_URL=${{ secrets.APP_SYNC_URL_PROD }} >> .env.production
+        echo GATSBY_APP_SYNC_API_KEY=${{ secrets.APP_SYNC_API_KEY_PROD }} >> .env.production
+        cat .env.production
+        npm run build
+      env:
+        GATSBY_APP_SYNC_URL: ${{ secrets.APP_SYNC_URL_PROD }}
+        GATSBY_APP_SYNC_API_KEY: ${{ secrets.APP_SYNC_API_KEY_PROD }}
+
+    - name: Deploy to Azure
+      uses: tibor19/static-website-deploy@v1
+      with:
+        enabled-static-website: 'true'
+        folder: 'public'
+        connection-string: ${{ secrets.TMP_CONN_STRING }}
+
