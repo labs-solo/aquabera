@@ -1,0 +1,54 @@
+name: ichi.org (stage)
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+    name: build-deploy-stage
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: true
+
+    - name: Install Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 16.x
+
+    - name: Install dependencies
+      run: |
+        npm i --force
+    - name: Build website
+      run: |
+        echo "NODE_ENV: $NODE_ENV"
+        touch .env.production
+        echo GATSBY_APP_SYNC_URL=${{ secrets.APP_SYNC_URL_STAGE }} >> .env.production
+        echo GATSBY_APP_SYNC_API_KEY=${{ secrets.APP_SYNC_API_KEY_STAGE }} >> .env.production
+        cat .env.production
+        npm run build
+      env:
+        GATSBY_APP_SYNC_URL: ${{ secrets.APP_SYNC_URL_STAGE }}
+        GATSBY_APP_SYNC_API_KEY: ${{ secrets.APP_SYNC_API_KEY_STAGE }}
+
+    # - name: Deploy to Azure
+    #   uses: tibor19/static-website-deploy@v1
+    #   with:
+    #     enabled-static-website: 'true'
+    #     folder: 'public'
+    #     connection-string: ${{ secrets.APP_ICHI_ORG_CONNECTION_STRING_STAGE }}
+
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-1
+
+    - name: Deploy static site to s3://ichiorg.stage.${{ github.actor }}
+      run: aws s3 sync ./public s3://ichiorg.stage.${{ github.actor }} --delete
