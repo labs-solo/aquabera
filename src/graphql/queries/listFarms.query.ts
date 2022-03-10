@@ -12,6 +12,7 @@ query listFarms {
       farmTVL
       lpName
       displayName
+      vaultIRR
     }
   }
 }

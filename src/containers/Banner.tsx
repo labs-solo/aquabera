@@ -44,18 +44,20 @@ const Banner: React.FC<Props> = (props) => {
     pollInterval: REFRESH_INTERVALS[QueryName.listFarms]
   });
   const appSyncFarms: AppSyncFarmAPY[] = dataFarms?.listFarms?.items || [];
-  const farm = appSyncFarms.filter(farm => farm.isPosition && farm.chainId === ChainId.MAINNET)
-    .reduce( ( (prev, current) => (prev.yearlyAPY > current.yearlyAPY) ? prev : current), 
+  // appSyncFarms.map((farm) => (console.log(` ${farm.displayName} --- irr: ${farm.vaultIRR}`)));
+  const farm = appSyncFarms.filter(farm => farm.isPosition && farm.chainId === ChainId.MAINNET && farm.displayName === 'oneUNI Vault')
+    .reduce( ( (prev, current) => ((prev.yearlyAPY + prev.vaultIRR) > (current.yearlyAPY + current.vaultIRR)) ? prev : current), 
     {isPosition: true, 
       yearlyAPY: 0,
       chainId: 0,
       tvl: 0,
       farmTVL: 0,
       lpName: '',
-      displayName: ''
+      displayName: '',
+      vaultIRR: 0
     }); 
-  const maxAPY = parseInt(farm.yearlyAPY.toString());
-  const bannerMessage = maxAPY ? `Deposit ${farm.displayName.replace(' Vault', '')} into the ${farm.displayName} and earn up to ${maxAPY}% APR`: ""; 
+  const maxAPY = parseInt((farm.yearlyAPY + farm.vaultIRR).toString());
+  const bannerMessage = maxAPY ? `Deposit ${farm.displayName.replace(' Vault', '')} into the ${farm.displayName} and earn up to ${maxAPY}% ROI`: ""; 
 
   return (
     <>
