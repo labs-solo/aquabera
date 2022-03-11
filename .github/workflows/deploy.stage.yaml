@@ -53,12 +53,12 @@ jobs:
         GATSBY_APP_SYNC_URL: ${{ secrets.APP_SYNC_URL_STAGE }}
         GATSBY_APP_SYNC_API_KEY: ${{ secrets.APP_SYNC_API_KEY_STAGE }}
 
-    # - name: Deploy to Azure
-    #   uses: tibor19/static-website-deploy@v1
-    #   with:
-    #     enabled-static-website: 'true'
-    #     folder: 'public'
-    #     connection-string: ${{ secrets.APP_ICHI_ORG_CONNECTION_STRING_STAGE }}
+    - name: Deploy to Azure
+      uses: tibor19/static-website-deploy@v1
+      with:
+        enabled-static-website: 'true'
+        folder: 'public'
+        connection-string: ${{ secrets.ICHI_ORG_CONNECTION_STRING_STAGE }}
 
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v1
@@ -127,5 +127,5 @@ jobs:
       with:
         enabled-static-website: 'true'
         folder: 'public'
-        connection-string: ${{ secrets.BLOB_STORAGE_CONNECTION_STRING }}
+        connection-string: ${{ secrets.ICHI_ORG_CONNECTION_STRING_PROD }}
 
