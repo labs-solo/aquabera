@@ -119,9 +119,9 @@ export const communityOptions = [
     text: 'Twitter',
     value: 3,
     content: (
-        <OutboundLink target="_blank" href="https://twitter.com/ichifarm">Twitter</OutboundLink>
+        <OutboundLink target="_blank" href="https://twitter.com/ichifoundation">Twitter</OutboundLink>
     ),
-    url: 'https://twitter.com/ichifarm',
+    url: 'https://twitter.com/ichifoundation',
     target: 'blank'
   }
 ];
