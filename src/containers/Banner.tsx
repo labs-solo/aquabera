@@ -57,14 +57,17 @@ const Banner: React.FC<Props> = (props) => {
       vaultIRR: 0
     }); 
   const maxAPY = parseInt((farm.yearlyAPY + farm.vaultIRR).toString());
-  const bannerMessage = maxAPY ? `Deposit ${farm.displayName.replace(' Vault', '')} into the ${farm.displayName} and earn up to ${maxAPY}% ROI`: ""; 
-
+  // const bannerMessage = maxAPY ? `Deposit ${farm.displayName.replace(' Vault', '')} into the ${farm.displayName} and earn up to ${maxAPY}% ROI`: ""; 
+  const bannerMessage = 'Click here for up to date information on Rari Pool 136, help, and next steps';
   return (
     <>
       <BannerWrapperOuter id="home">
         <StyledBackgroundGradient>
           <StyledFlexCenter>
-            <OutboundLink href="https://app.ichi.org/vault" target="_blank" className="medium color-white">
+            {/* <OutboundLink href="https://app.ichi.org/vault" target="_blank" className="medium color-white">
+              {bannerMessage} &rarr;
+            </OutboundLink> */}
+            <OutboundLink href="https://discord.gg/rMgkwh8BA2" target="_blank" className="medium color-white">
               {bannerMessage} &rarr;
             </OutboundLink>
           </StyledFlexCenter>
