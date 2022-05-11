@@ -117,7 +117,7 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
       text: 'Discord',
       value: 2,
       content: (
-          <OutboundLink target="_blank" href="https://discord.com/invite/Bm6pUHjHUC">Discord</OutboundLink>
+          <OutboundLink target="_blank" href="https://discord.gg/ZqqEg7s4">Discord</OutboundLink>
       )
     },
     {

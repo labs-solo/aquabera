@@ -109,9 +109,9 @@ export const communityOptions = [
     text: 'Discord',
     value: 2,
     content: (
-        <OutboundLink target="_blank" href="https://discord.com/invite/Bm6pUHjHUC">Discord</OutboundLink>
+        <OutboundLink target="_blank" href="https://discord.gg/ZqqEg7s4">Discord</OutboundLink>
     ),
-    url: 'https://discord.com/invite/Bm6pUHjHUC',
+    url: 'https://discord.gg/ZqqEg7s4',
     target: 'blank'
   },
   {
