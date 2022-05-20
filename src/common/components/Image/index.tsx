@@ -3,26 +3,39 @@ import styled from 'styled-components';
 
 type StyledImageArgs = {
   marginLeft?: string;
+  margin?: string;
   height?: string;
   width?: string;
+  maxWidth?: string;
+  maxHeight?: string;
+  padding?: string;
 };
 const StyledImage = styled.img<StyledImageArgs>`
-  display: block;
+  display: inline-block;
   max-width: 100%;
   /* height: auto; */
-  height: ${(props) => (props.height ? props.height : 'auto')};
-  width: ${(props) => (props.width ? props.width : undefined)};
-  margin-left: ${(props) => (props.marginLeft ? props.marginLeft : '0px')};
+  height: ${(props) => (props.height || 'auto')};
+  width: ${(props) => (props.width || undefined)};
+  margin-left: ${(props) => (props.marginLeft || '0px')};
+  // margin-bottom: 0 !important;
+  margin: ${(props) => (props.margin || '0px')};
+  padding: ${(props) => (props.padding || '0px')};
+  max-width: ${(props) => (props.maxWidth || undefined)};
+  max-height: ${(props) => (props.maxHeight || undefined)};
 `;
 
 type ImageProps = {
   src?: string;
   alt: string;
   marginLeft?: string;
+  margin?: string;
   height?: string;
   width?: string;
   className?: string;
   onClick?: (event: React.MouseEvent<HTMLImageElement, MouseEvent>) => void;
+  maxWidth?: string;
+  maxHeight?: string;
+  padding?: string;
 };
 
 const Image: React.FC<ImageProps> = (props) => {
@@ -36,8 +49,12 @@ const Image: React.FC<ImageProps> = (props) => {
       src={props.src}
       alt={props.alt}
       marginLeft={props.marginLeft}
+      margin={props.margin}
       height={props.height}
       width={props.width}
+      padding={props.padding}
+      maxWidth={props.maxWidth}
+      maxHeight={props.maxHeight}
       onClick={props.onClick}
     />
   );

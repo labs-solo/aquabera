@@ -1,7 +1,5 @@
 import Modal from 'common/components/Modal/Modal';
 import Image from 'common/components/Image';
-import { StyledGrid } from 'common/styles/grid.styles';
-import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import { StyledModalBody, StyledModalBodyRight, PopoverHeaderText, StyledModalBodyLeft, StyledBg, PopoverLink, IchiLogoV2 } from './modalContainer.style';
 import Button from 'common/components/Button';

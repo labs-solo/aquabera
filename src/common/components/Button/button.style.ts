@@ -4,7 +4,11 @@ import { alignItems, boxShadow, variant } from 'styled-system';
 import { base } from '../base';
 import { buttonStyle, colorStyle, sizeStyle } from '../customVariant';
 
-const ButtonStyle = styled.button`
+type StyledButtonProps = {
+  width?: string;
+};
+
+const ButtonStyle = styled.button<StyledButtonProps>`
   /* button default style */
   cursor: pointer;
   display: inline-flex;
@@ -13,12 +17,13 @@ const ButtonStyle = styled.button`
   // The color here is consistent in html and rehydration
   color: ${lightTheme.colors.white};
   background-color: ${lightTheme.colors.primary};
-  min-height: 48px;
-  min-width: 48px;
+  min-height: 39px;
+  min-width: 85px;
+  width: ${(props) => props.width};
   border-radius: 3px;
   font-family: inherit;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
   text-transform: capitalize;
   padding-top: 8px;

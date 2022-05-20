@@ -1,25 +1,40 @@
 import App from 'App';
-import Banner from 'containers/Banner';
-import MediaSection from 'containers/MediaSection';
-import QuoteCarouselSection from 'containers/QuoteCarouselSection';
-import HowItWorksSection from 'containers/HowItWorksSection';
-import JoinTheCommunitySection from 'containers/JoinTheCommunitySection';
-import OneTokensSection from 'containers/OneTokensSection';
-import PartnersSection from 'containers/PartnersSection';
-import RssFeedSection from 'containers/RssFeedSection';
 import React from 'react';
+import MainSection from 'containers/MainSection';
+import AngelVaultsSection from 'containers/AngelVaultsSection';
+import BrandedDollarsSection from 'containers/BrandedDollarsSection';
+import { AnchorLink } from "gatsby-plugin-anchor-links";
+import Image from 'common/components/Image';
 
-const Index: React.FC = () => {
+const Index: React.FC = (props) => {
   return (
-    <App>
-      <Banner />
-      <OneTokensSection />
-      <QuoteCarouselSection />
-      <HowItWorksSection />
-      <PartnersSection />
-      <RssFeedSection />
-      <JoinTheCommunitySection />
-      <MediaSection />
+    <App className="home-page-container" noGutter={true}>
+      <div id="angelvaults" >
+        <AngelVaultsSection />
+      </div>
+
+      <div style={{textAlign: "center", width: "100%"}}>
+        <AnchorLink to="/#hodlvaults" title="HODL Vaults">
+          <Image className="chevron-down" alt="Scroll Down" />
+        </AnchorLink>
+      </div>
+
+      <div id="hodlvaults" >
+        <MainSection>
+          {props.children}
+        </MainSection>
+      </div>
+
+      <div style={{textAlign: "center", width: "100%"}}>
+        <AnchorLink to="/#brandeddollars" title="Branded Dollars">
+          <Image className="chevron-down" alt="Scroll Down" />
+        </AnchorLink>
+      </div>
+
+      <div id="brandeddollars" >
+        <BrandedDollarsSection />
+      </div>
+
     </App>
   );
 };

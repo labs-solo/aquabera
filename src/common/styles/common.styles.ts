@@ -20,6 +20,34 @@ export const StyledFlex = styled.div<StyledFlexProps>`
   margin-top: ${(props) => props.marginTop};
   gap: ${(props) => props.gap};
   flex-wrap: ${(props) => props.flexWrap};
+
+  .buttons {
+    width: 530px;
+
+    @media (max-width: 550px) {
+      width: 100%;
+    }
+  }
+  .primary-button, .secondary-button{
+    width: 250px;
+
+    @media (max-width: 550px) {
+      width: 100%;
+    }
+
+  }
+  .btn-link{
+    text-decoration: none;
+    @media (max-width: 550px) {
+      width: 48%;
+    }
+  }
+
+  @media (max-width: 550px) {
+    .card_row{
+      flex-direction: column;
+    }
+  }
 `;
 
 export const StyledFlexRowNoWrap = styled.div<StyledFlexProps>`
@@ -71,6 +99,24 @@ export const StyledContainer = styled.div`
     margin-right: 0px;
     margin-left: 0px;
   }
+`;
+export const StyledParagraph = styled.div<StyledFlexProps>`
+  max-width: 800px;
+  font-size: 24px;
+  line-height: 28.8px;
+  font-weight: 300;
+`;
+
+export const StyledSecondaryParagraph = styled.div<StyledFlexProps>`
+  font-size: 18px;
+  line-height: 21.6px;
+  font-weight: 700;
+`;
+
+export const StyledSubText = styled.div<StyledFlexProps>`
+  font-size: 16px;
+  font-weight: 300;
+  color: #787E91;
 `;
 
 type StyledFlexColumnProps = {
@@ -143,24 +189,49 @@ export const StyledTextWithCursor = styled.div`
   }
 `;
 
-export const StyledHr = styled.hr`
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: none;
-  height: 1px;
-  width: 90%;
+export const StyledDivRelative = styled.div`
+  position: relative;
 `;
 
-export const StyledFullHr = styled.hr`
-  margin-top: 20px;
+export const StyledHorizontalCard = styled.div<StyledFlexProps>`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 20px;
+  padding: ${(props) => (props.padding || '20px')};
   margin-bottom: 20px;
-  border: none;
-  height: 1px;
+  align-items: center;
+  width: ${(props) => (props.width || '49%')};
+
+  @media screen and (max-width: 700px) {
+    width: 100%;
+  }
+`;
+
+export const StyledHorizontalCardInner = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   width: 100%;
 `;
 
-export const StyledDivRelative = styled.div`
-  position: relative;
+export const StyledVerticalCard = styled.div<StyledFlexProps>`
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  width: ${(props) => (props.width || '32%')};
+  padding: ${(props) => (props.padding || '60px 20px')};
+  @media screen and (max-width: 700px) {
+    width: 49%;
+    padding: ${(props) => (props.padding || '40px 20px')};
+  }
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    padding: ${(props) => (props.padding || '40px 20px')};
+  }
+
 `;
 
 export const StyledActionAnchor = styled.a`

@@ -6,6 +6,7 @@ import ThemeSwitcher from 'common/components/ThemeSwitcher';
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import Button from 'common/components/Button';
 import Link from 'common/components/Link';
+import NavContainer from 'common/components/UI/NavContainer';
 
 export const developerOptions = [
   {
@@ -158,8 +159,8 @@ type Props = {
 
 const Topnav: React.FC<Props> = (props) => {
   return (
-  <Navbar collapseOnSelect expand="lg" className="bg-color navbar">
-  <Container>
+  <Navbar collapseOnSelect expand="lg">
+  <NavContainer>
 
     <Navbar.Brand href="/">                
       <Image
@@ -202,11 +203,11 @@ const Topnav: React.FC<Props> = (props) => {
         <div className="theme-switcher-icon"><ThemeSwitcher onClick={props.themeToggle} /></div>
 
         <OutboundLink target="_blank" href="https://app.ichi.org" >
-          <Button className="text primary-button" title="Enter App" />
+          <Button className="text primary-button" title="Launch App" />
         </OutboundLink>
       </Nav>
     </Navbar.Collapse>
-  </Container>
+  </NavContainer>
 </Navbar>)     
 };
 

@@ -7,7 +7,7 @@ import { CopywriteText, TosText } from './copywriteSection.style';
 
 const CopywriteSection: React.FC = () => {
   return (
-    <Container >
+    <Container paddingTop="40px">
       <StyledFlex width="100%" padding="0 0 40px 0">
         <CopywriteText className="primary-text-color text-align-left">
             &copy; 2021 

@@ -1,8 +1,8 @@
 import React from 'react';
-import Button from 'common/components/Button';
-import Card from './Card';
+import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import './Card.css';
-import SectionHeader from 'common/components/SectionHeader';
+import { StyledFlex, StyledFlexColumn, StyledSecondaryParagraph, StyledParagraph, StyledSubText, StyledVerticalCard } from 'common/styles/common.styles';
+import Image from 'common/components/Image';
 
 class Widget extends React.Component {
 
@@ -30,7 +30,7 @@ class Widget extends React.Component {
             .then(data => data.json())
             .then(data => {   
                 const dataItems = data.items
-                const mediumPosts = dataItems.filter(item => !item.title.includes("Weekly Review")  )
+                const mediumPosts = dataItems.filter(item => !item.title.includes("Week in Review")  )
                 this.setState({
                     mediumPosts: mediumPosts,
                 }) 
@@ -40,36 +40,45 @@ class Widget extends React.Component {
                     requestFailed: true,
                 })
             })
+        this.isTwitter = this.props.data.header === 'Twitter';
     }
     
     render() {
         if (this.state.requestFailed) return <div className="container"><p className="ml-4">Oops! Sorry we couldn't load your medium articles</p></div>
         if (!this.state.mediumPosts) return <div className="container"><p className="ml-4">Loading articles from my medium feed ...</p></div>
         
-        const mediumPosts = this.state.mediumPosts
+        const mediumPosts = this.state.mediumPosts.filter((p) => p.title !== "No title");
         const posts = mediumPosts.length > 3 ? mediumPosts.slice(0, 3) : mediumPosts;
-        
-        const cardCarousels = posts.map((post, index) => 
-          <div className={this.state.active === index ? 'carousel-item col-12 col-sm-12 col-md-6 col-lg-4 active' : 'carousel-item col-12 col-sm-12 col-md-6 col-lg-4'} key={index}> 
-            <Card post={post} />
-          </div>
-        ) 
-        
+
         return(
-            <>
-                <hr />
-                <SectionHeader
-                    text={this.props.data.header}
-                />
-                <div id="postsCardCarousels" className="carousel slide" data-ride="carousel" data-interval="false">
-                    <div className="carousel-inner row w-100 mx-auto" role="listbox">
-                        {cardCarousels}
-                    </div>
-                </div>
-                <div className="clear text-align-center">
-                    <Button className="text primary-button" title="View All" onClick={this.handleClick} />
-                </div>
-            </>
+            <StyledFlex flexWrap="wrap" justifyContent="space-between" className="card_row">
+                {posts.map((post) => (
+                    <StyledVerticalCard padding="30px 20px" key={post.link} className="news_card secondary-bg-color">
+                        <OutboundLink href={post.link} target="blank">
+                        {/* {this.isTwitter && ( */}
+                            {true && (
+                                <StyledFlex className="mb-20">
+                                    <Image alt="ICHI" className="ichi-black-white mr-20" />
+                                    <StyledFlexColumn>
+                                        <StyledParagraph>
+                                            ICHI
+                                        </StyledParagraph>
+                                        <StyledSubText >
+                                            {this.isTwitter && <> @ichifoundation &middot; </>}
+                                            {new Date(post.pubDate)
+                                                .toLocaleDateString("en-US", {month: 'short', day: 'numeric', year: 'numeric'})}
+                                        </StyledSubText>
+                                    </StyledFlexColumn>
+                                </StyledFlex>
+                            )}
+                            {/* {!this.isTwitter && (
+                                <img src={post.thumbnail} className="card-img-top post-thumbnail" alt={post.title} />
+                            )} */}
+                            <StyledSecondaryParagraph className="primary-text-color">{post.title}</StyledSecondaryParagraph>
+                        </OutboundLink>
+                    </StyledVerticalCard>
+                ))}    
+            </StyledFlex>
         )
     }        
 }

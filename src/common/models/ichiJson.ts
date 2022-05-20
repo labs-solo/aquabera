@@ -11,6 +11,10 @@ type Header = {
     text: string;
     href: string;
   }
+  button2: {
+    text: string;
+    href: string;
+  }
 }
 
 type HowItWorksSection = {
@@ -39,6 +43,18 @@ type JoinTheCommunitySection = {
   header: Header;
 }
 
+type MainSection = {
+  header: Header;
+}
+
+type AngelVaultsSection = {
+  header: Header;
+}
+
+type BrandedDollarsSection = {
+  header: Header;
+}
+
 export type IchiJson = {
   ichiJson: {
     navbar: Navbar;
@@ -47,5 +63,8 @@ export type IchiJson = {
     partnersSection: PartnersSection;
     rssFeedSection: RssFeedSection;
     joinTheCommunitySection: JoinTheCommunitySection;
+    mainSection: MainSection;
+    angelVaultsSection: AngelVaultsSection;
+    brandedDollarsSection: BrandedDollarsSection;
   };
 };

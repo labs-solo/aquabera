@@ -7,6 +7,7 @@ query listFarms {
       isDeposit
       isPosition
       yearlyAPY
+      vaultIRR
       chainId
       tvl
       farmTVL

@@ -1,8 +1,31 @@
-.card{
-    width: 33%;
-    float: left;
-    padding: 30px;
+.news_card{
+    width: 32%;
+    padding: 20px;
 }
+@media (max-width: 700px) {
+    .news_card{
+        width: 49%;
+    }
+    .news_card:last-child{
+        display: none;
+    }
+  }
+  @media (max-width: 480px) {
+    .card_row{
+      flex-direction: column !important;
+    }
+    .news_card{
+        width: 100% !important;
+    }
+    .news_card:nth-child(2){
+        display: none;
+    }
+    .news_card:last-child{
+        display: none;
+    }
+
+  }
+
 @media screen and (max-width: 767px) {
     .card{
         width: 100%;

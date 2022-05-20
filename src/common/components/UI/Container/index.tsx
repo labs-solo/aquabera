@@ -7,11 +7,14 @@ type Props = {
   noGutter?: boolean;
   mobileGutter?: boolean;
   width?: string;
+  paddingTop?: string;
+  paddingBottom?: string;
+  marginBottom?: string;
 }
 
 const Container: React.FC<Props> = (props) => {
   // Add all classs to an array
-  const addAllClasses = ['container'];
+  const addAllClasses = ['main_container'];
   // className prop checking
   if (props.className) {
     addAllClasses.push(props.className);
@@ -24,6 +27,9 @@ const Container: React.FC<Props> = (props) => {
       noGutter={props.noGutter}
       width={props.width}
       mobileGutter={props.mobileGutter}
+      paddingTop={props.paddingTop}
+      paddingBottom={props.paddingBottom}
+      marginBottom={props.marginBottom}
     >
       {props.children}
     </ContainerWrapper>

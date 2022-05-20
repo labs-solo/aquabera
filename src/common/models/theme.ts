@@ -9,12 +9,16 @@ export type Colors = {
   bgColor: string;
   transparent: string;
   primaryTextColor: string;
+  secondaryTextColor: string;
   black: string;
   white: string;
   headingColor: string;
+  secondaryHeaderColor: string;
   subHeadingColor: string;
   textColor: string;
   subTextColor: string;
+  headerLinkColor: string;
+  linkColor: string;
   labelColor: string;
   inactiveField: string;
   inactiveButton: string;
@@ -68,6 +72,10 @@ export type IchiTheme = {
     bgPopover: string;
     leftArrow: string;
     rightArrow: string;
+    mainSection: string;
+    angelVaults: string;
+    brandedDollars: string;
+    form: string;
   },
   icons:{
     close: string;

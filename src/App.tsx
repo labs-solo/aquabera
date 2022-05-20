@@ -5,31 +5,47 @@ import { darkTheme } from 'common/theme/dark/darkTheme';
 import { lightTheme } from 'common/theme/light/lightTheme';
 import SEO from 'components/seo';
 import GlobalStyle, { ContentWrapper } from 'containers/app.style';
-import CopywriteSection from 'containers/CopywriteSection';
-import React from 'react';
-import Sticky from 'react-stickynode';
+import React, { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
+import Banner from 'containers/Banner';
+import Container from 'common/components/UI/Container';
+import Footer from 'containers/Footer';
+import HeaderSection from 'containers/HeaderSection';
+import 'react-pro-sidebar/dist/css/styles.css';
+import SidebarSection from 'containers/SidebarSection';
 import useDarkMode from 'use-dark-mode';
-import Topnav from 'containers/Topnav';
 
-const App: React.FC = (props) => {
+type Props = {
+  className?: string;
+  noGutter?: boolean;
+  marginBottom?: string;
+}
+
+
+const App: React.FC<Props> = (props) => {
   const darkMode = useDarkMode();
   const theme = darkMode.value ? darkTheme : lightTheme;
+
+  const [showSidebar, setShowSidebar] = useState(false);
+  const sidebarClassName = showSidebar ? 'show' : '';
+  
   return (
     <ThemeProvider theme={theme}>
       <ApolloProvider client={apolloClient}>
         <SEO title="ICHI" />
         <ResetCSS />
         <GlobalStyle />
-        <ContentWrapper>
-          <Sticky top={0} innerZ={9999} activeClass="sticky-active">
-            <Topnav themeToggle={darkMode.toggle} themeName={theme.name} /> 
-          </Sticky>
-          <ContentWrapper>
-            {props.children}
+        <div style={{position: 'relative'}}>
+          <SidebarSection sidebarClassName={sidebarClassName} showSidebar={setShowSidebar} />
+          <ContentWrapper className={`main-container ${props.className}`}>
+            <Banner />
+            <HeaderSection showSidebar={setShowSidebar}  themeToggle={darkMode.toggle} themeName={theme.name} /> 
+            <Container noGutter={props.noGutter} marginBottom="0px">
+              {props.children}
+            </Container>
+            <Footer />
           </ContentWrapper>
-          <CopywriteSection />
-        </ContentWrapper>
+        </div>
       </ApolloProvider>
     </ThemeProvider>
   );

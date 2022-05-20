@@ -14,6 +14,10 @@
 // import IconTheme from 'common/assets/image/ichi/theme/light_mode.svg';
 import ImageBanner from 'common/assets/image/light/bg_hero.jpg';
 import ImageTopWaves from 'common/assets/image/light/bg_top_waves_light.svg';
+import ImageMainSection from 'common/assets/image/dark/bg_main_section.png';
+import ImageAngelVaultsSection from 'common/assets/image/dark/bg_angel_vaults.png';
+import ImageBrandedDollarsSection from 'common/assets/image/dark/bg_branded_dollars.png';
+import ImageForm from 'common/assets/image/dark/bg_form.png';
 import ImageCommunityBubbles from 'common/assets/image/light/img_bubbles_community_light.svg';
 import ImageOneTokenBubbles from 'common/assets/image/light/img_bubbles_onetokens.svg';
 import ImageHowItWorks from 'common/assets/image/light/img_howitworks.svg';
@@ -21,8 +25,8 @@ import ImageIchiLogo from 'common/assets/image/light/img_logo_ichi_black.svg';
 import ImageIchi from 'common/assets/image/light/img_logo_ichi_symbol.svg';
 import ImageTheme from 'common/assets/image/light/img_theme.svg';
 import IconClose from 'common/assets/image/light/icon_close.svg';
-import ImageLeftArrowLight from 'common/assets/image/light/img_left_arrow.png';
-import ImageRightArrowLight from 'common/assets/image/light/img_right_arrow.png';
+import ImageLeftArrow from 'common/assets/image/dark/img_left_arrow.png';
+import ImageRightArrow from 'common/assets/image/dark/img_right_arrow.png';
 import ImageBgPopover from 'common/assets/image/ichi/background_blue.png';
 import { ColorsKey, IchiTheme, Theme } from 'common/models/theme';
 import { css } from 'styled-components';
@@ -56,10 +60,14 @@ export const lightTheme: IchiTheme = {
     howItWorks: ImageHowItWorks,
     communityBubbles: ImageCommunityBubbles,
     topWaves: ImageTopWaves,
-    leftArrow: ImageLeftArrowLight,
-    rightArrow: ImageRightArrowLight,
     theme: ImageTheme,
-    bgPopover: ImageBgPopover
+    bgPopover: ImageBgPopover,
+    leftArrow: ImageLeftArrow,
+    rightArrow: ImageRightArrow,
+    mainSection: ImageMainSection,
+    angelVaults: ImageAngelVaultsSection,
+    brandedDollars: ImageBrandedDollarsSection,
+    form: ImageForm
   },
   icons:{
     close: IconClose

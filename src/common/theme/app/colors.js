@@ -13,7 +13,7 @@ const colors = {
     black: '#000000',
     white: '#ffffff',
     primary: '#1A73E8',
-    headingColor: '#0f2137',
+    headingColor: '#016DF2',
     quoteText: '#343d48',
     textColor: 'rgba(52, 61, 72, 0.8)',
     linkColor: '#2b9eff',

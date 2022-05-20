@@ -126,5 +126,47 @@
         "href": "https://t.me/ichifarm"
       }
     }
+	},
+	"mainSection": {
+    "header": {
+      "name": "HODL Vaults",
+      "text": "Earn yield by depositing your favorite token",
+      "button": {
+        "text": "Deposit",
+        "href": "https://app.ichi.org/hodlvault/"
+      },
+      "button2": {
+        "text": "Learn More",
+        "href": "https://docs.ichi.farm/earn-yield/hodl-vaults"
+      }
+    }
+	},
+	"angelVaultsSection": {
+    "header": {
+      "name": "Angel Vaults",
+      "text": "Build protocol owned liquidity without selling your project's token",
+      "button": {
+        "text": "Deposit",
+        "href": "https://app.ichi.org/vault/"
+      },
+      "button2": {
+        "text": "Learn More",
+        "href": "https://angel.ichi.org"
+      }
+    }
+	},
+	"brandedDollarsSection": {
+    "header": {
+      "name": "Branded Dollars",
+      "text": "Stable tokens worth $1, backed by any project's native token",
+      "button": {
+        "text": "Mint",
+        "href": "https://app.ichi.org/mint"
+      },
+      "button2": {
+        "text": "Learn More",
+        "href": "https://docs.ichi.farm/earn-yield/deposit"
+      }
+    }
 	}
 }

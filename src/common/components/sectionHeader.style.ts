@@ -1,17 +1,20 @@
 import styled from 'styled-components';
 
 export const StyledSectionHeader = styled.div`
-  font-size: 40px;
-  font-weight: 600;
+  font-size: 18px;
   letter-spacing: 0;
-  line-height: 49px;
-  text-align: center;
+  line-height: 22px;
+  width: 580px;
+  font-family: "lato";
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 20px;
 `;
 
 export const StyledSectionHeaderSubText = styled.div`
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 0;
-  line-height: 24px;
-  text-align: center;
-  max-width: 575px;
+  line-height: 22px;
+  font-family: "lato";
+  font-weight: 500;
 `;

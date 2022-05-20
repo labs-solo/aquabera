@@ -5,7 +5,7 @@ import React from 'react';
 
 const Index: React.FC = () => {
   return (
-    <App>
+    <App className="home-page-container">
       <NewsSection />
     </App>
   );

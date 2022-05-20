@@ -15,6 +15,10 @@
 // import IconTheme from 'common/assets/image/ichi/theme/dark_mode.svg';
 import ImageBanner from 'common/assets/image/dark/bg_hero.jpg';
 import ImageTopWaves from 'common/assets/image/dark/bg_top_waves_dark.svg';
+import ImageMainSection from 'common/assets/image/dark/bg_main_section.png';
+import ImageAngelVaultsSection from 'common/assets/image/dark/bg_angel_vaults.png';
+import ImageBrandedDollarsSection from 'common/assets/image/dark/bg_branded_dollars.png';
+import ImageForm from 'common/assets/image/dark/bg_form.png';
 import ImageCommunityBubbles from 'common/assets/image/dark/img_bubbles_community_dark.svg';
 import ImageOneTokenBubbles from 'common/assets/image/dark/img_bubbles_onetokens.svg';
 import ImageIchi from 'common/assets/image/dark/img_logo_ichi_symbol.svg';
@@ -59,7 +63,11 @@ export const darkTheme: IchiTheme = {
     theme: ImageTheme,
     bgPopover: ImageBgPopover,
     leftArrow: ImageLeftArrow,
-    rightArrow: ImageRightArrow
+    rightArrow: ImageRightArrow,
+    mainSection: ImageMainSection,
+    angelVaults: ImageAngelVaultsSection,
+    brandedDollars: ImageBrandedDollarsSection,
+    form: ImageForm
 },
   icons:{
     close: IconClose

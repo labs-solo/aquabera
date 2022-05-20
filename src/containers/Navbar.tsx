@@ -14,8 +14,6 @@ import React, { useRef, useState } from 'react';
 // import Scrollspy from 'react-scrollspy';
 // import { MenuArea, MobileMenu, NavbarWrapper } from './navbar.style';
 import { MenuArea, NavbarWrapper } from './navbar.style';
-import ModalContainer from 'containers/ModalContainer';
-import useModal from 'hooks/useModal';
 import Link from 'common/components/Link';
 
 

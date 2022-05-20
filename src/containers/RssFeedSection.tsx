@@ -1,35 +1,29 @@
-import Container from 'common/components/UI/Container';
-// import { IchiJson } from 'common/models/ichiJson';
-// import { graphql, useStaticQuery } from 'gatsby';
+import Image from 'common/components/Image';
 import React from 'react';
 import Widget from 'common/components/RssFeed/Widget.js'
+import {NewsFeed} from './NewsSection';
+import { StyledFlex, StyledParagraph, StyledSubText } from 'common/styles/common.styles';
+import { OutboundLink } from 'gatsby-plugin-google-gtag';
 
-const PartnersSection: React.FC = () => {
-  /* const Data = useStaticQuery<IchiJson>(graphql`
-    query {
-      ichiJson {
-        rssFeedSection {
-          header
-          url
-          feed
-          rss2json
-        }
-      }
-    }
-  `); */
+type Props = {
+  section: NewsFeed;
+  logo: string;
+}
 
-  // const section = Data.ichiJson.rssFeedSection;
-  const section = {
-    "header": "Latest News",
-    "feed": "https://medium.com/feed/ichifarm",
-    "url": "https://medium.com/ichifarm",
-    "rss2json": "https://api.rss2json.com/v1/api.json?rss_url="
-  }
-
+const PartnersSection: React.FC<Props> = (props) => {
   return (
-    <Container>
-      <Widget data={section}></Widget>
-    </Container>
+    <>
+      <StyledFlex justifyContent="space-between" alignItems="center" className="mb-20">
+        <StyledFlex alignItems="center">
+          <Image className={props.logo} alt={props.section.header} height="60px" />
+          <StyledParagraph className="secondary-header-color ml-20">{props.section.header}</StyledParagraph>
+        </StyledFlex>
+        <OutboundLink href={props.section.url} target="blank">
+          <StyledSubText className="primary-text-color">Read More</StyledSubText>
+        </OutboundLink>
+      </StyledFlex>
+      <Widget data={props.section} />
+    </>
   );
 };
 

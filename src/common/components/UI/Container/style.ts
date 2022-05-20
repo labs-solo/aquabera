@@ -5,17 +5,20 @@ type Props = {
   noGutter?: boolean;
   mobileGutter?: boolean;
   width?: string;
+  paddingTop?: string;
+  paddingBottom?: string;
+  marginTop?: string;
+  marginBottom?: string;
 };
 
 const ContainerWrapper = styled.div<Props>`
   margin-left: auto;
   margin-right: auto;
-  ${(props) =>
-    props.fullWidth &&
-    css`
-      width: 100%;
-      max-width: none !important;
-    `};
+  padding-top:  ${(props) => props.paddingTop || '0'};
+  padding-bottom:  ${(props) => props.paddingBottom || '0'};
+  margin-top:  ${(props) => props.marginTop || '30px'};
+  margin-bottom:  ${(props) => props.marginBottom || '80px'};
+  width: 100%;
   ${(props) =>
     (props.noGutter &&
       css`
@@ -26,16 +29,8 @@ const ContainerWrapper = styled.div<Props>`
       padding-left: 30px;
       padding-right: 30px;
     `};
-  @media (min-width: 768px) {
-    /*max-width: 750px;*/
-    width: 100%;
-  }
-  @media (min-width: 992px) {
-    max-width: 970px;
-    width: 100%;
-  }
   @media (min-width: 1220px) {
-    max-width: ${(props) => props.width || '1200px'};
+    max-width: ${(props) => props.width || '1000px'};
     width: 100%;
   }
   @media (max-width: 768px) {
