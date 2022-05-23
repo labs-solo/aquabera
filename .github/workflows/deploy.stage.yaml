@@ -32,6 +32,10 @@ jobs:
         # Commenting out to test if it works without this
         commitHash: ${{ steps.push-changes.outputs.commit-hash }}
 
+    - name: Cloudfare URL
+      run: |
+        echo ${{ steps.cloudfare.outputs.url }}
+
   prod:
     needs: stage
     name: Build and deploy prod
@@ -42,9 +46,13 @@ jobs:
 
     steps:
 
-    - uses: actions/checkout@v2
+    - name: Merge master -> production
+      uses: devmasx/merge-branch@master
       with:
-        submodules: true
+        type: now
+        from_branch: master
+        target_branch: production
+        github_token: ${{ github.token }}
 
     - name: Await CF Staging build
       id: cloudfare

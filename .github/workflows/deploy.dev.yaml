@@ -30,3 +30,7 @@ jobs:
         # Add this if you want to wait for a deployment triggered by a specfied commit
         # Commenting out to test if it works without this
         commitHash: ${{ steps.push-changes.outputs.commit-hash }}
+
+    - name: Cloudfare URL
+      run: |
+        echo ${{ steps.cloudfare.outputs.url }}

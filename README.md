@@ -2,7 +2,7 @@
 
 ## Contributing
 
-Use Node v12 and after installing node_modules run `npm run dev`
+Use Node v16 and after `npm i` run `npm run dev`
 
 ### Troubleshooting Mac
 
