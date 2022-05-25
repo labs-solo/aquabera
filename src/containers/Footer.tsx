@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
             <FooterLink href={i.link} key={i.title} className="header-link-color">{i.title}</FooterLink>
           ))}
 
-          <OutboundLink href="https://discord.gg/ZqqEg7s4">
+          <OutboundLink href="https://discord.gg/cxPGjGTy8V">
             <Image src="../images/discord.svg" alt="Discord" className="smi-icon" />
           </OutboundLink>
           <OutboundLink href="https://t.me/ichifarm">

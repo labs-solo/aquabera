@@ -24,7 +24,7 @@ const CommunitySection: React.FC = () => {
       </StyledSecondaryParagraph>
       <StyledFlex flexWrap="wrap" justifyContent="space-between">
         <StyledHorizontalCard className="secondary-bg-color">
-          <OutboundLink href="https://discord.gg/ZqqEg7s4" target="blank">
+          <OutboundLink href="https://discord.gg/cxPGjGTy8V" target="blank">
             <StyledHorizontalCardInner>
               <Image src="../images/discord.svg" alt="Discord" className="mr-20" height="50" />
               <StyledFlexColumn>
