@@ -70,6 +70,7 @@ const CommunitySection: React.FC = () => {
       </StyledFlex>
 
       <hr />
+      {/* Temporarily removed
 
       <SectionHeader 
         text="Coming Soon!" 
@@ -82,7 +83,7 @@ const CommunitySection: React.FC = () => {
         Love ICHI and want to do more? Apply to be an ICHI Ambassador! 
         You can become part of an elite team, expand your network, attend events with ICHI, 
         earn cash and develop your skill sets.
-      </StyledParagraph>
+      </StyledParagraph> */}
     </StyledCommunitySection>
   );
 };
