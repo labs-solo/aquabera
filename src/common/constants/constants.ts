@@ -189,6 +189,6 @@ export const navMenu = [
   },
   {
     title: 'Docs',
-    link: 'https://docs.ichi.farm'
+    link: 'https://docs.ichi.org/'
   },
 ]
