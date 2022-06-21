@@ -35,11 +35,11 @@ const Banner: React.FC<Props> = (props) => {
 
   // const maxAPY = parseInt((farm.yearlyAPY + farm.vaultIRR).toString());
   // const bannerMessage = maxAPY ? `Deposit ${farm.displayName.replace(' Vault', '')} into the ${farm.displayName} and earn up to ${maxAPY}% ROI`: ""; 
-  const bannerMessage = 'Click here to deposit into an ICHI Angel Vault';
+  const bannerMessage = 'Join us for an ICHI <> Polygon AMA on June 28, 2022 @ 11:30AM ET';
   return (
     <BannerWrapperOuter id="home">
       <StyledBackgroundGradient>
-        <OutboundLink href="https://app.ichi.org/vault" target="_blank" className="medium color-white">
+        <OutboundLink href="https://twitter.com/ichifoundation/status/1538955862773059585" target="_blank" className="medium color-white">
           {bannerMessage} &rarr;
         </OutboundLink>
       </StyledBackgroundGradient>
