@@ -1,17 +1,16 @@
 {
-	"navbar": {
-		"logo": "../../assets/image/ichi/logo_horizontal_light/ichi_logo_horizontal_light.svg",
-		"navMenu": [
-		]
-	},
-	"howItWorksSection": {
-		"href": "https://docs.ichi.farm/onetokens/win-win-design-of-onetokens",
-		"header": {
+  "navbar": {
+    "logo": "../../assets/image/ichi/logo_horizontal_light/ichi_logo_horizontal_light.svg",
+    "navMenu": []
+  },
+  "howItWorksSection": {
+    "href": "https://docs.ichi.farm/onetokens/win-win-design-of-onetokens",
+    "header": {
       "name": "The Decentralized Monetary Authority Model",
       "text": "Decentralized Monetary Authorities allow any community to mint a stablecoin with their favorite cryptocurrency. Tokens are always redeemable for $1, and create a community treasury to stimulate rewards"
     }
-	},
-	"oneTokensSection": {
+  },
+  "oneTokensSection": {
     "header": {
       "name": "Branded Dollars",
       "text": "ICHI has supported the creation of branded dollars for leading cryptocurrency communities."
@@ -50,8 +49,8 @@
         "text": "Borrow and lend on wing.finance"
       }
     ]
-	},
-	"partnersSection": {
+  },
+  "partnersSection": {
     "header": {
       "name": "Partners",
       "text": "Organizations supporting the ICHI community"
@@ -110,14 +109,14 @@
         "text": "Ecosystem and liquidity"
       }
     ]
-	},
-  "rssFeedSection":{
+  },
+  "rssFeedSection": {
     "header": "Latest News",
     "feed": "https://medium.com/feed/ichifarm",
     "url": "https://medium.com/ichifarm",
     "rss2json": "https://api.rss2json.com/v1/api.json?rss_url="
   },
-	"joinTheCommunitySection": {
+  "joinTheCommunitySection": {
     "header": {
       "name": "Join the community",
       "text": "Drop by our Telegram to join the community, learn about ICHI, start farming, and govern the project",
@@ -126,8 +125,8 @@
         "href": "https://t.me/ichifarm"
       }
     }
-	},
-	"mainSection": {
+  },
+  "mainSection": {
     "header": {
       "name": "HODL Vaults",
       "text": "Earn yield by depositing your favorite token",
@@ -137,11 +136,11 @@
       },
       "button2": {
         "text": "Learn More",
-        "href": "https://docs.ichi.farm/earn-yield/hodl-vaults"
+        "href": "https://docs.ichi.org/ichi-docs-v3/ichi-vaults/hodl-vaults"
       }
     }
-	},
-	"angelVaultsSection": {
+  },
+  "angelVaultsSection": {
     "header": {
       "name": "Angel Vaults",
       "text": "Build protocol owned liquidity without selling your project's token",
@@ -154,8 +153,8 @@
         "href": "https://angel.ichi.org"
       }
     }
-	},
-	"brandedDollarsSection": {
+  },
+  "brandedDollarsSection": {
     "header": {
       "name": "Branded Dollars",
       "text": "Stable tokens worth $1, backed by any project's native token",
@@ -168,5 +167,5 @@
         "href": "https://docs.ichi.farm/earn-yield/deposit"
       }
     }
-	}
+  }
 }
