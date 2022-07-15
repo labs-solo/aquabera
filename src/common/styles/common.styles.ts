@@ -234,6 +234,16 @@ export const StyledVerticalCard = styled.div<StyledFlexProps>`
 
 `;
 
+export const StyledInnerCard = styled.div<StyledFlexProps>`
+  height: 100%;
+  width: 100%;
+  padding: ${(props) => (props.padding || '60px 20px')};
+  @media screen and (max-width: 700px) {
+    padding: ${(props) => (props.padding || '40px 20px')};
+  }
+
+`;
+
 export const StyledActionAnchor = styled.a`
   height: 18px;
   text-decoration: underline;

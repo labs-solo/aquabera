@@ -47,6 +47,8 @@ import ImageDefiyield from '../common/assets/image/ichi/media/defiyield.png';
 import ImageDecrypt from '../common/assets/image/ichi/media/decrypt.png';
 import ImageCoinTribune from '../common/assets/image/ichi/media/cointribune.png';
 import ImageInsideTrack from '../common/assets/image/ichi/media/inside-track.jpg';
+const IconCryptoholics = 'https://ichi-images.s3.amazonaws.com/logos/cryptoholics.png';
+
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -316,6 +318,9 @@ const GlobalStyle = createGlobalStyle`
     }
     & .icon-balancer {
       content: url(${IconBalance})
+    }
+    & .icon-cryptoholics {
+      content: url(${IconCryptoholics})
     }
     & .icon-loopring {
       content: url(${IconLoopring})
@@ -660,6 +665,9 @@ const GlobalStyle = createGlobalStyle`
       }
       & .cosimo {
         content: url('../images/partners/Cosimo-Ventures-Grey-1.svg');
+      }
+      & .cryptoholics {
+        content: url(${IconCryptoholics})
       }
       & .elliptic {
         content: url('../images/partners/Elliptic_Logo.png');
@@ -1079,6 +1087,9 @@ const GlobalStyle = createGlobalStyle`
       }
       & .cosimo {
         content: url('../images/partners/Cosimo-Ventures-Grey-1.svg');
+      }
+      & .cryptoholics {
+        content: url(${IconCryptoholics})
       }
       & .elliptic {
         content: url('../images/partners/Elliptic_Logo.png');

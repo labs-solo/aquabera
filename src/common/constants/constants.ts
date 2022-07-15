@@ -16,7 +16,14 @@ export const ChainId = {
   KOVAN: 42
 }
 
-export const partners = [
+type Partner = {
+  name: string;
+  logo: string;
+  description?: string;
+  url?: string;
+}
+
+export const partners: Partner[] = [
   {
     name: '1INCH',
     logo: 'oneinch',
@@ -136,6 +143,12 @@ export const partners = [
     name: 'Elliptic',
     logo: 'elliptic',
     description: ''
+  },
+  {
+    name: 'Cryptoholics',
+    logo: 'cryptoholics',
+    description: '',
+    url: 'https://cryptoholics.com/'
   },
 ]
 
