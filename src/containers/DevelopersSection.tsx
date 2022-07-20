@@ -22,7 +22,7 @@ const DevelopersSection: React.FC = () => {
 
       <StyledFlex flexWrap="wrap" justifyContent="space-between" className="mt-40">
         <StyledHorizontalCard className="secondary-bg-color">
-          <OutboundLink href="https://github.com/ichidao" target="blank">
+          <OutboundLink href="https://github.com/ichifarm" target="blank">
             <StyledHorizontalCardInner>
               <Image alt="Github" className="image-github mr-20" height="40" />
               <StyledSecondaryParagraph className="primary-text-color">
