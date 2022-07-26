@@ -14,6 +14,7 @@ query listFarms {
       lpName
       displayName
       vaultIRR
+      poolId
     }
   }
 }

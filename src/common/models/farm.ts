@@ -8,5 +8,5 @@ export type AppSyncFarmAPY = {
   farmTVL: number;
   lpName: string;
   displayName: string;
-  vaultIRR: number;
+  poolId: number;
 };
