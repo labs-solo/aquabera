@@ -33,76 +33,6 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
     });
   };
 
-  const developerOptions = [
-    {
-      key: 1,
-      text: 'Documentation',
-      value: 1,
-      content: (
-        <OutboundLink target="_blank" href="https://docs.ichi.farm/">Documentation</OutboundLink>
-      )
-    },
-    {
-      key: 2,
-      text: 'Github',
-      value: 2,
-      content: (
-          <OutboundLink target="_blank" href="https://github.com/ichifarm">Github</OutboundLink>
-      )
-    },
-    {
-      key: 3,
-      text: 'Audits',
-      value: 3,
-      content: (
-          <OutboundLink target="_blank" href="https://docs.ichi.farm/audits-and-risks/audits">Audits</OutboundLink>
-      )
-    },
-    {
-      key: 4,
-      text: 'Bug Bounty',
-      value: 4,
-      content: (
-          <OutboundLink target="_blank" href="https://immunefi.com/bounty/ichi/">Bug Bounty</OutboundLink>
-      )
-    },
-  ];
-
-  const governanceOptions = [
-    {
-      key: 1,
-      text: 'ICHI Token',
-      value: 1,
-      content: (
-          <OutboundLink target="_blank" href="https://docs.ichi.farm/ichi/ichi-governance">ICHI Token</OutboundLink>
-      )
-    },
-    {
-      key: 2,
-      text: 'Stablecoin Treasuries',
-      value: 2,
-      content: (
-          <OutboundLink target="_blank" href="https://www.ichi.farm/#/treasury">Stablecoin Treasuries</OutboundLink>
-      )
-    },
-    {
-      key: 3,
-      text: 'Forum',
-      value: 3,
-      content: (
-          <OutboundLink target="_blank" href="https://docs.ichi.farm/ichi/ichi-governance">Forum</OutboundLink>
-      )
-    },
-    {
-      key: 4,
-      text: 'Vote',
-      value: 4,
-      content: (
-          <OutboundLink target="_blank" href="https://snapshot.page/#/ichi.eth">Vote</OutboundLink>
-      )
-    },
-  ];
-
   const communityOptions = [
     {
       key: 1,
@@ -179,24 +109,6 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
           />
         </Menu>
       </li> */}
-      <li>
-        <Menu compact style={semanticMenuStyles} className="bg-color">
-          <Dropdown
-            text='Developers'
-            options={developerOptions}
-            style={semanticDropdownStyles} simple item
-          />
-        </Menu>
-      </li>
-      <li>
-        <Menu compact style={semanticMenuStyles} className="bg-color">
-          <Dropdown
-            text='Governance'
-            options={governanceOptions}
-            style={semanticDropdownStyles} simple item
-          />
-        </Menu>
-      </li>
       <li>
         <Menu compact style={semanticMenuStyles} className="bg-color">
           <Dropdown

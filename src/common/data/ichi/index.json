@@ -3,13 +3,6 @@
     "logo": "../../assets/image/ichi/logo_horizontal_light/ichi_logo_horizontal_light.svg",
     "navMenu": []
   },
-  "howItWorksSection": {
-    "href": "https://docs.ichi.farm/onetokens/win-win-design-of-onetokens",
-    "header": {
-      "name": "The Decentralized Monetary Authority Model",
-      "text": "Decentralized Monetary Authorities allow any community to mint a stablecoin with their favorite cryptocurrency. Tokens are always redeemable for $1, and create a community treasury to stimulate rewards"
-    }
-  },
   "oneTokensSection": {
     "header": {
       "name": "Branded Dollars",
@@ -164,7 +157,7 @@
       },
       "button2": {
         "text": "Learn More",
-        "href": "https://docs.ichi.farm/earn-yield/deposit"
+        "href": "https://docs.ichi.org/ichi-docs-v3/branded-dollars/overview"
       }
     }
   }

@@ -43,7 +43,7 @@ const CountDownSectionHelper = () => {
   return (
     <SectionWrapper>
       <ContentWrapper>
-        <OutboundLink className="countdown-heading" target="_blank" href="https://docs.ichi.farm/liquidity-programs/overview/ichi-reward-halving">
+        <OutboundLink className="countdown-heading" target="_blank" href="https://docs.ichi.org/">
           ICHI Halving Countdown
         </OutboundLink>
         <Fade up>

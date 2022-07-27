@@ -42,11 +42,9 @@ const Banner: React.FC<Props> = (props) => {
   const maxAPY = parseInt(farm.vaultIRR.toString());
   // USDC - 20006 is angel vault, wBTC - 1028 is hodl vault
   const isHodlVault = farm.poolId === 1028 || farm.poolId !== 20006;
-  // wbtc vault displayName is lower case in sdk. When it's changed in sdk, this line can be removed; displayNameTmp replaced with farm.displayName
-  const displayNameTmp = farm.displayName.replace(' vault', ' Vault').replace('wbtc', 'wBTC');
-  const displayName = isHodlVault ? displayNameTmp.replace(' Vault', ' HODL Vault') : displayNameTmp.replace(' Vault', 'Angel Vault');
+  const displayName = isHodlVault ? farm.displayName.replace(' Vault', ' HODL Vault') : farm.displayName.replace(' Vault', ' Angel Vault');
   const bannerMessage = maxAPY 
-    ? `The ${displayName} has earned ${maxAPY}% IRR since inception. Click to supply ${displayNameTmp.replace(' Vault', '')}`
+    ? `The ${displayName} has earned ${maxAPY}% IRR since inception. Click to supply ${farm.displayName.replace(' Vault', '')}`
     : "Click here to deposit into an ICHI Angel Vault"; 
 
   const bannerLink = maxAPY

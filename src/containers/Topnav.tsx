@@ -8,91 +8,6 @@ import Button from 'common/components/Button';
 import Link from 'common/components/Link';
 import NavContainer from 'common/components/UI/NavContainer';
 
-export const developerOptions = [
-  {
-    key: 1,
-    text: 'Documentation',
-    value: 1,
-    content: (
-      <OutboundLink target="_blank" href="https://docs.ichi.farm/">Documentation</OutboundLink>
-    ), 
-    url: 'https://docs.ichi.farm/',
-    target: 'blank'
-  },
-  {
-    key: 2,
-    text: 'Github',
-    value: 2,
-    content: (
-        <OutboundLink target="_blank" href="https://github.com/ichifarm">Github</OutboundLink>
-    ), 
-    url: 'https://github.com/ichifarm',
-    target: 'blank'
-  },
-  {
-    key: 3,
-    text: 'Audits',
-    value: 3,
-    content: (
-        <OutboundLink target="_blank" href="https://docs.ichi.farm/audits-and-risks/audits">Audits</OutboundLink>
-    ), 
-    url: 'https://docs.ichi.farm/audits-and-risks/audits',
-    target: 'blank'
-  },
-  {
-    key: 4,
-    text: 'Bug Bounty',
-    value: 4,
-    content: (
-        <OutboundLink target="_blank" href="https://immunefi.com/bounty/ichi/">Bug Bounty</OutboundLink>
-    ), 
-    url: 'https://immunefi.com/bounty/ichi/',
-    target: 'blank'
-  },
-];
-
-export const governanceOptions = [
-  {
-    key: 1,
-    text: 'ICHI Token',
-    value: 1,
-    content: (
-        <OutboundLink target="_blank" href="https://docs.ichi.farm/ichi/ichi-governance">ICHI Token</OutboundLink>
-    ), 
-    url: 'https://docs.ichi.farm/ichi/ichi-governance',
-    target: 'blank'
-  },
-  {
-    key: 2,
-    text: 'Stablecoin Treasuries',
-    value: 2,
-    content: (
-        <OutboundLink target="_blank" href="https://www.ichi.farm/#/treasury">Stablecoin Treasuries</OutboundLink>
-    ), 
-    url: 'https://www.ichi.farm/#/treasury',
-    target: 'blank'
-  },
-  {
-    key: 3,
-    text: 'Forum',
-    value: 3,
-    content: (
-        <OutboundLink target="_blank" href="https://docs.ichi.farm/ichi/ichi-governance">Forum</OutboundLink>
-    ), 
-    url: 'https://docs.ichi.farm/ichi/ichi-governance',
-    target: 'blank'
-  },
-  {
-    key: 4,
-    text: 'Vote',
-    value: 4,
-    content: (
-        <OutboundLink target="_blank" href="https://snapshot.page/#/ichi.eth">Vote</OutboundLink>
-    ), 
-    url: 'https://snapshot.page/#/ichi.eth',
-    target: 'blank'
-  },
-];
 
 export const communityOptions = [
   {
@@ -173,16 +88,6 @@ const Topnav: React.FC<Props> = (props) => {
       <Nav className="me-auto">
       </Nav>
       <Nav>
-      <NavDropdown title="Developers" className="collasible-nav-dropdown">
-          {developerOptions.map(option => (
-            <NavDropdown.Item key={option.key} href={option.url} target={option.target}>{option.text}</NavDropdown.Item>
-          ))}
-        </NavDropdown>
-        <NavDropdown title="Governance" className="collasible-nav-dropdown">
-          {governanceOptions.map(option => (
-            <NavDropdown.Item key={option.key} href={option.url} target={option.target}>{option.text}</NavDropdown.Item>
-          ))}
-        </NavDropdown>
         <NavDropdown title="Community" className="collasible-nav-dropdown">
           {communityOptions.map(option => (
             <NavDropdown.Item key={option.key} href={option.url} target={option.target}>{option.text}</NavDropdown.Item>
