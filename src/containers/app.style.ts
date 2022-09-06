@@ -24,6 +24,7 @@ import IconFirstMileVenturesLight from '../common/assets/image/light/icon_first_
 import IconFirstMileVenturesDark from '../common/assets/image/dark/icon_first_mile_ventures_dark.svg';
 import Icon1Inch from '../common/assets/image/icons/icon_1inch.svg';
 import IconBalance from '../common/assets/image/icons/icon_balance.svg';
+import IconDeFiPulse from '../common/assets/image/icons/icon_defipulse.svg';
 import IconLoopring from '../common/assets/image/icons/icon_loopring.svg';
 import IconMoon from '../common/assets/image/icons/icon_moon.svg';
 import IconMoonbeam from '../common/assets/image/icons/icon_moonbeam.svg';
@@ -669,6 +670,9 @@ const GlobalStyle = createGlobalStyle`
       & .cryptoholics {
         content: url(${IconCryptoholics})
       }
+      & .defipulse {
+        content: url(${IconDeFiPulse})
+      }
       & .elliptic {
         content: url('../images/partners/Elliptic_Logo.png');
       }
@@ -1090,6 +1094,9 @@ const GlobalStyle = createGlobalStyle`
       }
       & .cryptoholics {
         content: url(${IconCryptoholics})
+      }
+      & .defipulse {
+        content: url(${IconDeFiPulse})
       }
       & .elliptic {
         content: url('../images/partners/Elliptic_Logo.png');

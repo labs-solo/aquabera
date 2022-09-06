@@ -9,7 +9,7 @@ import Image from 'common/components/Image';
 const Index: React.FC = (props) => {
   return (
     <App className="home-page-container" noGutter={true}>
-      <div id="angelvaults" >
+      {/* <div id="angelvaults" >
         <AngelVaultsSection />
       </div>
 
@@ -18,7 +18,7 @@ const Index: React.FC = (props) => {
           <Image className="chevron-down" alt="Scroll Down" />
         </AnchorLink>
       </div>
-
+ */}
       <div id="hodlvaults" >
         <MainSection>
           {props.children}

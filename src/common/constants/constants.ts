@@ -150,6 +150,12 @@ export const partners: Partner[] = [
     description: '',
     url: 'https://cryptoholics.com/'
   },
+  {
+    name: 'DeFi Pulse',
+    logo: 'defipulse',
+    description: '',
+    url: 'https://www.defipulse.com/'
+  },
 ]
 
 export const media = [
