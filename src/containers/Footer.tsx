@@ -34,6 +34,9 @@ const Footer: React.FC = () => {
           <OutboundLink href="https://twitter.com/ichifoundation">
             <Image src="../images/twitter.svg" alt="Twitter" className="smi-icon" />
           </OutboundLink>
+          <OutboundLink href="https://www.defipulse.com/">
+            <Image src="../images/DeFi-Pulse.svg" alt="DeFi Pulse" className="smi-icon" />
+          </OutboundLink>
         </StyledNav>
       </StyledFlex>
     </StyledFooter>

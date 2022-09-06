@@ -1,7 +1,7 @@
 import App from 'App';
 import React from 'react';
 import MainSection from 'containers/MainSection';
-import AngelVaultsSection from 'containers/AngelVaultsSection';
+// import AngelVaultsSection from 'containers/AngelVaultsSection';
 import BrandedDollarsSection from 'containers/BrandedDollarsSection';
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import Image from 'common/components/Image';
