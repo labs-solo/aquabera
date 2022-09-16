@@ -41,7 +41,7 @@ const BrandedDollarsSection: React.FC = () => {
             className="mt-20 text-align-left"
             textAlign="center"
           />
-          <Image src="../images/branded-dollars2.svg" alt="Branded Dollars" />
+          <Image src="../images/branded-dollars-new.svg" alt="Branded Dollars" />
           <StyledFlex justifyContent="space-between" className="buttons">
             <OutboundLink target="_blank" href={section.header.button.href} className="btn-link">
               <Button
