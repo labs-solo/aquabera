@@ -125,7 +125,7 @@
       "text": "Earn yield by depositing your favorite token",
       "button": {
         "text": "Deposit",
-        "href": "https://app.ichi.org/hodlvault/"
+        "href": "https://app.ichi.org"
       },
       "button2": {
         "text": "Learn More",
@@ -139,7 +139,7 @@
       "text": "Build protocol owned liquidity without selling your project's token",
       "button": {
         "text": "Deposit",
-        "href": "https://app.ichi.org/vault/"
+        "href": "https://app.ichi.org/angelvault/"
       },
       "button2": {
         "text": "Learn More",

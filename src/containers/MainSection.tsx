@@ -31,6 +31,7 @@ const MainSection: React.FC = () => {
   `);
 
   const section = Data.ichiJson.mainSection;
+  const hodlVaultDepositLink = "https://app.ichi.org/";
   return (
     <StyledMainSection id="main-section" className="">
       <StyledFlex justifyContent="center">
@@ -43,7 +44,7 @@ const MainSection: React.FC = () => {
           />
           <Image src="../images/gate_hero.png" alt="HODL Vault" />
           <StyledFlex justifyContent="space-between" className="buttons">
-            <OutboundLink target="_blank" href={section.header.button.href} className="btn-link">
+            <OutboundLink target="_blank" href={hodlVaultDepositLink} className="btn-link">
               <Button
                 className="text primary-button"
                 title={section.header.button.text}

@@ -48,8 +48,8 @@ const Banner: React.FC<Props> = (props) => {
     : "Click here to deposit into an ICHI Angel Vault"; 
 
   const bannerLink = maxAPY
-    ? ( isHodlVault ? `https://app.ichi.org/hodlvault?poolId=${farm.poolId}` : `https://app.ichi.org/vault?poolId=${farm.poolId}`)
-    : "https://app.ichi.org/vault"
+    ? ( isHodlVault ? `https://app.ichi.org/vault?poolId=${farm.poolId}` : `https://app.ichi.org/angelvault?poolId=${farm.poolId}`)
+    : "https://app.ichi.org"
   return (
     <BannerWrapperOuter id="home">
       <StyledBackgroundGradient>
