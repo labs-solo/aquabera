@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
           width="auto"
         />
         <CopywriteText className="secondary-text-color">
-            &copy; 2021 ICHI. All rights reserved 
+            &copy; 2022 ICHI. All rights reserved 
         </CopywriteText>
       </StyledFlex>
       <StyledFlex>
@@ -36,6 +36,9 @@ const Footer: React.FC = () => {
           </OutboundLink>
           <OutboundLink href="https://www.defipulse.com/">
             <Image src="../images/DeFi-Pulse.svg" alt="DeFi Pulse" className="smi-icon" />
+          </OutboundLink>
+          <OutboundLink href="https://medium.com/ichifarm">
+            <Image src="../images/medium-light.png" alt="Medium" className="smi-icon" />
           </OutboundLink>
         </StyledNav>
       </StyledFlex>

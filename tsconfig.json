@@ -1,7 +1,9 @@
 {
   "include": [
     "./src/**/*",
-    "./src/custom.d.ts"
+    "./src/custom.d.ts",
+    "tailwind.config.js", 
+    "postcss.config.js"
   ],
   "compilerOptions": {
     "target": "esnext",

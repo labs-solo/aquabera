@@ -121,15 +121,15 @@
   },
   "mainSection": {
     "header": {
-      "name": "ICHI Vaults",
-      "text": "Earn yield by depositing your favorite token",
+      "name": "Vaults",
+      "text": "Grow any token with greedy liquidity",
       "button": {
         "text": "Deposit",
         "href": "https://app.ichi.org"
       },
       "button2": {
         "text": "Learn More",
-        "href": "https://docs.ichi.org/ichi-docs-v3/ichi-vaults/hodl-vaults"
+        "href": "https://docs.ichi.org"
       }
     }
   },

@@ -1,6 +1,7 @@
 import { ApolloProvider } from '@apollo/client';
 import { apolloClient } from 'graphql/client';
 import { ResetCSS } from 'common/assets/css/style';
+import 'index.css';
 import { darkTheme } from 'common/theme/dark/darkTheme';
 import { lightTheme } from 'common/theme/light/lightTheme';
 import SEO from 'components/seo';
@@ -40,7 +41,7 @@ const App: React.FC<Props> = (props) => {
           <ContentWrapper className={`main-container ${props.className}`}>
             <Banner />
             <HeaderSection showSidebar={setShowSidebar}  themeToggle={darkMode.toggle} themeName={theme.name} /> 
-            <Container noGutter={props.noGutter} marginBottom="0px">
+            <Container noGutter={props.noGutter} marginBottom="20px">
               {props.children}
             </Container>
             <Footer />

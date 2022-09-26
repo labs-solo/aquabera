@@ -8,7 +8,7 @@ import Image from 'common/components/Image';
 
 const Index: React.FC = (props) => {
   return (
-    <App className="home-page-container" noGutter={true}>
+    <App className="" noGutter={true}>
       {/* <div id="angelvaults" >
         <AngelVaultsSection />
       </div>
@@ -25,7 +25,7 @@ const Index: React.FC = (props) => {
         </MainSection>
       </div>
 
-      <div style={{textAlign: "center", width: "100%"}}>
+      {/* <div style={{textAlign: "center", width: "100%"}}>
         <AnchorLink to="/#brandeddollars" title="Branded Dollars">
           <Image className="chevron-down" alt="Scroll Down" />
         </AnchorLink>
@@ -34,7 +34,7 @@ const Index: React.FC = (props) => {
       <div id="brandeddollars" >
         <BrandedDollarsSection />
       </div>
-
+ */}
     </App>
   );
 };

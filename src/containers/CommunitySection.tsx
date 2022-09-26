@@ -14,7 +14,7 @@ const CommunitySection: React.FC = () => {
         text='Community' 
       />
       <StyledParagraph className="mt-20 mb-20 primary-text-color">
-        ICHI is a Decentralized Autonomous Organization (DAO) that gives crypto projects the tools they need to operate their own sustainable, community-controlled economies.
+        ICHI is a Decentralized Autonomous Organization (DAO) that enables users to earn yield with any token. ICHI’s Vaults generate passive yield for any token using liquidity management strategies built on Uniswap V3.
       </StyledParagraph>
 
       <hr />
@@ -69,7 +69,7 @@ const CommunitySection: React.FC = () => {
         </StyledHorizontalCard>
       </StyledFlex>
 
-      <hr />
+      {/* <hr /> */}
       {/* Temporarily removed
 
       <SectionHeader 

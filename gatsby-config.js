@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Ichi`,
-    description: `Useable money for every coin`,
+    title: `Grow any token with greedy liquidity`,
+    description: `Grow any token with greedy liquidity`,
     author: `@gatsbyjs`,
   },
   plugins: [

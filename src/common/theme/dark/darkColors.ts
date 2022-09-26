@@ -1,7 +1,7 @@
 import { Colors } from 'common/models/theme';
 
 const darkColors: Colors = {
-  bgColor: '#000000',
+  bgColor: '#141826',
   transparent: 'transparent',
   primaryTextColor: '#ffffff',
   secondaryTextColor: '#787E91',
