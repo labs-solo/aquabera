@@ -68,81 +68,16 @@ const GlobalStyle = createGlobalStyle`
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
 
-    /* Margin top */
-    & .mt-5 {
-      margin-top: 5px;
-    }
-    & .mt-10 {
-      margin-top: 10px;
-    }
-    & .mt-20 {
-      margin-top: 20px;
-    }
-    & .mt-40 {
-      margin-top: 40px;
-    }
-    & .mt-60 {
-      margin-top: 60px;
-    }
-    & .mt-80 {
-      margin-top: 80px;
-    }
-    & .mt-100 {
-      margin-top: 100px;
-    }
-    /* Margin bottom */
-    & .mb-20 {
-      margin-bottom: 20px;
-    }
-    & .mb-40 {
-      margin-bottom: 40px;
-    }
-    & .mb-60 {
-      margin-bottom: 60px;
-    }
-    & .mb-80 {
-      margin-bottom: 80px;
-    }
-    & .mb-550 {
-      margin-bottom: 550px;
-    }
-    /* Margin left */
-    & .ml-10 {
-      margin-left: 10px;
-    }
-    & .ml-20 {
-      margin-left: 20px;
-    }
-    & .ml-40 {
-      margin-left: 40px;
-    }
-    & .ml-80 {
-      margin-left: 80px;
+    & .font-primary{
+      font-size: 24px;
+      line-height: 28.8px;
+      font-weight: 300;    
     }
 
-    /* Margin right */
-    & .mr-10 {
-      margin-right: 10px;
+    & .font-secondary{
+      font-size: 16px;
+      font-weight: 300;
     }
-    & .mr-20 {
-      margin-right: 20px;
-    }
-    & .mr-40 {
-      margin-right: 40px;
-    }
-    & .mr-80 {
-      margin-right: 80px;
-    }
-
-    & .mlr-auto {
-      margin-left: auto;
-      margin-right: auto;
-    }
-    & .ptb-5{
-      padding-top: 5px;
-      padding-bottom: 5px;
-    }
-
 
     .pro-sidebar{
       height: 100%;
@@ -161,7 +96,7 @@ const GlobalStyle = createGlobalStyle`
     .show{
       position: fixed;
       left: 0px;
-      @media only screen and (min-width: 1024px) {
+      @media only screen and (min-width: 1130px) {
         display: none;
       }
     }
@@ -254,6 +189,22 @@ const GlobalStyle = createGlobalStyle`
         display: none;
         visibility: hidden;
         }
+    }
+  
+    /* for YouTube videos */
+    iframe{
+      border: none;
+      margin-bottom: 0 !important;
+      height: 528px;
+      @media (max-width: 900px) {
+        height: 400px;
+      }
+      @media (max-width: 700px) {
+        height: 360px;
+      }
+      @media (max-width: 540px) {
+        height: 280px;
+      }
     }
   
 
@@ -363,6 +314,26 @@ const GlobalStyle = createGlobalStyle`
       content: url(${ImageInsideTrack})
     }
 
+    & .font-primary{
+      font-size: 24px;
+      line-height: 28.8px;
+      font-weight: 300;
+    }
+    & .font-primary-title{
+      font-size: 18px;
+      font-weight: 600;  
+      font-family: "lato";  
+      text-transform: uppercase;
+    }
+    & .font-secondary-title{
+      font-size: 18px;
+      font-weight: 700;    
+    }
+    & .font-secondary{
+      font-size: 16px;
+      font-weight: 300;
+      color: #787E91;    
+    }
 
     &.dark-mode {
 
@@ -458,7 +429,7 @@ const GlobalStyle = createGlobalStyle`
       & .header-link-color {
         color: ${darkTheme.colors.headerLinkColor}     
       }
-      & .header-link-color:hover{
+      & .header-link-color:hover,  .header-link-color:hover a{
         color: #787E91;
       }
 
@@ -605,6 +576,9 @@ const GlobalStyle = createGlobalStyle`
       }
       & .menu-icon {
         content: url('../images/sandwich-menu-icon.svg');
+        height: 20px; 
+        margin-right: 20px;
+        cursor: pointer;
       }
       & .close-menu-icon {
         content: url('../images/close-menu-icon.svg');
@@ -777,6 +751,50 @@ const GlobalStyle = createGlobalStyle`
         }
       }
     
+      input[type="text"], input[type="email"], textarea {
+        display: block;
+        width: 100%;
+        padding: 12px 15px;
+        border-radius: 6px;
+        margin: 16px auto 0px auto;
+        font-size: 20px;
+        font-weight: 300;
+    
+      }
+    
+      textarea {
+        height: 180px;
+        border-radius: 10px;
+      }
+    
+      .form-button{
+        width: 100% !important;
+        margin-top: 40px;
+      }
+      .disabled-form-button {
+        background-color: #47516a;
+        border-radius: 10px;
+        margin-top: 40px;
+        width: 100% !important;
+        color: #787E91;
+        cursor: not-allowed !important;
+      }
+    
+      .field{
+        position: relative;
+      }
+      .label{
+        position: absolute;
+        left: 15px;
+        top: -8px;
+        font-size: 14px; 
+        line-height: 14px;  
+        padding: 0 3px;
+        border-radius: 3px; 
+      }
+      .label-hidden{
+        display: none;
+      }
     
       /* ------------------------------------- */
       /* How it work section  */
@@ -891,7 +909,7 @@ const GlobalStyle = createGlobalStyle`
       & .header-link-color {
         color: ${lightTheme.colors.headerLinkColor}
       }
-      & .header-link-color:hover{
+      & .header-link-color:hover,  .header-link-color:hover a{
         color: #016DF2;
       }
 
@@ -1030,6 +1048,9 @@ const GlobalStyle = createGlobalStyle`
       }
       & .menu-icon {
         content: url('../images/sandwich-menu-icon-light.svg');
+        height: 20px; 
+        margin-right: 20px;
+        cursor: pointer;
       }
       & .close-menu-icon {
         content: url('../images/close-menu-icon-light.svg');
@@ -1172,7 +1193,51 @@ const GlobalStyle = createGlobalStyle`
         }
       }
     
-
+      input[type="text"], input[type="email"], textarea {
+        display: block;
+        width: 100%;
+        padding: 12px 15px;
+        border-radius: 6px;
+        margin: 16px auto 0px auto;
+        font-size: 20px;
+        font-weight: 300;
+    
+      }
+    
+      textarea {
+        height: 180px;
+        border-radius: 10px;
+      }
+    
+      .form-button{
+        width: 100% !important;
+        margin-top: 40px;
+      }
+      .disabled-form-button {
+        background-color: #47516a;
+        border-radius: 10px;
+        margin-top: 40px;
+        width: 100% !important;
+        color: #787E91;
+        cursor: not-allowed !important;
+      }
+    
+      .field{
+        position: relative;
+      }
+      .label{
+        position: absolute;
+        left: 15px;
+        top: -8px;
+        font-size: 14px; 
+        line-height: 14px;  
+        padding: 0 3px;
+        border-radius: 3px; 
+      }
+      .label-hidden{
+        display: none;
+      }
+        
       /* ------------------------------------- */
       /* Popover */
       /* ------------------------------------- */

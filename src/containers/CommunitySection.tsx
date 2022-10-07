@@ -1,73 +1,58 @@
-import Image from 'common/components/Image';
-import { StyledFlex, StyledFlexColumn, StyledHorizontalCard, StyledHorizontalCardInner, StyledParagraph, StyledSecondaryParagraph, StyledSubText } from 'common/styles/common.styles';
 import React from 'react';
 import SectionHeader from 'common/components/SectionHeader';;
-import { StyledCommunitySection } from './communitySection.style';
-import { OutboundLink } from 'gatsby-plugin-google-gtag';
+import HorizontalCard from 'common/components/HorizontalCard';
 
 
 const CommunitySection: React.FC = () => {
 
   return (
-    <StyledCommunitySection>
+    <section>
       <SectionHeader 
         text='Community' 
       />
-      <StyledParagraph className="mt-20 mb-20 primary-text-color">
+      <div className="mt-5 mb-5 primary-text-color font-primary max-w-[800px]">
         ICHI is a Decentralized Autonomous Organization (DAO) that enables users to earn yield with any token. ICHI’s Vaults generate passive yield for any token using liquidity management strategies built on Uniswap V3.
-      </StyledParagraph>
+      </div>
 
       <hr />
 
-      <StyledSecondaryParagraph className="mt-20 mb-40 secondary-header-color">
+      <div className="mt-5 mb-10 secondary-header-color font-secondary-title">
         Join the Conversation
-      </StyledSecondaryParagraph>
-      <StyledFlex flexWrap="wrap" justifyContent="space-between">
-        <StyledHorizontalCard className="secondary-bg-color">
-          <OutboundLink href="https://discord.gg/cxPGjGTy8V" target="blank">
-            <StyledHorizontalCardInner>
-              <Image src="../images/discord.svg" alt="Discord" className="mr-20" height="50" />
-              <StyledFlexColumn>
-                <StyledSecondaryParagraph className="secondary-header-color">Discord</StyledSecondaryParagraph>
-                <StyledSubText className="secondary-text-color">Ask questions and engage with the ICHI community</StyledSubText>
-              </StyledFlexColumn>
-            </StyledHorizontalCardInner>
-          </OutboundLink>
-        </StyledHorizontalCard>
-        <StyledHorizontalCard className="secondary-bg-color">
-          <OutboundLink href="https://snapshot.org/#/ichi.eth" target="blank">
-            <StyledHorizontalCardInner>
-              <Image src="../images/governance.svg" alt="Governance Forum" className="mr-20" height="50" />
-              <StyledFlexColumn>
-                <StyledSecondaryParagraph className="secondary-header-color">Governance Forum</StyledSecondaryParagraph>
-                <StyledSubText className="secondary-text-color">Participate in ICHI governance</StyledSubText>
-              </StyledFlexColumn>
-            </StyledHorizontalCardInner>
-          </OutboundLink>
-        </StyledHorizontalCard>
-        <StyledHorizontalCard className="secondary-bg-color">
-          <OutboundLink href="https://t.me/ichifarm" target="blank">
-            <StyledHorizontalCardInner>
-              <Image src="../images/telegram.svg" alt="Telegram" className="mr-20" height="50" />
-              <StyledFlexColumn>
-                <StyledSecondaryParagraph className="secondary-header-color">Telegram</StyledSecondaryParagraph>
-                <StyledSubText className="secondary-text-color">Share ideas and contribute to wide-ranging discussions</StyledSubText>
-              </StyledFlexColumn>
-            </StyledHorizontalCardInner>
-          </OutboundLink>
-        </StyledHorizontalCard>
-        <StyledHorizontalCard className="secondary-bg-color">
-          <OutboundLink href="https://twitter.com/ichifoundation" target="blank">
-            <StyledHorizontalCardInner>
-              <Image src="../images/twitter.svg" alt="Twitter" className="mr-20" height="50" />
-              <StyledFlexColumn>
-                <StyledSecondaryParagraph className="secondary-header-color">Twitter</StyledSecondaryParagraph>
-                <StyledSubText className="secondary-text-color">Follow the latest news from ICHI</StyledSubText>
-              </StyledFlexColumn>
-            </StyledHorizontalCardInner>
-          </OutboundLink>
-        </StyledHorizontalCard>
-      </StyledFlex>
+      </div>
+      <div className="flex flex-row flex-wrap justify-between">
+      <HorizontalCard 
+          title="Discord"
+          url="https://discord.gg/cxPGjGTy8V"
+          imageSrc="../images/discord.svg" 
+          imageMargin="20px" 
+          imageHeight="50"
+          description="Ask questions and engage with the ICHI community"
+        />
+        <HorizontalCard 
+          title="Governance Forum"
+          url="https://snapshot.org/#/ichi.eth"
+          imageSrc="../images/governance.svg" 
+          imageMargin="20px" 
+          imageHeight="50"
+          description="Participate in ICHI governance"
+        />
+        <HorizontalCard 
+          title="Telegram"
+          url="https://t.me/ichifarm"
+          imageSrc="../images/telegram.svg" 
+          imageMargin="20px" 
+          imageHeight="50"
+          description="Share ideas and contribute to wide-ranging discussions"
+        />
+        <HorizontalCard 
+          title="Twitter"
+          url="https://twitter.com/ichifoundation"
+          imageSrc="../images/twitter.svg" 
+          imageMargin="20px" 
+          imageHeight="50"
+          description="Follow the latest news from ICHI"
+        />
+      </div>
 
       {/* <hr /> */}
       {/* Temporarily removed
@@ -84,7 +69,7 @@ const CommunitySection: React.FC = () => {
         You can become part of an elite team, expand your network, attend events with ICHI, 
         earn cash and develop your skill sets.
       </StyledParagraph> */}
-    </StyledCommunitySection>
+    </section>
   );
 };
 

@@ -1,4 +1,3 @@
-import { StyledFlex, StyledParagraph } from 'common/styles/common.styles';
 import React from 'react';
 
 type Props = {
@@ -21,12 +20,14 @@ const Phase: React.FC<Props> = (props) => {
       bullColor = '#1A80F9';
   }
   return (
-    <StyledFlex>
-      <div style={{backgroundColor: bullColor, borderRadius: "50%", height: 20, width: 20, flexShrink: 0, marginTop: "5px", marginBottom: "15px"}}></div>
-      <StyledParagraph className="ml-20 primary-text-color" style={{flexShrink: 0}}>
+    <div>
+      <div
+        className="rounded-full h-5 w-5 float-left mr-5 mt-1 mb-4 flex-shrink-0" 
+        style={{backgroundColor: bullColor}} />
+      <div className="font-primary ml-5 primary-text-color whitespace-nowrap flex-shrink-0">
         Phase {props.phaseNum}.
-      </StyledParagraph>
-    </StyledFlex>
+      </div>
+    </div>
   );
 };
 

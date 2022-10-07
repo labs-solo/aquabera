@@ -1,13 +1,10 @@
-import { StyledFlex, StyledFlexColumn, StyledParagraph, StyledSubText } from 'common/styles/common.styles';
 import React, { useRef, useState } from 'react';
-import { StyledFormSection } from './partnershipRequestSection.style';
 import Button from 'common/components/Button';
 import Image from 'common/components/Image';
 import { Formik } from 'formik';
 import InputWithLabel from 'common/components/InputWithLabel/InputWithLabel';
 
 type Props = {
-  className?: string;
 }
 
 const PartnershipRequestSection: React.FC<Props> = (props) => {
@@ -18,19 +15,21 @@ const PartnershipRequestSection: React.FC<Props> = (props) => {
   const [onFocus, setOnFocus] = useState(false);
   const [placeHolder, setPlaceHolder] = useState("Message");
   return (
-    <StyledFormSection className={`bg-form ${props.className}`}>
-      <StyledFlex justifyContent="center">
-        <StyledFlexColumn alignItems="flex-start" justifyContent="center" className="form">
-          <StyledFlex justifyContent="space-between" alignItems="flex-start" width="100%" className="mb-20">
-            <StyledFlexColumn>
-              <StyledParagraph className="secondary-header-color">Partnership Request</StyledParagraph>
-              <StyledSubText className="mt-20">
+    <div className="bg-form">
+      <div className="flex flex-row justify-center">
+        <div className="flex flex-col items-start justify-center form">
+
+          <div className="flex flex-row justify-between items-start w-full mb-5">
+            <div className="flex flex-col">
+              <div className="font-primary secondary-header-color">Partnership Request</div>
+              <div className="font-secondary mt-5">
                 Interested in learning more or getting involved?<br />
                 Please fill this out the following form
-              </StyledSubText>
-            </StyledFlexColumn>
+              </div>
+            </div>
             <Image src="../images/hands.svg" alt="Partnership Request" />
-          </StyledFlex>
+          </div>
+
           <Formik
             initialValues={{ email: '', name: '', organization: '', jobTitle: '', subject1: '', message: '' }}
             validate={values => {
@@ -79,7 +78,12 @@ const PartnershipRequestSection: React.FC<Props> = (props) => {
               isSubmitting,
               /* and other goodies */
             }) => (          
-              <form method="post" action="https://getform.io/f/89705bad-f8d6-4e8e-8d6c-c8c68567bcb4" ref={formEl} onSubmit={handleSubmit}>
+              <form 
+                method="post" 
+                action="https://getform.io/f/89705bad-f8d6-4e8e-8d6c-c8c68567bcb4" 
+                ref={formEl} 
+                onSubmit={handleSubmit}
+                className="w-full md:w-[500px]">
                 <InputWithLabel
                   handleChange={handleChange}
                   handleBlur={handleBlur}
@@ -148,22 +152,22 @@ const PartnershipRequestSection: React.FC<Props> = (props) => {
                     
                 </div>
                 {errors.message && touched.message && (
-                  <StyledSubText className="secondary-text-color">
+                  <div className="font-secondary secondary-text-color">
                     {errors.message}
-                  </StyledSubText>
+                  </div>
                 )}
                 <Button
                   type="submit"
-                  className={(Array.isArray(errors) || Object.values(errors).toString() != "") ? 'disabled-button' : 'primary-button'}
+                  className={(Array.isArray(errors) || Object.values(errors).toString() != "") ? 'disabled-form-button' : 'form-button'}
                   width="100%"
                   title="Send"
                   disabled={isSubmitting || (Array.isArray(errors) || Object.values(errors).toString() != "")} />
               </form>
             )}
         </Formik>
-       </StyledFlexColumn>
-      </StyledFlex>
-    </StyledFormSection>
+       </div>
+      </div>
+    </div>
   );
 };
 

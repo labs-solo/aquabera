@@ -1,8 +1,6 @@
 import Image from 'common/components/Image';
-import { StyledFlex, StyledFlexColumn, StyledParagraph } from 'common/styles/common.styles';
 import React from 'react';
 import SectionHeader from 'common/components/SectionHeader';;
-import { StyledNewsSection } from './newsSection.style';
 import RssFeedSection from './RssFeedSection';
 import { media } from 'common/constants/constants';
 
@@ -28,7 +26,7 @@ const NewsSection: React.FC = () => {
   }
 
   return (
-    <StyledNewsSection>
+    <section>
       <SectionHeader 
         text='News' 
       />
@@ -36,12 +34,12 @@ const NewsSection: React.FC = () => {
       {/* Twitter */}
       <RssFeedSection section={twitterSection} logo="icon-twitter" />
 
-      <div className="mt-80" />
-      <StyledParagraph className="secondary-header-color mb-20">
+      <div className="mt-10" />
+      <div className="font-primary secondary-header-color mb-5">
         Daniel Tal, Network Steward at ICHI - Community Based DeFi | Blockchain Interviews
-      </StyledParagraph>
+      </div>
 
-      <div style={{borderRadius: "20px", overflow: "hidden"}} className="mb-80">
+      <div style={{overflow: "hidden"}} className="mb-20 rounded-[20px]">
         <iframe width="100%"  
           src="https://www.youtube.com/embed/if8sj9PCcfU" 
           title="YouTube video player" 
@@ -49,11 +47,11 @@ const NewsSection: React.FC = () => {
         >
         </iframe></div>
 
-      <StyledParagraph className="secondary-header-color mb-20">
+      <div className="font-primary secondary-header-color mb-5">
         What is ICHI Crypto? Full interview explanation
-      </StyledParagraph>
+      </div>
 
-      <div style={{borderRadius: "20px", overflow: "hidden"}} className="mb-80">
+      <div style={{overflow: "hidden"}} className="mb-20 rounded-[20px]">
         <iframe width="100%" 
           src="https://www.youtube.com/embed/Kz6_5VQXC28" 
           title="YouTube video player" 
@@ -62,11 +60,11 @@ const NewsSection: React.FC = () => {
         </iframe>
       </div>
 
-      <StyledParagraph className="secondary-header-color mb-20">
+      <div className="font-primary secondary-header-color mb-5">
         Are Branded Dollars The New StableCoins? | DeFi 2.0 with ICHI
-      </StyledParagraph>
+      </div>
 
-      <div style={{borderRadius: "20px", overflow: "hidden"}} className="mb-80">
+      <div style={{overflow: "hidden"}} className="mb-20 rounded-[20px]">
         <iframe width="100%" 
           src="https://www.youtube.com/embed/weU5b58LTdI" 
           title="YouTube video player" 
@@ -78,16 +76,16 @@ const NewsSection: React.FC = () => {
       {/* Medium */}
       <RssFeedSection section={mediumSection} logo="icon-medium" />
 
-      <StyledParagraph className="secondary-header-color mt-80">Media Coverage</StyledParagraph>
-      <StyledFlex flexWrap="wrap" className="justify-mobile">
+      <div className="font-primary secondary-header-color mt-20">Media Coverage</div>
+      <div className="flex flex-row flex-wrap justify-center md:justify-between">
         {media.map((co) => (
-          <StyledFlexColumn alignItems="center" width="105px" key={co.name}>
+          <div className="flex flex-col items-center w-28" key={co.name}>
             <Image src={`../images/${co.logo}`} alt={co.name} height="70px" margin="40px 0 20px 0" />
             <span className="link-color">{co.name}</span>
-          </StyledFlexColumn>
+          </div>
         ))}
-      </StyledFlex>
-    </StyledNewsSection>
+      </div>
+    </section>
   );
 };
 

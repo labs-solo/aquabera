@@ -26,10 +26,6 @@ const ButtonStyle = styled.button<StyledButtonProps>`
   font-weight: 600;
   text-decoration: none;
   text-transform: capitalize;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 15px;
-  padding-right: 15px;
   border: 0;
   transition: all 0.3s ease;
   span.btn-text {

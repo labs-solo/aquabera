@@ -1,6 +1,5 @@
 import Image from 'common/components/Image';
 import React from 'react';
-import { StyledThemeIcon, StyledThemeSwitcher } from './themeSwitcher.style';
 
 export type ThemeSwitcherProps = {
   onClick?: Function;
@@ -15,15 +14,13 @@ const ThemeSwitcher: React.FC<ThemeSwitcherProps> = (props) => {
   };
 
   return (
-    <StyledThemeSwitcher>
-      <StyledThemeIcon className="ptb-5">
-        <Image
-          className="icon-theme-switcher"
-          alt="Toggle theme"
-          onClick={onClick}
-        />
-      </StyledThemeIcon>
-    </StyledThemeSwitcher>
+    <div className="ml-0 mr-5 lg:ml-5 lg:mr-10">
+      <Image
+        className="icon-theme-switcher cursor-pointer"
+        alt="Toggle theme"
+        onClick={onClick}
+      />
+    </div>
   );
 };
 

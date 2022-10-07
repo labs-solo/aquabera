@@ -158,6 +158,34 @@ export const partners: Partner[] = [
   },
 ]
 
+export const communityIcons = [
+  {
+    name: 'Discord',
+    logo: 'discord.svg',
+    url: 'https://discord.gg/cxPGjGTy8V'
+  },
+  {
+    name: 'Telegram',
+    logo: 'telegram.svg',
+    url: 'https://t.me/ichifarm'
+  },
+  {
+    name: 'Twitter',
+    logo: 'twitter.svg',
+    url: 'https://twitter.com/ichifoundation'
+  },
+  {
+    name: 'DeFi Pulse',
+    logo: 'DeFi-Pulse.svg',
+    url: 'https://www.defipulse.com/'
+  },
+  {
+    name: 'Medium',
+    logo: 'medium-light.png',
+    url: 'https://medium.com/ichifarm'
+  }
+]
+
 export const media = [
   {
     name: 'Cointelegraph',

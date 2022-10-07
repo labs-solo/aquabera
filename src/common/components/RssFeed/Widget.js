@@ -1,7 +1,6 @@
 import React from 'react';
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import './Card.css';
-import { StyledFlex, StyledFlexColumn, StyledSecondaryParagraph, StyledParagraph, StyledSubText, StyledVerticalCard } from 'common/styles/common.styles';
 import Image from 'common/components/Image';
 
 class Widget extends React.Component {
@@ -51,34 +50,30 @@ class Widget extends React.Component {
         const posts = mediumPosts.length > 3 ? mediumPosts.slice(0, 3) : mediumPosts;
 
         return(
-            <StyledFlex flexWrap="wrap" justifyContent="space-between" className="card_row">
+            <div className="flex flex-row flex-wrap justify-between card_row">
                 {posts.map((post) => (
-                    <StyledVerticalCard padding="30px 20px" key={post.link} className="news_card secondary-bg-color">
+                    <div 
+                        key={post.link} 
+                        className="flex flex-col py-8 px-5 news_card secondary-bg-color rounded-[20px] item-center mb-5">
                         <OutboundLink href={post.link} target="blank">
-                        {/* {this.isTwitter && ( */}
-                            {true && (
-                                <StyledFlex className="mb-20">
-                                    <Image alt="ICHI" className="ichi-black-white mr-20" />
-                                    <StyledFlexColumn>
-                                        <StyledParagraph>
-                                            ICHI
-                                        </StyledParagraph>
-                                        <StyledSubText >
-                                            {this.isTwitter && <> @ichifoundation &middot; </>}
-                                            {new Date(post.pubDate)
-                                                .toLocaleDateString("en-US", {month: 'short', day: 'numeric', year: 'numeric'})}
-                                        </StyledSubText>
-                                    </StyledFlexColumn>
-                                </StyledFlex>
-                            )}
-                            {/* {!this.isTwitter && (
-                                <img src={post.thumbnail} className="card-img-top post-thumbnail" alt={post.title} />
-                            )} */}
-                            <StyledSecondaryParagraph className="primary-text-color">{post.title}</StyledSecondaryParagraph>
+                            <div className="flex flex-row mb-5">
+                                <Image marginRight="10px" alt="ICHI" className="ichi-black-white" />
+                                <div className="flex flex-col">
+                                    <div className="font-primary primary-text-color">
+                                        ICHI
+                                    </div>
+                                    <div className="font-secondary" >
+                                        {this.isTwitter && <> @ichifoundation &middot; </>}
+                                        {new Date(post.pubDate)
+                                            .toLocaleDateString("en-US", {month: 'short', day: 'numeric', year: 'numeric'})}
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="text-lg primary-text-color">{post.title}</div>
                         </OutboundLink>
-                    </StyledVerticalCard>
+                    </div>
                 ))}    
-            </StyledFlex>
+            </div>
         )
     }        
 }

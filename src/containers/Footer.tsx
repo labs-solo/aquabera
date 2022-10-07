@@ -1,48 +1,42 @@
 import Image from 'common/components/Image';
-import { navMenu } from 'common/constants/constants';
-import { StyledFlex } from 'common/styles/common.styles';
-import { OutboundLink } from 'gatsby-plugin-google-gtag';
+import { communityIcons, navMenu } from 'common/constants/constants';
+import { Link } from 'gatsby';
 import React from 'react';
-import { StyledFooter, CopywriteText, FooterLink, StyledNav } from './footer.style';
+import SocialMediaIcon from 'common/components/SocialMediaIcon';
+import MenuItem from 'common/components/MenuItem';
 
 const Footer: React.FC = () => {
   return (
-    <StyledFooter className="footer">
-      <StyledFlex alignItems="center">
-        <Image
-          className="image-ichi"
-          alt="ICHI"
-          height="34px"
-          width="auto"
-        />
-        <CopywriteText className="secondary-text-color">
+    <div className="flex flex-row items-center justify-between pr-5 pl-5 md:pr-10 md:pl-10 mt-10 h-32 footer">
+      <div className="flex items-center">
+        <Link to="/">
+          <Image
+            className="image-ichi"
+            alt="ICHI"
+            height="34px"
+            width="auto"
+          />
+        </Link>
+        <div className="pl-5 secondary-text-color text-base">
             &copy; 2022 ICHI. All rights reserved 
-        </CopywriteText>
-      </StyledFlex>
-      <StyledFlex>
-        <StyledNav className="primary-text-color">
+        </div>
+      </div>
+      <div className="flex">
+        <div className="flex flex-row items-center primary-text-color">
           {navMenu.map((i) => (
-            <FooterLink href={i.link} key={i.title} className="header-link-color">{i.title}</FooterLink>
+            <MenuItem key={i.title} link={i.link} title={i.title} />
           ))}
 
-          <OutboundLink href="https://discord.gg/cxPGjGTy8V">
-            <Image src="../images/discord.svg" alt="Discord" className="smi-icon" />
-          </OutboundLink>
-          <OutboundLink href="https://t.me/ichifarm">
-            <Image src="../images/telegram.svg" alt="Telegram" className="smi-icon" />
-          </OutboundLink>
-          <OutboundLink href="https://twitter.com/ichifoundation">
-            <Image src="../images/twitter.svg" alt="Twitter" className="smi-icon" />
-          </OutboundLink>
-          <OutboundLink href="https://www.defipulse.com/">
-            <Image src="../images/DeFi-Pulse.svg" alt="DeFi Pulse" className="smi-icon" />
-          </OutboundLink>
-          <OutboundLink href="https://medium.com/ichifarm">
-            <Image src="../images/medium-light.png" alt="Medium" className="smi-icon" />
-          </OutboundLink>
-        </StyledNav>
-      </StyledFlex>
-    </StyledFooter>
+          {communityIcons.map((i) => (
+            <SocialMediaIcon 
+              key={i.name}
+              url={i.url}
+              imageSrc={`../images/${i.logo}`}
+              title={i.name} />
+          ))}
+        </div>
+      </div>
+    </div>
   );
 };
 

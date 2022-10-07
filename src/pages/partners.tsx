@@ -6,7 +6,7 @@ import React from 'react';
 
 const Index: React.FC = () => {
   return (
-    <App noGutter={true} marginBottom={'0px'}>
+    <App marginBottom={'0px'}  className="home-page-container">
       <PartnersSection />
       <hr />
       <PartnershipRequestSection />

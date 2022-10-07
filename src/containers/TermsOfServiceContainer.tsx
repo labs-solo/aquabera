@@ -1,4 +1,3 @@
-import { StyledFlexCenter, StyledFlexColumn, StyledFlex } from 'common/styles/common.styles';
 import React from 'react';
 import TextWrapper from './termsofservicecontainer.style';
 import Container from 'common/components/UI/Container';
@@ -7,13 +6,13 @@ const TermsOfServiceContainer: React.FC = () => {
   return (
     <Container>
       <TextWrapper className="primary-text-color">
-        <StyledFlexCenter>
-          <StyledFlexColumn justifyContent="center" alignItems="center">
+        <div className="flex flex-row items-center">
+          <div className="flex flex-col justify-center items-center">
             <h1>Notice and Disclaimer</h1>
-          </StyledFlexColumn>
-        </StyledFlexCenter>
-        <StyledFlex padding="40px 0 0 0">
-          <StyledFlexColumn>
+          </div>
+        </div>
+        <div className="flex pt-10">
+          <div className="flex flex-col">
             <p>NOTICE AND DISCLAIMER PLEASE READ THE ENTIRETY OF THIS &quot;NOTICE AND DISCLAIMER&quot; SECTION CAREFULLY. NOTHING HEREIN CONSTITUTES LEGAL, FINANCIAL, BUSINESS OR TAX ADVICE AND YOU SHOULD CONSULT YOUR OWN LEGAL, FINANCIAL, TAX OR OTHER PROFESSIONAL ADVISOR(S) BEFORE ENGAGING IN ANY ACTIVITY IN CONNECTION HEREWITH. NEITHER ICHI DAO (THE <strong>DAO</strong>), ANY OF THE PROJECT TEAM MEMBERS (THE <strong>ICHI CORE TEAM</strong>) WHO HAVE WORKED ON THE ICHI PLATFORM (AS DEFINED HEREIN) OR PROJECT TO DEVELOP THE ICHI PLATFORM IN ANY WAY WHATSOEVER, ANY DISTRIBUTOR/VENDOR OF ICHI TOKENS (THE <strong>DISTRIBUTOR</strong>), NOR ANY SERVICE PROVIDER SHALL BE LIABLE FOR ANY KIND OF DIRECT OR INDIRECT DAMAGE OR LOSS WHATSOEVER WHICH YOU MAY SUFFER IN CONNECTION WITH ACCESSING ANY TOKEN DOCUMENTATION RELATING TO ICHI (THE <strong>TOKEN DOCUMENTATION</strong>), THE WEBSITE AT HTTPS://WWW.ICHI.ORG/ (THE <strong>WEBSITE</strong>) OR ANY OTHER WEBSITES OR MATERIALS PUBLISHED BY THE DAO. </p>
             <p><strong>Project purpose:</strong> You agree that you are acquiring ICHI to participate in the ICHI platform and to obtain services on the ecosystem thereon. The DAO, the Distributor and their respective affiliates would develop and contribute to the underlying source code for the ICHI platform. The DAO is acting solely as an arms' length third party in relation to the ICHI distribution, and not in the capacity as a financial advisor or fiduciary of any person with regard to the distribution of ICHI. </p>
             <p><strong>Nature of the Token Documentation:</strong> The Token Documentation and the Website are intended for general informational purposes only and do not constitute a prospectus, an offer document, an offer of securities, a solicitation for investment, or any offer to sell any product, item, or asset (whether digital or otherwise). The information herein may not be exhaustive and does not imply any element of a contractual relationship. There is no assurance as to the accuracy or completeness of such information and no representation, warranty or undertaking is or purported to be provided as to the accuracy or completeness of such information. Where the Token Documentation or the Website includes information that has been obtained from third party sources, the DAO, the Distributor, their respective affiliates and/or the ICHI Core team have not independently verified the accuracy or completeness of such information. Further, you acknowledge that circumstances may change and that the Token Documentation or the Website may become outdated as a result; and neither the DAO nor the Distributor is under any obligation to update or correct this document in connection therewith. </p>
@@ -48,8 +47,8 @@ const TermsOfServiceContainer: React.FC = () => {
             <p><strong>References to companies and platforms:</strong> The use of any company and/or platform names or trademarks herein (save for those which relate to the DAO, the Distributor or their respective affiliates) does not imply any affiliation with, or endorsement by, any third party. References in the Token Documentation or the Website to specific companies and platforms are for illustrative purposes only. </p>
             <p><strong>English language:</strong> The Token Documentation and the Website may be translated into a language other than English for reference purpose only and in the event of conflict or ambiguity between the English language version and translated versions of the Token Documentation or the Website, the English language versions shall prevail. You acknowledge that you have read and understood the English language version of the Token Documentation and the Website. </p>
             <p><strong>No Distribution:</strong> No part of the Token Documentation or the Website is to be copied, reproduced, distributed or disseminated in any way without the prior written consent of the DAO or the Distributor. By attending any presentation on this Token Documentation or by accepting any hard or soft copy of the Token Documentation, you agree to be bound by the foregoing limitations. </p>   
-          </StyledFlexColumn>
-        </StyledFlex>
+          </div>
+        </div>
       </TextWrapper>
     </Container>
 

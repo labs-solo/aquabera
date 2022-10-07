@@ -2,7 +2,6 @@ import Image from 'common/components/Image';
 import React from 'react';
 import Widget from 'common/components/RssFeed/Widget.js'
 import {NewsFeed} from './NewsSection';
-import { StyledFlex, StyledParagraph, StyledSubText } from 'common/styles/common.styles';
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
 
 type Props = {
@@ -10,21 +9,21 @@ type Props = {
   logo: string;
 }
 
-const PartnersSection: React.FC<Props> = (props) => {
+const RssFeedSection: React.FC<Props> = (props) => {
   return (
     <>
-      <StyledFlex justifyContent="space-between" alignItems="center" className="mb-20">
-        <StyledFlex alignItems="center">
+      <div className="flex flex-row justify-between items-center mb-5">
+        <div className="flex flex-row items-center">
           <Image className={props.logo} alt={props.section.header} height="60px" />
-          <StyledParagraph className="secondary-header-color ml-20">{props.section.header}</StyledParagraph>
-        </StyledFlex>
+          <div className="font-primary secondary-header-color ml-5">{props.section.header}</div>
+        </div>
         <OutboundLink href={props.section.url} target="blank">
-          <StyledSubText className="primary-text-color">Read More</StyledSubText>
+          <div className="font-secondary primary-text-color">Read More</div>
         </OutboundLink>
-      </StyledFlex>
+      </div>
       <Widget data={props.section} />
     </>
   );
 };
 
-export default PartnersSection;
+export default RssFeedSection;

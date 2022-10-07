@@ -2,7 +2,6 @@
 // import Image from 'common/components/Image';
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import React from 'react';
-import BannerWrapperOuter, { StyledBackgroundGradient } from './banner.style';
 import { useQuery } from '@apollo/client';
 import { REFRESH_INTERVALS } from 'common/constants/constants';
 import { QueryItemsResponse, QueryName } from 'common/models/graphql';
@@ -50,14 +49,18 @@ const Banner: React.FC<Props> = (props) => {
   const bannerLink = maxAPY
     ? ( isHodlVault ? `https://app.ichi.org/vault?poolId=${farm.poolId}` : `https://app.ichi.org/angelvault?poolId=${farm.poolId}`)
     : "https://app.ichi.org"
+
   return (
-    <BannerWrapperOuter id="home">
-      <StyledBackgroundGradient>
-        <OutboundLink href={bannerLink} target="_blank" className="medium color-white">
+    <div className="w-full m-auto overflow-hidden" id="home">
+      <div 
+        className="flex flex-row justify-center items-center pt-1 pb-1 pl-4 pr-4" 
+        style={{backgroundImage: 'linear-gradient(to left, #197CFB, #1DAFD9)'}} >
+
+        <OutboundLink href={bannerLink} target="_blank" className="color-white text-center font-semibold">
           {bannerMessage} &rarr;
         </OutboundLink>
-      </StyledBackgroundGradient>
-   </BannerWrapperOuter>        
+      </div>
+   </div>        
 
   );
 };

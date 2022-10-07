@@ -1,11 +1,11 @@
 import Image from 'common/components/Image';
-import { StyledFlex } from 'common/styles/common.styles';
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import React from 'react';
-import { StyledHeader, HeaderLink, StyledNav } from './headerSection.style';
+import { Link } from 'gatsby';
 import Button from 'common/components/Button';
 import { navMenu } from 'common/constants/constants';
 import ThemeSwitcher from 'common/components/ThemeSwitcher';
+import MenuItem from 'common/components/MenuItem';
 
 type Props = {
   themeToggle?: Function;
@@ -20,35 +20,36 @@ const HeaderSection: React.FC<Props> = (props) => {
   }
 
   return (
-    <StyledHeader>
-      <StyledFlex alignItems="center">
-        <a href="/">
+    <div className="flex flex-row justify-between items-center h-28 pl-5 pr-5 md:pl-10 md:pr-10 pt-5 pb-5">
+      <div className="flex flex-row items-center">
+        <Link to="/">
           <Image
             className="image-ichi-logo"
             alt="Community"
             height="34px"
             width="auto"
           />
-        </a>
-      </StyledFlex>
-      <StyledFlex justifyContent="flex-end">
-        <StyledNav className="primary-text-color">
+        </Link>
+      </div>
+
+      <div className="flex justify-end items-center">
           {navMenu.map((i) => (
-            <HeaderLink href={i.link} key={i.title} className="header-link-color">{i.title}</HeaderLink>
+            <MenuItem key={i.title} link={i.link} title={i.title} className="text-lg font-semibold" />
           ))}
           <ThemeSwitcher onClick={props.themeToggle} />
           
+          <div className="block lg:hidden">
+            <Image
+              className="menu-icon"
+              alt="menu"
+              onClick={toggleSideBar} />
+          </div>
 
-          <Image
-            className="menu-icon"
-            alt="menu"
-            onClick={toggleSideBar} />
-          <OutboundLink target="_blank" href="https://app.ichi.org" >
-            <Button className="primary-button" title="Launch App" />
+          <OutboundLink target="_blank" href="https://app.ichi.org">
+            <Button className="primary-button w-32 md:w-40" title="Launch App" />
           </OutboundLink>
-        </StyledNav>
-      </StyledFlex>
-    </StyledHeader>
+      </div>
+    </div>
   );
 };
 
