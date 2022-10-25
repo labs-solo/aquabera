@@ -122,7 +122,7 @@
   "mainSection": {
     "header": {
       "name": "Vaults",
-      "text": "Grow any token with greedy liquidity",
+      "text": "Grow any token with low-slippage, on-chain liquidity",
       "button": {
         "text": "Deposit",
         "href": "https://app.ichi.org"
