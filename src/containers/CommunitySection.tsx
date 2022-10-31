@@ -11,7 +11,7 @@ const CommunitySection: React.FC = () => {
         text='Community' 
       />
       <div className="mt-5 mb-5 primary-text-color font-primary max-w-[800px]">
-        ICHI is a Decentralized Autonomous Organization (DAO) that enables users to earn yield with any token. ICHI’s Vaults generate passive yield for any token using liquidity management strategies built on Uniswap V3.
+        ICHI’s greedy liquidity favors depositors who want to grow a specific token. It works by resisting the bots that drain value from two-token approaches. Ready to get started? Just deposit a single token. DM ICHI on Twitter, Telegram, or Discord if your favorite token isn’t yet available.
       </div>
 
       <hr />
