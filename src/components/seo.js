@@ -31,6 +31,10 @@ function SEO({ description, lang, meta, keywords, title }) {
                 content: metaDescription,
               },
               {
+                property: `og:image`,
+                content: `https://ichi-images.s3.amazonaws.com/misc/ichi_vaults_for_crypto_holders.png`,
+              },
+              {
                 property: `og:type`,
                 content: `website`,
               },
