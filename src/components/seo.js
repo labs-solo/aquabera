@@ -62,9 +62,9 @@ function SEO({ description, lang, meta, keywords, title }) {
               .concat(
                 keywords.length > 0
                   ? {
-                      name: `keywords`,
-                      content: keywords.join(`, `),
-                    }
+                    name: `keywords`,
+                    content: keywords.join(`, `),
+                  }
                   : []
               )
               .concat(meta)}
@@ -79,6 +79,7 @@ function SEO({ description, lang, meta, keywords, title }) {
                 twq('track','PageView');
             `}
             </script>
+            <script referrerpolicy="origin" src="https://tag.safary.io/stag.js"></script>
           </Helmet>
         );
       }}
