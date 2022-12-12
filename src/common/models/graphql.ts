@@ -1,5 +1,5 @@
 export enum QueryName {
-  listFarms = 'listFarms',
+  listMonitorVaults = 'listMonitorVaults'
 }
 
 export type QueryNames = keyof typeof QueryName;

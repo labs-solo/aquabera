@@ -5,49 +5,44 @@ import React from 'react';
 import { useQuery } from '@apollo/client';
 import { REFRESH_INTERVALS } from 'common/constants/constants';
 import { QueryItemsResponse, QueryName } from 'common/models/graphql';
-import { AppSyncFarmAPY } from 'common/models/farm';
-import { listFarmsQuery } from 'graphql/queries/listFarms.query';
+import { MonitorVaults } from 'common/models/farm';
+import { listMonitorVaultsQuery } from 'graphql/queries/listMonitorVaults.query';
 
 type Props = {
 }
 
 const Banner: React.FC<Props> = (props) => {
 
-  const { loading: loadingFarms, error: errorLoadingFarms, data: dataFarms, networkStatus: networkStatusFarms, refetch: refetchFarms } = useQuery<QueryItemsResponse<AppSyncFarmAPY>>(listFarmsQuery, {
-    // Fetch the list of farms if there is no urlPoolId
+  const {
+    loading: loadingMonitorVaults,
+    error,
+    data: dataMonitorVaults
+  } = useQuery<QueryItemsResponse<MonitorVaults>>(listMonitorVaultsQuery, {
     fetchPolicy: 'cache-and-network',
-    pollInterval: REFRESH_INTERVALS[QueryName.listFarms]
+    pollInterval: REFRESH_INTERVALS[QueryName.listMonitorVaults]
   });
-  const appSyncFarms: AppSyncFarmAPY[] = dataFarms?.listFarms?.items || [];
+  const vaults: MonitorVaults[] = dataMonitorVaults?.listMonitorVaults.items || [];
 
-  // only display major vaults: USDC - 20006, wBTC - 1028
-  const isMajorVault = (poolId: number) => {
-    return (poolId === 20006 || poolId === 1028);
+  // only display major vaults: USDC - 0x683F081DBC729dbD34AbaC708Fa0B390d49F1c39, wBTC - 0x913b7D91e019402233d2f75863133925CE658CD9
+  const isMajorVault = (address: string) => {
+    return (address === '0x683F081DBC729dbD34AbaC708Fa0B390d49F1c39' || address === '0x913b7D91e019402233d2f75863133925CE658CD9');
   };
 
-  const farm = appSyncFarms.filter(farm => farm.isPosition && isMajorVault(farm.poolId))
+  const vault = vaults.filter(v => isMajorVault(v.address))
     .reduce( ( (prev, current) => ((prev.vaultIRR) > (current.vaultIRR)) ? prev : current), 
-    {isPosition: true, 
-      yearlyAPY: 0,
-      chainId: 0,
-      tvl: 0,
-      farmTVL: 0,
-      lpName: '',
+    { address: '',
       displayName: '',
       vaultIRR: 0,
-      poolId: 0
     }); 
 
-  const maxAPY = parseInt(farm.vaultIRR.toString());
-  // USDC - 20006 is angel vault, wBTC - 1028 is hodl vault
-  const isHodlVault = farm.poolId === 1028 || farm.poolId !== 20006;
-  const displayName = isHodlVault ? farm.displayName.replace(' Vault', ' HODL Vault') : farm.displayName.replace(' Vault', ' Angel Vault');
+  const maxAPY = parseInt(vault.vaultIRR.toString());
+  const displayName = vault.displayName.replace('-ICHI', ' Vault');
   const bannerMessage = maxAPY 
-    ? `The ${displayName} has earned ${maxAPY}% IRR since inception. Click to supply ${farm.displayName.replace(' Vault', '')}`
+    ? `The ${displayName} has earned ${maxAPY}% IRR since inception. Click to supply ${displayName.replace(' Vault', '')}`
     : "Click here to deposit into an ICHI Angel Vault"; 
 
   const bannerLink = maxAPY
-    ? ( isHodlVault ? `https://app.ichi.org/vault?poolId=${farm.poolId}` : `https://app.ichi.org/angelvault?poolId=${farm.poolId}`)
+    ? ( `https://app.ichi.org/vault?address=${vault.address}` )
     : "https://app.ichi.org"
 
   return (

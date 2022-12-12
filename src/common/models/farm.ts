@@ -1,12 +1,24 @@
-export type AppSyncFarmAPY = {
-  isDeposit: boolean;
-  isPosition: boolean;
-  yearlyAPY: number;
-  vaultIRR: number;
-  chainId: number;
+export type MonitorVaults = {
+  name: string;
+  pendingDepositsRatio: number;
+  vaultStrength: number;
+  baseTokenValue: number;
+  address: string;
   tvl: number;
-  farmTVL: number;
-  lpName: string;
+  scarceTokenValue: number;
   displayName: string;
-  poolId: number;
+  pendingDeposits: number;
+  memberTokenRatio: number;
+  sevenDaysChange: number;
+  scarceTokenMarketCap: number;
+  vaultIRR: number;
+  vaultIrrAllTx: number;
+  isHodlVault: boolean;
+  needRebalanceFrom: string;
+  lastRebalance: string;
+  poolAddress: string;
+  isInverted: boolean;
+  wallPrice: number;
+  scarceTokenPriceFromVault: number;
+  targetVaultStrength: number;
 };
