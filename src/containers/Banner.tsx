@@ -29,13 +29,13 @@ const Banner: React.FC<Props> = (props) => {
   };
 
   const vault = vaults.filter(v => isMajorVault(v.address))
-    .reduce( ( (prev, current) => ((prev.vaultIRR) > (current.vaultIRR)) ? prev : current), 
+    .reduce( ( (prev, current) => ((prev.vaultIrrAllTx) > (current.vaultIrrAllTx)) ? prev : current), 
     { address: '',
       displayName: '',
-      vaultIRR: 0,
+      vaultIrrAllTx: 0,
     }); 
 
-  const maxAPY = parseInt(vault.vaultIRR.toString());
+  const maxAPY = parseInt(vault.vaultIrrAllTx.toString());
   const displayName = vault.displayName.replace('-ICHI', ' Vault');
   const bannerMessage = maxAPY 
     ? `The ${displayName} has earned ${maxAPY}% IRR since inception. Click to supply ${displayName.replace(' Vault', '')}`
