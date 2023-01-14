@@ -31,7 +31,7 @@ const MainSection: React.FC = () => {
   const hodlVaultDepositLink = "https://app.ichi.org/";
   return (
     <div className="flex flex-col items-center justify-center pb-20"  id="main-section">
-      <h1>{section.header.name}</h1>
+      <h1 className='px-3 mx-auto text-center'>Effortless Market Making on <span className='whitespace-nowrap'>Uniswap V3</span></h1>
       <div className="font-secondary mt-5 text-center" >{section.header.text}</div>
       
       <Image src="../images/gate_hero.png" alt="HODL Vault" margin="40px auto" className="w-[525px]" />
