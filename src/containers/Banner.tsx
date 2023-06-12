@@ -23,9 +23,18 @@ const Banner: React.FC<Props> = (props) => {
   });
   const vaults: MonitorVaults[] = dataMonitorVaults?.listMonitorVaults.items || [];
 
-  // only display major vaults: USDC - 0x683F081DBC729dbD34AbaC708Fa0B390d49F1c39, wBTC - 0x913b7D91e019402233d2f75863133925CE658CD9
+  // only display major vaults: USDC, wBTC, wETH, wStETH, wMATIC, Chainlink
   const isMajorVault = (address: string) => {
-    return (address === '0x683F081DBC729dbD34AbaC708Fa0B390d49F1c39' || address === '0x913b7D91e019402233d2f75863133925CE658CD9');
+    return (
+    //   address === '0x4aEF5144131dB95c110af41c8Ec09f46295a7C4B'
+    // || address === '0xFc089714519E84B7ce0a4023bfEE0D99F6d767dA'
+    // || address === '0x711901e4b9136119Fb047ABe8c43D49339f161c3'
+    // || address === '0x3ac9b3db3350A515c702ba19a001d099d4a5F132'
+    // || address === '0xDD2521755a8eb05c41C819488D1890e32FeB8753'
+    // || address === '0x9C90975B13d04D7d535359887C236ac51f2298cE'
+    address === '0x9ff3C1390300918B40714fD464A39699dDd9Fe00'
+    || address === '0x692437de2cAe5addd26CCF6650CaD722d914d974'
+    );
   };
 
   const vault = vaults.filter(v => isMajorVault(v.address))
@@ -36,10 +45,10 @@ const Banner: React.FC<Props> = (props) => {
     }); 
 
   const maxAPY = parseInt(vault.vaultIrrAllTx.toString());
-  const displayName = vault.displayName.replace('-ICHI', ' Vault');
+  const displayName = vault.displayName.replace('(polygon)', '');
   const bannerMessage = maxAPY 
-    ? `The ${displayName} has earned ${maxAPY}% IRR since inception. Click to supply ${displayName.replace(' Vault', '')}`
-    : "Click here to deposit into an ICHI Angel Vault"; 
+    ? `The ${displayName} vault has earned ${maxAPY}% IRR since inception. Click here to deposit`
+    : "Click here to deposit into a Vault"; 
 
   const bannerLink = maxAPY
     ? ( `https://app.ichi.org/vault?address=${vault.address}` )
