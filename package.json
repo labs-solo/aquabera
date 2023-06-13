@@ -45,6 +45,7 @@
     "react-particles-js": "^3.4.1",
     "react-pro-sidebar": "^0.7.1",
     "react-responsive": "^9.0.0-beta.5",
+    "react-responsive-carousel": "^3.2.23",
     "react-reveal": "^1.2.2",
     "react-rnd": "^10.3.0",
     "react-scroll-parallax": "^2.4.0",
