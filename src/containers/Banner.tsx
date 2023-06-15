@@ -23,7 +23,6 @@ const Banner: React.FC<Props> = (props) => {
     fetchPolicy: 'cache-and-network',
     pollInterval: REFRESH_INTERVALS[QueryName.listMonitorVaults]
   });
-  const vaults: MonitorVaults[] = dataMonitorVaults?.listMonitorVaults.items || [];
 
   // only display major vaults: USDC, wBTC, wETH, wStETH, wMATIC, Chainlink
   const isMajorVault = (address: string) => {
@@ -39,7 +38,17 @@ const Banner: React.FC<Props> = (props) => {
     );
   };
 
-  const vaultsToShow = vaults.filter(v => (isMajorVault(v.address) && v.vaultIrrAllTx > 0 ));
+  const vaults: MonitorVaults[] = dataMonitorVaults?.listMonitorVaults.items
+    .filter(v => (isMajorVault(v.address) && v.vaultIrrAllTx > 0 )) || [];
+  const maxIRR = vaults.reduce((prev, currVault) => 
+    { return prev > currVault.vaultIrrAllTx ? prev : currVault.vaultIrrAllTx }, 0);
+  const vaultsToShow = vaults.sort((v1, v2) => {
+    if(v1.vaultIrrAllTx === maxIRR){ return -1;}
+    if(v2.vaultIrrAllTx === maxIRR){ return 1;}
+    return 0;
+  });
+
+  vaultsToShow.map((v) => console.log('+', v.displayName, v.vaultIrrAllTx));
 
   return vaultsToShow.length > 0 ? (
     <div className="w-full m-auto overflow-hidden" id="home">
