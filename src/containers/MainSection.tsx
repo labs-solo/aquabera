@@ -31,9 +31,14 @@ const MainSection: React.FC = () => {
   const hodlVaultDepositLink = "https://app.ichi.org/";
   return (
     <div className="flex flex-col items-center justify-center pb-20"  id="main-section">
-      <h1 className='px-3 mx-auto text-center'>Effortless Market Making on <span className='whitespace-nowrap'>Uniswap V3</span></h1>
-      <div className="font-secondary mt-5 text-center" >{section.header.text}</div>
+      <h1 className='px-3 mx-auto text-center'>Profitable Liquidity Provision</h1>
+      <div className="font-secondary mt-5 text-center" >
+        Yield IQ: The Auto-Liquidity Manager Maximizing Your Income
+      </div>
       
+      <div className='yield-iq-div rounded-full px-6 py-2 mt-4 flex justify-center items-center'>
+        <img alt="Yield ID" className="yield-iq-logo w-[96px] mb-0" />
+      </div>
       <Image src="../images/gate_hero.png" alt="HODL Vault" margin="40px auto" className="w-[525px]" />
       <div className="flex flex-row justify-center md:justify-between w-full md:w-[560px] flex-wrap pl-5 pr-5">
         <OutboundLink target="_blank" href={hodlVaultDepositLink} className="btn-link w-full md:w-[250px]">

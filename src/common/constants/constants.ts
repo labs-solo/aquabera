@@ -16,6 +16,8 @@ export const ChainId = {
   KOVAN: 42
 }
 
+export const badgeSrc = 'https://ichi-images.s3.amazonaws.com/misc/';
+
 type Partner = {
   name: string;
   logo: string;

@@ -48,6 +48,7 @@ import ImageDefiyield from '../common/assets/image/ichi/media/defiyield.png';
 import ImageDecrypt from '../common/assets/image/ichi/media/decrypt.png';
 import ImageCoinTribune from '../common/assets/image/ichi/media/cointribune.png';
 import ImageInsideTrack from '../common/assets/image/ichi/media/inside-track.jpg';
+import { badgeSrc } from 'common/constants/constants';
 const IconCryptoholics = 'https://ichi-images.s3.amazonaws.com/logos/cryptoholics.png';
 
 
@@ -563,7 +564,13 @@ const GlobalStyle = createGlobalStyle`
       & .image-bg-popover {
         content: url(${darkTheme.images.bgPopover})
       }
-
+      & .yield-iq-logo{
+        content:url('${badgeSrc}Yield-IQ-Inverted-Color.png');
+      }
+      & .yield-iq-div{
+        background-color: #ffffff;
+      }
+    
       /* ------------------------------------- */
       /* Icons  */
       /* ------------------------------------- */
@@ -1035,7 +1042,13 @@ const GlobalStyle = createGlobalStyle`
       & .image-bg-popover {
         content: url(${darkTheme.images.bgPopover})
       }
-
+      & .yield-iq-logo{
+        content:url('${badgeSrc}Yield-IQ.png');
+      }
+      & .yield-iq-div{
+        background-color: #222222;
+      }
+    
       /* ------------------------------------- */
       /* Icons  */
       /* ------------------------------------- */
