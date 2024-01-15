@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
           />
         </Link>
         <div className="pl-5 secondary-text-color text-base">
-            &copy; 2022 ICHI. All rights reserved 
+            &copy; {new Date().getFullYear()} ICHI. All rights reserved 
         </div>
       </div>
       <div className="flex">

@@ -221,14 +221,6 @@ export const navMenu = [
     link: '/community/'
   },
   {
-    title: 'Governance',
-    link: '/governance/'
-  },
-  {
-    title: 'Developers',
-    link: '/developers/'
-  },
-  {
     title: 'Partners',
     link: '/partners/'
   },

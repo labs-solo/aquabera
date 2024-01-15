@@ -34,44 +34,7 @@ const NewsSection: React.FC = () => {
       {/* Twitter */}
       <RssFeedSection section={twitterSection} logo="icon-twitter" />
 
-      <div className="mt-10" />
-      <div className="font-primary secondary-header-color mb-5">
-        Daniel Tal, Network Steward at ICHI - Community Based DeFi | Blockchain Interviews
-      </div>
-
-      <div style={{overflow: "hidden"}} className="mb-20 rounded-[20px]">
-        <iframe width="100%"  
-          src="https://www.youtube.com/embed/if8sj9PCcfU" 
-          title="YouTube video player" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        >
-        </iframe></div>
-
-      <div className="font-primary secondary-header-color mb-5">
-        What is ICHI Crypto? Full interview explanation
-      </div>
-
-      <div style={{overflow: "hidden"}} className="mb-20 rounded-[20px]">
-        <iframe width="100%" 
-          src="https://www.youtube.com/embed/Kz6_5VQXC28" 
-          title="YouTube video player" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        >
-        </iframe>
-      </div>
-
-      <div className="font-primary secondary-header-color mb-5">
-        Are Branded Dollars The New StableCoins? | DeFi 2.0 with ICHI
-      </div>
-
-      <div style={{overflow: "hidden"}} className="mb-20 rounded-[20px]">
-        <iframe width="100%" 
-          src="https://www.youtube.com/embed/weU5b58LTdI" 
-          title="YouTube video player" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        >
-        </iframe>
-      </div>
+      <div className='mt-20' />
 
       {/* Medium */}
       <RssFeedSection section={mediumSection} logo="icon-medium" />

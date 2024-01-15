@@ -345,7 +345,7 @@ const GlobalStyle = createGlobalStyle`
         background-image: url("../images/bg-top.jpg");
         background-repeat: no-repeat;
         background-size: 100% auto;
-        background-position: center top 31px;
+        background-position: center top;
         @media only screen and (max-width: 1024px) {
           background-size: 1440px auto;
         }
@@ -353,7 +353,7 @@ const GlobalStyle = createGlobalStyle`
     
       & .home-page-container{
         background-image: url('../images/bg-top.jpg'), url('../images/bg-bottom.svg');
-        background-position: center top 31px, center bottom 120px;
+        background-position: center top 0px, center bottom 120px;
         background-size: 100% auto, 100% auto;
         background-repeat: no-repeat, no-repeat;
         @media only screen and (max-width: 1024px) {
@@ -361,7 +361,7 @@ const GlobalStyle = createGlobalStyle`
         }
         @media (min-width: 2100px) {
           background-image: url('../images/bg-top.jpg');
-          background-position: center top 31px;
+          background-position: center top;
         }
       }
 
@@ -838,7 +838,7 @@ const GlobalStyle = createGlobalStyle`
         background-image: url('../images/bg-top-light.png');
         background-repeat: no-repeat;
         background-size: 100% auto;
-        background-position: center top 31px;
+        background-position: center top;
         @media only screen and (max-width: 1024px) {
           background-size: 1440px auto;
         }
@@ -846,7 +846,7 @@ const GlobalStyle = createGlobalStyle`
 
       & .home-page-container{
         background-image: url('../images/bg-top-light.png'), url('../images/bg-bottom-light.png');
-        background-position: center top 31px, center bottom 120px;
+        background-position: center top 0px, center bottom 120px;
         background-size: 100% auto, 100% auto;
         background-repeat: no-repeat, no-repeat;
         @media only screen and (max-width: 1024px) {
@@ -854,7 +854,7 @@ const GlobalStyle = createGlobalStyle`
         }
         @media (min-width: 2100px) {
           background-image: url('../images/bg-top-light.png');
-          background-position: center top 31px;
+          background-position: center top;
         }
       }
 

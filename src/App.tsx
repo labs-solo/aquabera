@@ -39,7 +39,6 @@ const App: React.FC<Props> = (props) => {
         <div style={{position: 'relative'}}>
           <SidebarSection sidebarClassName={sidebarClassName} showSidebar={setShowSidebar} />
           <ContentWrapper className={`main-container ${props.className}`}>
-            <Banner />
             <HeaderSection showSidebar={setShowSidebar}  themeToggle={darkMode.toggle} themeName={theme.name} /> 
             <Container noGutter={props.noGutter} marginBottom="20px">
               {props.children}
