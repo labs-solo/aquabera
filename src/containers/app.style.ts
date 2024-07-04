@@ -657,6 +657,9 @@ const GlobalStyle = createGlobalStyle`
       & .elliptic {
         content: url('../images/partners/Elliptic_Logo.png');
       }
+      & .efficientfrontier {
+        content: url('../images/partners/efficient-frontier-white.png');
+      }
       & .first-mile {
         content: url('../images/partners/first mile.svg');
       }
@@ -1134,6 +1137,9 @@ const GlobalStyle = createGlobalStyle`
       }
       & .elliptic {
         content: url('../images/partners/Elliptic_Logo.png');
+      }
+      & .efficientfrontier {
+        content: url('../images/partners/efficient-frontier.png');
       }
       & .first-mile {
         content: url('../images/partners/first-mile-light.png');

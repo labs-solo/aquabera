@@ -37,6 +37,11 @@ export const partners: Partner[] = [
     description: 'Providing liquidity rewards'
   },
   {
+    name: 'Efficient Frontier',
+    logo: 'efficientfrontier',
+    description: 'Providing liquidity rewards'
+  },
+  {
     name: 'Loopring',
     logo: 'loopring',
     description: 'Providing liquidity rewards'
