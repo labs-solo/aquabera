@@ -223,15 +223,11 @@ export const media = [
 export const navMenu = [
   {
     title: 'Community',
-    link: '/community/'
+    link: 'https://labs-solo.github.io/aberabook/community/intro'
   },
   {
     title: 'Partners',
-    link: '/partners/'
-  },
-  {
-    title: 'News',
-    link: '/news/'
+    link: 'https://labs-solo.github.io/aberabook/community/intro'
   },
   {
     title: 'Docs',

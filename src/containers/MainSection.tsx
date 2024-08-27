@@ -39,7 +39,9 @@ const MainSection: React.FC = () => {
         Automate and optimize participation in Berachain's Proof-of-Liquidity
       </div>
       <OutboundLink target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeVKToHTP1AjIbyE3TglLcQLuPGM5jgArkvQN-jNs1KL5Wfrw/viewform?usp=sf_link">
-      <div className='border-2 border-[#287884] text-md font-bold text-[#287884] bg-transparent rounded-xl px-6 py-2 mt-8 flex justify-center items-center hover:bg-[#287884] hover:text-white transition-colors duration-100'>
+      <div className='text secondary-button px-6 py-3 mt-8 flex justify-center items-center'>
+
+      {/* <div className="text secondary-button w-full md:w-[250px] mb-3">  */}
         Register as a Founding Partner
       </div>
 
@@ -53,7 +55,7 @@ const MainSection: React.FC = () => {
       <div className="flex flex-row justify-center md:justify-between w-full md:w-[560px] flex-wrap pl-5 pr-5">
         <OutboundLink
           target="_blank"
-          href={hodlVaultDepositLink}
+          href="https://forms.gle/BW5HByzZAi72DrRF8"
           className="btn-link w-full md:w-[250px]"
         >
           <Button
@@ -66,8 +68,9 @@ const MainSection: React.FC = () => {
           href={section.header.button2.href}
           className="btn-link w-full md:w-[250px]"
         >
+
           <Button
-            className="text secondary-button w-full md:w-[250px] mb-3"
+            className="text ghost-button w-full md:w-[250px] mb-3"
             title={section.header.button2.text}
           />
         </OutboundLink>

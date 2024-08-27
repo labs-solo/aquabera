@@ -155,6 +155,29 @@ const GlobalStyle = createGlobalStyle`
       box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
     }
 
+    {/* <div className='border-2 border-[#287884] text-md font-bold text-[#287884] bg-transparent rounded-xl px-6 py-2 mt-8 flex justify-center items-center hover:bg-[#287884] hover:text-white transition-colors duration-100'> */}
+
+    & .ghost-button {
+      // width: 130px;
+      border-radius: 10px;
+      border-width: 2px;
+      border-color: #287884;
+      border-style: solid;
+      background-color: transparent;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 19px;
+      color: #287884;
+      transition: box-shadow 0.1s ease; /* Smooth transition for the shadow */
+    }
+
+    & .ghost-button:hover {
+      box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+      background-color: #287884;
+      color: #ffffff;
+    }
+
     & .small-button {
       width: 130px;
       border-radius: 25px;
@@ -342,7 +365,7 @@ const GlobalStyle = createGlobalStyle`
       font-weight: 700;    
     }
     & .font-secondary{
-      font-size: 16px;
+      font-size: 20px;
       font-weight: 300;
       color: #787E91;    
     }
