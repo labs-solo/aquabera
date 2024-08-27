@@ -24,9 +24,8 @@ type Props = {
 
 
 const App: React.FC<Props> = (props) => {
-  {/* Temporarily disable dark mode toggle */}
-  // const darkMode = useDarkMode();
-  // const theme = darkMode.value ? darkTheme : lightTheme;
+  const darkMode = useDarkMode();
+  const theme = darkMode.value ? darkTheme : lightTheme;
 
   const [showSidebar, setShowSidebar] = useState(false);
   const sidebarClassName = showSidebar ? 'show' : '';
@@ -40,9 +39,7 @@ const App: React.FC<Props> = (props) => {
         <div style={{position: 'relative'}}>
           <SidebarSection sidebarClassName={sidebarClassName} showSidebar={setShowSidebar} />
           <ContentWrapper className={`main-container ${props.className}`}>
-            {/* Temporarily disable dark mode toggle */}
-            {/* <HeaderSection showSidebar={setShowSidebar}  themeToggle={darkMode.toggle} themeName={theme.name} />  */}
-            <HeaderSection showSidebar={setShowSidebar}  themeToggle={undefined} themeName={lightTheme.name} /> 
+            <HeaderSection showSidebar={setShowSidebar}  themeToggle={darkMode.toggle} themeName={theme.name} /> 
             <Container noGutter={props.noGutter} marginBottom="20px">
               {props.children}
             </Container>

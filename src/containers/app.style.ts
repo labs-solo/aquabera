@@ -367,7 +367,7 @@ const GlobalStyle = createGlobalStyle`
     & .font-secondary{
       font-size: 20px;
       font-weight: 300;
-      color: #787E91;    
+      color: rgba(0, 0, 0, 0.7);
     }
 
     &.dark-mode {
@@ -383,6 +383,23 @@ const GlobalStyle = createGlobalStyle`
         @media only screen and (max-width: 1024px) {
           background-size: 1440px auto;
         }
+      }
+
+      & .ghost-button {
+        border-color: rgba(255, 255, 255, 0.8); /* White with 70% opacity */
+        color: rgba(255, 255, 255, 0.8); /* White with 70% opacity */
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.8); /* White with 70% opacity */
+          border-color: rgba(255, 255, 255, 0.8); /* White with 70% opacity */
+          color: rgba(0, 0, 0, 0.9);
+        }
+      }
+
+      & .font-secondary{
+        font-size: 20px;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.7);
       }
     
       & .home-page-container{
@@ -564,7 +581,7 @@ const GlobalStyle = createGlobalStyle`
       & .image-aquabera-logo {
         margin-top: auto;
         margin-bottom: auto;
-        content: url(${lightTheme.images.aquaberaLogo})
+        content: url(${darkTheme.images.aquaberaLogo})
       }
       & .ichi-black-white {
         content: url('../images/ichi-icon-black.svg');

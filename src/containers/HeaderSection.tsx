@@ -38,8 +38,8 @@ const HeaderSection: React.FC<Props> = (props) => {
             <MenuItem key={i.title} link={i.link} title={i.title} className="text-lg font-semibold" />
           ))}
           </div>
-          {/* Temporarily disable dark mode toggle */}
-          {/* <ThemeSwitcher onClick={props.themeToggle} /> */}
+          
+          <ThemeSwitcher onClick={props.themeToggle} />
           
           <div className="block lg:hidden">
             <Image
