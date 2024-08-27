@@ -547,9 +547,9 @@ const GlobalStyle = createGlobalStyle`
         content: url('../images/ichi-icon-black.svg');
       }
       & .image-ichi {
-        content: url(${darkTheme.images.ichiLogo});
+        content: url(${darkTheme.images.aquaberaLogo});
         @media (max-width: 1024px) {
-          content: url(${darkTheme.images.ichi});
+          content: url(${darkTheme.images.hero});
         }
       }
       & .image-banner {
