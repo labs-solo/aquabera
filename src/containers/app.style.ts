@@ -564,7 +564,7 @@ const GlobalStyle = createGlobalStyle`
       & .image-aquabera-logo {
         margin-top: auto;
         margin-bottom: auto;
-        content: url(${lightTheme.images.aquaberaLogo})
+        content: url(${darkTheme.images.aquaberaLogo})
       }
       & .ichi-black-white {
         content: url('../images/ichi-icon-black.svg');
