@@ -10,7 +10,7 @@ const lightColors: Colors = {
   headingColor: '#333333',
   secondaryHeaderColor: '#333333',
   subHeadingColor: '#666666',
-  headerLinkColor: '#104CA2',
+  headerLinkColor: '#32a2a2',
   linkColor: '#016DF2',
   textColor: '#43414e', // 3
   subTextColor: '#666666',

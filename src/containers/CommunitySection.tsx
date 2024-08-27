@@ -6,11 +6,11 @@ import HorizontalCard from 'common/components/HorizontalCard';
 const CommunitySection: React.FC = () => {
 
   return (
-    <section>
+     <section className="flex flex-grow">
       <SectionHeader 
-        text='Community' 
+        text='Community - coming soon!' 
       />
-      <div className="mt-5 mb-5 primary-text-color font-primary max-w-[800px]">
+      {/* <div className="mt-5 mb-5 primary-text-color font-primary max-w-[800px]">
         ICHI’s greedy liquidity favors depositors who want to grow a specific token. It works by resisting the bots that drain value from two-token approaches. Ready to get started? Just deposit a single token. DM ICHI on Twitter, Telegram, or Discord if your favorite token isn’t yet available.
       </div>
 
@@ -52,7 +52,7 @@ const CommunitySection: React.FC = () => {
           imageHeight="50"
           description="Follow the latest news from ICHI"
         />
-      </div>
+      </div> */}
 
       {/* <hr /> */}
       {/* Temporarily removed

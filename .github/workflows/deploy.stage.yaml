@@ -1,4 +1,4 @@
-name: ichi.org (stage)
+name: aquabera.com (stage)
 
 on:
   push:
@@ -25,7 +25,7 @@ jobs:
         accountEmail: ${{ secrets.CF_ACCOUNT_EMAIL  }}
         apiKey: ${{ secrets.CF_API_KEY  }}
         accountId: ${{ secrets.CF_ACCOUNT_KEY  }}
-        project: 'ichiorg'
+        project: 'aquabera'
         # Add this if you want GitHub Deployments (see below)
         githubToken: ${{ secrets.GITHUB_TOKEN }}
         # Add this if you want to wait for a deployment triggered by a specfied commit
@@ -42,7 +42,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: prod
-      url: https://ichi.org
+      url: https://aquabera.com
 
     steps:
 
@@ -61,7 +61,7 @@ jobs:
         accountEmail: ${{ secrets.CF_ACCOUNT_EMAIL  }}
         apiKey: ${{ secrets.CF_API_KEY  }}
         accountId: ${{ secrets.CF_ACCOUNT_KEY  }}
-        project: 'ichiorg'
+        project: 'aquabera'
         # Add this if you want GitHub Deployments (see below)
         githubToken: ${{ secrets.GITHUB_TOKEN }}
         # Add this if you want to wait for a deployment triggered by a specfied commit

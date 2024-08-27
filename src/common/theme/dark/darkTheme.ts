@@ -29,9 +29,12 @@ import IconClose from 'common/assets/image/dark/icon_close.svg';
 import ImageLeftArrow from 'common/assets/image/dark/img_left_arrow.png';
 import ImageRightArrow from 'common/assets/image/dark/img_right_arrow.png';
 import ImageBgPopover from 'common/assets/image/ichi/background_blue.png';
-import { ColorsKey, IchiTheme, Theme } from 'common/models/theme';
+import { ColorsKey, AquaberaTheme, Theme } from 'common/models/theme';
 import { css } from 'styled-components';
 import darkColors from './darkColors';
+
+import ImageAquaberaLogo from 'common/assets/image/aquabera/logoBlackTransparent.svg';
+import ImageAquaberaHero from 'common/assets/image/aquabera/aquaberaHero.jpg';
 
 const MEDIA_WIDTHS = {
   upToExtraSmall: 500,
@@ -49,12 +52,12 @@ const mediaWidthTemplates: { [width in keyof typeof MEDIA_WIDTHS]: typeof css } 
   return accumulator;
 }, {}) as any;
 
-export const darkTheme: IchiTheme = {
+export const darkTheme: AquaberaTheme = {
   name: Theme.DARK,
   mediaWidth: mediaWidthTemplates,
   images: {
-    ichi: ImageIchi,
-    ichiLogo: ImageIchiLogo,
+    hero: ImageAquaberaHero,
+    aquaberaLogo: ImageAquaberaLogo,
     banner: ImageBanner,
     oneTokenBubbles: ImageOneTokenBubbles,
     howItWorks: ImageHowItWorks,

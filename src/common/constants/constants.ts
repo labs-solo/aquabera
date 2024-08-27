@@ -235,6 +235,6 @@ export const navMenu = [
   },
   {
     title: 'Docs',
-    link: 'https://docs.ichi.org/'
+    link: 'https://labs-solo.github.io/aberabook/'
   },
 ]

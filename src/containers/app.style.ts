@@ -127,21 +127,32 @@ const GlobalStyle = createGlobalStyle`
     & .primary-button {
       // width: 160px;
       border-radius: 10px;
-      background: linear-gradient(139.74deg, #00C9FF 0%, #0676FF 100%);
+      background-color: #287884;
       font-size: 16px;
       font-weight: 600;
       letter-spacing: 0;
       line-height: 19px;
+      transition: box-shadow 0.1s ease; /* Smooth transition for the shadow */
+    }
+
+    & .primary-button:hover {
+      box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
     }
 
     & .secondary-button {
       // width: 130px;
       border-radius: 10px;
-      background-color: #104CA2;
+      background-color: #9AD7C6;
       font-size: 16px;
       font-weight: 600;
       letter-spacing: 0;
       line-height: 19px;
+      color: #000000;
+      transition: box-shadow 0.1s ease; /* Smooth transition for the shadow */
+    }
+
+    & .secondary-button:hover {
+      box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
     }
 
     & .small-button {
@@ -527,10 +538,10 @@ const GlobalStyle = createGlobalStyle`
       /* ------------------------------------- */
       /* Images  */
       /* ------------------------------------- */
-      & .image-ichi-logo {
+      & .image-aquabera-logo {
         margin-top: auto;
         margin-bottom: auto;
-        content: url(${darkTheme.images.ichiLogo})
+        content: url(${lightTheme.images.aquaberaLogo})
       }
       & .ichi-black-white {
         content: url('../images/ichi-icon-black.svg');
@@ -920,7 +931,7 @@ const GlobalStyle = createGlobalStyle`
         color: ${lightTheme.colors.headerLinkColor}
       }
       & .header-link-color:hover,  .header-link-color:hover a{
-        color: #016DF2;
+        color: #287884;
       }
 
       & .link-color {
@@ -1008,18 +1019,18 @@ const GlobalStyle = createGlobalStyle`
       /* ------------------------------------- */
       /* Images  */
       /* ------------------------------------- */
-      & .image-ichi-logo {
+      & .image-aquabera-logo {
         margin-top: auto;
         margin-bottom: auto;
-        content: url(${lightTheme.images.ichiLogo})
+        content: url(${lightTheme.images.aquaberaLogo})
       }
       & .ichi-black-white {
         content: url('../images/ichi icon white.svg');
       }
-      & .image-ichi {
-        content: url(${lightTheme.images.ichiLogo});
+      & .image-aquabera {
+        content: url(${lightTheme.images.aquaberaLogo});
         @media (max-width: 1024px) {
-          content: url(${lightTheme.images.ichi});
+          content: url(${lightTheme.images.hero});
         }
       }
       & .image-banner {

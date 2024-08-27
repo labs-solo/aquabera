@@ -8,8 +8,8 @@ const Index: React.FC = () => {
   return (
     <App marginBottom={'0px'}  className="home-page-container">
       <PartnersSection />
-      <hr />
-      <PartnershipRequestSection />
+      {/* <hr /> */}
+      {/* <PartnershipRequestSection /> */}
     </App>
   );
 };

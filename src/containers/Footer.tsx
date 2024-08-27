@@ -11,14 +11,14 @@ const Footer: React.FC = () => {
       <div className="flex items-center">
         <Link to="/">
           <Image
-            className="image-ichi"
-            alt="ICHI"
+            className="image-aquabera-logo"
+            alt="AquaBera logo"
             height="34px"
             width="auto"
           />
         </Link>
         <div className="pl-5 secondary-text-color text-base">
-            &copy; {new Date().getFullYear()} ICHI. All rights reserved 
+            &copy; {new Date().getFullYear()} AquaBera. All rights reserved 
         </div>
       </div>
       <div className="flex">
@@ -27,13 +27,13 @@ const Footer: React.FC = () => {
             <MenuItem key={i.title} link={i.link} title={i.title} />
           ))}
 
-          {communityIcons.map((i) => (
+          {/* {communityIcons.map((i) => (
             <SocialMediaIcon 
               key={i.name}
               url={i.url}
               imageSrc={`../images/${i.logo}`}
               title={i.name} />
-          ))}
+          ))} */}
         </div>
       </div>
     </div>

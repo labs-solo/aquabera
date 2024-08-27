@@ -8,9 +8,9 @@ const PartnersSection: React.FC = () => {
   return (
     <section>
       <SectionHeader
-        text="Partners"
+        text="Partners - coming soon!"
       />
-      <div className="flex flex-row justify-between flex-wrap mt-5">
+      {/* <div className="flex flex-row justify-between flex-wrap mt-5">
         {partners.map((partner) => (
           <VerticalCard
             key={partner.name}
@@ -18,7 +18,7 @@ const PartnersSection: React.FC = () => {
             url={partner.url}
             imageClassName={partner.logo} />
         ))}
-      </div>
+      </div> */}
     </section>
   );
 };

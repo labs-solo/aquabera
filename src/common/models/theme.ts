@@ -56,13 +56,13 @@ export type Colors = {
 
 export type ColorsKey = keyof typeof darkColors;
 
-export type IchiTheme = {
+export type AquaberaTheme = {
   name: Theme;
   // TODO: type this later, looks complicated
   mediaWidth: any,
   images: {
-    ichiLogo: string;
-    ichi: string;
+    aquaberaLogo: string;
+    hero: string;
     banner: string;
     oneTokenBubbles: string;
     howItWorks: string;

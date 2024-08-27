@@ -24,22 +24,25 @@ type Props = {
 
 
 const App: React.FC<Props> = (props) => {
-  const darkMode = useDarkMode();
-  const theme = darkMode.value ? darkTheme : lightTheme;
+  {/* Temporarily disable dark mode toggle */}
+  // const darkMode = useDarkMode();
+  // const theme = darkMode.value ? darkTheme : lightTheme;
 
   const [showSidebar, setShowSidebar] = useState(false);
   const sidebarClassName = showSidebar ? 'show' : '';
   
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={lightTheme}>
       <ApolloProvider client={apolloClient}>
-        <SEO title="ICHI" />
+        <SEO title="AquaBera" />
         <ResetCSS />
         <GlobalStyle />
         <div style={{position: 'relative'}}>
           <SidebarSection sidebarClassName={sidebarClassName} showSidebar={setShowSidebar} />
           <ContentWrapper className={`main-container ${props.className}`}>
-            <HeaderSection showSidebar={setShowSidebar}  themeToggle={darkMode.toggle} themeName={theme.name} /> 
+            {/* Temporarily disable dark mode toggle */}
+            {/* <HeaderSection showSidebar={setShowSidebar}  themeToggle={darkMode.toggle} themeName={theme.name} />  */}
+            <HeaderSection showSidebar={setShowSidebar}  themeToggle={undefined} themeName={lightTheme.name} /> 
             <Container noGutter={props.noGutter} marginBottom="20px">
               {props.children}
             </Container>

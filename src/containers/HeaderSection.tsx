@@ -24,19 +24,22 @@ const HeaderSection: React.FC<Props> = (props) => {
       <div className="flex flex-row items-center">
         <Link to="/">
           <Image
-            className="image-ichi-logo"
-            alt="Community"
-            height="34px"
+            className="image-aquabera-logo"
+            alt="AquaBera logo"
+            height="40px"
             width="auto"
           />
         </Link>
       </div>
 
       <div className="flex justify-end items-center">
+          <div className="flex mr-10">
           {navMenu.map((i) => (
             <MenuItem key={i.title} link={i.link} title={i.title} className="text-lg font-semibold" />
           ))}
-          <ThemeSwitcher onClick={props.themeToggle} />
+          </div>
+          {/* Temporarily disable dark mode toggle */}
+          {/* <ThemeSwitcher onClick={props.themeToggle} /> */}
           
           <div className="block lg:hidden">
             <Image
