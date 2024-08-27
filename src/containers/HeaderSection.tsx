@@ -48,7 +48,7 @@ const HeaderSection: React.FC<Props> = (props) => {
               onClick={toggleSideBar} />
           </div>
 
-          <OutboundLink target="_blank" href="https://app.ichi.org">
+          <OutboundLink target="_blank" href="https://forms.gle/BW5HByzZAi72DrRF8">
             <Button className="primary-button w-32 md:w-40" title="Launch App" />
           </OutboundLink>
       </div>

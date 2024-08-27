@@ -53,7 +53,7 @@ const MainSection: React.FC = () => {
       <div className="flex flex-row justify-center md:justify-between w-full md:w-[560px] flex-wrap pl-5 pr-5">
         <OutboundLink
           target="_blank"
-          href={hodlVaultDepositLink}
+          href="https://forms.gle/BW5HByzZAi72DrRF8"
           className="btn-link w-full md:w-[250px]"
         >
           <Button

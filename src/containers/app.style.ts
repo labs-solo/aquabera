@@ -342,7 +342,7 @@ const GlobalStyle = createGlobalStyle`
       font-weight: 700;    
     }
     & .font-secondary{
-      font-size: 16px;
+      font-size: 20px;
       font-weight: 300;
       color: #787E91;    
     }
