@@ -32,7 +32,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 property: `og:image`,
-                content: `https://ichi-images.s3.amazonaws.com/misc/ichi_vaults_for_crypto_holders.png`,
+                content: `https://ichi-images.s3.amazonaws.com/aquabera/aquabera_center.jpg`,
               },
               {
                 property: `og:type`,

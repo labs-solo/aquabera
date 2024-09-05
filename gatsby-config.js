@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Grow any token with low-slippage, on-chain liquidity`,
-    description: `Grow any token with low-slippage, on-chain liquidity`,
+    title: `Automate and optimize participation in Berachain's Proof-of-Liquidity`,
+    description: `Automate and optimize participation in Berachain's Proof-of-Liquidity`,
     author: `@gatsbyjs`,
   },
   plugins: [
