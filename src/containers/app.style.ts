@@ -64,7 +64,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: Lato;
+    font-family: Onest;
 
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
@@ -128,8 +128,9 @@ const GlobalStyle = createGlobalStyle`
       // width: 160px;
       border-radius: 10px;
       background-color: #287884;
+      font-family: 'Sigmar', sans-serif;
       font-size: 16px;
-      font-weight: 600;
+      font-weight: 400;
       letter-spacing: 0;
       line-height: 19px;
       transition: box-shadow 0.1s ease; /* Smooth transition for the shadow */
@@ -357,7 +358,7 @@ const GlobalStyle = createGlobalStyle`
     & .font-primary-title{
       font-size: 18px;
       font-weight: 600;  
-      font-family: "lato";  
+      font-family: "Onest";  
       text-transform: uppercase;
     }
     & .font-secondary-title{
@@ -1339,7 +1340,7 @@ const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   h6 {
-    font-family: 'Lato';
+    font-family: 'Sigmar';
     font-weight: 500;
   }
   h1 {

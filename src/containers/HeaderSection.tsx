@@ -49,7 +49,7 @@ const HeaderSection: React.FC<Props> = (props) => {
           </div>
 
           <OutboundLink target="_blank" href="https://app.aquabera.com">
-            <Button className="primary-button w-32 md:w-40" title="Launch App" />
+            <Button className="primary-button w-32 md:w-40" title="LAUNCH APP" />
           </OutboundLink>
       </div>
     </div>

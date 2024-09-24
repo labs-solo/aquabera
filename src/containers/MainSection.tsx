@@ -1,12 +1,12 @@
 import Button from "common/components/Button";
 import Image from "common/components/Image";
-import { IchiJson } from "common/models/ichiJson";
+import { AquaberaJson } from "common/models/aquaberaJson";
 import { graphql, useStaticQuery } from "gatsby";
 import { OutboundLink } from "gatsby-plugin-google-gtag";
 import React from "react";
 
 const MainSection: React.FC = () => {
-  const Data = useStaticQuery<IchiJson>(graphql`
+  const Data = useStaticQuery<AquaberaJson>(graphql`
     query {
       ichiJson {
         mainSection {
@@ -28,24 +28,16 @@ const MainSection: React.FC = () => {
   `);
 
   const section = Data.ichiJson.mainSection;
-  const hodlVaultDepositLink = "https://app.ichi.org/";
+
   return (
     <div
       className="flex flex-col items-center justify-center pb-20"
       id="main-section"
     >
-      <h1 className="px-3 mx-auto text-center">Maximize $BGT Earnings</h1>
+      <h1 className="px-3 mx-auto text-center">Make $BGT rain on autopilot</h1>
       <div className="font-secondary mt-5 text-center">
-        Automate and optimize participation in Berachain's Proof-of-Liquidity
+        Liquidity management protocol that maximizes your returns while minimizing risks without requiring constant oversight.
       </div>
-      <OutboundLink target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeVKToHTP1AjIbyE3TglLcQLuPGM5jgArkvQN-jNs1KL5Wfrw/viewform?usp=sf_link">
-      <div className='text secondary-button px-6 py-3 mt-8 flex justify-center items-center'>
-
-      {/* <div className="text secondary-button w-full md:w-[250px] mb-3">  */}
-        Register as a Founding Partner
-      </div>
-
-      </OutboundLink>
       <Image
         src="../images/aquaberaHero.jpg"
         alt="HODL Vault"
