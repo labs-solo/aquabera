@@ -889,8 +889,8 @@ const GlobalStyle = createGlobalStyle`
       background-color: ${lightTheme.colors.bgColor};
 
       & .main-container{
-        background-color: #fffff;
-        background-image: url('../images/bg-top-light.png');
+        background-color: #DBEFFF;
+        // background-image: url('../images/bg-top-light.png');
         background-repeat: no-repeat;
         background-size: 100% auto;
         background-position: center top;
@@ -900,7 +900,7 @@ const GlobalStyle = createGlobalStyle`
       }
 
       & .home-page-container{
-        background-image: url('../images/bg-top-light.png'), url('../images/bg-bottom-light.png');
+        // background-image: url('../images/bg-top-light.png'), url('../images/bg-bottom-light.png');
         background-position: center top 0px, center bottom 120px;
         background-size: 100% auto, 100% auto;
         background-repeat: no-repeat, no-repeat;
@@ -908,7 +908,7 @@ const GlobalStyle = createGlobalStyle`
           background-size: 1440px auto, 1440px auto;
         }
         @media (min-width: 2100px) {
-          background-image: url('../images/bg-top-light.png');
+          // background-image: url('../images/bg-top-light.png');
           background-position: center top;
         }
       }

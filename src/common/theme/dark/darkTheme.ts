@@ -21,8 +21,6 @@ import ImageBrandedDollarsSection from 'common/assets/image/dark/bg_branded_doll
 import ImageForm from 'common/assets/image/dark/bg_form.png';
 import ImageCommunityBubbles from 'common/assets/image/dark/img_bubbles_community_dark.svg';
 import ImageOneTokenBubbles from 'common/assets/image/dark/img_bubbles_onetokens.svg';
-import ImageIchi from 'common/assets/image/dark/img_logo_ichi_symbol.svg';
-import ImageIchiLogo from 'common/assets/image/dark/img_logo_ichi_white.svg';
 import ImageTheme from 'common/assets/image/dark/img_theme.svg';
 import ImageHowItWorks from 'common/assets/image/light/img_howitworks.svg';
 import IconClose from 'common/assets/image/dark/icon_close.svg';

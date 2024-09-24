@@ -21,8 +21,6 @@ import ImageForm from 'common/assets/image/dark/bg_form.png';
 import ImageCommunityBubbles from 'common/assets/image/light/img_bubbles_community_light.svg';
 import ImageOneTokenBubbles from 'common/assets/image/light/img_bubbles_onetokens.svg';
 import ImageHowItWorks from 'common/assets/image/light/img_howitworks.svg';
-import ImageIchiLogo from 'common/assets/image/light/img_logo_ichi_black.svg';
-import ImageIchi from 'common/assets/image/light/img_logo_ichi_symbol.svg';
 import ImageTheme from 'common/assets/image/light/img_theme.svg';
 import IconClose from 'common/assets/image/light/icon_close.svg';
 import ImageLeftArrow from 'common/assets/image/dark/img_left_arrow.png';
@@ -32,7 +30,7 @@ import { ColorsKey, AquaberaTheme, Theme } from 'common/models/theme';
 import { css } from 'styled-components';
 import lightColors from './lightColors';
 
-import GreenAquaberaLogo from 'common/assets/image/aquabera/logoGreenTransparent.svg';
+import BlackAquaberaLogo from 'common/assets/image/aquabera/aquaberaTextLogoBlack.svg';
 import ImageAquaberaHero from 'common/assets/image/aquabera/aquaberaHero.jpg';
 
 
@@ -57,7 +55,7 @@ export const lightTheme: AquaberaTheme = {
   mediaWidth: mediaWidthTemplates,
   images: {
     hero: ImageAquaberaHero,
-    aquaberaLogo: GreenAquaberaLogo,
+    aquaberaLogo: BlackAquaberaLogo,
     banner: ImageBanner,
     oneTokenBubbles: ImageOneTokenBubbles,
     howItWorks: ImageHowItWorks,
