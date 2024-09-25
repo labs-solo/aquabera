@@ -31,7 +31,7 @@ import { css } from 'styled-components';
 import lightColors from './lightColors';
 
 import BlackAquaberaLogo from 'common/assets/image/aquabera/aquaberaTextLogoBlack.svg';
-import ImageAquaberaHero from 'common/assets/image/aquabera/aquaberaHero.jpg';
+import ImageAquaberaBear from 'common/assets/image/aquabera/aquaberaBear.svg';
 
 
 const MEDIA_WIDTHS = {
@@ -54,7 +54,7 @@ export const lightTheme: AquaberaTheme = {
   name: Theme.LIGHT, // media queries
   mediaWidth: mediaWidthTemplates,
   images: {
-    hero: ImageAquaberaHero,
+    bear: ImageAquaberaBear,
     aquaberaLogo: BlackAquaberaLogo,
     banner: ImageBanner,
     oneTokenBubbles: ImageOneTokenBubbles,

@@ -32,7 +32,7 @@ import { css } from 'styled-components';
 import darkColors from './darkColors';
 
 import WhiteAquaberaLogo from 'common/assets/image/aquabera/logoWhiteTransparent.svg';
-import ImageAquaberaHero from 'common/assets/image/aquabera/aquaberaHero.jpg';
+import ImageAquaberaBear from 'common/assets/image/aquabera/aquaberaBear.svg';
 
 const MEDIA_WIDTHS = {
   upToExtraSmall: 500,
@@ -54,7 +54,7 @@ export const darkTheme: AquaberaTheme = {
   name: Theme.DARK,
   mediaWidth: mediaWidthTemplates,
   images: {
-    hero: ImageAquaberaHero,
+    bear: ImageAquaberaBear,
     aquaberaLogo: WhiteAquaberaLogo,
     banner: ImageBanner,
     oneTokenBubbles: ImageOneTokenBubbles,

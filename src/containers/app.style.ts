@@ -592,7 +592,7 @@ const GlobalStyle = createGlobalStyle`
       & .image-ichi {
         content: url(${darkTheme.images.aquaberaLogo});
         @media (max-width: 1024px) {
-          content: url(${darkTheme.images.hero});
+          content: url(${darkTheme.images.bear});
         }
       }
       & .image-banner {
@@ -1073,7 +1073,7 @@ const GlobalStyle = createGlobalStyle`
       & .image-aquabera {
         content: url(${lightTheme.images.aquaberaLogo});
         @media (max-width: 1024px) {
-          content: url(${lightTheme.images.hero});
+          content: url(${lightTheme.images.bear});
         }
       }
       & .image-banner {

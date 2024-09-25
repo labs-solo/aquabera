@@ -31,7 +31,7 @@ const MainSection: React.FC = () => {
 
   return (
     <div
-      className="flex flex-col items-center justify-center pb-20"
+      className="flex flex-col items-center justify-center pb-20 bg-white border border-2 border-black rounded-3xl shadow-[12px_12px_0_0_#020202]"
       id="main-section"
     >
       <h1 className="px-3 mx-auto text-center">Make $BGT rain on autopilot</h1>
@@ -39,7 +39,7 @@ const MainSection: React.FC = () => {
         Liquidity management protocol that maximizes your returns while minimizing risks without requiring constant oversight.
       </div>
       <Image
-        src="../images/aquaberaHero.jpg"
+        src="../images/aquaberaBear.png"
         alt="HODL Vault"
         margin="40px auto"
         className="w-[520px] rounded-lg"
@@ -61,10 +61,13 @@ const MainSection: React.FC = () => {
           className="btn-link w-full md:w-[250px]"
         >
 
-          <Button
-            className="text ghost-button w-full md:w-[250px] mb-3"
+          {/* <Button
+            className="text px-6 mb-3"
             title={section.header.button2.text}
-          />
+          /> */}
+          <div>
+          {section.header.button2.text}
+          </div>
         </OutboundLink>
       </div>
     </div>
