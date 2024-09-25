@@ -51,7 +51,7 @@ const MainSection: React.FC = () => {
           className="btn-link w-full md:w-[250px]"
         >
           <Button
-            className="text primary-button w-full md:w-[250px] mb-3"
+            className="text primary-button px-6 mb-3"
             title={section.header.button.text}
           />
         </OutboundLink>

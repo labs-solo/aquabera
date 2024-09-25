@@ -123,11 +123,13 @@ const GlobalStyle = createGlobalStyle`
       line-height: 1.3;
     }
 
-    
+
     & .primary-button {
+      box-shadow: 4px 6px 0px 0px #020202;
       // width: 160px;
-      border-radius: 10px;
-      background-color: #287884;
+      border-radius: 9999px;
+      color: #020202;
+      background-color: #FFD94E;
       font-family: 'Sigmar', sans-serif;
       font-size: 16px;
       font-weight: 400;
