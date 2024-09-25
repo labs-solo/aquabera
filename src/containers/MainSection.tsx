@@ -31,44 +31,48 @@ const MainSection: React.FC = () => {
 
   return (
     <div
-      className="flex flex-col items-center justify-center pb-20 bg-white border border-2 border-black rounded-3xl shadow-[12px_12px_0_0_#020202]"
+      className="relative min-h-[500px] flex flex-row  pb-20 bg-white border border-2 border-black rounded-3xl shadow-[12px_12px_0_0_#020202]"
       id="main-section"
     >
-      <h1 className="px-3 mx-auto text-center">Make $BGT rain on autopilot</h1>
-      <div className="font-secondary mt-5 text-center">
-        Liquidity management protocol that maximizes your returns while minimizing risks without requiring constant oversight.
-      </div>
-      <Image
-        src="../images/aquaberaBear.png"
-        alt="HODL Vault"
-        margin="40px auto"
-        className="w-[520px] rounded-lg"
-      />
-      <div className="flex flex-row justify-center md:justify-between w-full md:w-[560px] flex-wrap pl-5 pr-5">
-        <OutboundLink
-          target="_blank"
-          href="https://forms.gle/BW5HByzZAi72DrRF8"
-          className="btn-link w-full md:w-[250px]"
-        >
-          <Button
-            className="text primary-button px-6 mb-3"
-            title={section.header.button.text}
-          />
-        </OutboundLink>
-        <OutboundLink
-          target="_blank"
-          href={section.header.button2.href}
-          className="btn-link w-full md:w-[250px]"
-        >
+      {/* left side div */}
+      <div className="flex flex-1 flex-col items-center justify-center">
+        <h1 className="px-3 mx-auto text-center">
+          Make $BGT rain on autopilot
+        </h1>
+        <div className="font-secondary mt-5 text-center">
+          Liquidity management protocol that maximizes your returns while
+          minimizing risks without requiring constant oversight.
+        </div>
 
-          {/* <Button
-            className="text px-6 mb-3"
-            title={section.header.button2.text}
-          /> */}
-          <div>
-          {section.header.button2.text}
-          </div>
-        </OutboundLink>
+        <div className="flex flex-row justify-center md:w-[560px] pl-5 pr-5 space-x-[40px] mt-10">
+          <OutboundLink
+            target="_blank"
+            href="https://forms.gle/BW5HByzZAi72DrRF8"
+            className="btn-link"
+          >
+            <Button
+              className="text primary-button px-6 mb-3"
+              title={section.header.button.text}
+            />
+          </OutboundLink>
+          <OutboundLink
+            target="_blank"
+            href={section.header.button2.href}
+            className="btn-link flex items-center h-12"
+          >
+            <div>{section.header.button2.text}</div>
+          </OutboundLink>
+        </div>
+      </div>
+      {/* right side div */}
+      <div className="flex-1">
+      {/* absolute flex-1 bottom-[-100px] left-0 right-0 */}
+        <Image
+          src="../images/aquaberaBear.png"
+          alt="HODL Vault"
+          margin="40px auto"
+          className="absolute bottom-[-100px] w-[400px] rounded-lg"
+        />
       </div>
     </div>
   );
