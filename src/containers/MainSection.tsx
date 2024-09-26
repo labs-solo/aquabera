@@ -31,20 +31,22 @@ const MainSection: React.FC = () => {
 
   return (
     <div
-      className="relative min-h-[500px] flex flex-row  pb-20 bg-white border border-2 border-black rounded-3xl shadow-[12px_12px_0_0_#020202]"
+      className="relative min-h-[600px] flex flex-row  pb-20 bg-white border border-2 border-black rounded-3xl shadow-[12px_12px_0_0_#020202]"
       id="main-section"
     >
       {/* left side div */}
-      <div className="flex flex-1 flex-col items-center justify-center">
-        <h1 className="px-3 mx-auto text-center">
-          Make $BGT rain on autopilot
+      <div className="flex flex-1 flex-col items-start justify-center ml-4">
+        <h1 className="flex items-start">
+          Make $BGT
+          <br />
+          rain on autopilot
         </h1>
-        <div className="font-secondary mt-5 text-center">
+        <div className="font-secondary mt-5 max-w-[430px]">
           Liquidity management protocol that maximizes your returns while
           minimizing risks without requiring constant oversight.
         </div>
 
-        <div className="flex flex-row justify-center md:w-[560px] pl-5 pr-5 space-x-[40px] mt-10">
+        <div className="flex flex-row md:w-[560px] space-x-[40px] mt-10">
           <OutboundLink
             target="_blank"
             href="https://forms.gle/BW5HByzZAi72DrRF8"
@@ -64,14 +66,26 @@ const MainSection: React.FC = () => {
           </OutboundLink>
         </div>
       </div>
+      <Image
+        src="../images/aquaberaHoneySmall.png"
+        alt="Aquabera bear"
+        // margin="40px auto"
+        className="absolute left-[80px] top-[-20px] w-[120px] rounded-lg"
+      />
       {/* right side div */}
       <div className="flex-1">
-      {/* absolute flex-1 bottom-[-100px] left-0 right-0 */}
+        {/* absolute flex-1 bottom-[-100px] left-0 right-0 */}
         <Image
           src="../images/aquaberaBear.png"
-          alt="HODL Vault"
-          margin="40px auto"
-          className="absolute bottom-[-100px] w-[400px] rounded-lg"
+          alt="Aquabera bear"
+          // margin="40px auto"
+          className="absolute bottom-[-75px] w-[400px] rounded-lg"
+        />
+        <Image
+          src="../images/aquaberaHoneyLarge.png"
+          alt="Large dripping honey"
+          // margin="40px auto"
+          className="absolute right-[90px] top-[-35px] w-[400px] rounded-lg"
         />
       </div>
     </div>
