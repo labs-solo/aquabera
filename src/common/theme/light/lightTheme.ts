@@ -21,7 +21,7 @@ import ImageForm from 'common/assets/image/dark/bg_form.png';
 import ImageCommunityBubbles from 'common/assets/image/light/img_bubbles_community_light.svg';
 import ImageOneTokenBubbles from 'common/assets/image/light/img_bubbles_onetokens.svg';
 import ImageHowItWorks from 'common/assets/image/light/img_howitworks.svg';
-import ImageTheme from 'common/assets/image/light/img_theme.svg';
+import ImageTheme from 'common/assets/image/light/darkModeIcon.svg';
 import IconClose from 'common/assets/image/light/icon_close.svg';
 import ImageLeftArrow from 'common/assets/image/dark/img_left_arrow.png';
 import ImageRightArrow from 'common/assets/image/dark/img_right_arrow.png';

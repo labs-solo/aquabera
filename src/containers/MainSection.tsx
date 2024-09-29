@@ -31,12 +31,12 @@ const MainSection: React.FC = () => {
 
   return (
     <div
-      className="relative mx-4 min-h-[600px] flex flex-row  pb-20 bg-white border border-2 border-black rounded-3xl shadow-[12px_12px_0_0_#020202]"
+      className="relative mx-4 min-h-[650px] flex md:flex-row flex-col pb-20 bg-white border border-2 border-black rounded-3xl shadow-[12px_12px_0_0_#020202]"
       id="main-section"
     >
       {/* left side div */}
       <div className="flex flex-1 flex-col items-start justify-center ml-4">
-        <h1 className="flex items-start">
+        <h1 className="flex items-start z-10">
           Make $BGT
           <br />
           rain on autopilot
@@ -68,9 +68,9 @@ const MainSection: React.FC = () => {
       </div>
       <Image
         src="../images/aquaberaHoneySmall.png"
-        alt="Aquabera bear"
+        alt="Small dripping honey"
         // margin="40px auto"
-        className="absolute left-[80px] top-[-20px] w-[120px] rounded-lg"
+        className=" absolute left-[80px] top-[-20px] w-[120px] invisible md:visible"
       />
       {/* right side div */}
       <div className="flex-1">
@@ -79,13 +79,13 @@ const MainSection: React.FC = () => {
           src="../images/aquaberaBear.png"
           alt="Aquabera bear"
           // margin="40px auto"
-          className="absolute bottom-[-75px] w-[400px] rounded-lg"
+          className="absolute md:bottom-[-75px] md:w-[400px] w-[300px] bottom-[-50px] right-[0px]"
         />
         <Image
           src="../images/aquaberaHoneyLarge.png"
           alt="Large dripping honey"
           // margin="40px auto"
-          className="absolute right-[90px] top-[-35px] w-[400px] rounded-lg"
+          className="absolute md:right-[90px] md:top-[-35px] md:w-[400px] right-[30px] top-[-20px] w-[240px]"
         />
       </div>
     </div>

@@ -123,6 +123,22 @@ const GlobalStyle = createGlobalStyle`
       line-height: 1.3;
     }
 
+    & .header-button {
+      border: 2px solid #020202;
+      border-radius: 9999px;
+      color: #020202;
+      background-color: transparent;
+      font-family: 'Sigmar', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: 19px;
+      transition: box-shadow 0.1s ease; /* Smooth transition for the shadow */
+    }
+
+    & .header-button:hover {
+      border: 3px solid #020202;
+    }
 
     & .primary-button {
       box-shadow: 4px 6px 0px 0px #020202;
@@ -532,7 +548,7 @@ const GlobalStyle = createGlobalStyle`
         padding: 8px;
       }
       & .footer{
-        background-color: #141826;
+        background-color: #DBEFFF;
       }
 
       & hr{
@@ -1013,8 +1029,8 @@ const GlobalStyle = createGlobalStyle`
         padding: 8px;
       }
       & .footer{
-        background-color: #ffffff;
-        border-top: 1px solid #e0e0e0;
+        background-color: #DBEFFF;
+        // border-top: 1px solid #e0e0e0;
         border-bottom: none;
       }
 
