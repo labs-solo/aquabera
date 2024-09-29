@@ -31,7 +31,7 @@ const MainSection: React.FC = () => {
 
   return (
     <div
-      className="relative min-h-[600px] flex flex-row  pb-20 bg-white border border-2 border-black rounded-3xl shadow-[12px_12px_0_0_#020202]"
+      className="relative mx-4 min-h-[600px] flex flex-row  pb-20 bg-white border border-2 border-black rounded-3xl shadow-[12px_12px_0_0_#020202]"
       id="main-section"
     >
       {/* left side div */}
