@@ -123,22 +123,7 @@ const GlobalStyle = createGlobalStyle`
       line-height: 1.3;
     }
 
-    & .header-button {
-      border: 2px solid #020202;
-      border-radius: 9999px;
-      color: #020202;
-      background-color: transparent;
-      font-family: 'Sigmar', sans-serif;
-      font-size: 16px;
-      font-weight: 400;
-      letter-spacing: 0;
-      line-height: 19px;
-      transition: box-shadow 0.1s ease; /* Smooth transition for the shadow */
-    }
 
-    & .header-button:hover {
-      border: 3px solid #020202;
-    }
 
     & .primary-button {
       box-shadow: 4px 6px 0px 0px #020202;
@@ -391,10 +376,27 @@ const GlobalStyle = createGlobalStyle`
 
     &.dark-mode {
 
+    & .header-button {
+      border: 2px solid #EBFFF6;
+      border-radius: 9999px;
+      color: #EBFFF6;
+      background-color: transparent;
+      font-family: 'Sigmar', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: 19px;
+      transition: box-shadow 0.1s ease; /* Smooth transition for the shadow */
+    }
+
+    & .header-button:hover {
+      border: 3px solid #EBFFF6;
+    }
+
       background-color: ${darkTheme.colors.bgColor};
 
       & .main-container{
-        background-color: #1f2c53;
+        background-color: #042837;
         background-image: url("../images/bg-top.jpg");
         background-repeat: no-repeat;
         background-size: 100% auto;
@@ -455,7 +457,7 @@ const GlobalStyle = createGlobalStyle`
       }
 
       & .secondary-bg-color{
-        background-color: #141826;
+        background-color: #113946;
       }
 
       & .section-header-color {
@@ -548,7 +550,7 @@ const GlobalStyle = createGlobalStyle`
         padding: 8px;
       }
       & .footer{
-        background-color: #DBEFFF;
+        background-color: #042837;
       }
 
       & hr{
@@ -905,6 +907,23 @@ const GlobalStyle = createGlobalStyle`
     &.light-mode {
 
       background-color: ${lightTheme.colors.bgColor};
+
+          & .header-button {
+      border: 2px solid #020202;
+      border-radius: 9999px;
+      color: #020202;
+      background-color: transparent;
+      font-family: 'Sigmar', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: 19px;
+      transition: box-shadow 0.1s ease; /* Smooth transition for the shadow */
+    }
+
+    & .header-button:hover {
+      border: 3px solid #020202;
+    }
 
       & .main-container{
         background-color: #DBEFFF;

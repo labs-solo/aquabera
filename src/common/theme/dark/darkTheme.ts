@@ -21,7 +21,7 @@ import ImageBrandedDollarsSection from 'common/assets/image/dark/bg_branded_doll
 import ImageForm from 'common/assets/image/dark/bg_form.png';
 import ImageCommunityBubbles from 'common/assets/image/dark/img_bubbles_community_dark.svg';
 import ImageOneTokenBubbles from 'common/assets/image/dark/img_bubbles_onetokens.svg';
-import ImageTheme from 'common/assets/image/dark/img_theme.svg';
+import ImageTheme from 'common/assets/image/dark/lightModeIcon.svg';
 import ImageHowItWorks from 'common/assets/image/light/img_howitworks.svg';
 import IconClose from 'common/assets/image/dark/icon_close.svg';
 import ImageLeftArrow from 'common/assets/image/dark/img_left_arrow.png';
