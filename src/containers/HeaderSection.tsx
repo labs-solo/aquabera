@@ -35,7 +35,7 @@ const HeaderSection: React.FC<Props> = (props) => {
       <div className="flex justify-end items-center">
           <div className="flex mr-10">
           {navMenu.map((i) => (
-            <MenuItem key={i.title} link={i.link} title={i.title} className="text-lg font-semibold" />
+            <MenuItem key={i.title} link={i.link} title={i.title} className="text-lg font-normal" />
           ))}
           </div>
           
@@ -49,7 +49,7 @@ const HeaderSection: React.FC<Props> = (props) => {
           </div>
 
           <OutboundLink target="_blank" href="https://app.aquabera.com">
-            <Button className="primary-button w-32 md:w-40" title="Launch App" />
+            <Button className="header-button w-32 md:w-40" title="LAUNCH APP" />
           </OutboundLink>
       </div>
     </div>

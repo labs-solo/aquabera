@@ -62,7 +62,7 @@ export type AquaberaTheme = {
   mediaWidth: any,
   images: {
     aquaberaLogo: string;
-    hero: string;
+    bear: string;
     banner: string;
     oneTokenBubbles: string;
     howItWorks: string;

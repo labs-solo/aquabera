@@ -9,23 +9,23 @@ const Footer: React.FC = () => {
   return (
     <div className="flex flex-row items-center justify-between pr-5 pl-5 md:pr-10 md:pl-10 mt-10 h-32 footer">
       <div className="flex items-center">
-        <Link to="/">
+        {/* <Link to="/">
           <Image
             className="image-aquabera-logo"
             alt="AquaBera logo"
             height="34px"
             width="auto"
           />
-        </Link>
+        </Link> */}
         <div className="pl-5 secondary-text-color text-base">
             &copy; {new Date().getFullYear()} AquaBera. All rights reserved 
         </div>
       </div>
       <div className="flex">
         <div className="flex flex-row items-center primary-text-color">
-          {navMenu.map((i) => (
+          {/* {navMenu.map((i) => (
             <MenuItem key={i.title} link={i.link} title={i.title} />
-          ))}
+          ))} */}
 
           {/* {communityIcons.map((i) => (
             <SocialMediaIcon 

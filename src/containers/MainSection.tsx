@@ -1,12 +1,12 @@
 import Button from "common/components/Button";
 import Image from "common/components/Image";
-import { IchiJson } from "common/models/ichiJson";
+import { AquaberaJson } from "common/models/aquaberaJson";
 import { graphql, useStaticQuery } from "gatsby";
 import { OutboundLink } from "gatsby-plugin-google-gtag";
 import React from "react";
 
 const MainSection: React.FC = () => {
-  const Data = useStaticQuery<IchiJson>(graphql`
+  const Data = useStaticQuery<AquaberaJson>(graphql`
     query {
       ichiJson {
         mainSection {
@@ -28,52 +28,65 @@ const MainSection: React.FC = () => {
   `);
 
   const section = Data.ichiJson.mainSection;
-  const hodlVaultDepositLink = "https://app.ichi.org/";
+
   return (
     <div
-      className="flex flex-col items-center justify-center pb-20"
+      className="relative mx-4 min-h-[650px] flex md:flex-row flex-col pb-20 secondary-bg-color border border-2 border-black rounded-3xl shadow-[12px_12px_0_0_#020202]"
       id="main-section"
     >
-      <h1 className="px-3 mx-auto text-center">Maximize $BGT Earnings</h1>
-      <div className="font-secondary mt-5 text-center">
-        Automate and optimize participation in Berachain's Proof-of-Liquidity
-      </div>
-      <OutboundLink target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeVKToHTP1AjIbyE3TglLcQLuPGM5jgArkvQN-jNs1KL5Wfrw/viewform?usp=sf_link">
-      <div className='text secondary-button px-6 py-3 mt-8 flex justify-center items-center'>
+      {/* left side div */}
+      <div className="flex flex-1 flex-col items-start justify-center md:mx-16 mx-4">
+        <h1 className="flex items-start z-10">
+          Make $BGT
+          <br />
+          rain on autopilot
+        </h1>
+        <div className="font-secondary mt-5 max-w-[430px]">
+          Liquidity management protocol that maximizes your returns while
+          minimizing risks without requiring constant oversight.
+        </div>
 
-      {/* <div className="text secondary-button w-full md:w-[250px] mb-3">  */}
-        Register as a Founding Partner
+        <div className="flex flex-row md:w-[560px] space-x-[40px] mt-10">
+          <OutboundLink
+            target="_blank"
+            href="https://app.aquabera.com/"
+            className="btn-link"
+          >
+            <Button
+              className="text primary-button px-6 mb-3"
+              title={section.header.button.text}
+            />
+          </OutboundLink>
+          <OutboundLink
+            target="_blank"
+            href={section.header.button2.href}
+            className="btn-link flex items-center h-12"
+          >
+            <div>{section.header.button2.text}</div>
+          </OutboundLink>
+        </div>
       </div>
-
-      </OutboundLink>
       <Image
-        src="../images/aquaberaHero.jpg"
-        alt="HODL Vault"
-        margin="40px auto"
-        className="w-[520px] rounded-lg"
+        src="../images/aquaberaHoneySmall.png"
+        alt="Small dripping honey"
+        // margin="40px auto"
+        className=" absolute left-[80px] top-[-20px] w-[120px] invisible md:visible"
       />
-      <div className="flex flex-row justify-center md:justify-between w-full md:w-[560px] flex-wrap pl-5 pr-5">
-        <OutboundLink
-          target="_blank"
-          href="https://forms.gle/BW5HByzZAi72DrRF8"
-          className="btn-link w-full md:w-[250px]"
-        >
-          <Button
-            className="text primary-button w-full md:w-[250px] mb-3"
-            title={section.header.button.text}
-          />
-        </OutboundLink>
-        <OutboundLink
-          target="_blank"
-          href={section.header.button2.href}
-          className="btn-link w-full md:w-[250px]"
-        >
-
-          <Button
-            className="text ghost-button w-full md:w-[250px] mb-3"
-            title={section.header.button2.text}
-          />
-        </OutboundLink>
+      {/* right side div */}
+      <div className="flex-1">
+        {/* absolute flex-1 bottom-[-100px] left-0 right-0 */}
+        <Image
+          src="../images/aquaberaBear.png"
+          alt="Aquabera bear"
+          // margin="40px auto"
+          className="absolute md:bottom-[-75px] md:w-[400px] w-[300px] bottom-[-50px] right-[0px]"
+        />
+        <Image
+          src="../images/aquaberaHoneyLarge.png"
+          alt="Large dripping honey"
+          // margin="40px auto"
+          className="absolute md:right-[90px] md:top-[-35px] md:w-[400px] right-[30px] top-[-20px] w-[240px]"
+        />
       </div>
     </div>
   );
