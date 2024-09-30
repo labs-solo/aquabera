@@ -35,7 +35,7 @@ const MainSection: React.FC = () => {
       id="main-section"
     >
       {/* left side div */}
-      <div className="flex flex-1 flex-col items-start justify-center ml-4">
+      <div className="flex flex-1 flex-col items-start justify-center md:mx-16 mx-4">
         <h1 className="flex items-start z-10">
           Make $BGT
           <br />
