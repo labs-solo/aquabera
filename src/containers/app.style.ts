@@ -64,7 +64,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: Lato;
+    font-family: Onest;
 
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
@@ -123,13 +123,17 @@ const GlobalStyle = createGlobalStyle`
       line-height: 1.3;
     }
 
-    
+
+
     & .primary-button {
+      box-shadow: 4px 6px 0px 0px #020202;
       // width: 160px;
-      border-radius: 10px;
-      background-color: #287884;
+      border-radius: 9999px;
+      color: #020202;
+      background-color: #FFD94E;
+      font-family: 'Sigmar', sans-serif;
       font-size: 16px;
-      font-weight: 600;
+      font-weight: 400;
       letter-spacing: 0;
       line-height: 19px;
       transition: box-shadow 0.1s ease; /* Smooth transition for the shadow */
@@ -357,7 +361,7 @@ const GlobalStyle = createGlobalStyle`
     & .font-primary-title{
       font-size: 18px;
       font-weight: 600;  
-      font-family: "lato";  
+      font-family: "Onest";  
       text-transform: uppercase;
     }
     & .font-secondary-title{
@@ -372,10 +376,27 @@ const GlobalStyle = createGlobalStyle`
 
     &.dark-mode {
 
+    & .header-button {
+      border: 2px solid #EBFFF6;
+      border-radius: 9999px;
+      color: #EBFFF6;
+      background-color: transparent;
+      font-family: 'Sigmar', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: 19px;
+      transition: box-shadow 0.1s ease; /* Smooth transition for the shadow */
+    }
+
+    & .header-button:hover {
+      border: 3px solid #EBFFF6;
+    }
+
       background-color: ${darkTheme.colors.bgColor};
 
       & .main-container{
-        background-color: #1f2c53;
+        background-color: #042837;
         background-image: url("../images/bg-top.jpg");
         background-repeat: no-repeat;
         background-size: 100% auto;
@@ -436,7 +457,7 @@ const GlobalStyle = createGlobalStyle`
       }
 
       & .secondary-bg-color{
-        background-color: #141826;
+        background-color: #113946;
       }
 
       & .section-header-color {
@@ -529,7 +550,7 @@ const GlobalStyle = createGlobalStyle`
         padding: 8px;
       }
       & .footer{
-        background-color: #141826;
+        background-color: #042837;
       }
 
       & hr{
@@ -589,7 +610,7 @@ const GlobalStyle = createGlobalStyle`
       & .image-ichi {
         content: url(${darkTheme.images.aquaberaLogo});
         @media (max-width: 1024px) {
-          content: url(${darkTheme.images.hero});
+          content: url(${darkTheme.images.bear});
         }
       }
       & .image-banner {
@@ -887,9 +908,26 @@ const GlobalStyle = createGlobalStyle`
 
       background-color: ${lightTheme.colors.bgColor};
 
+          & .header-button {
+      border: 2px solid #020202;
+      border-radius: 9999px;
+      color: #020202;
+      background-color: transparent;
+      font-family: 'Sigmar', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: 19px;
+      transition: box-shadow 0.1s ease; /* Smooth transition for the shadow */
+    }
+
+    & .header-button:hover {
+      border: 3px solid #020202;
+    }
+
       & .main-container{
-        background-color: #fffff;
-        background-image: url('../images/bg-top-light.png');
+        background-color: #DBEFFF;
+        // background-image: url('../images/bg-top-light.png');
         background-repeat: no-repeat;
         background-size: 100% auto;
         background-position: center top;
@@ -899,7 +937,7 @@ const GlobalStyle = createGlobalStyle`
       }
 
       & .home-page-container{
-        background-image: url('../images/bg-top-light.png'), url('../images/bg-bottom-light.png');
+        // background-image: url('../images/bg-top-light.png'), url('../images/bg-bottom-light.png');
         background-position: center top 0px, center bottom 120px;
         background-size: 100% auto, 100% auto;
         background-repeat: no-repeat, no-repeat;
@@ -907,7 +945,7 @@ const GlobalStyle = createGlobalStyle`
           background-size: 1440px auto, 1440px auto;
         }
         @media (min-width: 2100px) {
-          background-image: url('../images/bg-top-light.png');
+          // background-image: url('../images/bg-top-light.png');
           background-position: center top;
         }
       }
@@ -1010,8 +1048,8 @@ const GlobalStyle = createGlobalStyle`
         padding: 8px;
       }
       & .footer{
-        background-color: #ffffff;
-        border-top: 1px solid #e0e0e0;
+        background-color: #DBEFFF;
+        // border-top: 1px solid #e0e0e0;
         border-bottom: none;
       }
 
@@ -1070,7 +1108,7 @@ const GlobalStyle = createGlobalStyle`
       & .image-aquabera {
         content: url(${lightTheme.images.aquaberaLogo});
         @media (max-width: 1024px) {
-          content: url(${lightTheme.images.hero});
+          content: url(${lightTheme.images.bear});
         }
       }
       & .image-banner {
@@ -1339,7 +1377,7 @@ const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   h6 {
-    font-family: 'Lato';
+    font-family: 'Sigmar';
     font-weight: 500;
   }
   h1 {

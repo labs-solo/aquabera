@@ -55,7 +55,7 @@ type BrandedDollarsSection = {
   header: Header;
 }
 
-export type IchiJson = {
+export type AquaberaJson = {
   ichiJson: {
     navbar: Navbar;
     howItWorksSection: HowItWorksSection;

@@ -227,7 +227,7 @@ export const navMenu = [
   },
   {
     title: 'Partners',
-    link: 'https://labs-solo.github.io/aberabook/community/intro'
+    link: 'https://docs.aquabera.com/community/partners/amplifi/'
   },
   {
     title: 'Docs',

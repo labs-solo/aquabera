@@ -21,9 +21,7 @@ import ImageBrandedDollarsSection from 'common/assets/image/dark/bg_branded_doll
 import ImageForm from 'common/assets/image/dark/bg_form.png';
 import ImageCommunityBubbles from 'common/assets/image/dark/img_bubbles_community_dark.svg';
 import ImageOneTokenBubbles from 'common/assets/image/dark/img_bubbles_onetokens.svg';
-import ImageIchi from 'common/assets/image/dark/img_logo_ichi_symbol.svg';
-import ImageIchiLogo from 'common/assets/image/dark/img_logo_ichi_white.svg';
-import ImageTheme from 'common/assets/image/dark/img_theme.svg';
+import ImageTheme from 'common/assets/image/dark/lightModeIcon.svg';
 import ImageHowItWorks from 'common/assets/image/light/img_howitworks.svg';
 import IconClose from 'common/assets/image/dark/icon_close.svg';
 import ImageLeftArrow from 'common/assets/image/dark/img_left_arrow.png';
@@ -34,7 +32,7 @@ import { css } from 'styled-components';
 import darkColors from './darkColors';
 
 import WhiteAquaberaLogo from 'common/assets/image/aquabera/logoWhiteTransparent.svg';
-import ImageAquaberaHero from 'common/assets/image/aquabera/aquaberaHero.jpg';
+import ImageAquaberaBear from 'common/assets/image/aquabera/aquaberaBear.svg';
 
 const MEDIA_WIDTHS = {
   upToExtraSmall: 500,
@@ -56,7 +54,7 @@ export const darkTheme: AquaberaTheme = {
   name: Theme.DARK,
   mediaWidth: mediaWidthTemplates,
   images: {
-    hero: ImageAquaberaHero,
+    bear: ImageAquaberaBear,
     aquaberaLogo: WhiteAquaberaLogo,
     banner: ImageBanner,
     oneTokenBubbles: ImageOneTokenBubbles,

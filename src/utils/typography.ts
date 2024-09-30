@@ -6,17 +6,16 @@ const typography = new Typography({
   baseLineHeight: 1.666,
   googleFonts: [
     {
-      name: 'Montserrat',
-      styles: [
-        '400',
-        '500',
-        '600',
-        '700',
-      ],
+      name: 'Sigmar',
+      styles: ['400'],
+    },
+    {
+      name: 'Onest',
+      styles: ['400', '700'],
     },
   ],
-  headerFontFamily: ["Montserrat", "sans-serif"],
-  bodyFontFamily: ["Montserrat", "sans-serif"],
+  headerFontFamily: ['Sigmar', 'sans-serif'],
+  bodyFontFamily: ['Onest', 'sans-serif'],
 })
 
 export default typography
