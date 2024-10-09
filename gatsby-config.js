@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Automate and optimize participation in Berachain's Proof-of-Liquidity`,
-    description: `Automate and optimize participation in Berachain's Proof-of-Liquidity`,
+    title: `Aquabera | Make $BGT rain on autopilot`,
+    description: `Liquidity management protocol that maximizes your returns while minimizing risks without requiring constant oversight.`,
     author: `@gatsbyjs`,
   },
   plugins: [
