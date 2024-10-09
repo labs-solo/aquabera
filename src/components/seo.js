@@ -32,7 +32,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 property: `og:image`,
-                content: `https://ichi-images.s3.amazonaws.com/aquabera/aquabera_center.jpg`,
+                content: `https://ichi-images.s3.amazonaws.com/aquabera/aquabera_lz1.jpg`,
               },
               {
                 property: `og:type`,
