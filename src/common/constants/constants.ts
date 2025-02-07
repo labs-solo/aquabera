@@ -223,14 +223,14 @@ export const media = [
 export const navMenu = [
   {
     title: 'Community',
-    link: 'https://labs-solo.github.io/aberabook/community/intro'
+    link: 'https://docs.aquabera.com'
   },
-  {
-    title: 'Partners',
-    link: 'https://docs.aquabera.com/community/partners/amplifi/'
-  },
+  // {
+  //   title: 'Partners',
+  //   link: 'https://docs.aquabera.com/partner-integration-collaborations/existing-partners.html'
+  // },
   {
     title: 'Docs',
-    link: 'https://labs-solo.github.io/aberabook/'
+    link: 'https://docs.aquabera.com'
   },
 ]
