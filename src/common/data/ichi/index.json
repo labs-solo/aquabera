@@ -125,11 +125,11 @@
       "text": "Grow any token with low-slippage, on-chain liquidity",
       "button": {
         "text": "LAUNCH APP",
-        "href": "https://app.aquabera.com/"
+        "href": "https://app.aquabera.com/explore"
       },
       "button2": {
         "text": "Learn More",
-        "href": "https://labs-solo.github.io/aberabook/"
+        "href": "https://docs.aquabera.com"
       }
     }
   },

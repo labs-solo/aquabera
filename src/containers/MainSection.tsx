@@ -49,7 +49,7 @@ const MainSection: React.FC = () => {
         <div className="flex flex-row md:w-[560px] space-x-[40px] mt-10">
           <OutboundLink
             target="_blank"
-            href="https://app.aquabera.com/"
+            href="https://app.aquabera.com/explore"
             className="btn-link"
           >
             <Button

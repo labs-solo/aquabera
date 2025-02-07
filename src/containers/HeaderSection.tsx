@@ -38,9 +38,9 @@ const HeaderSection: React.FC<Props> = (props) => {
             <MenuItem key={i.title} link={i.link} title={i.title} className="text-lg font-normal" />
           ))}
           </div>
-          
+
           <ThemeSwitcher onClick={props.themeToggle} />
-          
+
           <div className="block lg:hidden">
             <Image
               className="menu-icon"
@@ -48,7 +48,7 @@ const HeaderSection: React.FC<Props> = (props) => {
               onClick={toggleSideBar} />
           </div>
 
-          <OutboundLink target="_blank" href="https://app.aquabera.com">
+          <OutboundLink target="_blank" href="https://app.aquabera.com/explore">
             <Button className="header-button w-32 md:w-40" title="LAUNCH APP" />
           </OutboundLink>
       </div>
