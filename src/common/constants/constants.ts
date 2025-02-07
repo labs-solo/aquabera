@@ -223,7 +223,7 @@ export const media = [
 export const navMenu = [
   {
     title: 'Community',
-    link: 'https://app.aquabera.com'
+    link: 'https://docs.aquabera.com'
   },
   // {
   //   title: 'Partners',
@@ -231,6 +231,6 @@ export const navMenu = [
   // },
   {
     title: 'Docs',
-    link: 'https://app.aquabera.com'
+    link: 'https://docs.aquabera.com'
   },
 ]
