@@ -31,7 +31,7 @@ import { ColorsKey, AquaberaTheme, Theme } from 'common/models/theme';
 import { css } from 'styled-components';
 import darkColors from './darkColors';
 
-import WhiteAquaberaLogo from 'common/assets/image/aquabera/logoWhiteTransparent.svg';
+import WhiteAquaberaLogo from 'common/assets/image/aquabera/logo-white-text.svg';
 import ImageAquaberaBear from 'common/assets/image/aquabera/aquaberaBear.svg';
 
 const MEDIA_WIDTHS = {
