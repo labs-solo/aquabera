@@ -26,7 +26,7 @@ const HeaderSection: React.FC<Props> = (props) => {
           <Image
             className="image-aquabera-logo"
             alt="AquaBera logo"
-            height="40px"
+            height="44px"
             width="auto"
           />
         </Link>

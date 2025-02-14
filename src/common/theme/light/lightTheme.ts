@@ -30,7 +30,7 @@ import { ColorsKey, AquaberaTheme, Theme } from 'common/models/theme';
 import { css } from 'styled-components';
 import lightColors from './lightColors';
 
-import BlackAquaberaLogo from 'common/assets/image/aquabera/aquaberaTextLogoBlack.svg';
+import BlackAquaberaLogo from 'common/assets/image/aquabera/logo-dark-text.svg';
 import ImageAquaberaBear from 'common/assets/image/aquabera/aquaberaBear.svg';
 
 
